@@ -1,0 +1,22 @@
+\begin{lstlisting}[language=Python,caption={Codice per il calcolo della sensitività di $R_2$}\label{R2sensitivity}, columns=fullflexible,firstnumber=1, stepnumber=1, style=mystyle]
+   #************ +10%  ****************
+    cost = 1.1
+    args = [[C, r2*cost, qFull, pd]]
+    sol_R2_1 = solve_ivp(fun=fun, t_span=t_span,y0=y0,method=method, t_eval=t_eval,args=args,rtol=tol)
+    pPred_R2_1 = sol_R2_1.y[0,:] + r1*flow
+    
+    #************ -10%  ****************
+    cost = 0.9
+    args = [[C, r2*cost, qFull, pd]]
+    sol_R2_2 = solve_ivp(fun=fun, t_span=t_span,y0=y0,method=method, t_eval=t_eval,args=args,rtol=tol)
+    pPred_R2_2 = sol_R2_2.y[0,:] + r1*flow
+    
+    # Derivate parziali
+    partialDerivativeR2 = centredFiniteDifference(pPred_R2_1, pPred_R2_2, r2*(1-cost))
+    
+    # Sensitivita
+    S_map_R2 = (r2/map) * partialDerivativeR2[0]
+    S_dbp_R2 = (r2/dbp) * partialDerivativeR2[1]
+    S_sbp_R2 = (r2/sbp) * partialDerivativeR2[2]
+    S_pp_R2 = (r2/pp) * partialDerivativeR2[3]
+\end{lstlisting}

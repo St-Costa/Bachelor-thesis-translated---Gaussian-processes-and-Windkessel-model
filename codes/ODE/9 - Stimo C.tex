@@ -1,0 +1,15 @@
+\begin{lstlisting}[language=Python,caption={Codice per la stima di $C$ che minimizza $f_C$}\label{stimaC}, columns=fullflexible,firstnumber=1, stepnumber=1]
+    args = [time, pressure, rd, qFull, dpdt]
+    
+    # Trovo il valore di C che minimizza f_C
+    bracket = [0.6,10.]
+    # Funzione per minimizzare
+    res = minimize_scalar(funC,bracket=bracket, args=args)
+    
+    # Non funziona sempre
+    if res.success:
+        C = res.x
+        print("C: %.5f" % C)
+    else:
+        print("ATTENTION: did not succeed in finding C!")
+\end{lstlisting}

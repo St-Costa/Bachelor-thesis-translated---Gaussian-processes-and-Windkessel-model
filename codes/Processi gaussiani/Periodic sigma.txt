@@ -1,0 +1,24 @@
+  nb_of_samples = 250      # Number of points in each function
+  number_of_functions = 4  # Number of functions to sample
+
+  X = np.expand_dims(np.linspace(-2, 2, nb_of_samples), 1)
+
+  # Kernel: parameters and evaluation
+  l=1
+  s=0.1 # s=10
+  p=1
+  S = periodic(X, X, s, l, p)
+
+  # Draw samples from the prior at our data points.
+  # Zero mean
+  ys = np.random.multivariate_normal(mean=np.zeros(nb_of_samples), cov=S, size=number_of_functions)
+    
+  # Plot the sampled functions
+  fig, ax = plt.subplots()
+  at = AnchoredText("$l^2=1, \sigma^2=0.1, p=1$", prop=dict(size=11), frameon=True, loc='upper left')
+  at.patch.set_boxstyle("round,pad=0.,rounding_size=0.2")
+  ax.add_artist(at)
+
+  for i in range(number_of_functions):
+      ax.plot(X, ys[i], linestyle='-', marker='o', markersize=3, label='k(x,0)')
+  ax.set_xlim([-2, 2])

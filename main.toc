@@ -1,0 +1,112 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+~\hfill \textbf {Pag.}\par 
+\contentsline {chapter}{Lista codici}{viii}{chapter*.4}%
+\contentsline {chapter}{Elenco delle figure}{xiv}{chapter*.5}%
+\contentsline {chapter}{Elenco delle tabelle}{xv}{chapter*.6}%
+\contentsline {chapter}{\numberline {I}Introduzione}{1}{chapter.1}%
+\contentsline {section}{\numberline {I.1}Argomenti trattati e motivazione}{2}{section.1.1}%
+\contentsline {subsection}{\numberline {I.1.1}Processi gaussiani}{2}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {I.1.2}Modello Windkessel}{3}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {I.1.3}Motivazione dell'argomento}{4}{subsection.1.1.3}%
+\contentsline {section}{\numberline {I.2}Organizzazione dell'elaborato}{5}{section.1.2}%
+\contentsline {subsection}{\numberline {I.2.1}Fonti}{5}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {I.2.2}Immagini}{5}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {I.2.3}Codice}{5}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {I.2.4}Struttura dell'elaborato}{6}{subsection.1.2.4}%
+\contentsline {chapter}{\numberline {II}Distribuzione gaussiana}{7}{chapter.2}%
+\contentsline {section}{\numberline {II.1}Distribuzione gaussiana univariata}{8}{section.2.1}%
+\contentsline {section}{\numberline {II.2}Distribuzione gaussiana multivariata}{9}{section.2.2}%
+\contentsline {section}{\numberline {II.3}Correlazione per vettori multivariati}{11}{section.2.3}%
+\contentsline {chapter}{\numberline {III}Processi gaussiani}{17}{chapter.3}%
+\contentsline {section}{\numberline {III.1}Definizione e motivazione}{18}{section.3.1}%
+\contentsline {section}{\numberline {III.2}Introduzione ai processi gaussiani e alla notazione}{20}{section.3.2}%
+\contentsline {section}{\numberline {III.3}Sulle covariance function}{24}{section.3.3}%
+\contentsline {subsection}{\numberline {III.3.1}Linear kernel}{25}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {III.3.2}Squared-exponential kernel}{29}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {III.3.3}Periodic kernel}{33}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {III.3.4}Covariance function in più dimensioni}{37}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {III.3.5}Combinare le covariance function}{38}{subsection.3.3.5}%
+\contentsline {subsubsection}{Squared exponential + periodic kernel}{39}{subsubsection*.36}%
+\contentsline {subsubsection}{Linear $\times $ linear kernel}{40}{subsubsection*.39}%
+\contentsline {subsubsection}{Esempio reale di covariance function composta}{41}{subsubsection*.42}%
+\contentsline {section}{\numberline {III.4}Predizioni con osservazioni senza rumore}{44}{section.3.4}%
+\contentsline {section}{\numberline {III.5}Predizioni con osservazioni rumorose}{47}{section.3.5}%
+\contentsline {chapter}{\numberline {IV}Machine learning}{51}{chapter.4}%
+\contentsline {section}{\numberline {IV.1}Introduzione al machine learning}{52}{section.4.1}%
+\contentsline {section}{\numberline {IV.2}Dataset}{52}{section.4.2}%
+\contentsline {subsection}{\numberline {IV.2.1}Loss function}{54}{subsection.4.2.1}%
+\contentsline {section}{\numberline {IV.3}Modelli parametrici e non parametrici}{55}{section.4.3}%
+\contentsline {subsection}{\numberline {IV.3.1}Modelli parametrici}{55}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {IV.3.2}Modelli non parametrici}{55}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {IV.3.3}Struttura gerarchica}{56}{subsection.4.3.3}%
+\contentsline {section}{\numberline {IV.4}Ottimizzazione degli iperparametri}{57}{section.4.4}%
+\contentsline {subsection}{\numberline {IV.4.1}Inferenza bayesiana}{57}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {IV.4.2}Teorema di Bayes}{58}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {IV.4.3}Evidenza bayesiana}{59}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {IV.4.4}Alternative all'evidenza bayesiana}{60}{subsection.4.4.4}%
+\contentsline {subsection}{\numberline {IV.4.5}Nei processi gaussiani}{60}{subsection.4.4.5}%
+\contentsline {section}{\numberline {IV.5}Metodo di ottimizzazione}{61}{section.4.5}%
+\contentsline {subsection}{\numberline {IV.5.1}Forma della funzione da ottimizzare}{61}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {IV.5.2}Learning rate}{62}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {IV.5.3}Metodo del gradiente \blx@tocontentsinit {0}\cite {ruder_2022}}{63}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {IV.5.4}Discesa stocastica del gradiente \blx@tocontentsinit {0}\cite {bottou2012stochastic}}{64}{subsection.4.5.4}%
+\contentsline {subsection}{\numberline {IV.5.5}Metodo dei momenti \blx@tocontentsinit {0}\cite {ruder_2022}}{65}{subsection.4.5.5}%
+\contentsline {subsection}{\numberline {IV.5.6}AdaGrad \blx@tocontentsinit {0}\cite {JMLR:v12:duchi11a}}{66}{subsection.4.5.6}%
+\contentsline {subsection}{\numberline {IV.5.7}Adam \blx@tocontentsinit {0}\cite {kingma_adam_2017}}{67}{subsection.4.5.7}%
+\contentsline {chapter}{\numberline {V}Modello Windkessel}{69}{chapter.5}%
+\contentsline {section}{\numberline {V.1}Introduzione}{70}{section.5.1}%
+\contentsline {section}{\numberline {V.2}Concetti di fisiologia}{72}{section.5.2}%
+\contentsline {subsection}{\numberline {V.2.1}Ciclo cardiaco}{72}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {V.2.2}Terminologia utile}{76}{subsection.5.2.2}%
+\contentsline {subsubsection}{Volume sistolico}{76}{subsubsection*.62}%
+\contentsline {subsubsection}{Arteria elastica}{76}{subsubsection*.63}%
+\contentsline {subsubsection}{Resistenza vascolare}{76}{subsubsection*.64}%
+\contentsline {subsubsection}{Capacitanza o compliance}{77}{subsubsection*.65}%
+\contentsline {subsection}{\numberline {V.2.3}Effetto Windkessel}{77}{subsection.5.2.3}%
+\contentsline {section}{\numberline {V.3}Modello Windkessel a due elementi}{79}{section.5.3}%
+\contentsline {subsection}{\numberline {V.3.1}Definizione del modello}{81}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {V.3.2}Stima della compliance}{81}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {V.3.3}Stima della compliance e delle resistenze}{83}{subsection.5.3.3}%
+\contentsline {section}{\numberline {V.4}Forzante periodica}{83}{section.5.4}%
+\contentsline {subsection}{\numberline {V.4.1}Applicazione al modello Windkessel}{84}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {V.4.2}Tempo di esecuzione}{85}{subsection.5.4.2}%
+\contentsline {section}{\numberline {V.5}Analisi di sensitività locale}{86}{section.5.5}%
+\contentsline {chapter}{\numberline {VI}Metodologia e risultati training}{91}{chapter.6}%
+\contentsline {section}{\numberline {VI.1}Problema di regressione}{92}{section.6.1}%
+\contentsline {section}{\numberline {VI.2}Dettagli del training}{92}{section.6.2}%
+\contentsline {subsection}{\numberline {VI.2.1}GPErks}{92}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {VI.2.2}Processo gaussiano}{93}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {VI.2.3}Ottimizzazione degli iperparametri}{93}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {VI.2.4}Dataset di input}{93}{subsection.6.2.4}%
+\contentsline {section}{\numberline {VI.3}Risultati del training}{95}{section.6.3}%
+\contentsline {subsection}{\numberline {VI.3.1}Mean arterial pressure (MAP)}{95}{subsection.6.3.1}%
+\contentsline {subsubsection}{Training e validation loss}{95}{subsubsection*.78}%
+\contentsline {subsubsection}{Approssimazione dei dati di input}{96}{subsubsection*.80}%
+\contentsline {subsubsection}{Dipendenza da $C$}{96}{subsubsection*.82}%
+\contentsline {subsubsection}{Dipendenza da $R_1$}{99}{subsubsection*.87}%
+\contentsline {subsubsection}{Dipendenza da $R_2$}{101}{subsubsection*.92}%
+\contentsline {subsection}{\numberline {VI.3.2}Diastolic blood pressure (DBP)}{103}{subsection.6.3.2}%
+\contentsline {subsubsection}{Training e validation loss}{103}{subsubsection*.97}%
+\contentsline {subsubsection}{Approssimazione dei dati di input}{103}{subsubsection*.99}%
+\contentsline {subsubsection}{Dipendenza da $C$}{104}{subsubsection*.101}%
+\contentsline {subsubsection}{Dipendenza da $R_1$}{106}{subsubsection*.106}%
+\contentsline {subsubsection}{Dipendenza da $R_2$}{108}{subsubsection*.111}%
+\contentsline {subsection}{\numberline {VI.3.3}Pulse pressure (PP)}{110}{subsection.6.3.3}%
+\contentsline {subsubsection}{Training e validation loss}{110}{subsubsection*.116}%
+\contentsline {subsubsection}{Approssimazione dei dati di input}{110}{subsubsection*.118}%
+\contentsline {subsubsection}{Dipendenza da $C$}{111}{subsubsection*.120}%
+\contentsline {subsubsection}{Dipendenza da $R_1$}{113}{subsubsection*.125}%
+\contentsline {subsubsection}{Dipendenza da $R_2$}{115}{subsubsection*.130}%
+\contentsline {subsection}{\numberline {VI.3.4}Systolic blood pressure (SBP)}{117}{subsection.6.3.4}%
+\contentsline {subsubsection}{Training e validation loss}{117}{subsubsection*.135}%
+\contentsline {subsubsection}{Approssimazione dei dati di input}{117}{subsubsection*.137}%
+\contentsline {subsubsection}{Dipendenza da $C$}{118}{subsubsection*.139}%
+\contentsline {subsubsection}{Dipendenza da $R_1$}{120}{subsubsection*.144}%
+\contentsline {subsubsection}{Dipendenza da $R_2$}{122}{subsubsection*.149}%
+\contentsline {section}{\numberline {VI.4}Tempo di esecuzione: approssimazione di MAP, DBP, SBP, PP}{124}{section.6.4}%
+\contentsline {chapter}{\numberline {VII}Conclusioni e future directions}{125}{chapter.7}%
+\contentsline {section}{\numberline {VII.1}Conclusioni}{126}{section.7.1}%
+\contentsline {section}{\numberline {VII.2}Future directions}{127}{section.7.2}%
+\contentsline {chapter}{Bibliografia}{131}{chapter*.155}%
+\contentsline {chapter}{Appendice}{135}{chapter*.156}%

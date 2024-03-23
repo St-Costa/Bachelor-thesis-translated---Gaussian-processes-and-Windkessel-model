@@ -1,0 +1,15 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {V.1}{\ignorespaces Tabella riassuntiva ciclo cardiaco \blx@tocontentsinit {0}\cite {wiki:cicloCardiaco}.\relax }}{74}{table.caption.60}%
+\contentsline {table}{\numberline {V.2}{\ignorespaces Tempo di esecuzione per trovare l'approssimazione della soluzione del modello Windkessel su diversi cicli cardiaci. \relax }}{86}{table.caption.73}%
+\contentsline {table}{\numberline {V.3}{\ignorespaces Valori variabili calcolati con il modello Windkessel e parametri di input ($C, \alpha $) stimati. I valori reali sono ripresi da \blx@tocontentsinit {0}\cite {AaronsonPhilipI.PhilipIrving2020Tcsa}.\relax }}{87}{table.caption.74}%
+\contentsline {table}{\numberline {V.4}{\ignorespaces Sensitività locale delle variabili $\mathcal {M}=\{MAP, DBP, SBP, PP\}$ al variare del valore dei parametri $\mathcal {P}=\{C,R_1,R_2,P_d\}$. I parametri sono inseriti in ordine decrescente (in modulo) di sensitività.\relax }}{87}{table.caption.75}%
+\contentsline {table}{\numberline {V.5}{\ignorespaces Variazione delle variabili all'aumento del dieci percento dei parametri. $\mathcal {M}_S=\{\text {MAP}_S, \text {DBP}_S, \text {SBP}_S, \text {PP}_S\}$ sono le variabili ottenute con parametri standard (stimati precedentemente), $\mathcal {M}_{+10\%}=\{\text {MAP}_{+10\%}, \text {DBP}_{+10\%}, \text {SBP}_{+10\%}, \text {PP}_{+10\%}\}$ sono le variabili ottenute con singoli parametri aumentati del dieci percento, $\Delta =\{\Delta _{MAP}, \Delta _{DBP}, \Delta _{SBP}, \Delta _{PP}\}$ sono le variazioni percentuali della variabile a pedice.\relax }}{88}{table.caption.76}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {VI.1}{\ignorespaces Tempo di esecuzione per trovare l’approssimazione dei parametri usando i processi gaussiani addestrati.\relax }}{124}{table.caption.154}%
+\addvspace {10\p@ }

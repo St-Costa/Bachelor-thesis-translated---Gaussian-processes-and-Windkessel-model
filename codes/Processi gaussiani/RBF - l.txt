@@ -1,0 +1,25 @@
+  nb_of_samples = 150       # Number of points in each function
+  number_of_functions = 3   # Number of functions to sample
+
+  X = np.expand_dims(np.linspace(-4, 4, nb_of_samples), 1)
+
+  # Kernel: parameters and evaluation
+  l=0.3 # l=10
+  sigma=1
+  S = exponentiated_quadratic(X, X, l, sigma)
+
+  # Draw samples from the prior at our data points.
+  # Zero mean
+  ys = np.random.multivariate_normal(
+    mean=np.zeros(nb_of_samples), cov=S, 
+    size=number_of_functions)
+
+  # Plot the sampled functions
+  fig, ax = plt.subplots()
+  at = AnchoredText("$l^2=0.3, \sigma^2=1$", prop=dict(size=11), frameon=True, loc='upper left')
+  at.patch.set_boxstyle("round,pad=0.,rounding_size=0.2")
+  ax.add_artist(at)
+
+  for i in range(number_of_functions):
+      ax.plot(X, ys[i], linestyle='-', marker='o', markersize=3, label='k(x,0)')
+  ax.set_xlim([-4, 4])

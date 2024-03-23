@@ -1,0 +1,26 @@
+\begin{lstlisting}[language=Python,caption={Codice per il plot dei dati reali}\label{datiReali}, columns=fullflexible,firstnumber=1, stepnumber=1]
+    # Pressione e flusso dai file
+    flow = np.genfromtxt('stergioFlow.dat')
+    pressure = np.genfromtxt('stergioPressure.dat')
+
+    # Time grid
+    M = 1000
+    # array tempo
+    time = np.linspace(0.,1.,M)
+
+    # Interpolo i dati nella grid
+    flow = np.interp(time,flow[:,0],flow[:,1])
+    pressure = np.interp(time,pressure[:,0],pressure[:,1])
+
+    # Plot
+    fig,ax=plt.subplots()
+    ln1 = ax.plot(time,flow,'b-',label='$Q_{in}$')
+    ax.set_xlabel("time [s]")
+    ax.set_ylabel("$Q_{in}\,[mL/s]$")
+    ax2=ax.twinx()
+    ln2 = ax2.plot(time,pressure,'r-',label='P')
+    ax2.set_ylabel("$P\,[mmHg]$")
+    lns = ln1+ln2
+    labs = [l.get_label() for l in lns]
+    ax.legend(lns, labs, loc=0)
+\end{lstlisting}

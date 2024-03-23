@@ -1,0 +1,17 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{ccccc}
+\hline
+\textbf{Rank} & \textbf{MAP}      & \textbf{DBP}      & \textbf{SBP}      & \textbf{PP}       \\ \hline
+1             & $R_2$ ( -0.1907 ) & $R_2$ ( -0.0870 ) & $C$ ( 0.2464 )    & $C$ ( 0.7928 )    \\
+2             & $C$ ( 0.1271 )    & $C$ ( -0.0085 )   & $R_2$ ( -0.0871 ) & $R_1$ ( -0.1695 ) \\
+3             & $R_1$ ( -0.0285 ) & $R_1$ ( -0.0066 ) & $R_1$ ( -0.0584 )  & $R_2$ ( -0.0871 )  \\
+4             & $P_d$ ( -0.0099 )  & $P_d$ ( -0.0006)  & $P_d$ ( -0.0049 )  & $P_d$ ( -0.0141 )  \\ \hline
+\end{tabular}%
+}
+\caption{Sensitività locale delle variabili $\mathcal{M}=\{MAP, DBP, SBP, PP\}$ al variare del valore dei parametri $\mathcal{P}=\{C,R_1,R_2,P_d\}$. I parametri sono inseriti in ordine decrescente (in modulo) di sensitività.}
+\label{tab:local sensitivity}
+\end{table}

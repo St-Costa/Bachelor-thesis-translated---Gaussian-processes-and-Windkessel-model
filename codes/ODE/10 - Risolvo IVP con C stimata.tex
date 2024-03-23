@@ -1,0 +1,23 @@
+\begin{lstlisting}[language=Python,caption={Codice per generare la figura \ref{soluzioneCapprossimata}}\label{plotSoluzioneCstimata}, columns=fullflexible,firstnumber=1, stepnumber=1]
+    # Imposto i valori
+    args = [[C, rd, qFull, pd]]
+    fun = dpdt
+    t_span = [time[0],time[-1]]
+    y0 = [p0]
+    method='RK45'
+    t_eval = time
+
+    # Uso solve_ivp per risolvere ODE
+    sol = solve_ivp(fun=fun, t_span=t_span,y0=y0,method=method,
+    t_eval=t_eval,args=args,rtol=tol)
+    pPred = sol.y[0,:]
+
+    err = pressure-pPred
+    print("Error inf-norm is: %.6f" % np.linalg.norm(err,np.inf))
+    print("Error 2-norm is: %.6f" % np.linalg.norm(err,2))
+    plt.plot(time,pressure,'g-',label='Data')
+    plt.plot(time[::10],pPred[::10],'rx',label='Model')
+    plt.xlabel("time [s]")
+    plt.ylabel("$P\,[mmHg]$")
+    plt.legend()
+\end{lstlisting}

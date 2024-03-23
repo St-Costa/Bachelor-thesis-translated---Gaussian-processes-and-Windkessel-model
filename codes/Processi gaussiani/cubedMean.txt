@@ -1,0 +1,6 @@
+ def cubed_mean(x):
+      tempList = np.zeros(len(x))
+      for i in range(len(x)):
+          tempList[i] = x[i]
+      mean = tempList**3
+      return mean

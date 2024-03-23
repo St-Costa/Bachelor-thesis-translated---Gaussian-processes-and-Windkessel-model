@@ -1,0 +1,9 @@
+\begin{lstlisting}[language=Python,caption={Codice per definire la funzione di flusso per il modello Windkessel ciclico}\label{flusso periodico}, columns=fullflexible,firstnumber=1, stepnumber=1]
+    def qFull(t):
+        if type(t)==float:
+            tLoc = t-int(t)*1.
+        else:
+            tLoc = t-t.astype(int)*1.
+        q = np.interp(tLoc,time,flow)
+        return q
+\end{lstlisting}

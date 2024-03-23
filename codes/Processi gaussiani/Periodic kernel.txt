@@ -1,0 +1,24 @@
+  # Modify kernel to adapt to definition given
+  def periodic(xa, xb, s, l, p):
+      kernel = s**2 * ExpSineSquared(length_scale=l, periodicity=p).__call__(xa,xb)
+      return kernel
+
+  # Show covariance with X=1
+  fig,  ax2 = plt.subplots(1, 1, figsize=(4, 4))
+  xlim = (-4, 4)
+  X = np.expand_dims(np.linspace(*xlim, num=1000), 1)
+  zero = np.zeros((len(X), 1))
+
+  # Kernel: parameters and evaluation
+  s = 1
+  l = 1
+  p = 2
+  S0 = periodic(X, zero, s,l,p)
+
+  # Make the plots
+  fig.tight_layout()
+  plt.plot(X[:,0], S0[:,0], label='$k(x,0)$')
+  plt.xlabel("X", fontsize=13)
+  plt.legend(loc=1)
+  plt.xlim(xlim)
+  plt.show()

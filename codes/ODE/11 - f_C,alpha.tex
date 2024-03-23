@@ -1,0 +1,38 @@
+\begin{lstlisting}[language=Python,caption={Codice per la definizione della funzione  $f_{C,\alpha}$}\label{fCa}, columns=fullflexible,firstnumber=1, stepnumber=1]
+    def funCR(x,args):
+    """
+    Objective function for RCR Windkessel with compliance
+    C and alpha unknown. Input arguments:
+    - x: list with current value for compliance and alpha
+    - args: list containing:
+        1) time array where data is available
+        2) pressure array where data is available (associated to time)
+        3) peripehral resistance
+        4) flow function, that is called qFunc(t)
+        5) ODE function, that is called dydt(t,y,args)
+    Output argument:
+    - errnorm: the value of objective function (7) for "c"
+    """
+    c, alpha = x
+    time, pressure, r, qFunc, dydt = args
+    
+    # Definisco "r1" e "r2" usando "r" e "alpha"
+    r1= (1-alpha)*r
+    r2 = alpha*r
+    
+    # *****Risolvo IVP*****
+    # Condizionale iniziale p(t0)=pressure[0]
+    args = [[c,r2,qFunc, pd]]
+    fun = dydt
+    t_span = [time[0],time[-1]]
+    y0 = [pressure[0]]
+    method='RK45'
+    t_eval = time
+    sol = solve_ivp(fun=fun, t_span=t_span,y0=y0,method=method, t_eval=t_eval,args=args,rtol=tol)
+    
+    # Valuto f_C,alpha
+    pin = sol.y[0,:] + r1*flow
+    errnorm = (pin - pressure)**2
+    errnorm = sum(errnorm)
+    return errnorm
+\end{lstlisting}

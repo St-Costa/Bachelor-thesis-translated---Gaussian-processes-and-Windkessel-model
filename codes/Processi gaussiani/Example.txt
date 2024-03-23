@@ -1,0 +1,27 @@
+  def example_mean(x):
+      tempList = np.zeros(len(x))
+      for i in range(len(x)):
+          tempList[i] = x[i]
+      mean = tempList**2/4
+      return mean
+
+  nb_of_samples = 40        # Number of points in each function
+  number_of_functions = 4   # Number of functions to sample
+
+  X = np.expand_dims(np.linspace(-4, 4, nb_of_samples), 1)
+
+  # Kernel: parameters and evaluation
+  l=1
+  sigma=1
+  S = exponentiated_quadratic(X, X, l, sigma)
+  mean = example_mean(X)
+
+  # Draw samples from the prior at our data points
+  ys = np.random.multivariate_normal(mean, cov=S, size=number_of_functions)
+
+  # Plot the sampled functions
+  fig, ax = plt.subplots()
+
+  for i in range(number_of_functions):
+      ax.plot(X, ys[i], linestyle='', marker='o', markersize=3, label='k(x,0)')
+  ax.set_xlim([-4, 4])

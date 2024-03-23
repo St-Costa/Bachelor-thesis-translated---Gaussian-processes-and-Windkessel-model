@@ -1,0 +1,397 @@
+\documentclass[notitlepage, twoside, openright,12pt]{book}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%  Pacchetti         
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Pagine bianche
+\usepackage{afterpage}
+\newcommand\blankpage{
+    \null
+    \thispagestyle{empty}%
+    %\addtocounter{page}{-1}%
+    \newpage}
+
+%%%%% Testo di prova
+\usepackage{lipsum}  
+
+
+%%%%% TOC 
+\usepackage[titles]{tocloft}
+
+%%%% CITAZIONI
+\usepackage{epigraph}
+\setlength{\epigraphwidth}{0.64\textwidth}
+
+\usepackage[absolute,overlay]{textpos}
+
+%%%% VERBATIM INLINE
+\usepackage{fancyvrb}
+
+
+
+%%%% Sezioni di codice
+\usepackage{listings}
+\renewcommand\lstlistingname{Codice}
+\renewcommand\lstlistlistingname{Lista codici}
+
+
+
+
+
+%%%% Lingua e tastiera
+\usepackage[italian]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage[a4paper,top=3cm, bottom=3cm, left=3.5cm, right=3.5cm]{geometry}
+
+%%%% Matematica
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{xfrac}  %per le frazioni oblique
+\usepackage{bm}  %bold in math mdoe
+
+
+%%%% Tabelle e diagrammi
+\usepackage{array}
+\newcolumntype{L}{>{$}l<{$}}
+\newcolumntype{S}[1]{>{\raggedright\arraybackslash}m{#1}}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{D}[1]{>{\raggedleft\arraybackslash}m{#1}}
+\usepackage[table]{xcolor}
+\usepackage{xcolor}
+\usepackage{./Settings/nicematrix}
+\usepackage[all]{xy}
+
+\usepackage{multirow} %Merge cell
+
+%%%% Bibliografia
+\usepackage{csquotes}
+\usepackage[style=alphabetic, maxnames=5,minnames=4, backend=biber]{biblatex}
+\addbibresource{biblio.bib}
+
+
+%%%% Immagini
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+
+
+%%%% Oggetti flottanti
+\usepackage{float}
+
+
+%%%% Personalizzazione capitoli e intestazioni
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\setlength\headheight{16pt}
+\fancyhf{}
+
+
+%%%% Togliere le intestazioni dalle pagine vuote
+\usepackage{emptypage}
+
+
+%%%% Pdf/a per consegna
+\usepackage[a-1b]{pdfx}
+
+
+%%%% Links
+\usepackage[pdfa]{hyperref}
+
+
+%%%% LANDSCAPE
+\usepackage{lscape}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% Ambienti matematici %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\theoremstyle{plain}
+\newtheorem{teo}{Teorema}[section]
+\newtheorem*{teo*}{Teorema}
+\newtheorem{lemma}[teo]{Lemma}
+\newtheorem{cor}[teo]{Corollario}
+\newtheorem{prop}[teo]{Proposizione}
+\theoremstyle{definition}
+\newtheorem{defi}[teo]{Definizione}
+\newtheorem{nota}[teo]{Notazione}
+\theoremstyle{remark}
+\newtheorem{oss}[teo]{Osservazione}
+\newtheorem{ese}[teo]{Esempio}
+
+
+%%%% COMANDI MATEMATICI NUOVI
+\newcommand{\indep}{\perp \!\!\! \perp}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% STILE CAPITOLI E SECTION     
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{macros.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% STILE CODICE    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codered}{HTML}{cc0029}
+\definecolor{background}{RGB}{230, 243, 252}
+
+
+
+\lstdefinestyle{mystyle}{
+    language=Python,
+    backgroundcolor=\color{background}, 
+    keywordstyle=\bfseries\color{blue},
+    commentstyle=\itshape\color{codegreen},
+    numberstyle=\tiny\color{black},
+    stringstyle=\color{codered},
+    basicstyle=\linespread{0.85}\ttfamily\footnotesize,
+    firstnumber=0,  %%numeri partono da 0
+    stepnumber=5,   %%numero ogni 5 righe
+    frame=single,
+    rulecolor=\color{black},  %colore frame
+    breakatwhitespace=true,         
+    breaklines=true,                 
+    captionpos=t,      
+    abovecaptionskip=10pt,
+    belowcaptionskip=10pt,
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=10pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    deletekeywords=[2]{map},
+}
+
+\lstset{style=mystyle}
+
+
+
+
+%%%% P di probabilità
+\newcommand{\probP}{\text{I\kern-0.18em P}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%      INIZIO DOCUMENTO        %%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Frontmatter       
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frontmatter
+
+
+
+%%%%%FRONTESPIZIO
+\thispagestyle{empty}  
+\input{Settings/Senza righe} % frontespizio senza intestazioni
+
+
+\input{Capitoli/Ringraziamenti}
+
+
+%%%TOC
+\pagestyle{plain} % indice col solo numero di pagina
+\setcounter{tocdepth}{1}
+
+
+\setlength\cftsecnumwidth{30pt}  %distanza della sezione dopo il numero
+\setlength\cftchapnumwidth{30pt} %distanza del chapter dopo il numero
+
+
+\tableofcontents
+\addtocontents{toc}{~\hfill\textbf{Pag.}\par} %aggiunge Pag.
+
+
+
+\newpage
+
+
+
+
+
+
+%% LISTA CODICI
+
+%Distanza dal numero a sinistra
+\makeatletter
+\def\l@lstlisting#1#2{\@dottedtocline{1}{1.5em}{3.5em}{#1}{#2}}
+\makeatother
+
+\setcounter{tocdepth}{2}
+\lstlistoflistings
+\addcontentsline{toc}{chapter}{Lista codici}
+
+
+\cftsetindents{figure}{1.5em}{3.5em}  %distanza dal numero a sinistra
+
+\listoffigures
+\addcontentsline{toc}{chapter}{Elenco delle figure}
+
+
+\listoftables
+\addcontentsline{toc}{chapter}{Elenco delle tabelle}
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Intestazione per l'introduzione
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\pagestyle{fancy}
+%\fancyhf{}
+
+%\fancyfoot[C]{\thepage}
+%\renewcommand{\headrulewidth}{0pt}
+%\renewcommand{\footrulewidth}{0pt}
+
+
+
+
+
+
+
+
+
+
+%% MAINMATTER
+\mainmatter
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Intestazione per il corpo principale del documento
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{fancy}
+
+\fancyhead[LOH]{\nouppercase\rightmark}
+\fancyhead[ROH]{\textbf{\thepage}}
+
+\fancyhead[LEH]{\textbf{\thepage}}
+\fancyhead[REH]{\nouppercase \leftmark }
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%Cambia in alto a destra il capitolo:
+%   (nome capitolo)      |  Capi. (#capitolo)
+\renewcommand{\chaptermark}[1]{\markboth{#1 \qquad $\vert$ \quad  Cap. \thechapter\quad}{}}
+
+%Cambia in alto a sinistra la sezione:
+% sezione: (num sezione) | (nome sezione
+\renewcommand{\sectionmark}[1]{\markright{\quad Sez. \thesection \quad $\vert$ \qquad ~#1}}
+
+
+
+
+%%%%%% 
+%%    Rimuove il numero di pagina dei capitoli
+\makeatletter
+\let\oldchapter\chapter  %salvo il comando chapter per richiamarlo dopo in modo che nella bibliografia compaia il numero di pagina
+\renewcommand\chapter{\if@openright\cleardoublepage\else\clearpage\fi
+                    \thispagestyle{empty}%
+                    \global\@topnum\z@
+                    \@afterindentfalse
+                    \secdef\@chapter\@schapter}
+\makeatother
+%%%%%%%
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%% CAPITOLI
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{Capitoli/introduzione}
+\input{Capitoli/Distribuzione gaussiana}
+\input{Capitoli/Gaussian process}
+\input{Capitoli/Machine Learning}
+\input{Capitoli/Windkessel}
+\input{Capitoli/Risultati training}
+\input{Capitoli/Conclusioni}
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Capitolo temporaneo
+%\input{Capitoli/Training}
+
+
+%\input{Capitoli/Capitoli di esempio/capitolo: immagine}
+%\input{Capitoli/Capitoli di esempio/capitolo: codice}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Backmatter       
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\backmatter
+
+\afterpage{\blankpage}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%% Intestazione per la bibliografia
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\fancyhf{}
+\fancyhead[ROH]{\textbf{\thepage}}
+\fancyhead[LEH]{\textbf{\thepage}}
+\fancyhead[REH]{Bibliografia}
+\fancyhead[LOH]{Bibliografia}
+
+%\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%% BIBLIOGRAFIA
+\printbibliography[heading=bibintoc]
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% INTESTAZIONE APPENDICE
+%%%%%%%%%%%%%%%%
+\fancyhf{}
+\fancyhead[ROH]{\textbf{\thepage}}
+\fancyhead[LEH]{\textbf{\thepage}}
+\fancyhead[REH]{Appendice}
+\fancyhead[LOH]{Appendice}
+
+\input{Capitoli/Appendice}
+
+
+
+\end{document}

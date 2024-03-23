@@ -1,0 +1,49 @@
+\begin{lstlisting}[language=Python,caption={Codice per la definizione della funzione $f_C$}\label{fC}, columns=fullflexible,firstnumber=1, stepnumber=1]
+    def funC(c,args):
+        """
+        Objective function for CR Windkessel with compliance
+        C unknown
+        Input arguments:
+        - c: current value for compliance
+        - args: list     containing:
+            1) time array where data is available
+            2) pressure array where data is available (associated to time)
+            3) peripehral resistance
+            4) flow function, that is called qFunc(t)
+            5) ODE function, that is called dydt(t,y,args)
+        Output argument:
+        - errnorm: the value of objective function (7) for "c"
+        """
+    
+        time, pressure, r, qFunc, dydt= args
+    
+        argsIVP = [[c,r, qFunc, pd]]
+    
+        # ODE
+        fun = dydt
+    
+        # Tempo iniziale e finale
+        t_span = [time[0],time[-1]]
+    
+        # Condizione iniziale (lista di un elemento)
+        y0=[pressure[0]]
+    
+        # Metodo (stringa con il nome)
+        method='RK45'
+   
+        # Punti dove valutare la soluzione
+        t_eval = time
+
+        # Tolleranza per il metodo numerico
+        tol = 1e-6
+    
+        # solve_ivp
+        sol = solve_ivp(fun=fun, t_span=t_span,y0=y0,method=method, t_eval=t_eval,args=argsIVP,rtol=tol)
+    
+        # Vettore addendo di f_C
+        errnorm = (sol.y[0,:] - pressure)**2
+    
+        # f_C
+        errnorm = sum(errnorm)
+        return errnorm
+\end{lstlisting}

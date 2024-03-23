@@ -1,0 +1,23 @@
+  # Define squared-exponential kernel
+  # Modify kernel to adapt to definition given
+  def exponentiated_quadratic(xa, xb, l, sigma):
+      kernel = sigma**2 * RBF(length_scale=l).__call__(xa,xb)
+      return(kernel)
+
+  fig,  ax2 = plt.subplots(1, 1, figsize=(4, 4))
+  xlim = (-4, 4)
+  X = np.expand_dims(np.linspace(*xlim, num=100), 1)
+  zero = np.array([[0]])
+
+  # Kernel: parameters and evaluation
+  sigma = 1
+  l = 1
+  Y = exponentiated_quadratic(X,zero, l, sigma)
+
+  # Make the plots
+  fig.tight_layout()
+  plt.plot(X[:,0], Y[:,0], label='$k(x,0)$')
+  plt.xlabel("X", fontsize=13)
+  plt.legend(loc=1)
+  plt.xlim(xlim)
+  plt.show()

@@ -1,0 +1,18 @@
+\begin{lstlisting}[language=Python,caption={Codice per generare la figura \ref{plotfC}.}\label{plotfC-code}, columns=fullflexible,firstnumber=1, stepnumber=1]
+    # Considero i valori di C da 0.6 a 10 per minimizzare la funzione
+    M = 100
+    C = np.linspace(0.6,10,M)
+
+    function = []
+    for i in range(M):
+        args = [time, pressure, rd, qFull, dpdt]
+        # Valuto la funzione in quel C[i]
+        err = funC(C[i],args=args)
+        function.append(err)
+
+    # Plot dei valori della f_C
+    plt.plot(C,function,'b--',label='$f_C$')
+    plt.legend()
+    plt.ylabel("$f(C)\,[mmHg]$")
+    plt.xlabel("$C\,[mL/mmHg]$")
+\end{lstlisting}

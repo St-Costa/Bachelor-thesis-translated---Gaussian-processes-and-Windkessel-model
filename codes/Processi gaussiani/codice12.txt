@@ -1,0 +1,25 @@
+xs = (0:0.1:5);
+  ns = size(xs,2); % Lunghezza vettore
+  
+  % Mean function nulla
+  m = inline('0*x');  
+  
+  % Covariance function
+  K = inline( 'exp(-2*(sin((pi/1)*abs(repmat(p'',size(q))- repmat(q,size(p''))))).^2)' );
+  
+  % Genero tre sample di vettori gaussiani con il comando 'mvnrnd' (Statistics and Machine Learning Toolbox)
+  fs = mvnrnd(m(xs), K(xs,xs),3);  
+
+  p = plot(xs,fs);
+  
+  % Aumenta lo spessore di tutte le linee
+  for i = 1:numel(p)
+    p(i).LineWidth = 2.0;
+  end  
+
+  % Mostra solo lo zero sull'asse x
+  xticks([0])
+  
+  % Cambia il nome dell'asse delle x e ingrandisce il font
+  xlabel("x")
+  set(gca,'fontsize',15)

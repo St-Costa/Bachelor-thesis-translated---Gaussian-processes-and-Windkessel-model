@@ -1,0 +1,25 @@
+  # Modify kernel to adapt to definition given
+  def linear(xa, xb, sb, sv, c):
+      xa = xa - c
+      xb = xb - c
+      kernel = sb+sv*DotProduct(sigma_0=0).__call__(xa,xb)
+      return(kernel)
+
+  fig,  ax2 = plt.subplots(1, 1, figsize=(4, 4))
+  xlim = (-1, 1)
+  X = np.expand_dims(np.linspace(*xlim, num=100), 1)
+  uno = np.array([[1]])
+
+  # Kernel: parameters and evaluation
+  sb=1
+  sv=1
+  c=-1
+  S0 = linear(X, uno, sb, sv, c)
+
+  # Make the plots
+  fig.tight_layout()
+  plt.plot(X[:,0], S0[:,0], label='$k(x,1)$')
+  plt.xlabel("X", fontsize=12)
+  plt.legend(loc=1)
+  plt.xlim(xlim)
+  plt.show()

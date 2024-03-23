@@ -1,0 +1,33 @@
+\begin{lstlisting}[language=Python,caption={Codice per il metodo delle differenze finite centrate riadattato al calcolo della sensitività locale.}\label{differenzefinite}, columns=fullflexible,firstnumber=1, stepnumber=1]
+    def centredFiniteDifference(back, forward, h):
+    '''
+    ----- Parameters -----
+    back: lista Ppred con parametro Pi-h
+    forward: lista Ppred con parametro Pi+h
+    h : variazione del parametro Pi
+    ----- Returns -----
+    lista differenze finite centrate: [map', dbp', sbp', pp']        
+    '''
+    
+    # MAP
+    mapb = np.average(back)            # MAP(Pi-hi)
+    mapf = np.average(forward)         # MAP(Pi+hi)
+    mapDerivative = (mapf-mapb)/(2*h)
+    
+    # DBP
+    dbpb = np.min(back)                # DBP(Pi-hi)
+    dbpf = np.min(forward)             # DBP(Pi+hi)
+    dbpDerivative = (dbpf-dbpb)/(2*h)
+    
+    # SBP
+    sbpb = np.max(back)                # SBP(Pi-hi)
+    sbpf = np.max(forward)             # SBP(Pi+hi)
+    sbpDerivative = (sbpf-sbpb)/(2*h)
+    
+    # PP
+    ppb = sbpb - dbpb                  # PP(Pi-hi)
+    ppf = sbpf - dbpf                  # PP(Pi+hi)
+    ppDerivative = (ppf-ppb)/(2*h)
+    
+    return (mapDerivative, dbpDerivative, sbpDerivative, ppDerivative)
+\end{lstlisting}

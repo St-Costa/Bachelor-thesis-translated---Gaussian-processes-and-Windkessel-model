@@ -1,0 +1,77 @@
+\chapter{Introduzione}
+Nel capitolo introduttivo vengono motivati e introdotti gli argomenti trattati nell'elaborato e viene illustrato l'obiettivo principale: l'applicazione al modello Windkessel dell'apprendimento supervisionato nei processi gaussiani. Viene poi mostrata l'organizzazione dell'elaborato in termini di capitoli, fonti, immagini e codice.
+
+
+\begin{textblock*}{0.64\textwidth}(3.5cm+0.36\textwidth,18.5cm)
+\epigraph{\textbf{Breve dialogo con punto di circonferenza}\\
+- Per il Centro, mi scusi, qual è la via?\\
+- Oh non si affanni, qui è tutto periferia.}{Marco Furgeri}
+\end{textblock*}
+
+\newpage
+
+
+
+
+\section{Argomenti trattati e motivazione}
+\subsection{Processi gaussiani}
+Uno dei temi principali trattati nell'elaborato è l'apprendimento supervisionato, ovvero il problema di apprendere delle relazioni tra input e output a partire da un dataset di esempio per poi fare previsioni su nuovi input che la macchina non ha mai visto. È quindi chiaro che il problema in questione è induttivo: si devono definire dei dati di addestramento (finiti) $D$ e una funzione $f$ che faccia previsioni per tutti i possibili valori di ingresso.\\
+Un approccio al problema è quello di definire una classe di funzioni da cui attingere (ad esempio funzioni lineari), ma ciò presenta un problema: la scelta della classe. Questa scelta è infatti molto delicata poiché può portare, ad esempio, ad un modello basato su funzioni che non riescono a modellare accuratamente la funzione target; in tal caso le previsioni saranno imprecise. Inoltre aumentare la vastità della classe di funzioni (ad esempio aumentandone i parametri in un contesto di regressione parametrica) non necessariamente migliora le previsioni, poiché si corre il rischio di \textit{overfitting}, in cui si ottiene un buon adattamento ai dati di addestramento ma un pessimo risultato nelle previsioni su nuovi dati.\\
+Un secondo approccio consiste nell'attribuire una probabilità a ogni funzione possibile, dove le probabilità più alte sono attribuite alle funzioni che si considerano più probabili, ad esempio perché sono più lisce (in termini di continuità). Questo approccio non è esente da problemi: esistono infinite funzioni possibili e si è interessati a valutare questo insieme in tempo finito. I processi gaussiani risolvono elegantemente questo problema generalizzando la distribuzione di probabilità gaussiana. Mentre una distribuzione di probabilità descrive variabili casuali che sono scalari o vettori, questo tipo di processo stocastico regola le proprietà delle funzioni. Intuitivamente, si può pensare a una funzione come a un vettore molto lungo (infinito) in cui ogni componente è il valore della funzione $f(x)$ per un certo $x$. Nel corso dell'elaborato viene spiegato come, sebbene sia un'idea semplice, ciò risolva il suddetto problema. Infatti: l'inferenza nei processi gaussiani è in grado di trarre conclusioni a partire dalle proprietà della funzione su un numero finito di punti, ignorandone quindi infiniti. Per farlo, la funzione in questione viene considerata come un vettore con componenti $f(x_i)$ per $i=1,...,N$ che, per le proprietà dei processi gaussiani, è manipolabile con la teoria delle variabili aleatorie gaussiane multivariate, cioè con una teoria relativamente semplice. Ciò è estremamente potente perché è perfettamente adattabile computazionalmente. Seppur non sia un approccio molto conosciuto, in realtà molti modelli comunemente utilizzati nell'apprendimento automatico e nella statistica sono in realtà casi speciali o tipi limitati di processi gaussiani. 
+
+\newpage
+
+\subsection{Modello Windkessel}
+
+I modelli emodinamici basati su rappresentazioni semplificate dei componenti del sistema cardiovascolare possono contribuire fortemente allo studio e alla comprensione della fisiologia e delle patologie circolatorie. 
+Questi modelli possono essere derivati dalle equazioni di Navier-Stokes sfruttando caratteristiche specifiche del flusso sanguigno, come la morfologia cilindrica dei vasi, e possono offrire un grande livello di dettaglio e una descrizione potenzialmente accurata delle quantità rilevanti, ma la loro discretizzazione numerica è molto complessa e richiede elevate risorse computazionali.
+
+La rappresentazione e l'analisi del sistema cardiovascolare (in quelli che sono i modelli zero dimensionali) sono iniziate con la modellazione del flusso arterioso utilizzando il modello Windkessel. In particolare è il modello Windkessel a due elementi, proposto per la prima volta da Stephen Hales nel 1733 e successivamente formulato matematicamente da Otto Frank nel 1899, ad essere tra i più semplici e noti modelli (zerodimensionali). Esso è costituito da un condensatore $C$, che descrive le proprietà di elasticità delle grandi arterie, e un resistore $R$ (diviso in due resistori $R1$ e $R2$), che descrive la natura dissipativa dei piccoli vasi periferici, comprese arteriole e capillari. La modellistica si è poi ampliata per coprire la modellazione di altri componenti cardiovascolari, come il cuore, le valvole cardiache e le vene per simulare l'emodinamica globale dell'intero sistema circolatorio.
+
+%È importante sottolineare che la meccanica del sistema cardiovascolare può presentare forti non linearità. Tra queste non linearità, le equazioni costitutive dipendenti dalla pressione e le proprietà dei vasi rappresentano un esempio di grande interesse. Ad esempio nell'elaborato, nella descrizione del modello Windkessel, i valori delle componenti $C$ e $R$ ($=R_1+R_2$) sono considerati costanti mentre, poiché rappresentano parametri fisici reali, sono soggetti a non linearità. Quando il diametro del vaso cambia in base alle variazioni di pressione, la sua capacitanza cambia, così come la sua resistenza al flusso. Questi effetti sono generalmente inclusi in modelli più complessi (uno dimensionali).
+
+%Una comprensione approfondita della propagazione delle onde di pressione e di flusso nel sistema cardiovascolare e dell'impatto delle malattie e delle variazioni anatomiche su questi modelli può fornire informazioni preziose per la diagnosi clinica e il trattamento di patologie.
+Tuttavia, la modellazione del flusso sanguigno in reti altamente complesse può comportare simulazioni computazionalmente costose. 
+%L'elevato costo computazionale e il tempo di esecuzione aumentano significativamente quando si devono simulare lunghi intervalli temporali, arrivando a richiedere diversi minuti per ogni ciclo cardiaco. 
+La situazione peggiora quando, per esempio, si vogliono integrare diversi meccanismi nella microcircolazione cerebrale, ad esempio la perfusione cerebrale o lo scambio di soluti tra il sangue e i vari letti tissutali.
+
+In letteratura si trovano diversi lavori riguardanti modelli per la simulazione del flusso sanguigno arterioso che affrontano le questioni del tempo di esecuzione e dell'ottimizzazione della complessità topologica. Di interesse dell'elaborato, invece, è sfruttare le potenzialità del modello Windkessel (con una facile generalizzazione ad altri modelli emodinamici) senza dover risolvere l'equazione differenziale che lo descrive. Nel modello Windkessel si ha una sola equazione differenziale, dunque il costo computazionale e il tempo richiesto per avere un'approssimazione della soluzione sono molto bassi. Tuttavia, sfruttando l'apprendimento supervisionato con i processi gaussiani si ottengono gli stessi risultati del modello Windkessel (all'interno di una certa regione di incertezza) senza risolvere l'equazione differenziale, diminuendo quindi il tempo di esecuzione. In questo caso semplice non si ha una miglioria sensibile, ma pensando a modelli molto complessi con molte equazioni differenziali, che generalmente richiedono lunghi tempi di esecuzione e addirittura l'hosting su supercomputer, con questo approccio si possono ottenere tempi di attesa accettabili in contesti clinici.
+
+\newpage
+
+\subsection{Motivazione dell'argomento}
+Computational Life è un'azienda fondata nel 2018 dal dottor Christian Contarino (dottorato all'università di Trento nel 2018) che si occupa di applicazioni biomediche della matematica. Nell'ultimo periodo si sta occupando di Altegos™, un software di supporto decisionale predittivo paziente-specifico, che sfrutta la tecnologia predittiva dell'apprendimento supervisionato nei processi gaussiani. 
+
+Come anticipato, i modelli emodinamici complessi (ad esempio quelli completi, che modellano tutte le componenti della circolazione) richiedono molto tempo di esecuzione, che può arrivare anche a diverse ore. In un contesto di ricerca ciò non è problematico, ma in un contesto clinico in cui ci si interfaccia con pazienti che necessitano di cure urgenti questa attesa è incompatibile. Come anticipato dunque, i processi gaussiani risolvono il problema del tempo di esecuzione, permettendo di avere il supporto di un modello emodinamico che richiederebbe potenzialmente ore per la sua esecuzione.
+
+Inoltre, i processi gaussiani (e nello specifico la libreria utilizzata nell'elaborato al capitolo \ref{Capitolo: risultati training}) consentono di studiare la \textit{global sensitivity analysis} dei parametri, permettendo di comprendere quali tra essi abbiano effettivamente influenza in un determinato output e quali possano essere scartati dallo studio. Questo consente di alleggerire l'apprendimento automatico fornendo al modello statistico meno parametri, talvolta molti meno, velocizzando il processo e migliorando la precisione (similmente a quanto concluso riguardo a $P_d$ in \ref{sensitività}).
+
+Queste caratteristiche sono state implementate nel contesto di ricerca aziendale dal team di ricerca coordinato dal dottor Contarino per la creazione del prodotto Altegos™. Inoltre, la scelta dei processi gaussiani è giustificata dal fatto che hanno già mostrato ottimi risultati in ambiti simili a quello studiato nell'elaborato (ad esempio in \cite{doi:10.1098/rsta.2019.0334} e in \cite{Yuhn2022.03.10.483573}) e permettono di avere un'indicazione sulla precisione delle previsioni sotto forma di media e deviazione standard. Questo li rende una scelta preferibile agli altri approcci all'apprendimento automatico.
+
+
+Risulta quindi evidente come questa tecnologia e la sua applicazione siano delle novità nel mondo della ricerca e che il suo studio costituisca un'importante aggiunta al bagaglio di conoscenze accademiche di uno studente di laurea triennale. L'elaborato, quindi, si pone come obiettivo di studiare questa tecnologia applicata in un contesto semplificato, cioè quello del modello Windkessel, affinché possa essere facilmente generalizzata a contesti più reali e complessi come quelli affrontati nella laurea magistrale. 
+
+\newpage
+\section{Organizzazione dell'elaborato}
+\subsection{Fonti}
+Ad ogni capitolo viene dedicata una pagina introduttiva in cui viene anticipato il contenuto e vengono citate le fonti usate per la stesura dello stesso.
+La principale fonte usata per la parte dei processi gaussiani è \cite{rasmussen_gaussian_2006}; per la parte legata all'emodinamica e al modello Windkessel fonte importante di informazioni è stato il professore Lucas Omar Müller autore di \cite{ghitti_toro_müller_2022} e della jupyter notebook che ha fornito risultati pratici sul modello Windkessel (poi ampiamente modificata); nel capitolo "Metodologia e risultati training" è stata usata la libreria python "GPErks", che si trova su GitHub.
+
+\subsection{Immagini}
+La maggior parte delle immagini è stata generata dall'autore dell'elaborato; di queste viene spesso riportato il codice python nell'appendice\footnote{Non di tutte le immagini vengono riportati i codici per generarle perché in alcuni casi esso era troppo imponente da inserire nell'elaborato e talvolta poco utile: i codici della libreria GPErks, ad esempio, si trovano sulla pagina GitHub e non vi è necessità di riportarli nell'elaborato.}. Di tutte le immagini non generate dall'autore si trova la fonte in didascalia.
+
+\subsection{Codice}
+Il codice scritto per la generazione delle immagini e i risultati ottenuti è scritto in python. Questa scelta è stata fatta perché il python permette molte opzioni nella creazione dei grafici e perché la libreria GPErks è scritta in python.
+
+\newpage
+
+\subsection{Struttura dell'elaborato}
+I primi due capitoli hanno lo scopo di introdurre il vasto tema dei processi gaussiani. La trattazione non si dedicherà ad inquadrare i processi gaussiani nel vasto contesto dei processi stocastici ma si limiterà ad uno studio mirato delle sue peculiarità utili ai fini dell'apprendimento supervisionato.\\
+
+Nel capitolo "Machine learning" vengono introdotti i concetti di statistica bayesiana che stanno alla base dell'apprendimento supervisionato focalizzandosi sul caso dei processi gaussiani. Vengono anche introdotti, a titolo informativo, alcuni metodi di ottimizzazione tra cui quello usato per ottenere i risultati illustrati nell'ultimo capitolo.\\
+
+Successivamente viene introdotto il modello Windkessel, mostrando unicamente l'equazione differenziale (senza quindi spiegare come dedurla dall'equazione Navier-Stokes). Vengono poi illustrati risultati pratici sul suo uso nella predizione della pressione arteriosa di un paziente a partire dal suo flusso. Il capitolo si conclude con lo studio della sensitività locale di MAP, DBP, SBP e PP rispetto a $C$ (compliance), $R_1$ (resistenza prossimale), $R_2$ (resistenza periferica), $P_d$ (pressione distale), concludendo che la pressione distale influenza poco le variabili, motivo per cui è stata esclusa dai parametri di input nell'apprendimento supervisionato. \\
+
+Nell'ultimo capitolo vengono illustrati i risultati ottenuti dal training di processi gaussiani seguendo l'approccio della libreria GPErks per studiare la dipendenza da $C$, $R_1$  e $R_2$ della pressione arteriosa.\\
+
+In appendice vi sono la maggior parte dei codici usati per la generazione delle immagini e dei risultati usati nell'elaborato.

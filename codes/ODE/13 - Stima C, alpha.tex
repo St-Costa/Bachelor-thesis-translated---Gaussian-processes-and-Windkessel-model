@@ -1,0 +1,21 @@
+\begin{lstlisting}[language=Python,caption={Codice per la stima di $C$ e $\alpha$}\label{stimaCA}, columns=fullflexible,firstnumber=1, stepnumber=1]
+    args = [time, pressure, rd, qFull, dpdt]
+    x0 = [1.7,1.]
+    
+    # Scelgo il metodo
+    #method='Powell'
+    #method='CG'     NON FUNZIONA
+    #method='BFGS'   NON FUNZIONA
+    method='Nelder-Mead'
+    
+    res = minimize(funCR,x0,args=args,method=method)
+    print(res)
+    
+    if res.success:
+        C = res.x[0]
+        alpha = res.x[1]
+        print("C: %.5f" % C)
+        print("alpha: %.5f" % alpha)
+    else:
+        print("ATTENTION: did not succeed in finding C!")
+\end{lstlisting}

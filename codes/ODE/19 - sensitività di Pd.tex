@@ -1,0 +1,22 @@
+\begin{lstlisting}[language=Python,caption={Codice per il calcolo della sensitività di $P_d$}\label{Pdsensitivity}, columns=fullflexible,firstnumber=1, stepnumber=1, style=mystyle]
+   #************ +10%  ****************
+    cost = 1.1
+    args = [[C, r2, qFull, pd*cost]]
+    sol_Pd_1 = solve_ivp(fun=fun, t_span=t_span,y0=y0,method=method, t_eval=t_eval,args=args,rtol=tol)
+    pPred_Pd_1 = sol_Pd_1.y[0,:] + r1*flow
+    
+    #************ -10%  ****************
+    cost = 0.9
+    args = [[C, r2, qFull, pd*cost]]
+    sol_Pd_2 = solve_ivp(fun=fun, t_span=t_span,y0=y0,method=method, t_eval=t_eval,args=args,rtol=tol)
+    pPred_Pd_2 = sol_Pd_2.y[0,:] + r1*flow
+    
+    # Derivate parziali
+    partialDerivativePd = centredFiniteDifference(pPred_Pd_1, pPred_Pd_2, pd*(1-cost))
+    
+    # Sensitivita
+    S_map_Pd = (pd/map) * partialDerivativePd[0]
+    S_dbp_Pd = (pd/dbp) * partialDerivativePd[1]
+    S_sbp_Pd = (pd/sbp) * partialDerivativePd[2]
+    S_pp_Pd = (pd/pp) * partialDerivativePd[3]
+\end{lstlisting}

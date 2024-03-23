@@ -1,0 +1,1385 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{anyt/global//global/global}
+    \entry{AaronsonPhilipI.PhilipIrving2020Tcsa}{book}{}
+      \name{author}{2}{}{%
+        {{hash=dd39501f6710fcc7f714768c4c9835db}{%
+           family={Aaronson},
+           familyi={A\bibinitperiod},
+           given={Philip\bibnamedelimb I.\bibnamedelimi (Philip\bibnamedelima Irving)},
+           giveni={P\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim (\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=644e4ed6f142ab0784d60e0bbac673d4}{%
+           family={Ward},
+           familyi={W\bibinitperiod},
+           given={Jeremy\bibnamedelimb P.\bibnamedelimi T},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {eng}%
+      }
+      \list{publisher}{1}{%
+        {Blackwell}%
+      }
+      \strng{namehash}{65cff2747b57265ad6ddf4ea903da6f8}
+      \strng{fullhash}{65cff2747b57265ad6ddf4ea903da6f8}
+      \strng{bibnamehash}{65cff2747b57265ad6ddf4ea903da6f8}
+      \strng{authorbibnamehash}{65cff2747b57265ad6ddf4ea903da6f8}
+      \strng{authornamehash}{65cff2747b57265ad6ddf4ea903da6f8}
+      \strng{authorfullhash}{65cff2747b57265ad6ddf4ea903da6f8}
+      \field{labelalpha}{AW20}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{The cardiovascular system at a glance}
+      \field{edition}{5th ed.}
+      \field{isbn}{9781405150446}
+      \field{series}{At a glance series (Oxford, England)}
+      \field{title}{The cardiovascular system at a glance}
+      \field{year}{2020}
+    \endentry
+    \entry{bottou2012stochastic}{inbook}{}
+      \name{author}{1}{}{%
+        {{hash=179581647e37c19b9a3deb51a1cfc5b0}{%
+           family={Bottou},
+           familyi={B\bibinitperiod},
+           given={Leon},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{179581647e37c19b9a3deb51a1cfc5b0}
+      \strng{fullhash}{179581647e37c19b9a3deb51a1cfc5b0}
+      \strng{bibnamehash}{179581647e37c19b9a3deb51a1cfc5b0}
+      \strng{authorbibnamehash}{179581647e37c19b9a3deb51a1cfc5b0}
+      \strng{authornamehash}{179581647e37c19b9a3deb51a1cfc5b0}
+      \strng{authorfullhash}{179581647e37c19b9a3deb51a1cfc5b0}
+      \field{labelalpha}{Bot12}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Neural Networks, Tricks of the Trade, Reloaded}
+      \field{edition}{Neural Networks, Tricks of the Trade, Reloaded}
+      \field{month}{1}
+      \field{series}{Lecture Notes in Computer Science (LNCS)}
+      \field{title}{Stochastic Gradient Descent Tricks}
+      \field{volume}{7700}
+      \field{year}{2012}
+      \field{pages}{430\bibrangedash 445}
+      \range{pages}{16}
+      \verb{urlraw}
+      \verb https://www.microsoft.com/en-us/research/publication/stochastic-gradient-tricks/
+      \endverb
+      \verb{url}
+      \verb https://www.microsoft.com/en-us/research/publication/stochastic-gradient-tricks/
+      \endverb
+    \endentry
+    \entry{damianou_gaussian_2016}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=2aff45b384b41b5aa7b77885bc07d25a}{%
+           family={Damianou},
+           familyi={D\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Brown University}%
+      }
+      \strng{namehash}{2aff45b384b41b5aa7b77885bc07d25a}
+      \strng{fullhash}{2aff45b384b41b5aa7b77885bc07d25a}
+      \strng{bibnamehash}{2aff45b384b41b5aa7b77885bc07d25a}
+      \strng{authorbibnamehash}{2aff45b384b41b5aa7b77885bc07d25a}
+      \strng{authornamehash}{2aff45b384b41b5aa7b77885bc07d25a}
+      \strng{authorfullhash}{2aff45b384b41b5aa7b77885bc07d25a}
+      \field{labelalpha}{Dam16}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Gaussian process lecture ({Jupiter} pyhton)}
+      \field{urlday}{27}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Jupyter Notebook Viewer:C\:\\Users\\capod\\Zotero\\storage\\LGGMM28H\\Brown2016.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://nbviewer.org/github/adamian/adamian.github.io/blob/master/talks/Brown2016.ipynb
+      \endverb
+      \verb{url}
+      \verb https://nbviewer.org/github/adamian/adamian.github.io/blob/master/talks/Brown2016.ipynb
+      \endverb
+      \keyw{Gaussian processes}
+    \endentry
+    \entry{JMLR:v12:duchi11a}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b8fbef1897da5bf46822ced31bc865c6}{%
+           family={Duchi},
+           familyi={D\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0b3d32703edd2b7248e8e8f33c5893db}{%
+           family={Hazan},
+           familyi={H\bibinitperiod},
+           given={Elad},
+           giveni={E\bibinitperiod}}}%
+        {{hash=300d4990e626d975e0c28630444f63c3}{%
+           family={Singer},
+           familyi={S\bibinitperiod},
+           given={Yoram},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{21039f1d6e97f13dbd40c187a8131cf0}
+      \strng{fullhash}{21039f1d6e97f13dbd40c187a8131cf0}
+      \strng{bibnamehash}{21039f1d6e97f13dbd40c187a8131cf0}
+      \strng{authorbibnamehash}{21039f1d6e97f13dbd40c187a8131cf0}
+      \strng{authornamehash}{21039f1d6e97f13dbd40c187a8131cf0}
+      \strng{authorfullhash}{21039f1d6e97f13dbd40c187a8131cf0}
+      \field{labelalpha}{DHS11}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Machine Learning Research}
+      \field{number}{61}
+      \field{title}{Adaptive Subgradient Methods for Online Learning and Stochastic Optimization}
+      \field{volume}{12}
+      \field{year}{2011}
+      \field{pages}{2121\bibrangedash 2159}
+      \range{pages}{39}
+      \verb{urlraw}
+      \verb http://jmlr.org/papers/v12/duchi11a.html
+      \endverb
+      \verb{url}
+      \verb http://jmlr.org/papers/v12/duchi11a.html
+      \endverb
+    \endentry
+    \entry{duvenaud_automatic_2014}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=e4deb88f170cd63993e55f9d986a38fb}{%
+           family={Duvenaud},
+           familyi={D\bibinitperiod},
+           given={David\bibnamedelima Kristjanson},
+           giveni={D\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {University of Cambridge}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Pembroke College}%
+      }
+      \strng{namehash}{e4deb88f170cd63993e55f9d986a38fb}
+      \strng{fullhash}{e4deb88f170cd63993e55f9d986a38fb}
+      \strng{bibnamehash}{e4deb88f170cd63993e55f9d986a38fb}
+      \strng{authorbibnamehash}{e4deb88f170cd63993e55f9d986a38fb}
+      \strng{authornamehash}{e4deb88f170cd63993e55f9d986a38fb}
+      \strng{authorfullhash}{e4deb88f170cd63993e55f9d986a38fb}
+      \field{labelalpha}{Duv14}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{6}
+      \field{title}{Automatic {Model} {Construction} with {Gaussian} {Processes}}
+      \field{type}{Doctor of {Philosophy}}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb https://www.cs.toronto.edu/~duvenaud/thesis.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.cs.toronto.edu/~duvenaud/thesis.pdf
+      \endverb
+    \endentry
+    \entry{gelman_bayesian_1995}{book}{}
+      \name{author}{4}{}{%
+        {{hash=1e1eb60e3b6e222217bf8e9b24070b28}{%
+           family={Gelman},
+           familyi={G\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5f088783ee75f9f0908eeb4fa9571a31}{%
+           family={Carlin},
+           familyi={C\bibinitperiod},
+           given={John\bibnamedelima B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=fd9cbf9e3046ffa6a7cecf24e1a46b03}{%
+           family={Stern},
+           familyi={S\bibinitperiod},
+           given={Hal\bibnamedelima S.},
+           giveni={H\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=49a367b6280de8a239f8bbdd573f996f}{%
+           family={Rubin},
+           familyi={R\bibinitperiod},
+           given={Donald\bibnamedelima B.},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{2}{%
+        {Chapman}%
+        {Hall/CRC}%
+      }
+      \strng{namehash}{94060b026e45baacbbd40733c715050d}
+      \strng{fullhash}{94060b026e45baacbbd40733c715050d}
+      \strng{bibnamehash}{94060b026e45baacbbd40733c715050d}
+      \strng{authorbibnamehash}{94060b026e45baacbbd40733c715050d}
+      \strng{authornamehash}{94060b026e45baacbbd40733c715050d}
+      \strng{authorfullhash}{94060b026e45baacbbd40733c715050d}
+      \field{labelalpha}{Gel+95}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-429-25841-1}
+      \field{month}{6}
+      \field{title}{Bayesian {Data} {Analysis}}
+      \field{year}{1995}
+      \verb{doi}
+      \verb 10.1201/9780429258411
+      \endverb
+    \endentry
+    \entry{gortler_visual_2019}{article}{}
+      \name{author}{3}{}{%
+        {{hash=ebddcaf13bce93253a73b00d7235e246}{%
+           family={Görtler},
+           familyi={G\bibinitperiod},
+           given={Jochen},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8be6ae0d3f96a6697e999e331fa1cdd2}{%
+           family={Kehlbeck},
+           familyi={K\bibinitperiod},
+           given={Rebecca},
+           giveni={R\bibinitperiod}}}%
+        {{hash=675352a3dd6162348006cba3551962ee}{%
+           family={Deussen},
+           familyi={D\bibinitperiod},
+           given={Oliver},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{4a743ca414e8d5c1b2a09169ddda1740}
+      \strng{fullhash}{4a743ca414e8d5c1b2a09169ddda1740}
+      \strng{bibnamehash}{4a743ca414e8d5c1b2a09169ddda1740}
+      \strng{authorbibnamehash}{4a743ca414e8d5c1b2a09169ddda1740}
+      \strng{authornamehash}{4a743ca414e8d5c1b2a09169ddda1740}
+      \strng{authorfullhash}{4a743ca414e8d5c1b2a09169ddda1740}
+      \field{labelalpha}{GKD19}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Distill}
+      \field{title}{A Visual Exploration of Gaussian Processes}
+      \field{year}{2019}
+      \verb{doi}
+      \verb 10.23915/distill.00017
+      \endverb
+      \verb{urlraw}
+      \verb https://distill.pub/2019/visual-exploration-gaussian-processes
+      \endverb
+      \verb{url}
+      \verb https://distill.pub/2019/visual-exploration-gaussian-processes
+      \endverb
+    \endentry
+    \entry{ghitti_toro_müller_2022}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=9d0adfa3f00ecaf2a7c3eb140140cce2}{%
+           family={Ghitti},
+           familyi={G\bibinitperiod},
+           given={Beatrice},
+           giveni={B\bibinitperiod}}}%
+        {{hash=b851864ef7e3a3010b02be35c7e7dc44}{%
+           family={Toro},
+           familyi={T\bibinitperiod},
+           given={Eleuterio\bibnamedelima Francisco},
+           giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=34ccc0d2ebe142977604c4f70d7f126a}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={Lucas\bibnamedelima Omar},
+           giveni={L\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {EDP Sciences}%
+      }
+      \strng{namehash}{8129d062f9a8bf706b9c0b30c74c213f}
+      \strng{fullhash}{8129d062f9a8bf706b9c0b30c74c213f}
+      \strng{bibnamehash}{8129d062f9a8bf706b9c0b30c74c213f}
+      \strng{authorbibnamehash}{8129d062f9a8bf706b9c0b30c74c213f}
+      \strng{authornamehash}{8129d062f9a8bf706b9c0b30c74c213f}
+      \strng{authorfullhash}{8129d062f9a8bf706b9c0b30c74c213f}
+      \field{labelalpha}{GTM22}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ESAIM}
+      \field{title}{Nonlinear lumped-parameter models for blood flow simulations in networks of vessels}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.esaim-m2an.org/component/article?access=doi&amp;doi=10.1051\%2Fm2an\%2F2022052
+      \endverb
+      \verb{url}
+      \verb https://www.esaim-m2an.org/component/article?access=doi&amp;doi=10.1051%5C%2Fm2an%5C%2F2022052
+      \endverb
+    \endentry
+    \entry{gut_intermediate_2009}{book}{}
+      \name{author}{1}{}{%
+        {{hash=0a158dec58d0843364ab135af046a928}{%
+           family={Gut},
+           familyi={G\bibinitperiod},
+           given={Allan},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Springer New York}%
+      }
+      \strng{namehash}{0a158dec58d0843364ab135af046a928}
+      \strng{fullhash}{0a158dec58d0843364ab135af046a928}
+      \strng{bibnamehash}{0a158dec58d0843364ab135af046a928}
+      \strng{authorbibnamehash}{0a158dec58d0843364ab135af046a928}
+      \strng{authornamehash}{0a158dec58d0843364ab135af046a928}
+      \strng{authorfullhash}{0a158dec58d0843364ab135af046a928}
+      \field{labelalpha}{Gut09}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Seconda edizione}
+      \field{isbn}{9781441901620}
+      \field{series}{Springer {Texts} in {Statistics}}
+      \field{title}{An {Intermediate} {Course} in {Probability}}
+      \field{year}{2009}
+      \verb{doi}
+      \verb https://doi.org/10.1007/978-1-4419-0162-0
+      \endverb
+    \endentry
+    \entry{kingma_adam_2017}{report}{}
+      \name{author}{2}{}{%
+        {{hash=b6fbd171848aad4edf3925543f1f1522}{%
+           family={Kingma},
+           familyi={K\bibinitperiod},
+           given={Diederik\bibnamedelima P.},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=8aa66e8231cc2fdbe67aa4f18ca970c6}{%
+           family={Ba},
+           familyi={B\bibinitperiod},
+           given={Jimmy},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{fullhash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{bibnamehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{authorbibnamehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{authornamehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{authorfullhash}{a09df9f123146b8e2c7f1134c9496932}
+      \field{labelalpha}{KB17}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{month}{1}
+      \field{note}{arXiv:1412.6980 [cs] type: article}
+      \field{number}{arXiv:1412.6980}
+      \field{shorttitle}{Adam}
+      \field{title}{Adam: {A} {Method} for {Stochastic} {Optimization}}
+      \field{type}{techreport}
+      \field{urlday}{18}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1412.6980
+      \endverb
+      \verb{file}
+      \verb Kingma_Ba_2017_Adam.pdf:C\:\\Users\\capod\\Zotero\\storage\\J4FWI58X\\Kingma_Ba_2017_Adam.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1412.6980
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1412.6980
+      \endverb
+    \endentry
+    \entry{kimeldorf_correspondence_1970}{article}{}
+      \name{author}{2}{}{%
+        {{hash=464b9c39d6d757f10357d428d32720e5}{%
+           family={Kimeldorf},
+           familyi={K\bibinitperiod},
+           given={George\bibnamedelima S.},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=8854589115ff3f8518458b3abd5243a4}{%
+           family={Wahba},
+           familyi={W\bibinitperiod},
+           given={Grace},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{82e9083d03fc0e0b779d9977981e5d51}
+      \strng{fullhash}{82e9083d03fc0e0b779d9977981e5d51}
+      \strng{bibnamehash}{82e9083d03fc0e0b779d9977981e5d51}
+      \strng{authorbibnamehash}{82e9083d03fc0e0b779d9977981e5d51}
+      \strng{authornamehash}{82e9083d03fc0e0b779d9977981e5d51}
+      \strng{authorfullhash}{82e9083d03fc0e0b779d9977981e5d51}
+      \field{labelalpha}{KW70}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Annals of Mathematical Statistics}
+      \field{month}{4}
+      \field{title}{A {Correspondence} {Between} {Bayesian} {Estimation} on {Stochastic} {Processes} and {Smoothing} by {Splines}}
+      \field{urlday}{10}
+      \field{urlmonth}{3}
+      \field{urlyear}{2022}
+      \field{volume}{41}
+      \field{year}{1970}
+      \field{urldateera}{ce}
+      \field{pages}{495\bibrangedash 502}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1214/aoms/1177697089
+      \endverb
+    \endentry
+    \entry{doi:10.1098/rsta.2019.0334}{article}{}
+      \name{author}{9}{}{%
+        {{hash=0c24efbe3a1d8fa79a2e250cf7c9054e}{%
+           family={Longobardi},
+           familyi={L\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c14734d4a5c16c5ae7cad939552ed4cf}{%
+           family={Lewalle},
+           familyi={L\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7960a599944239ecd515b2f92bfd00ba}{%
+           family={Coveney},
+           familyi={C\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=3d5bad2319282e8a5671a8576b1bebb6}{%
+           family={Sjaastad},
+           familyi={S\bibinitperiod},
+           given={I.},
+           giveni={I\bibinitperiod}}}%
+        {{hash=b1946e92b26ce84f22822c21e759a274}{%
+           family={Espe},
+           familyi={E\bibinitperiod},
+           given={E.\bibnamedelimi K.\bibnamedelimi S.},
+           giveni={E\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=6ae7f6a22c61915c7c0d464dd92f07ff}{%
+           family={Louch},
+           familyi={L\bibinitperiod},
+           given={W.\bibnamedelimi E.},
+           giveni={W\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=b34777a60bd3b614f67afe40e812453a}{%
+           family={Musante},
+           familyi={M\bibinitperiod},
+           given={C.\bibnamedelimi J.},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=5abc83060cc74fed11ca4fd7b8376daa}{%
+           family={Sher},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ea515b8ea3160dbb98f77bbbb7818de6}{%
+           family={Niederer},
+           familyi={N\bibinitperiod},
+           given={S.\bibnamedelimi A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{64af514d5a86057c8ba2a947ff21b0fe}
+      \strng{fullhash}{d35e7d6d18913c87b42c96b6e46a90eb}
+      \strng{bibnamehash}{64af514d5a86057c8ba2a947ff21b0fe}
+      \strng{authorbibnamehash}{64af514d5a86057c8ba2a947ff21b0fe}
+      \strng{authornamehash}{64af514d5a86057c8ba2a947ff21b0fe}
+      \strng{authorfullhash}{d35e7d6d18913c87b42c96b6e46a90eb}
+      \field{labelalpha}{Lon+20}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences}
+      \field{number}{2173}
+      \field{title}{Predicting left ventricular contractile function via Gaussian process emulation in aortic-banded rats}
+      \field{volume}{378}
+      \field{year}{2020}
+      \field{pages}{20190334}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1098/rsta.2019.0334
+      \endverb
+      \verb{urlraw}
+      \verb https://royalsocietypublishing.org/doi/abs/10.1098/rsta.2019.0334
+      \endverb
+      \verb{url}
+      \verb https://royalsocietypublishing.org/doi/abs/10.1098/rsta.2019.0334
+      \endverb
+    \endentry
+    \entry{murphy_machine_2012}{book}{}
+      \name{author}{1}{}{%
+        {{hash=99413be56c82adf72b6474dcdf8d3023}{%
+           family={Murphy},
+           familyi={M\bibinitperiod},
+           given={Kevin\bibnamedelima P.},
+           giveni={K\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=93da2819ab01d8a5e7bae39ce6f17c1f}{%
+           family={Bach},
+           familyi={B\bibinitperiod},
+           given={Francis},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Cambridge, MA, USA}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{99413be56c82adf72b6474dcdf8d3023}
+      \strng{fullhash}{99413be56c82adf72b6474dcdf8d3023}
+      \strng{bibnamehash}{99413be56c82adf72b6474dcdf8d3023}
+      \strng{authorbibnamehash}{99413be56c82adf72b6474dcdf8d3023}
+      \strng{authornamehash}{99413be56c82adf72b6474dcdf8d3023}
+      \strng{authorfullhash}{99413be56c82adf72b6474dcdf8d3023}
+      \strng{editorbibnamehash}{93da2819ab01d8a5e7bae39ce6f17c1f}
+      \strng{editornamehash}{93da2819ab01d8a5e7bae39ce6f17c1f}
+      \strng{editorfullhash}{93da2819ab01d8a5e7bae39ce6f17c1f}
+      \field{extraname}{1}
+      \field{labelalpha}{Mur12}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{A comprehensive introduction to machine learning that uses probabilistic models and inference as a unifying approach.}
+      \field{isbn}{978-0-262-01802-9}
+      \field{month}{8}
+      \field{series}{Adaptive {Computation} and {Machine} {Learning} series}
+      \field{shorttitle}{Machine {Learning}}
+      \field{title}{Machine {Learning}: {A} {Probabilistic} {Perspective}}
+      \field{year}{2012}
+    \endentry
+    \entry{murphy_probabilistic_2022}{book}{}
+      \name{author}{1}{}{%
+        {{hash=99413be56c82adf72b6474dcdf8d3023}{%
+           family={Murphy},
+           familyi={M\bibinitperiod},
+           given={Kevin\bibnamedelima P.},
+           giveni={K\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=93da2819ab01d8a5e7bae39ce6f17c1f}{%
+           family={Bach},
+           familyi={B\bibinitperiod},
+           given={Francis},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Cambridge, MA, USA}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{99413be56c82adf72b6474dcdf8d3023}
+      \strng{fullhash}{99413be56c82adf72b6474dcdf8d3023}
+      \strng{bibnamehash}{99413be56c82adf72b6474dcdf8d3023}
+      \strng{authorbibnamehash}{99413be56c82adf72b6474dcdf8d3023}
+      \strng{authornamehash}{99413be56c82adf72b6474dcdf8d3023}
+      \strng{authorfullhash}{99413be56c82adf72b6474dcdf8d3023}
+      \strng{editorbibnamehash}{93da2819ab01d8a5e7bae39ce6f17c1f}
+      \strng{editornamehash}{93da2819ab01d8a5e7bae39ce6f17c1f}
+      \strng{editorfullhash}{93da2819ab01d8a5e7bae39ce6f17c1f}
+      \field{extraname}{2}
+      \field{labelalpha}{Mur22}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{isbn}{978-0-262-04682-4}
+      \field{month}{3}
+      \field{series}{Adaptive {Computation} and {Machine} {Learning} series}
+      \field{shorttitle}{Probabilistic {Machine} {Learning}}
+      \field{title}{Probabilistic {Machine} {Learning}: {An} {Introduction}}
+      \field{year}{2022}
+    \endentry
+    \entry{pytorch:R2score}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=33d9ec8b9423134944ba10b4a0a136a3}{%
+           family={{Pytorch authors}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{33d9ec8b9423134944ba10b4a0a136a3}
+      \strng{fullhash}{33d9ec8b9423134944ba10b4a0a136a3}
+      \strng{bibnamehash}{33d9ec8b9423134944ba10b4a0a136a3}
+      \strng{authorbibnamehash}{33d9ec8b9423134944ba10b4a0a136a3}
+      \strng{authornamehash}{33d9ec8b9423134944ba10b4a0a136a3}
+      \strng{authorfullhash}{33d9ec8b9423134944ba10b4a0a136a3}
+      \field{labelalpha}{Pyt22}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[Online; accessed 03-May-2022]}
+      \field{title}{R2SCORE - PyTorch Ignite}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://pytorch.org/ignite/generated/ignite.contrib.metrics.regression.R2Score.html#r2score
+      \endverb
+      \verb{url}
+      \verb https://pytorch.org/ignite/generated/ignite.contrib.metrics.regression.R2Score.html#r2score
+      \endverb
+    \endentry
+    \entry{rasmussen_gaussian_2004}{book}{}
+      \name{author}{1}{}{%
+        {{hash=58d90ed7b7348c7a5a9b4a2a8f46df7b}{%
+           family={Rasmussen},
+           familyi={R\bibinitperiod},
+           given={Carl\bibnamedelima Edward},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=cf4fea95321213e7dc3532fd33b85112}{%
+           family={Bousquet},
+           familyi={B\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod}}}%
+        {{hash=86714cf89fed80215d15171e9ed5f412}{%
+           family={Luxburg},
+           familyi={L\bibinitperiod},
+           given={Ulrike},
+           giveni={U\bibinitperiod},
+           prefix={von},
+           prefixi={v\bibinitperiod}}}%
+        {{hash=2298e36b333b0aa99bb6d09e6a171708}{%
+           family={Ratsch},
+           familyi={R\bibinitperiod},
+           given={Gunnar},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{58d90ed7b7348c7a5a9b4a2a8f46df7b}
+      \strng{fullhash}{58d90ed7b7348c7a5a9b4a2a8f46df7b}
+      \strng{bibnamehash}{58d90ed7b7348c7a5a9b4a2a8f46df7b}
+      \strng{authorbibnamehash}{58d90ed7b7348c7a5a9b4a2a8f46df7b}
+      \strng{authornamehash}{58d90ed7b7348c7a5a9b4a2a8f46df7b}
+      \strng{authorfullhash}{58d90ed7b7348c7a5a9b4a2a8f46df7b}
+      \strng{editorbibnamehash}{1b1f3705bcfb291793b2e043193f96fd}
+      \strng{editornamehash}{1b1f3705bcfb291793b2e043193f96fd}
+      \strng{editorfullhash}{1b1f3705bcfb291793b2e043193f96fd}
+      \field{labelalpha}{Ras04}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-540-28650-9}
+      \field{series}{Lecture {Notes} in {Computer} {Science}}
+      \field{title}{Gaussian {Processes} in {Machine} {Learning}}
+      \field{year}{2004}
+      \field{pages}{63\bibrangedash 71}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1007/978-3-540-28650-9_4
+      \endverb
+      \keyw{Gaussian processes}
+    \endentry
+    \entry{ruder_2022}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b468248a20d75c52ee742f4592c2569f}{%
+           family={Ruder},
+           familyi={R\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{b468248a20d75c52ee742f4592c2569f}
+      \strng{fullhash}{b468248a20d75c52ee742f4592c2569f}
+      \strng{bibnamehash}{b468248a20d75c52ee742f4592c2569f}
+      \strng{authorbibnamehash}{b468248a20d75c52ee742f4592c2569f}
+      \strng{authornamehash}{b468248a20d75c52ee742f4592c2569f}
+      \strng{authorfullhash}{b468248a20d75c52ee742f4592c2569f}
+      \field{labelalpha}{Rud16}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An overview of gradient descent optimization algorithms}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.48550/ARXIV.1609.04747
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1609.04747
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1609.04747
+      \endverb
+    \endentry
+    \entry{rasmussen_gaussian_2006}{book}{}
+      \name{author}{2}{}{%
+        {{hash=58d90ed7b7348c7a5a9b4a2a8f46df7b}{%
+           family={Rasmussen},
+           familyi={R\bibinitperiod},
+           given={Carl\bibnamedelima Edward},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=d34fdfcbfcb5412397b946351370db22}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Christopher\bibnamedelimb K.\bibnamedelimi I.},
+           giveni={C\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Cambridge, Mass}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{f0ccf4a09a3a6a91719405724e3ae5da}
+      \strng{fullhash}{f0ccf4a09a3a6a91719405724e3ae5da}
+      \strng{bibnamehash}{f0ccf4a09a3a6a91719405724e3ae5da}
+      \strng{authorbibnamehash}{f0ccf4a09a3a6a91719405724e3ae5da}
+      \strng{authornamehash}{f0ccf4a09a3a6a91719405724e3ae5da}
+      \strng{authorfullhash}{f0ccf4a09a3a6a91719405724e3ae5da}
+      \field{labelalpha}{RW06}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-262-18253-9}
+      \field{series}{Adaptive computation and machine learning}
+      \field{title}{Gaussian processes for machine learning}
+      \field{year}{2006}
+    \endentry
+    \entry{noauthor_tutorial_nodate}{article}{}
+      \name{author}{3}{}{%
+        {{hash=474ffd79ffbc1c65c4afc8dc8ae05564}{%
+           family={Schulz},
+           familyi={S\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=aa2bcefbbebd7fcf69edad382bc0f765}{%
+           family={Speekenbrink},
+           familyi={S\bibinitperiod},
+           given={Maarten},
+           giveni={M\bibinitperiod}}}%
+        {{hash=112eb0b147c4a7f674d015a86e5dea70}{%
+           family={Krause},
+           familyi={K\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{1175e531e3395d34419670735d32fcda}
+      \strng{fullhash}{1175e531e3395d34419670735d32fcda}
+      \strng{bibnamehash}{1175e531e3395d34419670735d32fcda}
+      \strng{authorbibnamehash}{1175e531e3395d34419670735d32fcda}
+      \strng{authornamehash}{1175e531e3395d34419670735d32fcda}
+      \strng{authorfullhash}{1175e531e3395d34419670735d32fcda}
+      \field{labelalpha}{SSK18}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{0022-2496}
+      \field{journaltitle}{Journal of Mathematical Psychology}
+      \field{month}{8}
+      \field{shorttitle}{A tutorial on {Gaussian} process regression}
+      \field{title}{A tutorial on {Gaussian} process regression: {Modelling}, exploring, and exploiting functions}
+      \field{urlday}{18}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{volume}{85}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 16}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1016/j.jmp.2018.03.001
+      \endverb
+      \verb{file}
+      \verb Schulz et al_2018_A tutorial on Gaussian process regression.pdf:C\:\\Users\\capod\\Zotero\\storage\\C24CNQDE\\Schulz et al_2018_A tutorial on Gaussian process regression.pdf:application/pdf;ScienceDirect Snapshot:C\:\\Users\\capod\\Zotero\\storage\\PW53DBUT\\S0022249617302158.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0022249617302158
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0022249617302158
+      \endverb
+    \endentry
+    \entry{turner_gaussian_2016}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=c8f76a7d37501a26e1ac420c3958dcd4}{%
+           family={Turner},
+           familyi={T\bibinitperiod},
+           given={Dr\bibnamedelima Richard\bibnamedelima E},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Imperial College London}%
+      }
+      \strng{namehash}{c8f76a7d37501a26e1ac420c3958dcd4}
+      \strng{fullhash}{c8f76a7d37501a26e1ac420c3958dcd4}
+      \strng{bibnamehash}{c8f76a7d37501a26e1ac420c3958dcd4}
+      \strng{authorbibnamehash}{c8f76a7d37501a26e1ac420c3958dcd4}
+      \strng{authornamehash}{c8f76a7d37501a26e1ac420c3958dcd4}
+      \strng{authorfullhash}{c8f76a7d37501a26e1ac420c3958dcd4}
+      \field{labelalpha}{Tur16}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Gaussian {Processes}: {From} the {Basics} to the {State}-of-the-{Art}}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb http://cbl.eng.cam.ac.uk/pub/Public/Turner/News/imperial-gp-tutorial.pdf
+      \endverb
+      \verb{url}
+      \verb http://cbl.eng.cam.ac.uk/pub/Public/Turner/News/imperial-gp-tutorial.pdf
+      \endverb
+    \endentry
+    \entry{wang_intuitive_2022}{article}{}
+      \name{author}{1}{}{%
+        {{hash=fcd6114a30fda9801eef65b9d374f56b}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{fcd6114a30fda9801eef65b9d374f56b}
+      \strng{fullhash}{fcd6114a30fda9801eef65b9d374f56b}
+      \strng{bibnamehash}{fcd6114a30fda9801eef65b9d374f56b}
+      \strng{authorbibnamehash}{fcd6114a30fda9801eef65b9d374f56b}
+      \strng{authornamehash}{fcd6114a30fda9801eef65b9d374f56b}
+      \strng{authorfullhash}{fcd6114a30fda9801eef65b9d374f56b}
+      \field{labelalpha}{Wan22}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv:2009.10862 [cs, stat]}
+      \field{month}{4}
+      \field{note}{arXiv: 2009.10862}
+      \field{title}{An {Intuitive} {Tutorial} to {Gaussian} {Processes} {Regression}}
+      \field{urlday}{4}
+      \field{urlmonth}{5}
+      \field{urlyear}{2022}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2009.10862
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2009.10862
+      \endverb
+    \endentry
+    \entry{wiki:Compliance}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
+           family={{Wikipedia contributors}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \field{extraname}{1}
+      \field{labelalpha}{Wik}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[Online; accessed 09-04-2022]}
+      \field{title}{Compliance (physiology) --- {W}ikipedia{,} The Free Encyclopedia}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Compliance_(physiology)
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Compliance_(physiology)
+      \endverb
+    \endentry
+    \entry{wiki:Vascularresistance}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
+           family={{Wikipedia contributors}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \field{extraname}{2}
+      \field{labelalpha}{Wik}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[Online; accessed 09-04-2022]}
+      \field{title}{Vascular resistance --- {W}ikipedia{,} The Free Encyclopedia}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Vascular_resistance
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Vascular_resistance
+      \endverb
+    \endentry
+    \entry{wiki:DiagrammaWiggers}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
+           family={{Wikipedia contributors}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \field{extraname}{3}
+      \field{labelalpha}{Wik21}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[Online; accessed 9-April-2022]}
+      \field{title}{Wiggers diagram --- {Wikipedia}{,} The Free Encyclopedia}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/w/index.php?title=Wiggers_diagram&oldid=1029541282
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Wiggers_diagram&oldid=1029541282
+      \endverb
+    \endentry
+    \entry{wiki:WindkesselEffect}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
+           family={{Wikipedia contributors}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \field{extraname}{4}
+      \field{labelalpha}{Wik21}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[Online; accessed 9-April-2022]}
+      \field{title}{Windkessel effect --- {Wikipedia}{,} The Free Encyclopedia}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/w/index.php?title=Windkessel_effect&oldid=1038550965
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Windkessel_effect&oldid=1038550965
+      \endverb
+    \endentry
+    \entry{wiki:cicloCardiaco}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
+           family={{Wikipedia contributors}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \field{extraname}{5}
+      \field{labelalpha}{Wik22}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[Online; accessed 9-April-2022]}
+      \field{title}{Cardiac cycle --- {Wikipedia}{,} The Free Encyclopedia}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/w/index.php?title=Cardiac_cycle&oldid=1077898034
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Cardiac_cycle&oldid=1077898034
+      \endverb
+    \endentry
+    \entry{wikiNormalDistribution}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
+           family={{Wikipedia contributors}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \field{extraname}{6}
+      \field{labelalpha}{Wik22}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[Online; accessed 06-04-2022]}
+      \field{title}{Distribuzione normale --- {W}ikipedia{,} The Free Encyclopedia}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://it.wikipedia.org/wiki/Distribuzione_normale
+      \endverb
+      \verb{url}
+      \verb https://it.wikipedia.org/wiki/Distribuzione_normale
+      \endverb
+    \endentry
+    \entry{wiki:gradientDescend}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
+           family={{Wikipedia contributors}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \field{extraname}{7}
+      \field{labelalpha}{Wik22}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extraalpha}{3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[Online; accessed 16-May-2022]}
+      \field{title}{Gradient descent}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/w/index.php?title=Gradient_descent&oldid=1087292976
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Gradient_descent&oldid=1087292976
+      \endverb
+    \endentry
+    \entry{wiki:overfitting}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
+           family={{Wikipedia contributors}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \field{extraname}{8}
+      \field{labelalpha}{Wik22}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extraalpha}{4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[Online; accessed 30-April-2022]}
+      \field{title}{Overfitting --- {Wikipedia}{,} The Free Encyclopedia}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/w/index.php?title=Overfitting&oldid=1076526991
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Overfitting&oldid=1076526991
+      \endverb
+    \endentry
+    \entry{wiki:datasets}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
+           family={{Wikipedia contributors}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \field{extraname}{9}
+      \field{labelalpha}{Wik22}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extraalpha}{5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[Online; accessed 30-April-2022]}
+      \field{title}{Training, validation, and test data sets}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/w/index.php?title=Training,_validation,_and_test_data_sets&oldid=1077290985
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Training,_validation,_and_test_data_sets&oldid=1077290985
+      \endverb
+    \endentry
+    \entry{wilkinson_introduction_2020}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=9cb8808062f356eaeeaba091651450cf}{%
+           family={Wilkinson},
+           familyi={W\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {School of Mathematical Sciences University of Nottingham}%
+      }
+      \strng{namehash}{9cb8808062f356eaeeaba091651450cf}
+      \strng{fullhash}{9cb8808062f356eaeeaba091651450cf}
+      \strng{bibnamehash}{9cb8808062f356eaeeaba091651450cf}
+      \strng{authorbibnamehash}{9cb8808062f356eaeeaba091651450cf}
+      \strng{authornamehash}{9cb8808062f356eaeeaba091651450cf}
+      \strng{authorfullhash}{9cb8808062f356eaeeaba091651450cf}
+      \field{labelalpha}{Wil20}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An introduction to {Gaussian} {Processes}}
+      \field{type}{Lecture}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://rich-d-wilkinson.github.io/docs/talks/Wilkinson_GPSS2020.pdf
+      \endverb
+      \verb{url}
+      \verb https://rich-d-wilkinson.github.io/docs/talks/Wilkinson_GPSS2020.pdf
+      \endverb
+    \endentry
+    \entry{williams_prediction_1998}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=03fe732f745576c10e0c06a73741997b}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={C.\bibnamedelimi K.\bibnamedelimi I.},
+           giveni={C\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=8a36116840c7ee55901618c95fd08a58}{%
+           family={Jordan},
+           familyi={J\bibinitperiod},
+           given={Michael\bibnamedelima I.},
+           giveni={M\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Dordrecht}%
+      }
+      \list{publisher}{1}{%
+        {Springer Netherlands}%
+      }
+      \strng{namehash}{03fe732f745576c10e0c06a73741997b}
+      \strng{fullhash}{03fe732f745576c10e0c06a73741997b}
+      \strng{bibnamehash}{03fe732f745576c10e0c06a73741997b}
+      \strng{authorbibnamehash}{03fe732f745576c10e0c06a73741997b}
+      \strng{authornamehash}{03fe732f745576c10e0c06a73741997b}
+      \strng{authorfullhash}{03fe732f745576c10e0c06a73741997b}
+      \strng{editorbibnamehash}{8a36116840c7ee55901618c95fd08a58}
+      \strng{editornamehash}{8a36116840c7ee55901618c95fd08a58}
+      \strng{editorfullhash}{8a36116840c7ee55901618c95fd08a58}
+      \field{labelalpha}{Wil98}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{booktitle}{Learning in {Graphical} {Models}}
+      \field{isbn}{978-94-011-5014-9}
+      \field{shorttitle}{Prediction with {Gaussian} {Processes}}
+      \field{title}{Prediction with {Gaussian} {Processes}: {From} {Linear} {Regression} to {Linear} {Prediction} and {Beyond}}
+      \field{urlday}{22}
+      \field{urlmonth}{3}
+      \field{urlyear}{2022}
+      \field{year}{1998}
+      \field{urldateera}{ce}
+      \field{pages}{599\bibrangedash 621}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1007/978-94-011-5014-9_23
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-94-011-5014-9_23
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-94-011-5014-9_23
+      \endverb
+    \endentry
+    \entry{westerhof_arterial_2008}{article}{}
+      \name{author}{3}{}{%
+        {{hash=98a35975ac38fdc6df6ff1039878bf77}{%
+           family={Westerhof},
+           familyi={W\bibinitperiod},
+           given={Nicolaas},
+           giveni={N\bibinitperiod}}}%
+        {{hash=5dc5d5aa48d1ad3f7361f2cba41d1da4}{%
+           family={Lankhaar},
+           familyi={L\bibinitperiod},
+           given={Jan-Willem},
+           giveni={J\bibinithyphendelim W\bibinitperiod}}}%
+        {{hash=2b0fade9f9c88f371f25ec0ac0fa10b3}{%
+           family={Westerhof},
+           familyi={W\bibinitperiod},
+           given={Berend},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{04b84cec193aa2119fcd8a97328b90a6}
+      \strng{fullhash}{04b84cec193aa2119fcd8a97328b90a6}
+      \strng{bibnamehash}{04b84cec193aa2119fcd8a97328b90a6}
+      \strng{authorbibnamehash}{04b84cec193aa2119fcd8a97328b90a6}
+      \strng{authornamehash}{04b84cec193aa2119fcd8a97328b90a6}
+      \strng{authorfullhash}{04b84cec193aa2119fcd8a97328b90a6}
+      \field{labelalpha}{WLW08}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Medical \& biological engineering \& computing}
+      \field{month}{7}
+      \field{title}{The arterial {Windkessel}}
+      \field{volume}{47}
+      \field{year}{2008}
+      \field{pages}{131\bibrangedash 41}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1007/s11517-008-0359-2
+      \endverb
+    \endentry
+    \entry{Yuhn2022.03.10.483573}{article}{}
+      \name{author}{5}{}{%
+        {{hash=d166d643102485b255a99d2d3cfff2c2}{%
+           family={Yuhn},
+           familyi={Y\bibinitperiod},
+           given={Changyoung},
+           giveni={C\bibinitperiod}}}%
+        {{hash=46834d1e6af0576a5f59c8b8c609c698}{%
+           family={Oshima},
+           familyi={O\bibinitperiod},
+           given={Marie},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b6f25c2ea695f4385f6acab832194dfc}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Yan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=7479812e6391ebb8bdc1c75ab0850459}{%
+           family={Hayakawa},
+           familyi={H\bibinitperiod},
+           given={Motoharu},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b4e75a71ddf68e1925cc62d1dcf62fcf}{%
+           family={Yamada},
+           familyi={Y\bibinitperiod},
+           given={Shigeki},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cold Spring Harbor Laboratory}%
+      }
+      \strng{namehash}{4173881da38e0acbcef40f09a098abe4}
+      \strng{fullhash}{4173881da38e0acbcef40f09a098abe4}
+      \strng{bibnamehash}{4173881da38e0acbcef40f09a098abe4}
+      \strng{authorbibnamehash}{4173881da38e0acbcef40f09a098abe4}
+      \strng{authornamehash}{4173881da38e0acbcef40f09a098abe4}
+      \strng{authorfullhash}{4173881da38e0acbcef40f09a098abe4}
+      \field{labelalpha}{Yuh+22}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{bioRxiv}
+      \field{title}{Uncertainty quantification in cerebral circulation simulations focusing on the collateral flow: Surrogate model approach with machine learning}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.1101/2022.03.10.483573
+      \endverb
+      \verb{urlraw}
+      \verb https://www.biorxiv.org/content/early/2022/05/25/2022.03.10.483573
+      \endverb
+      \verb{url}
+      \verb https://www.biorxiv.org/content/early/2022/05/25/2022.03.10.483573
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

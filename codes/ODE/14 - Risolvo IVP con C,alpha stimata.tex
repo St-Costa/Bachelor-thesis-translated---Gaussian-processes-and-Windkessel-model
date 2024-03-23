@@ -1,0 +1,25 @@
+\begin{lstlisting}[language=Python,caption={Codice per generare la figura \ref{soluzioneCalphaapprossimata}.}\label{soluzioneCalphastimate}, columns=fullflexible,firstnumber=1, stepnumber=1]
+    # I parametri sono stati aggiornati nei codici precedenti
+    r1= (1-alpha)*rd
+    r2 = alpha*rd
+    
+    args = [[C, r2, qFull, pd]]
+    fun = dpdt
+    t_span = [time[0],time[-1]]
+    y0 = [pressure[0]]
+    method='RK45'
+    t_eval = time
+    tol = 1e-6
+    
+    # solve_ivp
+    sol = solve_ivp(fun=fun, t_span=t_span,y0=y0,method=method, t_eval=t_eval,args=args,rtol=tol)
+    pPred = sol.y[0,:] + r1*flow
+    
+    # Plot
+    err = pressure-pPred
+    plt.plot(time,pressure,'g-',label='Data')
+    plt.plot(time[::10],pPred[::10],'rx',label='Model')
+    plt.xlabel("time [s]")
+    plt.ylabel("$P\,[mmHg]$")
+    plt.legend()
+\end{lstlisting}

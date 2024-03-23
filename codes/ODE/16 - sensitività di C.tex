@@ -1,0 +1,22 @@
+\begin{lstlisting}[language=Python,caption={Codice per il calcolo della sensitività di $C$}\label{Csensitivity}, columns=fullflexible,firstnumber=1, stepnumber=1, style=mystyle]
+    #************ +10%  ****************
+    cost = 1.1
+    args = [[C*cost, r2, qFull, pd]]
+    sol_C_1 = solve_ivp(fun=fun, t_span=t_span,y0=y0,method=method, t_eval=t_eval,args=args,rtol=tol)
+    pPred_C_1 = sol_C_1.y[0,:] + r1*flow
+    
+    #************ -10%  ****************
+    cost = 0.9
+    args = [[C*cost, r2, qFull, pd]]
+    sol_C_2 = solve_ivp(fun=fun, t_span=t_span,y0=y0,method=method, t_eval=t_eval,args=args,rtol=tol)
+    pPred_C_2 = sol_C_2.y[0,:] + r1*flow
+    
+    # Derivate parziali
+    partialDerivativeC = centredFiniteDifference(pPred_C_1, pPred_C_2, C*(1-cost))
+    
+    # Sensitivita
+    S_map_C = (C/map) * partialDerivativeC[0]
+    S_dbp_C = (C/dbp) * partialDerivativeC[1]
+    S_sbp_C = (C/sbp) * partialDerivativeC[2]
+    S_pp_C = (C/pp) * partialDerivativeC[3]
+\end{lstlisting}

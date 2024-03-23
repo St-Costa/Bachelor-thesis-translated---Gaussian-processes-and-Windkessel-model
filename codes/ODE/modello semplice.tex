@@ -1,0 +1,8 @@
+\begin{lstlisting}[language=Python,caption={Plot soluzione del modello "semplice"}\label{modelloSemplice}, columns=fullflexible,firstnumber=1, stepnumber=1]
+    pPred = flow*rd
+    plt.plot(time,pressure,label='Data')
+    plt.plot(time,pPred,label='Resistance model')
+    plt.xlabel("time [s]")
+    plt.ylabel("$P\,[mmHg]$")
+    plt.legend()
+\end{lstlisting}
