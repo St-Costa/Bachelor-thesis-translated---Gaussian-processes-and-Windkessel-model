@@ -1,9 +1,8 @@
-\babel@toc {italian}{}\relax 
-\babel@toc {italian}{}\relax 
+\babel@toc {english}{}\relax 
 ~\hfill \textbf {Pag.}\par 
-\contentsline {chapter}{Lista codici}{viii}{chapter*.4}%
-\contentsline {chapter}{Elenco delle figure}{xiv}{chapter*.5}%
-\contentsline {chapter}{Elenco delle tabelle}{xv}{chapter*.6}%
+\contentsline {chapter}{List of codes}{viii}{chapter*.4}%
+\contentsline {chapter}{List of figures}{xiv}{chapter*.5}%
+\contentsline {chapter}{List of tables}{xv}{chapter*.6}%
 \contentsline {chapter}{\numberline {I}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {I.1}Topics covered and motivation}{2}{section.1.1}%
 \contentsline {subsection}{\numberline {I.1.1}Gaussian processes}{2}{subsection.1.1.1}%
@@ -108,5 +107,5 @@
 \contentsline {chapter}{\numberline {VII}Conclusioni e future directions}{125}{chapter.7}%
 \contentsline {section}{\numberline {VII.1}Conclusioni}{126}{section.7.1}%
 \contentsline {section}{\numberline {VII.2}Future directions}{127}{section.7.2}%
-\contentsline {chapter}{Bibliografia}{131}{chapter*.155}%
+\contentsline {chapter}{Bibliography}{131}{chapter*.155}%
 \contentsline {chapter}{Appendice}{135}{chapter*.156}%
