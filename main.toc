@@ -104,8 +104,8 @@
 \contentsline {subsubsection}{Dipendenza da $R_1$}{120}{subsubsection*.144}%
 \contentsline {subsubsection}{Dipendenza da $R_2$}{122}{subsubsection*.149}%
 \contentsline {section}{\numberline {VI.4}Tempo di esecuzione: approssimazione di MAP, DBP, SBP, PP}{124}{section.6.4}%
-\contentsline {chapter}{\numberline {VII}Conclusioni e future directions}{125}{chapter.7}%
-\contentsline {section}{\numberline {VII.1}Conclusioni}{126}{section.7.1}%
+\contentsline {chapter}{\numberline {VII}Conclusions and future directions}{125}{chapter.7}%
+\contentsline {section}{\numberline {VII.1}Conclusions}{126}{section.7.1}%
 \contentsline {section}{\numberline {VII.2}Future directions}{127}{section.7.2}%
 \contentsline {chapter}{Bibliography}{131}{chapter*.155}%
 \contentsline {chapter}{Appendice}{135}{chapter*.156}%
