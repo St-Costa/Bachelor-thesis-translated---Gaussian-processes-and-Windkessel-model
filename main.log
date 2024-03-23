@@ -1,330 +1,353 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.4)  5 MAR 2024 09:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.12.17)  23 MAR 2024 16:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main.tex
-(./main.tex
-LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-01-21>
-(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
-Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
-File: bk12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+**./main.tex
+(main.tex
+LaTeX2e <2023-11-01>
+L3 programming layer <2023-12-08>
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
+Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/base\bk12.clo
+File: bk12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count185
-\c@chapter=\count186
-\c@section=\count187
-\c@subsection=\count188
-\c@subsubsection=\count189
-\c@paragraph=\count190
-\c@subparagraph=\count191
-\c@figure=\count192
-\c@table=\count193
-\abovecaptionskip=\skip47
-\belowcaptionskip=\skip48
-\bibindent=\dimen138
+\c@part=\count187
+\c@chapter=\count188
+\c@section=\count189
+\c@subsection=\count190
+\c@subsubsection=\count191
+\c@paragraph=\count192
+\c@subparagraph=\count193
+\c@figure=\count194
+\c@table=\count195
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/afterpage.sty
-Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
-\AP@output=\toks16
-\AP@partial=\box50
-\AP@footins=\box51
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/tools\afterpage.sty
+Package: afterpage 2023/07/04 v1.08 After-Page Package (DPC)
+\AP@output=\toks17
+\AP@partial=\box51
+\AP@footins=\box52
 )
-(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
-(/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2022-01-21 L3 programming layer (loader) 
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l3k
+eys2e.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2023-12-08 L3 programming layer (loader) 
 
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count194
-\l__pdf_internal_box=\box52
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2023-11-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count196
+\l__pdf_internal_box=\box53
 ))
-Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
+Package: l3keys2e 2023-10-10 LaTeX2e option processing using LaTeX3 keys
 )
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count195
-\l__lipsum_a_int=\count196
-\l__lipsum_b_int=\count197
+\g__lipsum_par_int=\count197
+\l__lipsum_a_int=\count198
+\l__lipsum_b_int=\count199
 
-(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
-(/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.ltd.tex))
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/tocloft\tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has chapter divisions on input line 51.
-\cftparskip=\skip49
-\cftbeforetoctitleskip=\skip50
-\cftaftertoctitleskip=\skip51
-\cftbeforepartskip=\skip52
-\cftpartnumwidth=\skip53
-\cftpartindent=\skip54
-\cftbeforechapskip=\skip55
-\cftchapindent=\skip56
-\cftchapnumwidth=\skip57
-\cftbeforesecskip=\skip58
-\cftsecindent=\skip59
-\cftsecnumwidth=\skip60
-\cftbeforesubsecskip=\skip61
-\cftsubsecindent=\skip62
-\cftsubsecnumwidth=\skip63
-\cftbeforesubsubsecskip=\skip64
-\cftsubsubsecindent=\skip65
-\cftsubsubsecnumwidth=\skip66
-\cftbeforeparaskip=\skip67
-\cftparaindent=\skip68
-\cftparanumwidth=\skip69
-\cftbeforesubparaskip=\skip70
-\cftsubparaindent=\skip71
-\cftsubparanumwidth=\skip72
-\cftbeforeloftitleskip=\skip73
-\cftafterloftitleskip=\skip74
-\cftbeforefigskip=\skip75
-\cftfigindent=\skip76
-\cftfignumwidth=\skip77
-\c@lofdepth=\count198
-\c@lotdepth=\count199
-\cftbeforelottitleskip=\skip78
-\cftafterlottitleskip=\skip79
-\cftbeforetabskip=\skip80
-\cfttabindent=\skip81
-\cfttabnumwidth=\skip82
+\cftparskip=\skip50
+\cftbeforetoctitleskip=\skip51
+\cftaftertoctitleskip=\skip52
+\cftbeforepartskip=\skip53
+\cftpartnumwidth=\skip54
+\cftpartindent=\skip55
+\cftbeforechapskip=\skip56
+\cftchapindent=\skip57
+\cftchapnumwidth=\skip58
+\cftbeforesecskip=\skip59
+\cftsecindent=\skip60
+\cftsecnumwidth=\skip61
+\cftbeforesubsecskip=\skip62
+\cftsubsecindent=\skip63
+\cftsubsecnumwidth=\skip64
+\cftbeforesubsubsecskip=\skip65
+\cftsubsubsecindent=\skip66
+\cftsubsubsecnumwidth=\skip67
+\cftbeforeparaskip=\skip68
+\cftparaindent=\skip69
+\cftparanumwidth=\skip70
+\cftbeforesubparaskip=\skip71
+\cftsubparaindent=\skip72
+\cftsubparanumwidth=\skip73
+\cftbeforeloftitleskip=\skip74
+\cftafterloftitleskip=\skip75
+\cftbeforefigskip=\skip76
+\cftfigindent=\skip77
+\cftfignumwidth=\skip78
+\c@lofdepth=\count266
+\c@lotdepth=\count267
+\cftbeforelottitleskip=\skip79
+\cftafterlottitleskip=\skip80
+\cftbeforetabskip=\skip81
+\cfttabindent=\skip82
+\cfttabnumwidth=\skip83
 )
-(/usr/share/texlive/texmf-dist/tex/latex/epigraph/epigraph.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/epigraph\epigraph.sty
 Package: epigraph 2020/01/02 v1.5e typesetting epigraphs
 
-(/usr/share/texlive/texmf-dist/tex/latex/nextpage/nextpage.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/nextpage\nextpage.sty
 Package: nextpage 2009/09/03 v1.1a additional page commands
 )
-\beforeepigraphskip=\skip83
-\afterepigraphskip=\skip84
-\epigraphwidth=\skip85
-\epigraphrule=\skip86
-)
-(/usr/share/texlive/texmf-dist/tex/latex/textpos/textpos.sty
-Package: textpos 2020/09/26 v1.10
+\beforeepigraphskip=\skip84
+\afterepigraphskip=\skip85
+\epigraphwidth=\skip86
+\epigraphrule=\skip87
+) (C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/textpos\textpos.sty
+Package: textpos 2022/07/23 v1.10.1
+Package textpos Info: choosing support for LaTeX3 on input line 60.
 
-Package: textpos 2020/09/26 1.10, absolute positioning of text on the page
-Package textpos Info: choosing support for LaTeX3 on input line 61.
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks17
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
 )
-\TP@textbox=\box53
-\TP@holdbox=\box54
-\TPHorizModule=\dimen139
-\TPVertModule=\dimen140
-\TP@margin=\dimen141
-\TP@absmargin=\dimen142
+\TP@textbox=\box54
+\TP@holdbox=\box55
+\TPHorizModule=\dimen141
+\TPVertModule=\dimen142
+\TP@margin=\dimen143
+\TP@absmargin=\dimen144
 
 Grid set 16 x 16 = 38.39343pt x 49.68562pt
-\TPboxrulesize=\dimen143
-\TP@ox=\dimen144
-\TP@oy=\dimen145
-\TP@tbargs=\toks18
+\TPboxrulesize=\dimen145
+\TP@ox=\dimen146
+\TP@oy=\dimen147
+\TP@tbargs=\toks19
 TextBlockOrigin set to 0pt x 0pt
-) (/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
-Package: fancyvrb 2021/12/21 4.1b verbatim text (tvz,hv)
-\FV@CodeLineNo=\count266
+) (C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/fancyvrb\fancyvrb.sty
+Package: fancyvrb 2024/01/20 4.5c verbatim text (tvz,hv)
+\FV@CodeLineNo=\count268
 \FV@InFile=\read2
-\FV@TabBox=\box55
-\c@FancyVerbLine=\count267
-\FV@StepNumber=\count268
+\FV@TabBox=\box56
+\c@FancyVerbLine=\count269
+\FV@StepNumber=\count270
 \FV@OutFile=\write3
+) (C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count271
+\lst@gtempboxa=\box57
+\lst@token=\toks20
+\lst@length=\count272
+\lst@currlwidth=\dimen148
+\lst@column=\count273
+\lst@pos=\count274
+\lst@lostspace=\dimen149
+\lst@width=\dimen150
+\lst@newlines=\count275
+\lst@lineno=\count276
+\lst@maxwidth=\dimen151
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+\c@lstnumber=\count277
+\lst@skipnumbers=\count278
+\lst@framebox=\box58
 )
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count269
-\lst@gtempboxa=\box56
-\lst@token=\toks19
-\lst@length=\count270
-\lst@currlwidth=\dimen146
-\lst@column=\count271
-\lst@pos=\count272
-\lst@lostspace=\dimen147
-\lst@width=\dimen148
-\lst@newlines=\count273
-\lst@lineno=\count274
-\lst@maxwidth=\dimen149
-
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count275
-\lst@skipnumbers=\count276
-\lst@framebox=\box57
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2020/03/24 1.8d listings configuration
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2023/02/27 1.9 listings configuration
 ))
-Package: listings 2020/03/24 1.8d (Carsten Heinz)
+Package: listings 2023/02/27 1.9 (Carsten Heinz)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2023/12/06 v3.98 The Babel package
+\babel@savecnt=\count279
+\U@D=\dimen152
+\l@unhyphenated=\language79
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2022/01/26 3.70 The Babel package
-\babel@savecnt=\count277
-\U@D=\dimen150
-\l@unhyphenated=\language6
-
-(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read3
-\bbl@dirlevel=\count278
+\bbl@dirlevel=\count280
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel-italian/italian.ldf
-Language: italian 2020/05/21 v.1.4.04 Italian support for the babel system
-\it@lettering=\count279
-\it@doublequoteactive=\count280
-\it@ISOcompliance=\count281
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/babel-italian\italian.l
+df
+Language: italian 2024/01/03 v.1.5.00 Italian support for the babel system
+\it@lettering=\count281
+\it@doublequoteactive=\count282
+\it@ISOcompliance=\count283
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/it\babel
+-italian.tex
+Package babel Info: Importing font and identification data for italian
+(babel)             from babel-it.ini. Reported on input line 11.
+)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count282
+\etb@tempcnta=\count284
 )
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
-\inpenc@prehook=\toks20
-\inpenc@posthook=\toks21
+\inpenc@prehook=\toks21
+\inpenc@posthook=\toks22
 )
-(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2020/03/06 v1.0d TeX engine tests
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
-\Gm@cnth=\count283
-\Gm@cntv=\count284
-\c@Gm@tempcnt=\count285
-\Gm@bindingoffset=\dimen151
-\Gm@wd@mp=\dimen152
-\Gm@odd@mp=\dimen153
-\Gm@even@mp=\dimen154
-\Gm@layoutwidth=\dimen155
-\Gm@layoutheight=\dimen156
-\Gm@layouthoffset=\dimen157
-\Gm@layoutvoffset=\dimen158
-\Gm@dimlist=\toks22
-)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2021/10/15 v2.17l AMS math features
-\@mathmargin=\skip87
+\Gm@cnth=\count285
+\Gm@cntv=\count286
+\c@Gm@tempcnt=\count287
+\Gm@bindingoffset=\dimen153
+\Gm@wd@mp=\dimen154
+\Gm@odd@mp=\dimen155
+\Gm@even@mp=\dimen156
+\Gm@layoutwidth=\dimen157
+\Gm@layoutheight=\dimen158
+\Gm@layouthoffset=\dimen159
+\Gm@layoutvoffset=\dimen160
+\Gm@dimlist=\toks23
+
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip88
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks23
-\ex@=\dimen159
+\@emptytoks=\toks24
+\ex@=\dimen161
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen160
+\pmbraise@=\dimen162
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2021/08/26 v2.02 operator names
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count286
+\inf@bad=\count288
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count287
-\leftroot@=\count288
+\uproot@=\count289
+\leftroot@=\count290
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count289
-\DOTSCASE@=\count290
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count291
+\DOTSCASE@=\count292
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box58
-\strutbox@=\box59
-\big@size=\dimen161
+\Mathstrutbox@=\box59
+\strutbox@=\box60
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen163
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count291
-\c@MaxMatrixCols=\count292
+\macc@depth=\count293
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count294
 \dotsspace@=\muskip16
-\c@parentequation=\count293
-\dspbrk@lvl=\count294
-\tag@help=\toks24
-\row@=\count295
-\column@=\count296
-\maxfields@=\count297
-\andhelp@=\toks25
-\eqnshift@=\dimen162
-\alignsep@=\dimen163
-\tagshift@=\dimen164
-\tagwidth@=\dimen165
-\totwidth@=\dimen166
-\lineht@=\dimen167
-\@envbody=\toks26
-\multlinegap=\skip88
-\multlinetaggap=\skip89
-\mathdisplay@stack=\toks27
-LaTeX Info: Redefining \[ on input line 2938.
-LaTeX Info: Redefining \] on input line 2939.
+\c@parentequation=\count295
+\dspbrk@lvl=\count296
+\tag@help=\toks25
+\row@=\count297
+\column@=\count298
+\maxfields@=\count299
+\andhelp@=\toks26
+\eqnshift@=\dimen164
+\alignsep@=\dimen165
+\tagshift@=\dimen166
+\tagwidth@=\dimen167
+\totwidth@=\dimen168
+\lineht@=\dimen169
+\@envbody=\toks27
+\multlinegap=\skip89
+\multlinetaggap=\skip90
+\mathdisplay@stack=\toks28
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
-(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+)) (C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks28
-\thm@bodyfont=\toks29
-\thm@headfont=\toks30
-\thm@notefont=\toks31
-\thm@headpunct=\toks32
-\thm@preskip=\skip90
-\thm@postskip=\skip91
-\thm@headsep=\skip92
-\dth@everypar=\toks33
+\thm@style=\toks29
+\thm@bodyfont=\toks30
+\thm@headfont=\toks31
+\thm@notefont=\toks32
+\thm@headpunct=\toks33
+\thm@preskip=\skip91
+\thm@postskip=\skip92
+\thm@headsep=\skip93
+\dth@everypar=\toks34
 )
-(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xfrac/xfrac.sty
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xfrac\xfrac.
+sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen168
-\Gin@req@width=\dimen169
-)
-(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+\Gin@req@height=\dimen170
+\Gin@req@width=\dimen171
+) (C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
-(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2022-01-12 L3 Experimental document command parser
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
+e.sty
+Package: xparse 2023-10-10 L3 Experimental document command parser
 )
-(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
-Package: xtemplate 2022-01-12 L3 Experimental prototype document functions
-\l__xtemplate_tmp_dim=\dimen170
-\l__xtemplate_tmp_int=\count298
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xtemplate\xt
+emplate.sty
+Package: xtemplate 2023-10-10 L3 Experimental prototype document functions
+\l__xtemplate_tmp_dim=\dimen172
+\l__xtemplate_tmp_int=\count300
 \l__xtemplate_tmp_muskip=\muskip17
-\l__xtemplate_tmp_skip=\skip93
+\l__xtemplate_tmp_skip=\skip94
 )
-Package: xfrac 2022-01-12 L3 Experimental split-level fractions
-\l__xfrac_slash_box=\box60
-\l__xfrac_tmp_box=\box61
-\l__xfrac_denominator_bot_sep_dim=\dimen171
-\l__xfrac_numerator_bot_sep_dim=\dimen172
-\l__xfrac_numerator_top_sep_dim=\dimen173
-\l__xfrac_slash_left_sep_dim=\dimen174
-\l__xfrac_slash_right_sep_dim=\dimen175
+Package: xfrac 2023-10-10 L3 Experimental split-level fractions
+\l__xfrac_slash_box=\box61
+\l__xfrac_tmp_box=\box62
+\l__xfrac_denominator_bot_sep_dim=\dimen173
+\l__xfrac_numerator_bot_sep_dim=\dimen174
+\l__xfrac_numerator_top_sep_dim=\dimen175
+\l__xfrac_slash_left_sep_dim=\dimen176
+\l__xfrac_slash_right_sep_dim=\dimen177
 \l__xfrac_slash_left_muskip=\muskip18
 \l__xfrac_slash_right_muskip=\muskip19
 
@@ -332,8 +355,8 @@ Package xtemplate Info: Declaring object type 'xfrac' taking 3 argument(s) on
 (xtemplate)             line 80.
 
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
-Package: bm 2021/04/25 v1.2e Bold Symbol Support (DPC/FMi)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/tools\bm.sty
+Package: bm 2023/07/08 v1.2f Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup6
 \symboldletters=\mathgroup7
 \symboldsymbols=\mathgroup8
@@ -342,669 +365,697 @@ Package bm Info: No bold for \U/msa/m/n, using \pmb.
 Package bm Info: No bold for \U/msb/m/n, using \pmb.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
-\col@sep=\dimen176
-\ar@mcellbox=\box62
-\extrarowheight=\dimen177
-\NC@list=\toks34
-\extratabsurround=\skip94
-\backup@length=\skip95
-\ar@cellbox=\box63
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen178
+\ar@mcellbox=\box63
+\extrarowheight=\dimen179
+\NC@list=\toks35
+\extratabsurround=\skip95
+\backup@length=\skip96
+\ar@cellbox=\box64
 )
-(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 227.
-
-(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
-Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
-\everycr=\toks35
-\minrowclearance=\skip96
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+) (C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
+Package: colortbl 2024/02/20 v1.0g Color table columns (DPC)
+\everycr=\toks36
+\minrowclearance=\skip97
+\rownum=\count301
+) (Settings/nicematrix.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.
+sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.
+sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.st
+y
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-common.tex
+\pgfutil@everybye=\toks37
+\pgfutil@tempdima=\dimen180
+\pgfutil@tempdimb=\dimen181
 )
-\rownum=\count299
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
-Package xcolor Info: Model `RGB' extended on input line 1368.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-latex.def
+\pgfutil@abb=\box65
 )
-(./Settings/nicematrix.sty
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks36
-\pgfutil@tempdima=\dimen178
-\pgfutil@tempdimb=\dimen179
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
-ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box64
-) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
-Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
+code.tex
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
-Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks37
-\pgfkeys@temptoks=\toks38
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex
+\pgfkeys@pathtoks=\toks38
+\pgfkeys@temptoks=\toks39
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
-ex
-\pgfkeys@tmptoks=\toks39
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+libraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks40
 ))
-\pgf@x=\dimen180
-\pgf@y=\dimen181
-\pgf@xa=\dimen182
-\pgf@ya=\dimen183
-\pgf@xb=\dimen184
-\pgf@yb=\dimen185
-\pgf@xc=\dimen186
-\pgf@yc=\dimen187
-\pgf@xd=\dimen188
-\pgf@yd=\dimen189
+\pgf@x=\dimen182
+\pgf@y=\dimen183
+\pgf@xa=\dimen184
+\pgf@ya=\dimen185
+\pgf@xb=\dimen186
+\pgf@yb=\dimen187
+\pgf@xc=\dimen188
+\pgf@yc=\dimen189
+\pgf@xd=\dimen190
+\pgf@yd=\dimen191
 \w@pgf@writea=\write4
 \r@pgf@reada=\read4
-\c@pgf@counta=\count300
-\c@pgf@countb=\count301
-\c@pgf@countc=\count302
-\c@pgf@countd=\count303
-\t@pgf@toka=\toks40
-\t@pgf@tokb=\toks41
-\t@pgf@tokc=\toks42
-\pgf@sys@id@count=\count304
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
-File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+\c@pgf@counta=\count302
+\c@pgf@countb=\count303
+\c@pgf@countc=\count304
+\c@pgf@countd=\count305
+\t@pgf@toka=\toks41
+\t@pgf@tokb=\toks42
+\t@pgf@tokc=\toks43
+\pgf@sys@id@count=\count306
+
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
+fg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-pdftex.def
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
-f
-File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 )))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
-tex
-File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfsyssoftpath@smallbuffer@items=\count305
-\pgfsyssoftpath@bigbuffer@items=\count306
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+ssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count307
+\pgfsyssoftpath@bigbuffer@items=\count308
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
-tex
-File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+sprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
-Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+e.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen190
-\pgfmath@count=\count307
-\pgfmath@box=\box65
-\pgfmath@toks=\toks43
-\pgfmath@stack@operand=\toks44
-\pgfmath@stack@operation=\toks45
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
-.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
-ric.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
-e.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
-.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
-tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
-.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
-tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
-thmetics.code.tex)))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count308
-))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
-x
-File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@picminx=\dimen191
-\pgf@picmaxx=\dimen192
-\pgf@picminy=\dimen193
-\pgf@picmaxy=\dimen194
-\pgf@pathminx=\dimen195
-\pgf@pathmaxx=\dimen196
-\pgf@pathminy=\dimen197
-\pgf@pathmaxy=\dimen198
-\pgf@xx=\dimen199
-\pgf@xy=\dimen256
-\pgf@yx=\dimen257
-\pgf@yy=\dimen258
-\pgf@zx=\dimen259
-\pgf@zy=\dimen260
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
-code.tex
-File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@path@lastx=\dimen261
-\pgf@path@lasty=\dimen262
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
 .tex
-File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@shorten@end@additional=\dimen263
-\pgf@shorten@start@additional=\dimen264
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.
+code.tex)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
+r.code.tex
+\pgfmath@dimen=\dimen192
+\pgfmath@count=\count309
+\pgfmath@box=\box66
+\pgfmath@toks=\toks44
+\pgfmath@stack@operand=\toks45
+\pgfmath@stack@operation=\toks46
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
-x
-File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfpic=\box66
-\pgf@hbox=\box67
-\pgf@layerbox@main=\box68
-\pgf@picture@serial@count=\count309
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
-ode.tex
-File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgflinewidth=\dimen265
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
-s.code.tex
-File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@pt@x=\dimen266
-\pgf@pt@y=\dimen267
-\pgf@pt@temp=\dimen268
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
-File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
-ex
-File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.code.tex)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.basic.code.tex)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.trigonometric.code.tex)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.random.code.tex)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.comparison.code.tex)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.base.code.tex)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.round.code.tex)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.misc.code.tex)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.integerarithmetics.code.tex)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.
+code.tex)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
 .code.tex
-File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
-x
-File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfarrowsep=\dimen269
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
-File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@max=\dimen270
-\pgf@sys@shading@range@num=\count310
-\pgf@shadingcount=\count311
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
-File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
-tex
-File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfexternal@startupbox=\box69
+\c@pgfmathroundto@lastzeros=\count310
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
-x
-File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
+tex)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen193
+\pgf@picmaxx=\dimen194
+\pgf@picminy=\dimen195
+\pgf@picmaxy=\dimen196
+\pgf@pathminx=\dimen197
+\pgf@pathmaxx=\dimen198
+\pgf@pathminy=\dimen199
+\pgf@pathmaxy=\dimen256
+\pgf@xx=\dimen257
+\pgf@xy=\dimen258
+\pgf@yx=\dimen259
+\pgf@yy=\dimen260
+\pgf@zx=\dimen261
+\pgf@zy=\dimen262
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
-ode.tex
-File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen263
+\pgf@path@lasty=\dimen264
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
-tex
-File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen265
+\pgf@shorten@start@additional=\dimen266
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
-File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+escopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box67
+\pgf@hbox=\box68
+\pgf@layerbox@main=\box69
+\pgf@picture@serial@count=\count311
+)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+egraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen267
+)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen268
+\pgf@pt@y=\dimen269
+\pgf@pt@temp=\dimen270
+)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+equick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+earrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen271
+)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen272
+\pgf@sys@shading@range@num=\count312
+\pgf@shadingcount=\count313
+)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box70
+)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+elayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+erdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
-File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfnodeparttextbox=\box70
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+shapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box71
 )
 
 LaTeX Warning: You have requested package `./Settings/nicematrix',
                but the package provides `nicematrix'.
 
 Package: nicematrix 2021/09/09 v6.2 Enhanced arrays with the help of PGF/TikZ
-\g__nicematrix_env_int=\count312
-\g__nicematrix_NiceMatrixBlock_int=\count313
-\l__nicematrix_columns_width_dim=\dimen271
-\l__nicematrix_col_width_dim=\dimen272
-\g__nicematrix_row_total_int=\count314
-\g__nicematrix_col_total_int=\count315
-\g__nicematrix_blocks_wd_dim=\dimen273
-\g__nicematrix_blocks_ht_dim=\dimen274
-\g__nicematrix_blocks_dp_dim=\dimen275
-\l__nicematrix_tabular_width_dim=\dimen276
-\l__nicematrix_old_iRow_int=\count316
-\l__nicematrix_old_jCol_int=\count317
-\g__nicematrix_total_X_weight_int=\count318
-\l__nicematrix_X_columns_dim=\dimen277
-\l__nicematrix_x_initial_dim=\dimen278
-\l__nicematrix_y_initial_dim=\dimen279
-\l__nicematrix_x_final_dim=\dimen280
-\l__nicematrix_y_final_dim=\dimen281
-\l_tmpc_dim=\dimen282
-\l_tmpd_dim=\dimen283
-\g__nicematrix_width_last_col_dim=\dimen284
-\g__nicematrix_width_first_col_dim=\dimen285
-\l__nicematrix_row_min_int=\count319
-\l__nicematrix_row_max_int=\count320
-\l__nicematrix_col_min_int=\count321
-\l__nicematrix_col_max_int=\count322
-\g__nicematrix_static_num_of_col_int=\count323
-\l__nicematrix_rounded_corners_dim=\dimen286
-\l__nicematrix_line_width_dim=\dimen287
-\g__nicematrix_block_box_int=\count324
-\l__nicematrix_submatrix_extra_height_dim=\dimen288
-\l__nicematrix_submatrix_left_xshift_dim=\dimen289
-\l__nicematrix_submatrix_right_xshift_dim=\dimen290
-\l__nicematrix_trim_dim=\dimen291
-\l__nicematrix_first_row_int=\count325
-\l__nicematrix_first_col_int=\count326
-\l__nicematrix_last_row_int=\count327
-\l__nicematrix_last_col_int=\count328
-\c@tabularnote=\count329
-\l__nicematrix_number_of_notes_int=\count330
-\l__nicematrix_cell_space_top_limit_dim=\dimen292
-\l__nicematrix_cell_space_bottom_limit_dim=\dimen293
-\l__nicematrix_inter_dots_dim=\dimen294
-\l__nicematrix_xdots_shorten_dim=\dimen295
-\l__nicematrix_radius_dim=\dimen296
-\l__nicematrix_notes_above_space_dim=\dimen297
-\l__nicematrix_left_margin_dim=\dimen298
-\l__nicematrix_right_margin_dim=\dimen299
-\l__nicematrix_extra_left_margin_dim=\dimen300
-\l__nicematrix_extra_right_margin_dim=\dimen301
-\c__nicematrix_max_l_dim=\dimen302
-) (/usr/share/texlive/texmf-dist/tex/generic/xypic/xy.sty
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xy.tex Bootstrap'ing:
-catcodes, docmode, (/usr/share/texlive/texmf-dist/tex/generic/xypic/xyrecat.tex
-) (/usr/share/texlive/texmf-dist/tex/generic/xypic/xyidioms.tex)
+\g__nicematrix_env_int=\count314
+\g__nicematrix_NiceMatrixBlock_int=\count315
+\l__nicematrix_columns_width_dim=\dimen273
+\l__nicematrix_col_width_dim=\dimen274
+\g__nicematrix_row_total_int=\count316
+\g__nicematrix_col_total_int=\count317
+\g__nicematrix_blocks_wd_dim=\dimen275
+\g__nicematrix_blocks_ht_dim=\dimen276
+\g__nicematrix_blocks_dp_dim=\dimen277
+\l__nicematrix_tabular_width_dim=\dimen278
+\l__nicematrix_old_iRow_int=\count318
+\l__nicematrix_old_jCol_int=\count319
+\g__nicematrix_total_X_weight_int=\count320
+\l__nicematrix_X_columns_dim=\dimen279
+\l__nicematrix_x_initial_dim=\dimen280
+\l__nicematrix_y_initial_dim=\dimen281
+\l__nicematrix_x_final_dim=\dimen282
+\l__nicematrix_y_final_dim=\dimen283
+\l_tmpc_dim=\dimen284
+\l_tmpd_dim=\dimen285
+\g__nicematrix_width_last_col_dim=\dimen286
+\g__nicematrix_width_first_col_dim=\dimen287
+\l__nicematrix_row_min_int=\count321
+\l__nicematrix_row_max_int=\count322
+\l__nicematrix_col_min_int=\count323
+\l__nicematrix_col_max_int=\count324
+\g__nicematrix_static_num_of_col_int=\count325
+\l__nicematrix_rounded_corners_dim=\dimen288
+\l__nicematrix_line_width_dim=\dimen289
+\g__nicematrix_block_box_int=\count326
+\l__nicematrix_submatrix_extra_height_dim=\dimen290
+\l__nicematrix_submatrix_left_xshift_dim=\dimen291
+\l__nicematrix_submatrix_right_xshift_dim=\dimen292
+\l__nicematrix_trim_dim=\dimen293
+\l__nicematrix_first_row_int=\count327
+\l__nicematrix_first_col_int=\count328
+\l__nicematrix_last_row_int=\count329
+\l__nicematrix_last_col_int=\count330
+\c@tabularnote=\count331
+\l__nicematrix_number_of_notes_int=\count332
+\l__nicematrix_cell_space_top_limit_dim=\dimen294
+\l__nicematrix_cell_space_bottom_limit_dim=\dimen295
+\l__nicematrix_inter_dots_dim=\dimen296
+\l__nicematrix_xdots_shorten_dim=\dimen297
+\l__nicematrix_radius_dim=\dimen298
+\l__nicematrix_notes_above_space_dim=\dimen299
+\l__nicematrix_left_margin_dim=\dimen300
+\l__nicematrix_right_margin_dim=\dimen301
+\l__nicematrix_extra_left_margin_dim=\dimen302
+\l__nicematrix_extra_right_margin_dim=\dimen303
+\c__nicematrix_max_l_dim=\dimen304
+) (C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xy.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xy.tex
+Bootstrap'ing: catcodes, docmode,
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xyrecat.tex)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xyidioms.tex)
 
  Xy-pic version 3.8.9 <2013/10/06>
  Copyright (c) 1991-2013 by Kristoffer H. Rose <krisrose@tug.org> and others
  Xy-pic is free software: see the User's Guide for details.
 
 Loading kernel: messages; fonts; allocations: state,
-\X@c=\dimen303
-\Y@c=\dimen304
-\U@c=\dimen305
-\D@c=\dimen306
-\L@c=\dimen307
-\R@c=\dimen308
-\Edge@c=\toks46
-\X@p=\dimen309
-\Y@p=\dimen310
-\U@p=\dimen311
-\D@p=\dimen312
-\L@p=\dimen313
-\R@p=\dimen314
-\Edge@p=\toks47
-\X@origin=\dimen315
-\Y@origin=\dimen316
-\X@xbase=\dimen317
-\Y@xbase=\dimen318
-\X@ybase=\dimen319
-\Y@ybase=\dimen320
-\X@min=\dimen321
-\Y@min=\dimen322
-\X@max=\dimen323
-\Y@max=\dimen324
-\lastobjectbox@=\box71
-\zerodotbox@=\box72
-\almostz@=\dimen325
+\X@c=\dimen305
+\Y@c=\dimen306
+\U@c=\dimen307
+\D@c=\dimen308
+\L@c=\dimen309
+\R@c=\dimen310
+\Edge@c=\toks47
+\X@p=\dimen311
+\Y@p=\dimen312
+\U@p=\dimen313
+\D@p=\dimen314
+\L@p=\dimen315
+\R@p=\dimen316
+\Edge@p=\toks48
+\X@origin=\dimen317
+\Y@origin=\dimen318
+\X@xbase=\dimen319
+\Y@xbase=\dimen320
+\X@ybase=\dimen321
+\Y@ybase=\dimen322
+\X@min=\dimen323
+\Y@min=\dimen324
+\X@max=\dimen325
+\Y@max=\dimen326
+\lastobjectbox@=\box72
+\zerodotbox@=\box73
+\almostz@=\dimen327
  direction,
-\d@X=\dimen326
-\d@Y=\dimen327
-\K@=\count331
-\KK@=\count332
-\Direction=\count333
-\K@dXdY=\dimen328
-\K@dYdX=\dimen329
+\d@X=\dimen328
+\d@Y=\dimen329
+\K@=\count333
+\KK@=\count334
+\Direction=\count335
+\K@dXdY=\dimen330
+\K@dYdX=\dimen331
 \xyread@=\read5
 \xywrite@=\write5
-\csp@=\count334
-\quotPTK@=\dimen330
+\csp@=\count336
+\quotPTK@=\dimen332
 
 utility macros; pictures: \xy, positions,
-\swaptoks@@=\toks48
-\connectobjectbox@@=\box73
+\swaptoks@@=\toks49
+\connectobjectbox@@=\box74
  objects,
-\styletoks@=\toks49
+\styletoks@=\toks50
  decorations;
 kernel objects: directionals, circles, text; options; algorithms: directions,
 edges, connections;  Xy-pic loaded)
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 )
 Package: xy 2013/10/06 Xy-pic version 3.8.9
 
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xyall.tex
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xyall.tex
  Xy-pic option: All features v.3.8
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xycurve.tex
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xycurve.tex
  Xy-pic option: Curve and Spline extension v.3.12 curve,
-\crv@cnt@=\count335
-\crvpts@=\toks50
-\splinebox@=\box74
-\splineval@=\dimen331
-\splinedepth@=\dimen332
-\splinetol@=\dimen333
-\splinelength@=\dimen334
+\crv@cnt@=\count337
+\crvpts@=\toks51
+\splinebox@=\box75
+\splineval@=\dimen333
+\splinedepth@=\dimen334
+\splinetol@=\dimen335
+\splinelength@=\dimen336
  circles,
-\L@=\dimen335
+\L@=\dimen337
  loaded)
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xyframe.tex
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xyframe.tex
  Xy-pic option: Frame and Bracket extension v.3.14 loaded)
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xycmtip.tex
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xycmtip.tex
  Xy-pic option: Computer Modern tip extension v.3.7
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xytips.tex
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xytips.tex
  Xy-pic option: More Tips extension v.3.11 loaded) loaded)
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xyline.tex
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xyline.tex
  Xy-pic option: Line styles extension v.3.10
-\xylinethick@=\dimen336
+\xylinethick@=\dimen338
  loaded)
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xyrotate.tex
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xyrotate.tex
  Xy-pic option: Rotate and Scale extension v.3.8 loaded)
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xycolor.tex
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xycolor.tex
  Xy-pic option: Colour extension v.3.11 loaded)
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xymatrix.tex
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xymatrix.tex
  Xy-pic option: Matrix feature v.3.14
-\Row=\count336
-\Col=\count337
-\queue@=\toks51
-\queue@@=\toks52
-\qcount@=\count338
-\qcount@@=\count339
-\matrixsize@=\count340
+\Row=\count338
+\Col=\count339
+\queue@=\toks52
+\queue@@=\toks53
+\qcount@=\count340
+\qcount@@=\count341
+\matrixsize@=\count342
  loaded)
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xyarrow.tex
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xyarrow.tex
  Xy-pic option: Arrow and Path feature v.3.9 path, \ar, loaded)
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xygraph.tex
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xygraph.tex
  Xy-pic option: Graph feature v.3.11 loaded) loaded)
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xypdf.tex
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xypdf.tex
  Xy-pic option: PDF driver v.1.7 Xy-pic pdf driver: `color' extension support
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xypdf-co.tex loaded)
-Xy-pic pdf driver: `curve' extension support
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xypdf-cu.tex loaded)
-Xy-pic pdf driver: `frame' extension support
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xypdf-fr.tex loaded)
-Xy-pic pdf driver: `line' extension support
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xypdf-li.tex loaded)
-Xy-pic pdf driver: `rotate' extension support
-(/usr/share/texlive/texmf-dist/tex/generic/xypic/xypdf-ro.tex loaded) loaded))
-(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xypdf-co.tex
+loaded) Xy-pic pdf driver: `curve' extension support
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xypdf-cu.tex
+loaded) Xy-pic pdf driver: `frame' extension support
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xypdf-fr.tex
+loaded) Xy-pic pdf driver: `line' extension support
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xypdf-li.tex
+loaded) Xy-pic pdf driver: `rotate' extension support
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/xypic\xypdf-ro.tex
+loaded) loaded))
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
-\multirow@colwidth=\skip97
-\multirow@cntb=\count341
-\multirow@dima=\skip98
-\bigstrutjot=\dimen337
+\multirow@colwidth=\skip98
+\multirow@cntb=\count343
+\multirow@dima=\skip99
+\bigstrutjot=\dimen339
 )
-(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
-Package: csquotes 2021-02-22 v5.2l context-sensitive quotations (JAW)
-\csq@reset=\count342
-\csq@gtype=\count343
-\csq@glevel=\count344
-\csq@qlevel=\count345
-\csq@maxlvl=\count346
-\csq@tshold=\count347
-\csq@ltx@everypar=\toks53
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.sty
+Package: csquotes 2022-09-14 v5.2n context-sensitive quotations (JAW)
+\csq@reset=\count344
+\csq@gtype=\count345
+\csq@glevel=\count346
+\csq@qlevel=\count347
+\csq@maxlvl=\count348
+\csq@tshold=\count349
+\csq@ltx@everypar=\toks54
 
-(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
-File: csquotes.def 2021-02-22 v5.2l csquotes generic definitions (JAW)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.def
+File: csquotes.def 2022-09-14 v5.2n csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
 
-(/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.cfg
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.cfg
 File: csquotes.cfg 
-))
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
-Package: biblatex 2022/02/02 v3.17 programmable bibliographies (PK/MW)
+)) (C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.st
+y
+Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
 
-(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-))
-(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)) (C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count348
+\lrq@indent=\count350
 
-(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip20
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count349
-\c@listtotal=\count350
-\c@listcount=\count351
-\c@liststart=\count352
-\c@liststop=\count353
-\c@citecount=\count354
-\c@citetotal=\count355
-\c@multicitecount=\count356
-\c@multicitetotal=\count357
-\c@instcount=\count358
-\c@maxnames=\count359
-\c@minnames=\count360
-\c@maxitems=\count361
-\c@minitems=\count362
-\c@citecounter=\count363
-\c@maxcitecounter=\count364
-\c@savedcitecounter=\count365
-\c@uniquelist=\count366
-\c@uniquename=\count367
-\c@refsection=\count368
-\c@refsegment=\count369
-\c@maxextratitle=\count370
-\c@maxextratitleyear=\count371
-\c@maxextraname=\count372
-\c@maxextradate=\count373
-\c@maxextraalpha=\count374
-\c@abbrvpenalty=\count375
-\c@highnamepenalty=\count376
-\c@lownamepenalty=\count377
-\c@maxparens=\count378
-\c@parenlevel=\count379
-\blx@tempcnta=\count380
-\blx@tempcntb=\count381
-\blx@tempcntc=\count382
-\c@blx@maxsection=\count383
-\c@blx@maxsegment@0=\count384
-\blx@notetype=\count385
-\blx@parenlevel@text=\count386
-\blx@parenlevel@foot=\count387
-\c@blx@sectionciteorder@0=\count388
-\blx@entrysetcounter=\count389
-\blx@biblioinstance=\count390
-\labelnumberwidth=\skip99
-\labelalphawidth=\skip100
-\biblabelsep=\skip101
-\bibitemsep=\skip102
-\bibnamesep=\skip103
-\bibinitsep=\skip104
-\bibparsep=\skip105
-\bibhang=\skip106
+\c@tabx@nest=\count351
+\c@listtotal=\count352
+\c@listcount=\count353
+\c@liststart=\count354
+\c@liststop=\count355
+\c@citecount=\count356
+\c@citetotal=\count357
+\c@multicitecount=\count358
+\c@multicitetotal=\count359
+\c@instcount=\count360
+\c@maxnames=\count361
+\c@minnames=\count362
+\c@maxitems=\count363
+\c@minitems=\count364
+\c@citecounter=\count365
+\c@maxcitecounter=\count366
+\c@savedcitecounter=\count367
+\c@uniquelist=\count368
+\c@uniquename=\count369
+\c@refsection=\count370
+\c@refsegment=\count371
+\c@maxextratitle=\count372
+\c@maxextratitleyear=\count373
+\c@maxextraname=\count374
+\c@maxextradate=\count375
+\c@maxextraalpha=\count376
+\c@abbrvpenalty=\count377
+\c@highnamepenalty=\count378
+\c@lownamepenalty=\count379
+\c@maxparens=\count380
+\c@parenlevel=\count381
+\blx@tempcnta=\count382
+\blx@tempcntb=\count383
+\blx@tempcntc=\count384
+\c@blx@maxsection=\count385
+\blx@maxsegment@0=\count386
+\blx@notetype=\count387
+\blx@parenlevel@text=\count388
+\blx@parenlevel@foot=\count389
+\blx@sectionciteorder@0=\count390
+\blx@sectionciteorderinternal@0=\count391
+\blx@entrysetcounter=\count392
+\blx@biblioinstance=\count393
+\labelnumberwidth=\skip100
+\labelalphawidth=\skip101
+\biblabelsep=\skip102
+\bibitemsep=\skip103
+\bibnamesep=\skip104
+\bibinitsep=\skip105
+\bibparsep=\skip106
+\bibhang=\skip107
 \blx@bcfin=\read6
 \blx@bcfout=\write6
-\blx@langwohyphens=\language7
-\c@mincomprange=\count391
-\c@maxcomprange=\count392
-\c@mincompwidth=\count393
+\blx@langwohyphens=\language80
+\c@mincomprange=\count394
+\c@maxcomprange=\count395
+\c@mincompwidth=\count396
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def
-File: blx-dm.def 2022/02/02 v3.17 biblatex localization (PK/MW)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
+File: blx-dm.def 2023/03/05 v3.19 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'alphabetic.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count394
-\c@savedafterword=\count395
-\c@annotator=\count396
-\c@savedannotator=\count397
-\c@author=\count398
-\c@savedauthor=\count399
-\c@bookauthor=\count400
-\c@savedbookauthor=\count401
-\c@commentator=\count402
-\c@savedcommentator=\count403
-\c@editor=\count404
-\c@savededitor=\count405
-\c@editora=\count406
-\c@savededitora=\count407
-\c@editorb=\count408
-\c@savededitorb=\count409
-\c@editorc=\count410
-\c@savededitorc=\count411
-\c@foreword=\count412
-\c@savedforeword=\count413
-\c@holder=\count414
-\c@savedholder=\count415
-\c@introduction=\count416
-\c@savedintroduction=\count417
-\c@namea=\count418
-\c@savednamea=\count419
-\c@nameb=\count420
-\c@savednameb=\count421
-\c@namec=\count422
-\c@savednamec=\count423
-\c@translator=\count424
-\c@savedtranslator=\count425
-\c@shortauthor=\count426
-\c@savedshortauthor=\count427
-\c@shorteditor=\count428
-\c@savedshorteditor=\count429
-\c@labelname=\count430
-\c@savedlabelname=\count431
-\c@institution=\count432
-\c@savedinstitution=\count433
-\c@lista=\count434
-\c@savedlista=\count435
-\c@listb=\count436
-\c@savedlistb=\count437
-\c@listc=\count438
-\c@savedlistc=\count439
-\c@listd=\count440
-\c@savedlistd=\count441
-\c@liste=\count442
-\c@savedliste=\count443
-\c@listf=\count444
-\c@savedlistf=\count445
-\c@location=\count446
-\c@savedlocation=\count447
-\c@organization=\count448
-\c@savedorganization=\count449
-\c@origlocation=\count450
-\c@savedoriglocation=\count451
-\c@origpublisher=\count452
-\c@savedorigpublisher=\count453
-\c@publisher=\count454
-\c@savedpublisher=\count455
-\c@language=\count456
-\c@savedlanguage=\count457
-\c@origlanguage=\count458
-\c@savedoriglanguage=\count459
-\c@pageref=\count460
-\c@savedpageref=\count461
-\shorthandwidth=\skip107
-\shortjournalwidth=\skip108
-\shortserieswidth=\skip109
-\shorttitlewidth=\skip110
-\shortauthorwidth=\skip111
-\shorteditorwidth=\skip112
-\locallabelnumberwidth=\skip113
-\locallabelalphawidth=\skip114
-\localshorthandwidth=\skip115
-\localshortjournalwidth=\skip116
-\localshortserieswidth=\skip117
-\localshorttitlewidth=\skip118
-\localshortauthorwidth=\skip119
-\localshorteditorwidth=\skip120
+\c@afterword=\count397
+\c@savedafterword=\count398
+\c@annotator=\count399
+\c@savedannotator=\count400
+\c@author=\count401
+\c@savedauthor=\count402
+\c@bookauthor=\count403
+\c@savedbookauthor=\count404
+\c@commentator=\count405
+\c@savedcommentator=\count406
+\c@editor=\count407
+\c@savededitor=\count408
+\c@editora=\count409
+\c@savededitora=\count410
+\c@editorb=\count411
+\c@savededitorb=\count412
+\c@editorc=\count413
+\c@savededitorc=\count414
+\c@foreword=\count415
+\c@savedforeword=\count416
+\c@holder=\count417
+\c@savedholder=\count418
+\c@introduction=\count419
+\c@savedintroduction=\count420
+\c@namea=\count421
+\c@savednamea=\count422
+\c@nameb=\count423
+\c@savednameb=\count424
+\c@namec=\count425
+\c@savednamec=\count426
+\c@translator=\count427
+\c@savedtranslator=\count428
+\c@shortauthor=\count429
+\c@savedshortauthor=\count430
+\c@shorteditor=\count431
+\c@savedshorteditor=\count432
+\c@labelname=\count433
+\c@savedlabelname=\count434
+\c@institution=\count435
+\c@savedinstitution=\count436
+\c@lista=\count437
+\c@savedlista=\count438
+\c@listb=\count439
+\c@savedlistb=\count440
+\c@listc=\count441
+\c@savedlistc=\count442
+\c@listd=\count443
+\c@savedlistd=\count444
+\c@liste=\count445
+\c@savedliste=\count446
+\c@listf=\count447
+\c@savedlistf=\count448
+\c@location=\count449
+\c@savedlocation=\count450
+\c@organization=\count451
+\c@savedorganization=\count452
+\c@origlocation=\count453
+\c@savedoriglocation=\count454
+\c@origpublisher=\count455
+\c@savedorigpublisher=\count456
+\c@publisher=\count457
+\c@savedpublisher=\count458
+\c@language=\count459
+\c@savedlanguage=\count460
+\c@origlanguage=\count461
+\c@savedoriglanguage=\count462
+\c@pageref=\count463
+\c@savedpageref=\count464
+\shorthandwidth=\skip108
+\shortjournalwidth=\skip109
+\shortserieswidth=\skip110
+\shorttitlewidth=\skip111
+\shortauthorwidth=\skip112
+\shorteditorwidth=\skip113
+\locallabelnumberwidth=\skip114
+\locallabelalphawidth=\skip115
+\localshorthandwidth=\skip116
+\localshortjournalwidth=\skip117
+\localshortserieswidth=\skip118
+\localshorttitlewidth=\skip119
+\localshortauthorwidth=\skip120
+\localshorteditorwidth=\skip121
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
-File: blx-compat.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.def
+File: blx-compat.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
-File: biblatex.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
-\c@textcitecount=\count462
-\c@textcitetotal=\count463
-\c@textcitemaxnames=\count464
-\c@biburlbigbreakpenalty=\count465
-\c@biburlbreakpenalty=\count466
-\c@biburlnumpenalty=\count467
-\c@biburlucpenalty=\count468
-\c@biburllcpenalty=\count469
+ (C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
+File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
+\c@textcitecount=\count465
+\c@textcitetotal=\count466
+\c@textcitemaxnames=\count467
+\c@biburlbigbreakpenalty=\count468
+\c@biburlbreakpenalty=\count469
+\c@biburlnumpenalty=\count470
+\c@biburlucpenalty=\count471
+\c@biburllcpenalty=\count472
 \biburlbigskip=\muskip21
 \biburlnumskip=\muskip22
 \biburlucskip=\muskip23
 \biburllcskip=\muskip24
-\c@smartand=\count470
+\c@smartand=\count473
 )
 Package biblatex Info: Trying to load bibliography style 'alphabetic'...
 Package biblatex Info: ... file 'alphabetic.bbx' found.
 
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/alphabetic.bbx
-File: alphabetic.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\alphabetic
+.bbx
+File: alphabetic.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
-File: standard.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count471
-\c@bbx:relatedtotal=\count472
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.b
+bx
+File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count474
+\c@bbx:relatedtotal=\count475
 ))
 Package biblatex Info: Trying to load citation style 'alphabetic'...
 Package biblatex Info: ... file 'alphabetic.cbx' found.
 
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/alphabetic.cbx
-File: alphabetic.cbx 2022/02/02 v3.17 biblatex citation style (PK/MW)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/cbx\alphabetic
+.cbx
+File: alphabetic.cbx 2023/03/05 v3.19 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -1019,245 +1070,258 @@ Package biblatex Info: Redefining '\smartcites'.
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
 
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.cfg
 File: biblatex.cfg 
 )
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
 Package biblatex Info: ... and expl3
-(biblatex)             2022-01-21 L3 programming layer (loader) 
+(biblatex)             2023-12-08 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
 
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
-Package: blx-case-expl3 2022/02/02 v3.17 expl3 case changing code for biblatex
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3
+.sty
+Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
-\captionmargin=\dimen338
-\captionmargin@=\dimen339
-\captionwidth=\dimen340
-\caption@tempdima=\dimen341
-\caption@indent=\dimen342
-\caption@parindent=\dimen343
-\caption@hangindent=\dimen344
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen340
+\captionmargin=\dimen341
+\caption@leftmargin=\dimen342
+\caption@rightmargin=\dimen343
+\caption@width=\dimen344
+\caption@indent=\dimen345
+\caption@parindent=\dimen346
+\caption@hangindent=\dimen347
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count473
-\c@continuedfloat=\count474
+\c@caption@flags=\count476
+\c@continuedfloat=\count477
 Package caption Info: listings package is loaded.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
-\c@subfigure=\count475
-\c@subtable=\count476
-)
-(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count478
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count479
+) (C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count477
-\float@exts=\toks54
-\float@box=\box75
-\@float@everytoks=\toks55
-\@floatcapt=\box76
+\c@float@type=\count480
+\float@exts=\toks55
+\float@box=\box76
+\@float@everytoks=\toks56
+\@floatcapt=\box77
 )
-(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
-Package: titlesec 2021/07/05 v2.14 Sectioning titles
-\ttl@box=\box77
-\beforetitleunit=\skip121
-\aftertitleunit=\skip122
-\ttl@plus=\dimen345
-\ttl@minus=\dimen346
-\ttl@toksa=\toks56
-\titlewidth=\dimen347
-\titlewidthlast=\dimen348
-\titlewidthfirst=\dimen349
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
+Package: titlesec 2023/10/27 v2.16 Sectioning titles
+\ttl@box=\box78
+\beforetitleunit=\skip122
+\aftertitleunit=\skip123
+\ttl@plus=\dimen348
+\ttl@minus=\dimen349
+\ttl@toksa=\toks57
+\titlewidth=\dimen350
+\titlewidthlast=\dimen351
+\titlewidthfirst=\dimen352
 )
-(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
-rs
-\f@nch@headwidth=\skip123
-\f@nch@O@elh=\skip124
-\f@nch@O@erh=\skip125
-\f@nch@O@olh=\skip126
-\f@nch@O@orh=\skip127
-\f@nch@O@elf=\skip128
-\f@nch@O@erf=\skip129
-\f@nch@O@olf=\skip130
-\f@nch@O@orf=\skip131
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip124
+\f@nch@O@elh=\skip125
+\f@nch@O@erh=\skip126
+\f@nch@O@olh=\skip127
+\f@nch@O@orh=\skip128
+\f@nch@O@elf=\skip129
+\f@nch@O@erf=\skip130
+\f@nch@O@olf=\skip131
+\f@nch@O@orf=\skip132
 )
-(/usr/share/texlive/texmf-dist/tex/latex/emptypage/emptypage.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/emptypage\emptypage.sty
 Package: emptypage 2010/05/30 v1.2 Suppress page numbers and headings on empty 
 pages
-)
-(/usr/share/texlive/texmf-dist/tex/latex/pdfx/pdfx.sty
+) (C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/pdfx\pdfx.sty
 Package: pdfx 2019/02/27 v1.6.3 PDF/X and PDF/A support (CVR/HTH/RRM/PS)
-\pdfx@minorversion=\count478
+\pdfx@minorversion=\count481
 
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/everyshi/everyshi.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/everyshi\everyshi.sty
 Package: everyshi 2020/11/18 v4.00 EveryShipout Package
 )
-(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
-){/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-(/usr/share/texlive/texmf-dist/tex/latex/pdfx/l8u-penc.def
+){C:/Users/stefa/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/pdfx\l8u-penc.def
 File: l8u-penc.def 2017/06/23 v0.8 Custom LaTeX file, for UTF8 encoded letters 
 and symbols
 LaTeX Info: Composite with undeclared \b in encoding L8U on input line 278.
 )
-\pdfxsafeforxmp@toks=\toks57
-\pdfx@tmptoks=\toks58
+\pdfxsafeforxmp@toks=\toks58
+\pdfx@tmptoks=\toks59
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2023-11-26 v7.01g Hypertext links for LaTeX
 
-(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+keys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
+ty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+) (C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro
+.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen350
-\Hy@linkcounter=\count479
-\Hy@pagecounter=\count480
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
-File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel la
-nguages
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
+lestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+\c@section@level=\count482
+)
+\@linkdim=\dimen353
+\Hy@linkcounter=\count483
+\Hy@pagecounter=\count484
+
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2023-11-26 v7.01g Hyperref: PDFDocEncoding definition (HO)
+)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
-Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-)
-\Hy@SavedSpaceFactor=\count481
+\Hy@SavedSpaceFactor=\count485
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2023-11-26 v7.01g Hyperref: PDF Unicode definition (HO)
 )
-Package hyperref Info: Option `pdfa' set `true' on input line 4073.
-Package hyperref Info: Hyper figures OFF on input line 4192.
-Package hyperref Info: Link nesting OFF on input line 4197.
-Package hyperref Info: Hyper index ON on input line 4200.
-Package hyperref Info: Plain pages OFF on input line 4207.
-Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Option `pdfa' set `true' on input line 4064.
+Package hyperref Info: Hyper figures OFF on input line 4181.
+Package hyperref Info: Link nesting OFF on input line 4186.
+Package hyperref Info: Hyper index ON on input line 4189.
+Package hyperref Info: Plain pages OFF on input line 4196.
+Package hyperref Info: Backreferencing OFF on input line 4201.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count482
-LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen351
+Package hyperref Info: Bookmarks ON on input line 4448.
+\c@Hy@tempcnt=\count486
+LaTeX Info: Redefining \url on input line 4786.
+\XeTeXLinkMargin=\dimen354
 
-(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
+.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count483
-\Field@Width=\dimen352
-\Fld@charsize=\dimen353
-Package hyperref Info: Hyper figures OFF on input line 6076.
-Package hyperref Info: Link nesting OFF on input line 6081.
-Package hyperref Info: Hyper index ON on input line 6084.
-Package hyperref Info: backreferencing OFF on input line 6091.
-Package hyperref Info: Link coloring OFF on input line 6096.
-Package hyperref Info: Link coloring with OCG OFF on input line 6101.
-Package hyperref Info: PDF/A mode ON on input line 6104.
-LaTeX Info: Redefining \ref on input line 6146.
-LaTeX Info: Redefining \pageref on input line 6150.
+\Fld@menulength=\count487
+\Field@Width=\dimen355
+\Fld@charsize=\dimen356
+Package hyperref Info: Hyper figures OFF on input line 6065.
+Package hyperref Info: Link nesting OFF on input line 6070.
+Package hyperref Info: Hyper index ON on input line 6073.
+Package hyperref Info: backreferencing OFF on input line 6080.
+Package hyperref Info: Link coloring OFF on input line 6085.
+Package hyperref Info: Link coloring with OCG OFF on input line 6090.
+Package hyperref Info: PDF/A mode ON on input line 6093.
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count484
-\c@Item=\count485
-\c@Hfootnote=\count486
+\Hy@abspage=\count488
+\c@Item=\count489
+\c@Hfootnote=\count490
 )
 Package hyperref Info: Driver: hpdftex.
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2023-11-26 v7.01g Hyperref driver for pdfTeX
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count487
-\c@bookmark@seq@number=\count488
+\Fld@listcount=\count491
+\c@bookmark@seq@number=\count492
 
-(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
+echeck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
+ounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-86.
+85.
 )
-\Hy@SectionHShift=\skip132
+\Hy@SectionHShift=\skip133
 )
 Package hyperref Info: Option `unicode' set `true' on input line 1463.
 
-(/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.s
+ty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
 Package hyperref Info: Option `psdextra' set `true' on input line 1465.
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc-greekbasic.def
-File: puenc-greekbasic.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (
-greek block) (HO)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\psdextra.def
+File: psdextra.def 2023-11-26 v7.01g Hyperref: Additions to PDF string support
 )
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/psdextra.def
-File: psdextra.def 2021-06-07 v7.00m Hyperref: Additions to PDF string support
-)
-(/usr/share/texlive/texmf-dist/tex/generic/colorprofiles/colorprofiles.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/colorprofiles\colorpr
+ofiles.sty
 Package: colorprofiles 2018/11/01 v1.0.1 color profiles for PDF/X and PDF/A sup
 port
 
-(/usr/share/texlive/texmf-dist/tex/generic/colorprofiles/colorprofiles.tex))
-(/usr/share/texlive/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/colorprofiles\colorpr
+ofiles.tex))
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\se-pdfdoc.d
+ef
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
-(/usr/share/texlive/texmf-dist/tex/latex/pdfx/AdobeColorProfiles.tex)
-(/usr/share/texlive/texmf-dist/tex/latex/pdfx/8bit.def
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/pdfx\AdobeColorProfiles
+.tex) (C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/pdfx\8bit.def
 File: 8bit.def 2008/03/30 v1.1d Input encoding file
 )
 ** pdfx: No file main.xmpdata . Metadata will be incomplete!
-<<sRGB.icc>> (/usr/share/texlive/texmf-dist/tex/latex/pdfx/8bit.def
+<<sRGB.icc>>
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/pdfx\8bit.def
 File: 8bit.def 2008/03/30 v1.1d Input encoding file
 )
 Package hyperref Info: Option `unicode' set `true' on input line 2411.
 Package hyperref Info: Option `unicode' set `true' on input line 2412.
 
-(/usr/share/texlive/texmf-dist/tex/generic/pdftex/glyphtounicode.tex)
-(/usr/share/texlive/texmf-dist/tex/latex/pdfx/glyphtounicode-cmr.tex)
-(/usr/share/texlive/texmf-dist/tex/latex/pdfx/glyphtounicode-ntx.tex)
-(/usr/share/texlive/texmf-dist/tex/latex/xmpincl/xmpincl.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/generic/pdftex\glyphtounicode
+.tex)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/pdfx\glyphtounicode-cmr
+.tex)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/pdfx\glyphtounicode-ntx
+.tex)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/xmpincl\xmpincl.sty
 Package: xmpincl 2021/09/22 v2.4 Include XMP data in pdflatex
 )
-(/usr/share/texlive/texmf-dist/tex/latex/pdfx/8bit.def
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/pdfx\8bit.def
 File: 8bit.def 2008/03/30 v1.1d Input encoding file
 )
 Using XMP template file: pdfa.xmp
@@ -1265,38 +1329,41 @@ Using XMP template file: pdfa.xmp
 \xmpinclRead=\read7
 \openout7 = `pdfa.xmpi'.
 
-<<pdfa.xmpi>>) (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+<<pdfa.xmpi>>)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
-\c@teo=\count489
+\c@teo=\count493
 
-(./macros.tex (/usr/share/texlive/texmf-dist/tex/latex/xhfill/xhfill.sty
-(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count490
-\calc@Bcount=\count491
-\calc@Adimen=\dimen354
-\calc@Bdimen=\dimen355
-\calc@Askip=\skip133
-\calc@Bskip=\skip134
+(macros.tex
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/xhfill\xhfill.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count494
+\calc@Bcount=\count495
+\calc@Adimen=\dimen357
+\calc@Bdimen=\dimen358
+\calc@Askip=\skip134
+\calc@Bskip=\skip135
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count492
-\calc@Cskip=\skip135
+\calc@Ccount=\count496
+\calc@Cskip=\skip136
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
 Package: xhfill 2011/05/14\ v 1.01\ modify width and color of hrulefill
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'italian'.
- (./main.aux)
+
+(main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 184.
@@ -1317,7 +1384,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 184.
 LaTeX Font Info:    ... okay on input line 184.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 184.
 LaTeX Font Info:    ... okay on input line 184.
-\c@lstlisting=\count493
+\c@lstlisting=\count497
 LaTeX Info: Redefining \it@ocap on input line 184.
 LaTeX Info: Redefining \it@ccap on input line 184.
 
@@ -1326,7 +1393,7 @@ File italian.ldf warning:
 italian.ldf    With OT1 encoding guillemets are poorly faked
 italian.ldf    Use T1 encoding
 italian.ldf    or specify a font with command \CaporaliFrom
-italian.ldf    See the documentation concerning the babel-italian typesetting 
+italian.ldf    See the documentation concerning the babel-italian typesetting
 italian.ldf    on input line 184.
 
 *geometry* driver: auto-detecting
@@ -1363,46 +1430,50 @@ italian.ldf    on input line 184.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count494
-\scratchdimen=\dimen356
-\scratchbox=\box78
-\nofMPsegments=\count495
-\nofMParguments=\count496
-\everyMPshowfont=\toks59
-\MPscratchCnt=\count497
-\MPscratchDim=\dimen357
-\MPnumerator=\count498
-\makeMPintoPDFobject=\count499
-\everyMPtoPDFconversion=\toks60
-) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+\scratchcounter=\count498
+\scratchdimen=\dimen359
+\scratchbox=\box79
+\nofMPsegments=\count499
+\nofMParguments=\count500
+\everyMPshowfont=\toks60
+\MPscratchCnt=\count501
+\MPscratchDim=\dimen360
+\MPnumerator=\count502
+\makeMPintoPDFobject=\count503
+\everyMPtoPDFconversion=\toks61
+)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 LaTeX Font Info:    Trying to load font information for U+msa on input line 184
 .
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 184
 .
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Package xypdf Info: Line width: 0.47998pt on input line 184.
 Package biblatex Info: Trying to load language 'italian'...
 Package biblatex Info: ... file 'italian.lbx' found.
 
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/italian.lbx
-File: italian.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\italian.lb
+x
+File: italian.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
 )
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
@@ -1411,7 +1482,7 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (./main.bbl)
+ (main.bbl)
 Package biblatex Info: Reference section=0 on input line 184.
 Package biblatex Info: Reference segment=0 on input line 184.
 Package caption Info: Begin \AtBeginDocument code.
@@ -1419,26 +1490,11 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring OFF on input line 184.
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
-
-(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
-Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
-)
-\c@section@level=\count500
-)
-LaTeX Info: Redefining \ref on input line 184.
-LaTeX Info: Redefining \pageref on input line 184.
-LaTeX Info: Redefining \nameref on input line 184.
-
-(./main.out) (./main.out)
+ (main.out) (main.out)
 \@outlinefile=\write8
 \openout8 = `main.out'.
 
- (./Settings/Senza righe.tex
+ (Settings/Senza righe.tex
 <images/dmtesi.png, id=337, 286.4301pt x 61.4295pt>
 File: images/dmtesi.png Graphic file (type png)
 <use images/dmtesi.png>
@@ -1454,7 +1510,7 @@ Overfull \hbox (2.71352pt too wide) in paragraph at lines 33--38
 [][]  
  []
 
-) (./Capitoli/Ringraziamenti.tex [1
+) (Capitoli/Ringraziamenti.tex [1
 
 
  <./images/dmtesi.png>] [2
@@ -1467,17 +1523,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
 [3]) [4
 
 
-] (./main.toc [5])
+] (main.toc [5])
 \tf@toc=\write9
 \openout9 = `main.toc'.
 
- [6] (./main.lol [7
+ [6] (main.lol [7
 
 ])
 \tf@lol=\write10
 \openout10 = `main.lol'.
 
- [8] (./main.lof
+ [8] (main.lof
 Overfull \hbox (8.32092pt too wide) in paragraph at lines 18--18
  [][] [][]\OT1/cmr/m/n/12 Grafico di fun-zio-ni con di-stri-bu-zio-ne $\OML/cmm
 /m/it/12 f \OMS/cmsy/m/n/12 ^^X []\OT1/cmr/m/n/12 (\OT1/cmr/bx/n/12 0\OML/cmm/m
@@ -1608,7 +1664,7 @@ Underfull \vbox (badness 5331) has occurred while \output is active []
 \tf@lof=\write11
 \openout11 = `main.lof'.
 
- [14] (./main.lot)
+ [14] (main.lot)
 \tf@lot=\write12
 \openout12 = `main.lot'.
 
@@ -1616,7 +1672,7 @@ Underfull \vbox (badness 5331) has occurred while \output is active []
 
 ] [16
 
-] (./Capitoli/introduzione.tex
+] (Capitoli/introduzione.tex
 Capitolo I.
 [1
 
@@ -1640,7 +1696,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
  []
 
-) (./Capitoli/Distribuzione gaussiana.tex [6]
+) (Capitoli/Distribuzione gaussiana.tex [6]
 Capitolo II.
 [7
 
@@ -1762,8 +1818,8 @@ g)
 Package pdftex.def Info: images/Gaussiane/CorrelazioneMultidimensionale3.png  u
 sed on input line 270.
 (pdftex.def)             Requested size: 278.83578pt x 243.10283pt.
-) (./Capitoli/Gaussian process.tex [16 <./images/Gaussiane/CorrelazioneUnidimen
-sionale.png> <./images/Gaussiane/CorrelazioneMultidimensionale3.png>]
+) (Capitoli/Gaussian process.tex [16 <./images/Gaussiane/CorrelazioneUnidimensi
+onale.png> <./images/Gaussiane/CorrelazioneMultidimensionale3.png>]
 Capitolo III.
 [17
 
@@ -1812,7 +1868,7 @@ df)
 Package pdftex.def Info: images/Gaussian process/esempioProcessoGaussiano.pdf  
 used on input line 227.
 (pdftex.def)             Requested size: 338.59023pt x 225.73732pt.
- [23 <./images/Gaussian process/EsempioProcessoGaussiano.pdf>]
+ [23 <./images/Gaussian process/esempioProcessoGaussiano.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 245--246
 
  []
@@ -1824,7 +1880,7 @@ File: images/Gaussian process/Linear Kernel.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/Gaussian process/Linear Kernel.pdf  used on inp
 ut line 295.
 (pdftex.def)             Requested size: 239.00558pt x 239.0056pt.
- [25 <./images/Gaussian process/Linear kernel.pdf>]
+ [25 <./images/Gaussian process/Linear Kernel.pdf>]
 <images/Gaussian process/Linear sample.pdf, id=1366, 433.62pt x 289.08pt>
 File: images/Gaussian process/Linear sample.pdf Graphic file (type pdf)
 <use images/Gaussian process/Linear sample.pdf>
@@ -1859,18 +1915,16 @@ n input line 368.
  [27 <./images/Gaussian process/Linear - c=-3.pdf> <./images/Gaussian process/L
 inear - c=0.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Gaussian process/Linear - c=0.
-pdf): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./images/Gaussian process/Linear - c=0.pdf): PDF
+ inclusion: multiple pdfs with page group included in a single page
 > <./images/Gaussian process/Linear - sigmab=0.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Gaussian process/Linear - sigm
-ab=0.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
-ge
+pdfTeX warning: pdflatex (file ./images/Gaussian process/Linear - sigmab=0.pdf)
+: PDF inclusion: multiple pdfs with page group included in a single page
 > <./images/Gaussian process/Linear - sigmab=05.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Gaussian process/Linear - sigm
-ab=05.pdf): PDF inclusion: multiple pdfs with page group included in a single p
-age
+pdfTeX warning: pdflatex (file ./images/Gaussian process/Linear - sigmab=05.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 <images/Gaussian process/Linear - sigmav=1.pdf, id=1595, 433.62pt x 289.08pt>
 File: images/Gaussian process/Linear - sigmav=1.pdf Graphic file (type pdf)
@@ -1893,14 +1947,12 @@ n input line 410.
  [28 <./images/Gaussian process/Linear - sigmav=1.pdf> <./images/Gaussian proce
 ss/Linear - sigmav=10.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Gaussian process/Linear - sigm
-av=10.pdf): PDF inclusion: multiple pdfs with page group included in a single p
-age
+pdfTeX warning: pdflatex (file ./images/Gaussian process/Linear - sigmav=10.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
 > <./images/Gaussian process/Linear - cubedmean.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Gaussian process/Linear - cube
-dmean.pdf): PDF inclusion: multiple pdfs with page group included in a single p
-age
+pdfTeX warning: pdflatex (file ./images/Gaussian process/Linear - cubedmean.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 <images/Gaussian process/Squared-exponential kernel.pdf, id=1727, 289.08pt x 28
 9.08pt>
@@ -1956,16 +2008,16 @@ line 517.
  [31 <./images/Gaussian process/RBF - sigma=01.pdf> <./images/Gaussian process/
 RBF - sigma=10.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Gaussian process/RBF - sigma=1
-0.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./images/Gaussian process/RBF - sigma=10.pdf): P
+DF inclusion: multiple pdfs with page group included in a single page
 > <./images/Gaussian process/RBF - l=03.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Gaussian process/RBF - l=03.pd
-f): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./images/Gaussian process/RBF - l=03.pdf): PDF i
+nclusion: multiple pdfs with page group included in a single page
 > <./images/Gaussian process/RBF - l=10.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Gaussian process/RBF - l=10.pd
-f): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./images/Gaussian process/RBF - l=10.pdf): PDF i
+nclusion: multiple pdfs with page group included in a single page
 >]
 <images/Gaussian process/RBF - cubedmean.pdf, id=1948, 433.62pt x 289.08pt>
 File: images/Gaussian process/RBF - cubedmean.pdf Graphic file (type pdf)
@@ -2010,14 +2062,12 @@ on input line 609.
 [34 <./images/Gaussian process/Periodic sample.pdf> <./images/Gaussian process/
 Periodic - sigma=01.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Gaussian process/Periodic - si
-gma=01.pdf): PDF inclusion: multiple pdfs with page group included in a single 
-page
+pdfTeX warning: pdflatex (file ./images/Gaussian process/Periodic - sigma=01.pd
+f): PDF inclusion: multiple pdfs with page group included in a single page
 > <./images/Gaussian process/Periodic - sigma=10.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Gaussian process/Periodic - si
-gma=10.pdf): PDF inclusion: multiple pdfs with page group included in a single 
-page
+pdfTeX warning: pdflatex (file ./images/Gaussian process/Periodic - sigma=10.pd
+f): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 <images/Gaussian process/Periodic - p=08.pdf, id=2139, 433.62pt x 289.08pt>
 File: images/Gaussian process/Periodic - p=08.pdf Graphic file (type pdf)
@@ -2046,18 +2096,16 @@ put line 658.
  [35 <./images/Gaussian process/Periodic - p=08.pdf> <./images/Gaussian process
 /Periodic - p=10.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Gaussian process/Periodic - p=
-10.pdf): PDF inclusion: multiple pdfs with page group included in a single page
-
+pdfTeX warning: pdflatex (file ./images/Gaussian process/Periodic - p=10.pdf): 
+PDF inclusion: multiple pdfs with page group included in a single page
 > <./images/Gaussian process/Periodic - l=0.8.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Gaussian process/Periodic - l=
-0.8.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
-e
+pdfTeX warning: pdflatex (file ./images/Gaussian process/Periodic - l=0.8.pdf):
+ PDF inclusion: multiple pdfs with page group included in a single page
 > <./images/Gaussian process/Periodic - l=4.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Gaussian process/Periodic - l=
-4.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./images/Gaussian process/Periodic - l=4.pdf): P
+DF inclusion: multiple pdfs with page group included in a single page
 >]
 <images/Gaussian process/Periodic - cubedmean.pdf, id=2284, 433.62pt x 289.08pt
 >
@@ -2094,9 +2142,8 @@ d on input line 758.
  [39 <./images/Gaussian process/RBF + periodic kernel.pdf> <./images/Gaussian p
 rocess/RBF + periodic sample.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Gaussian process/RBF + periodi
-c sample.pdf): PDF inclusion: multiple pdfs with page group included in a singl
-e page
+pdfTeX warning: pdflatex (file ./images/Gaussian process/RBF + periodic sample.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 <images/Gaussian process/Linear x Linear kernel.pdf, id=2420, 289.08pt x 289.08
 pt>
@@ -2117,9 +2164,8 @@ ed on input line 785.
  [40 <./images/Gaussian process/Linear x Linear kernel.pdf> <./images/Gaussian 
 process/linear x linear sample.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Gaussian process/linear x line
-ar sample.pdf): PDF inclusion: multiple pdfs with page group included in a sing
-le page
+pdfTeX warning: pdflatex (file ./images/Gaussian process/linear x linear sample
+.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 <images/Gaussian process/Co2_example.PNG, id=2502, 599.99156pt x 236.38312pt>
 File: images/Gaussian process/Co2_example.PNG Graphic file (type png)
@@ -2211,8 +2257,8 @@ Package pdftex.def Info: images/Gaussian process/Noise - mean&samples.pdf  used
  on input line 1050.
 (pdftex.def)             Requested size: 398.3386pt x 199.16766pt.
 )
-(./Capitoli/Machine Learning.tex [49 <./images/Gaussian process/Noise - mean&sa
-mples.pdf>] [50
+(Capitoli/Machine Learning.tex [49 <./images/Gaussian process/Noise - mean&samp
+les.pdf>] [50
 
 ]
 Capitolo IV.
@@ -2223,7 +2269,7 @@ er-vi-sio-na-to)\OT1/cmr/bx/n/12 . []\OT1/cmr/m/n/12 L'\OT1/cmr/bx/n/12 apprend
 imento su-
  []
 
-(./Capitoli/Dataset.tex [52]
+(Capitoli/Dataset.tex [52]
 <images/Machine learning/Overfitted_Data.png, id=2856, 378.41376pt x 256.96pt>
 File: images/Machine learning/Overfitted_Data.png Graphic file (type png)
 <use images/Machine learning/Overfitted_Data.png>
@@ -2349,7 +2395,7 @@ File: images/Machine learning/Comparison.PNG Graphic file (type png)
 Package pdftex.def Info: images/Machine learning/Comparison.PNG  used on input 
 line 327.
 (pdftex.def)             Requested size: 298.75394pt x 284.90443pt.
-) (./Capitoli/Windkessel.tex [68 <./images/Machine learning/Comparison.PNG>]
+) (Capitoli/Windkessel.tex [68 <./images/Machine learning/Comparison.PNG>]
 Capitolo V.
 
 Overfull \hbox (7.23776pt too wide) in paragraph at lines 2--8
@@ -2406,7 +2452,7 @@ Package pdftex.def Info: images/Windkessel/diastole.png  used on input line 100
 .
 (pdftex.def)             Requested size: 99.58464pt x 128.49792pt.
 [73 <./images/Windkessel/sistole.png> <./images/Windkessel/diastole.png>]
-(./Tabelle/Tabella ciclo cardiaco.tex [74])
+(Tabelle/Tabella ciclo cardiaco.tex [74])
 <images/Windkessel/Wiggers_Diagram_IT.svg.png, id=3138, 803.0pt x 641.39626pt>
 File: images/Windkessel/Wiggers_Diagram_IT.svg.png Graphic file (type png)
 <use images/Windkessel/Wiggers_Diagram_IT.svg.png>
@@ -2431,8 +2477,7 @@ File: images/Windkessel/WindkesselEffect(libro).PNG Graphic file (type png)
 Package pdftex.def Info: images/Windkessel/WindkesselEffect(libro).PNG  used on
  input line 186.
 (pdftex.def)             Requested size: 278.83578pt x 254.72917pt.
-
-[78 <./images/Windkessel/WindkesselEffect(libro).PNG>]
+ [78 <./images/Windkessel/WindkesselEffect(libro).PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 231--232
 
  []
@@ -2471,8 +2516,8 @@ Underfull \vbox (badness 1931) has occurred while \output is active []
 
  [82 <./images/Windkessel/f_C.pdf> <./images/Windkessel/modelloCstimata.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Windkessel/modelloCstimata.pdf
-): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex (file ./images/Windkessel/modelloCstimata.pdf): PDF in
+clusion: multiple pdfs with page group included in a single page
 >]
 <images/Windkessel/modelloCalphastimata.pdf, id=3313, 433.62pt x 289.08pt>
 File: images/Windkessel/modelloCalphastimata.pdf Graphic file (type pdf)
@@ -2497,12 +2542,12 @@ Package pdftex.def Info: images/Windkessel/modelloPeriodicoCalphastimata.pdf  u
 sed on input line 360.
 (pdftex.def)             Requested size: 298.75394pt x 199.1787pt.
  [85 <./images/Windkessel/modelloPeriodicoCalphastimata.pdf>]
-(./Tabelle/tabella tempi windkessel.tex) [86] (./Tabelle/Tabella variabili.tex
+(Tabelle/tabella tempi windkessel.tex) [86] (Tabelle/Tabella variabili.tex
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 1
 4.
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
-File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/base\omlcmr.fd
+File: omlcmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 14.
@@ -2511,8 +2556,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 404--406
 
  []
 
-(./Tabelle/tabella sensitività locale.tex) [87]
-(./Tabelle/tabella variazione dei parametri e variabili.tex
+(Tabelle/tabella sensitività locale.tex) [87]
+(Tabelle/tabella variazione dei parametri e variabili.tex
 Overfull \hbox (21.1106pt too wide) in paragraph at lines 7--75
  [][] 
  []
@@ -2522,7 +2567,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 422--428
 
  []
 
-) (./Capitoli/Risultati training.tex [89
+) (Capitoli/Risultati training.tex [89
 
 
 ] [90
@@ -2605,15 +2650,14 @@ Package pdftex.def Info: images/Training (risultati)/MAP/MAP - C - dx.pdf  used
 ining (risultati)/MAP/MAP - C - full.pdf> <./images/Training (risultati)/MAP/MA
 P - C - training.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Training (risultati)/MAP/MAP -
- C - training.pdf): PDF inclusion: multiple pdfs with page group included in a 
-single page
+pdfTeX warning: pdflatex (file ./images/Training (risultati)/MAP/MAP - C - trai
+ning.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
+ge
 >] [98 <./images/Training (risultati)/MAP/MAP - C - sx.pdf> <./images/Training 
 (risultati)/MAP/MAP - C - dx.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Training (risultati)/MAP/MAP -
- C - dx.pdf): PDF inclusion: multiple pdfs with page group included in a single
- page
+pdfTeX warning: pdflatex (file ./images/Training (risultati)/MAP/MAP - C - dx.p
+df): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 <images/Training (risultati)/MAP/MAP - R1 - full.pdf, id=3735, 1228.59pt x 614.
 295pt>
@@ -2650,15 +2694,14 @@ d on input line 174.
  [99 <./images/Training (risultati)/MAP/MAP - R1 - full.pdf> <./images/Training
  (risultati)/MAP/MAP - R1 - training.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Training (risultati)/MAP/MAP -
- R1 - training.pdf): PDF inclusion: multiple pdfs with page group included in a
- single page
+pdfTeX warning: pdflatex (file ./images/Training (risultati)/MAP/MAP - R1 - tra
+ining.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
 >] [100 <./images/Training (risultati)/MAP/MAP - R1 - sx.pdf> <./images/Trainin
 g (risultati)/MAP/MAP - R1 - dx.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Training (risultati)/MAP/MAP -
- R1 - dx.pdf): PDF inclusion: multiple pdfs with page group included in a singl
-e page
+pdfTeX warning: pdflatex (file ./images/Training (risultati)/MAP/MAP - R1 - dx.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 <images/Training (risultati)/MAP/MAP - R2 - full.pdf, id=3979, 1228.59pt x 614.
 295pt>
@@ -2695,15 +2738,14 @@ d on input line 215.
  [101 <./images/Training (risultati)/MAP/MAP - R2 - full.pdf> <./images/Trainin
 g (risultati)/MAP/MAP - R2 - training.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Training (risultati)/MAP/MAP -
- R2 - training.pdf): PDF inclusion: multiple pdfs with page group included in a
- single page
+pdfTeX warning: pdflatex (file ./images/Training (risultati)/MAP/MAP - R2 - tra
+ining.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
 >] [102 <./images/Training (risultati)/MAP/MAP - R2 - sx.pdf> <./images/Trainin
 g (risultati)/MAP/MAP - R2 - dx.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Training (risultati)/MAP/MAP -
- R2 - dx.pdf): PDF inclusion: multiple pdfs with page group included in a singl
-e page
+pdfTeX warning: pdflatex (file ./images/Training (risultati)/MAP/MAP - R2 - dx.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 <images/Training (risultati)/DBP/DBP - loss.png, id=4223, 837.1275pt x 319.1925
 pt>
@@ -2755,15 +2797,14 @@ Package pdftex.def Info: images/Training (risultati)/DBP/DBP - C - dx.pdf  used
  [104 <./images/Training (risultati)/DBP/DBP - C - full.pdf> <./images/Training
  (risultati)/DBP/DBP - C - training.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Training (risultati)/DBP/DBP -
- C - training.pdf): PDF inclusion: multiple pdfs with page group included in a 
-single page
+pdfTeX warning: pdflatex (file ./images/Training (risultati)/DBP/DBP - C - trai
+ning.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
+ge
 >] [105 <./images/Training (risultati)/DBP/DBP - C - sx.pdf> <./images/Training
  (risultati)/DBP/DBP - C - dx.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Training (risultati)/DBP/DBP -
- C - dx.pdf): PDF inclusion: multiple pdfs with page group included in a single
- page
+pdfTeX warning: pdflatex (file ./images/Training (risultati)/DBP/DBP - C - dx.p
+df): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 <images/Training (risultati)/DBP/DBP - R1 - full.pdf, id=4465, 1228.59pt x 614.
 295pt>
@@ -2800,15 +2841,14 @@ d on input line 343.
  [106 <./images/Training (risultati)/DBP/DBP - R1 - full.pdf> <./images/Trainin
 g (risultati)/DBP/DBP - R1 - training.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Training (risultati)/DBP/DBP -
- R1 - training.pdf): PDF inclusion: multiple pdfs with page group included in a
- single page
+pdfTeX warning: pdflatex (file ./images/Training (risultati)/DBP/DBP - R1 - tra
+ining.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
 >] [107 <./images/Training (risultati)/DBP/DBP - R1 - sx.pdf> <./images/Trainin
 g (risultati)/DBP/DBP - R1 - dx.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Training (risultati)/DBP/DBP -
- R1 - dx.pdf): PDF inclusion: multiple pdfs with page group included in a singl
-e page
+pdfTeX warning: pdflatex (file ./images/Training (risultati)/DBP/DBP - R1 - dx.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 <images/Training (risultati)/DBP/DBP - R2 - full.pdf, id=4712, 1228.59pt x 614.
 295pt>
@@ -2845,15 +2885,14 @@ d on input line 385.
  [108 <./images/Training (risultati)/DBP/DBP - R2 - full.pdf> <./images/Trainin
 g (risultati)/DBP/DBP - R2 - training.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Training (risultati)/DBP/DBP -
- R2 - training.pdf): PDF inclusion: multiple pdfs with page group included in a
- single page
+pdfTeX warning: pdflatex (file ./images/Training (risultati)/DBP/DBP - R2 - tra
+ining.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
 >] [109 <./images/Training (risultati)/DBP/DBP - R2 - sx.pdf> <./images/Trainin
 g (risultati)/DBP/DBP - R2 - dx.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Training (risultati)/DBP/DBP -
- R2 - dx.pdf): PDF inclusion: multiple pdfs with page group included in a singl
-e page
+pdfTeX warning: pdflatex (file ./images/Training (risultati)/DBP/DBP - R2 - dx.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 <images/Training (risultati)/PP/PP - loss.png, id=4957, 839.135pt x 322.20375pt
 >
@@ -2904,15 +2943,14 @@ n input line 468.
  [111 <./images/Training (risultati)/PP/PP - C - full.pdf> <./images/Training (
 risultati)/PP/PP - C - training.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Training (risultati)/PP/PP - C
- - training.pdf): PDF inclusion: multiple pdfs with page group included in a si
-ngle page
+pdfTeX warning: pdflatex (file ./images/Training (risultati)/PP/PP - C - traini
+ng.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+
 >] [112 <./images/Training (risultati)/PP/PP - C - sx.pdf> <./images/Training (
 risultati)/PP/PP - C - dx.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Training (risultati)/PP/PP - C
- - dx.pdf): PDF inclusion: multiple pdfs with page group included in a single p
-age
+pdfTeX warning: pdflatex (file ./images/Training (risultati)/PP/PP - C - dx.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 <images/Training (risultati)/PP/PP - R1 - full.pdf, id=5172, 1228.59pt x 614.29
 5pt>
@@ -2947,15 +2985,14 @@ on input line 512.
  [113 <./images/Training (risultati)/PP/PP - R1 - full.pdf> <./images/Training 
 (risultati)/PP/PP - R1 - training.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Training (risultati)/PP/PP - R
-1 - training.pdf): PDF inclusion: multiple pdfs with page group included in a s
-ingle page
+pdfTeX warning: pdflatex (file ./images/Training (risultati)/PP/PP - R1 - train
+ing.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
+e
 >] [114 <./images/Training (risultati)/PP/PP - R1 - sx.pdf> <./images/Training 
 (risultati)/PP/PP - R1 - dx.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Training (risultati)/PP/PP - R
-1 - dx.pdf): PDF inclusion: multiple pdfs with page group included in a single 
-page
+pdfTeX warning: pdflatex (file ./images/Training (risultati)/PP/PP - R1 - dx.pd
+f): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 <images/Training (risultati)/PP/PP - R2 - full.pdf, id=5411, 1228.59pt x 614.29
 5pt>
@@ -2990,15 +3027,14 @@ on input line 555.
  [115 <./images/Training (risultati)/PP/PP - R2 - full.pdf> <./images/Training 
 (risultati)/PP/PP - R2 - training.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Training (risultati)/PP/PP - R
-2 - training.pdf): PDF inclusion: multiple pdfs with page group included in a s
-ingle page
+pdfTeX warning: pdflatex (file ./images/Training (risultati)/PP/PP - R2 - train
+ing.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
+e
 >] [116 <./images/Training (risultati)/PP/PP - R2 - sx.pdf> <./images/Training 
 (risultati)/PP/PP - R2 - dx.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Training (risultati)/PP/PP - R
-2 - dx.pdf): PDF inclusion: multiple pdfs with page group included in a single 
-page
+pdfTeX warning: pdflatex (file ./images/Training (risultati)/PP/PP - R2 - dx.pd
+f): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 <images/Training (risultati)/SBP/SBP - loss.png, id=5646, 837.1275pt x 319.1925
 pt>
@@ -3050,15 +3086,14 @@ Package pdftex.def Info: images/Training (risultati)/SBP/SBP - C - dx.pdf  used
  [118 <./images/Training (risultati)/SBP/SBP - C - full.pdf> <./images/Training
  (risultati)/SBP/SBP - C - training.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Training (risultati)/SBP/SBP -
- C - training.pdf): PDF inclusion: multiple pdfs with page group included in a 
-single page
+pdfTeX warning: pdflatex (file ./images/Training (risultati)/SBP/SBP - C - trai
+ning.pdf): PDF inclusion: multiple pdfs with page group included in a single pa
+ge
 >] [119 <./images/Training (risultati)/SBP/SBP - C - sx.pdf> <./images/Training
  (risultati)/SBP/SBP - C - dx.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Training (risultati)/SBP/SBP -
- C - dx.pdf): PDF inclusion: multiple pdfs with page group included in a single
- page
+pdfTeX warning: pdflatex (file ./images/Training (risultati)/SBP/SBP - C - dx.p
+df): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 <images/Training (risultati)/SBP/SBP - R1 - full.pdf, id=5865, 1228.59pt x 614.
 295pt>
@@ -3095,15 +3130,14 @@ d on input line 682.
  [120 <./images/Training (risultati)/SBP/SBP - R1 - full.pdf> <./images/Trainin
 g (risultati)/SBP/SBP - R1 - training.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Training (risultati)/SBP/SBP -
- R1 - training.pdf): PDF inclusion: multiple pdfs with page group included in a
- single page
+pdfTeX warning: pdflatex (file ./images/Training (risultati)/SBP/SBP - R1 - tra
+ining.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
 >] [121 <./images/Training (risultati)/SBP/SBP - R1 - sx.pdf> <./images/Trainin
 g (risultati)/SBP/SBP - R1 - dx.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Training (risultati)/SBP/SBP -
- R1 - dx.pdf): PDF inclusion: multiple pdfs with page group included in a singl
-e page
+pdfTeX warning: pdflatex (file ./images/Training (risultati)/SBP/SBP - R1 - dx.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 <images/Training (risultati)/SBP/SBP - R2 - full.pdf, id=6110, 1228.59pt x 614.
 295pt>
@@ -3143,21 +3177,20 @@ Underfull \vbox (badness 6316) has occurred while \output is active []
  [122 <./images/Training (risultati)/SBP/SBP - R2 - full.pdf> <./images/Trainin
 g (risultati)/SBP/SBP - R2 - training.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Training (risultati)/SBP/SBP -
- R2 - training.pdf): PDF inclusion: multiple pdfs with page group included in a
- single page
+pdfTeX warning: pdflatex (file ./images/Training (risultati)/SBP/SBP - R2 - tra
+ining.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
 >] [123 <./images/Training (risultati)/SBP/SBP - R2 - sx.pdf> <./images/Trainin
 g (risultati)/SBP/SBP - R2 - dx.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./images/Training (risultati)/SBP/SBP -
- R2 - dx.pdf): PDF inclusion: multiple pdfs with page group included in a singl
-e page
->] (./Tabelle/Tabella tempi parametri.tex)
+pdfTeX warning: pdflatex (file ./images/Training (risultati)/SBP/SBP - R2 - dx.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] (Tabelle/Tabella tempi parametri.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 738--740
 
  []
 
-) (./Capitoli/Conclusioni.tex [124]
+) (Capitoli/Conclusioni.tex [124]
 Capitolo VII.
 [125
 
@@ -3239,10 +3272,12 @@ Overfull \hbox (14.47708pt too wide) in paragraph at lines 378--378
 l\OT1/cmr/m/n/12 : []$\OT1/cmtt/m/n/12 https : / / en . wikipedia .
  []
 
-[133] (./Capitoli/Appendice.tex [134] [135
+[133] (Capitoli/Appendice.tex [134] [135
 
 ]
-(./codes/Processi gaussiani/Import.txt
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 28.
+ (codes/Processi gaussiani/Import.txt
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 4.
 )
@@ -3251,53 +3286,56 @@ Underfull \hbox (badness 1107) in paragraph at lines 31--31
 i im-ma-gi-ni sul-la
  []
 
-(./codes/Processi gaussiani/Import2.txt)
-(./codes/Processi gaussiani/cubedMean.txt) [136]
-(./codes/Processi gaussiani/Example.txt) [137]
-(./codes/Processi gaussiani/Linear kernel.txt
+(codes/Processi gaussiani/Import2.txt) (codes/Processi gaussiani/cubedMean.txt)
+[136] (codes/Processi gaussiani/Example.txt) [137]
+(codes/Processi gaussiani/Linear kernel.txt
 LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
 21.
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
-File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+(C:\Users\stefa\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmtt.fd
+File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ))
-(./codes/Processi gaussiani/Linear sample.txt) [138]
-(./codes/Processi gaussiani/Linear - c.txt)
-(./codes/Processi gaussiani/Linear - sigmab.txt) [139]
-(./codes/Processi gaussiani/Linear - sigmav.txt)
-(./codes/Processi gaussiani/Linear - cubedmean.txt) [140]
-(./codes/Processi gaussiani/RBF kernel.txt)
-(./codes/Processi gaussiani/RBF sample.txt) [141]
-(./codes/Processi gaussiani/RBF - sigma.txt)
-(./codes/Processi gaussiani/RBF - l.txt) [142]
-(./codes/Processi gaussiani/RBF - cubedMean.txt) [143]
-(./codes/Processi gaussiani/Periodic kernel.txt)
-(./codes/Processi gaussiani/Periodic sample.txt) [144]
-(./codes/Processi gaussiani/Periodic sigma.txt)
-(./codes/Processi gaussiani/Periodic p.txt) [145]
-(./codes/Processi gaussiani/Periodic l.txt)
-(./codes/Processi gaussiani/Periodic - cubedmean.txt) [146]
-(./codes/Processi gaussiani/RBF + periodic kernel.txt)
-(./codes/Processi gaussiani/RBF + periodic sample.txt) [147]
-(./codes/Processi gaussiani/Linear x linear.txt)
-(./codes/Processi gaussiani/Linear x linear sample.txt) [148]
-(./codes/Processi gaussiani/Interpolazione.txt) [149]
-(./codes/Processi gaussiani/InterpolazioneConfidenceRegion.txt) [150]
-(./codes/Processi gaussiani/InterpolazioneConfidenceRegion.txt) [151]
-(./codes/Processi gaussiani/NoiseConfidenceRegion.txt) [152]
-(./codes/ODE/1 - Configurazione.tex) (./codes/ODE/2 - Dati reali.tex)
-(./codes/ODE/3 - Resistenza totale.tex) (./codes/ODE/4 - Definisco ODE.tex)
-[153] (./codes/ODE/5 - funzione flusso.tex) (./codes/ODE/7 - f_C.tex) [154]
-(./codes/ODE/modello semplice.tex) (./codes/ODE/8 - Plot f_C.tex)
-(./codes/ODE/9 - Stimo C.tex) [155]
-(./codes/ODE/10 - Risolvo IVP con C stimata.tex)
-(./codes/ODE/11 - f_C,alpha.tex) (./codes/ODE/13 - Stima C, alpha.tex [156])
-(./codes/ODE/14 - Risolvo IVP con C,alpha stimata.tex) [157]
-(./codes/ODE/15 - differenze finite centrate.tex)
-(./codes/ODE/16 - sensitività di C.tex) [158]
-(./codes/ODE/17 sensitività di R1.tex) (./codes/ODE/18 - sensitività R2.tex)
-[159] (./codes/ODE/19 - sensitività di Pd.tex)
-(./codes/ODE/flusso periodico.tex)) [160] (./main.aux)
+(codes/Processi gaussiani/Linear sample.txt) [138]
+(codes/Processi gaussiani/Linear - c.txt)
+(codes/Processi gaussiani/Linear - sigmab.txt) [139]
+(codes/Processi gaussiani/Linear - sigmav.txt)
+(codes/Processi gaussiani/Linear - cubedmean.txt) [140]
+(codes/Processi gaussiani/RBF kernel.txt)
+(codes/Processi gaussiani/RBF sample.txt) [141]
+(codes/Processi gaussiani/RBF - sigma.txt)
+(codes/Processi gaussiani/RBF - l.txt) [142]
+(codes/Processi gaussiani/RBF - cubedMean.txt) [143]
+(codes/Processi gaussiani/Periodic kernel.txt)
+(codes/Processi gaussiani/Periodic sample.txt) [144]
+(codes/Processi gaussiani/Periodic sigma.txt)
+(codes/Processi gaussiani/Periodic p.txt) [145]
+(codes/Processi gaussiani/Periodic l.txt)
+(codes/Processi gaussiani/Periodic - cubedmean.txt) [146]
+(codes/Processi gaussiani/RBF + periodic kernel.txt)
+(codes/Processi gaussiani/RBF + periodic sample.txt) [147]
+(codes/Processi gaussiani/Linear x linear.txt)
+(codes/Processi gaussiani/Linear x linear sample.txt) [148]
+(codes/Processi gaussiani/Interpolazione.txt) [149]
+(codes/Processi gaussiani/InterpolazioneConfidenceRegion.txt) [150]
+(codes/Processi gaussiani/InterpolazioneConfidenceRegion.txt) [151]
+(codes/Processi gaussiani/NoiseConfidenceRegion.txt) [152]
+(codes/ODE/1 - Configurazione.tex) (codes/ODE/2 - Dati reali.tex)
+(codes/ODE/3 - Resistenza totale.tex) (codes/ODE/4 - Definisco ODE.tex)
+[153] (codes/ODE/5 - funzione flusso.tex) (codes/ODE/7 - f_C.tex) [154]
+(codes/ODE/modello semplice.tex) (codes/ODE/8 - Plot f_C.tex)
+(codes/ODE/9 - Stimo C.tex) [155] (codes/ODE/10 - Risolvo IVP con C stimata.tex
+) (codes/ODE/11 - f_C,alpha.tex) (codes/ODE/13 - Stima C, alpha.tex [156])
+(codes/ODE/14 - Risolvo IVP con C,alpha stimata.tex) [157]
+(codes/ODE/15 - differenze finite centrate.tex)
+(codes/ODE/16 - sensitività di C.tex) [158]
+(codes/ODE/17 sensitività di R1.tex) (codes/ODE/18 - sensitività R2.tex)
+[159] (codes/ODE/19 - sensitività di Pd.tex) (codes/ODE/flusso periodico.tex))
+[160] (main.aux)
+ ***********
+LaTeX2e <2023-11-01>
+L3 programming layer <2023-12-08>
+ ***********
+
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 2.90001pt have occurred.
@@ -3309,41 +3347,46 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 43837 strings out of 480195
- 826141 string characters out of 5894661
- 1906645 words of memory out of 5000000
- 59136 multiletter control sequences out of 15000+600000
- 497963 words of font info for 141 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
- 77i,24n,80p,3215b,3130s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/stefano/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tctt1000.6
-00pk> </home/stefano/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm120
-0.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbs
-y8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
-2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
-bm10.pfb>
-Output written on main.pdf (176 pages, 4772166 bytes).
+ 44173 strings out of 474491
+ 855554 string characters out of 5743833
+ 2288473 words of memory out of 5000000
+ 63942 multiletter control sequences out of 15000+600000
+ 586773 words of font info for 149 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 81i,24n,93p,3217b,3250s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\stefa\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tctt
+1000.pk> <C:\Users\stefa\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\tcrm1200.pk><C:/Users/stefa/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cmextra/cmbsy8.pfb><C:/Users/stefa/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/stefa/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/stefa/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/stefa/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/stefa
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Us
+ers/stefa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmitt10.
+pfb><C:/Users/stefa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmmi10.pfb><C:/Users/stefa/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmmi12.pfb><C:/Users/stefa/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmmi6.pfb><C:/Users/stefa/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/stefa/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/stefa/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/stefa/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/stefa
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Use
+rs/stefa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb>
+<C:/Users/stefa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+r7.pfb><C:/Users/stefa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmr8.pfb><C:/Users/stefa/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb><C:/Users/stefa/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmsy6.pfb><C:/Users/stefa/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/stefa/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/stefa/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/stefa/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/ste
+fa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/
+Users/stefa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/m
+sbm10.pfb>
+Output written on main.pdf (176 pages, 4772535 bytes).
 PDF statistics:
  8198 PDF objects out of 8907 (max. 8388607)
  1651 named destinations out of 1728 (max. 500000)
