@@ -1,6 +1,6 @@
-\chapter{Distribuzione gaussiana}
-In questo capitolo vengono fornite le proprietà di base delle distribuzioni gaussiane, con particolare attenzione nei riguardi della \textbf{distribuzione gaussiana multivariata}. Come suggerisce il nome, i \textbf{processi gaussiani} si basano infatti su queste distribuzioni multivariate, sfruttando le proprietà che verranno mostrate nel corso del capitolo.\\
-Le fonti usate per la stesura del capitolo sono \cite{gut_intermediate_2009}, \cite{wilkinson_introduction_2020}, \cite{murphy_probabilistic_2022}.
+\chapter{Gaussian distribution}
+In this chapter, the basic properties of Gaussian distributions are given, with special attention in regard to the \textbf{multivariate Gaussian distribution}. As the name suggests, \textbf{Gaussian processes} are in fact based on these multivariate distributions, exploiting properties that will be shown throughout the chapter.\\
+The sources used in writing the chapter are \cite{gut_intermediate_2009}, \cite{wilkinson_introduction_2020}, \cite{murphy_probabilistic_2022}.
 
 
 \begin{textblock*}{0.64\textwidth}(3.5cm+0.36\textwidth,18.5cm)
@@ -14,11 +14,11 @@ Le fonti usate per la stesura del capitolo sono \cite{gut_intermediate_2009}, \c
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\section{Distribuzione gaussiana univariata}
-\begin{defi}[Distribuzione gaussiana univariata]
-La \textbf{distribuzione gaussiana univariata} è una distribuzione di probabilità continua. \\
-Data $Y\sim \mathcal{N}(\mu, \sigma^2)$, la sua funzione di densità di probabilità si esprime come:
-\[f_Y(y) = \frac{1}{\sqrt{2\pi \sigma^2}} \text{exp}\bigg\{-\frac{1}{2}\frac{(y-\mu)^2}{\sigma^2}\bigg\}.\]
+\section{Univariate Gaussian distribution}
+\begin{defi}[Univariate Gaussian distribution]
+    The \textbf{univariate Gaussian distribution} is a continuous probability distribution. \\
+    Given $Y\sim \mathcal{N}(\mu, \sigma^2)$, its probability density function is expressed as:
+    \[f_Y(y) = \frac{1}{\sqrt{2\pi \sigma^2}} \text{exp}\bigg\{-\frac{1}{2}\frac{(y-\mu)^2}{\sigma^2}\bigg\}.\]
 \end{defi}
 
 
@@ -30,34 +30,34 @@ Data $Y\sim \mathcal{N}(\mu, \sigma^2)$, la sua funzione di densità di probabil
 \begin{subfigure}{.5\textwidth}
   \centering
   \includegraphics[width=\linewidth]{images/Gaussiane/PDFNormalDistribution.png}
-  \caption{Densità di probabilità}
+  \caption{Probability density}
   \label{fig:sub1}
 \end{subfigure}%
 \begin{subfigure}{.5\textwidth}
   \centering
   \includegraphics[width=\linewidth]{images/Gaussiane/CDFNormalDistribution.png}
-  \caption{Funzione di ripartizione}
+  \caption{Distribution function}
   \label{fig:sub2}
 \end{subfigure}
-\caption{Funzione di ripartizione e densità di probabilità di una distribuzione normale standard \cite{wikiNormalDistribution}.}
+\caption{Distribution function and probability density of a standard normal distribution \cite{wikiNormalDistribution}.}
 \label{fig:gaussian}
 \end{figure}
 
 
 
 \begin{oss} \label{normal decomposition}
-Data $Z\sim \mathcal{N}(0,1)$ segue:  $Y=\mu + \sigma Z\sim \mathcal{N}(\mu,\sigma^2)$.
+Given $Z\sim \mathcal{N}(0,1)$ it follows:  $Y=\mu + \sigma Z\sim \mathcal{N}(\mu,\sigma^2)$.
 \end{oss}
 
 \begin{oss}
-Informalmente parlando, la distribuzione gaussiana è "conveniente" matematicamente per via delle sue proprietà:
+    Informally speaking, the Gaussian distribution is "convenient" mathematically because of its properties:
 \begin{itemize}
-    \item la distribuzione normale ha due parametri di facile interpretazione: la media e la varianza;
-    \item la distribuzione normale è chiusa per operazioni lineari;
-    \item la distribuzione normale è chiusa per marginalizzazione e condizionamento (si veda la proposizione \ref{marginale-condizionata});
-    \item a parità di media e varianza, la distribuzione normale ha massima entropia;
-    \item dal \textbf{teorema del limite centrale}, la distribuzione normale è il limite di una somma di variabili aleatorie; occorre cioè naturalmente;
-    \item la distribuzione normale ha una forma matematica semplice che ne facilita l'implementazione.
+    \item the normal distribution has two parameters that are easy to interpret: the mean and the variance;
+    \item the normal distribution is closed under linear operations;
+    \item the normal distribution is closed by marginalization and conditioning (see the proposition \ref{marginale-condizionata});
+    \item at equal mean and variance, the normal distribution has maximum entropy;
+    \item from \textbf{central limit theorem}, the normal distribution is the limit of a sum of random variables; 
+    \item the normal distribution has a simple mathematical form that facilitates its implementation.
 \end{itemize}
 \end{oss}
 
@@ -68,18 +68,18 @@ Informalmente parlando, la distribuzione gaussiana è "conveniente" matematicame
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% GAUSSIANA MULTIVARIATA
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Distribuzione gaussiana multivariata}
+\section{Multivariate Gaussian distribution}
 
 
-La distribuzione gaussiana multivariata è una generalizzazione della distribuzione normale (univariata).
+The multivariate Gaussian distribution is a generalization of the normal (univariate) distribution.
 
 
 
-\begin{defi}[Distribuzione gaussiana multivariata] Un vettore $n$-dimensionale $\mathbf{X}$ di variabili aleatorie è detto normale (\textbf{multivariato normale}) se e solo se $\forall \mathbf{a}\in \mathbb{R}^n$ la variabile aleatoria $\mathbf{a}^\text{T}\mathbf{X}$ è una distribuzione normale.  
-La densità\footnote{Nel caso generalizzato non è possibile definire la densità della distribuzione gaussiana multivariata. Come verrà mostrato in seguito, nei processi gaussiani la densità non è importante quanto la matrice di covarianza e il vettore media.} di una \textbf{distribuzione gaussiana multivariata} si esprime come
+\begin{defi}[Multivariate Gaussian distribution] An $n$-dimensional $\mathbf{X}$-vector of random variables is said to be normal (\textbf{multivariate normal}) if and only if $\forall \mathbf{a} in \mathbb{R}^n$ the random variable $\mathbf{a}^\text{T}\mathbf{X}$ is a normal distribution.  
+    The density\footnote{In the generalized case it is not possible to define the density of the multivariate Gaussian distribution. As will be shown later, in Gaussian processes the density is not as important as the covariance matrix and the mean vector.} of a \textbf{multivariate Gaussian distribution} is expressed as
 \[f_{\mathbf{X}}(\mathbf{x})=\frac{1}{(2\pi)^{\sfrac{n}{2}}  \text{det}(\bm{\Sigma})^{\sfrac{1}{2}}} \text{ exp}\left[-\frac{1}{2}(\bm{x}-\bm{\mu})^\text{T}\bm{\Sigma}^{-1}(\bm{x}-\bm{\mu})\right]
 \]\end{defi}
-dove $\bm{\mu}=\mathbb{E}[\bm{X}]\in \mathbb{R}^n$ è il \textit{vettore media}, $\bm{\Sigma}=\text{Cov}[\bm{X}]$ è una matrice $n\times n$ chiamata \textit{matrice di covarianza}, definita come segue:
+where $\bm{\mu}=\mathbb{E}[\bm{X}]\in \mathbb{R}^n$ is the  \textit{mean vector}, $\bm{\Sigma}=\text{Cov}[\bm{X}]$ is a $n\times n$ matrix called \textit{covariance matrix}, defined as:
 \[\begin{split}
 \text{Cov}[\bm{X}] &= \mathbb{E}\left[(\bm{X}-\mathbb{E}[\bm{X}])(\bm{X}-\mathbb{E}[\bm{X}])^\text{T} \right]\\
  & = \begin{pmatrix}
@@ -90,13 +90,13 @@ dove $\bm{\mu}=\mathbb{E}[\bm{X}]\in \mathbb{R}^n$ è il \textit{vettore media},
     \end{pmatrix}
 \end{split}
 \]
-dove:
+where:
 \[ \text{Cov}[X_i,X_j]=\mathbb{E}[(X_i-\mathbb{E}[X_i])(X_j-\mathbb{E}[X_j])] = \mathbb{E}[X_iX_j]-\mathbb{E}[X_i]\mathbb{E}[X_j]  \]
 \[ \mathbb{V}[X_i]=\text{Cov}[X_i, X_i]. \]
 
 
 \begin{oss}\label{ossGaussianaMultivariata}
-La matrice di covarianza è simmetrica e semidefinita positiva, cioè: $\forall \mathbf{a}\in \mathbb{R}^n$ si ha $\mathbf{a}^\text{T}\mathbf{\Sigma} \mathbf{a}\geq 0$.
+    The covariance matrix is symmetrical and semidefinite positive, i.e., $\forall \mathbf{a} \in \mathbb{R}^n$ one has $\mathbf{a}^\text{T} \mathbf{a}\geq 0$.
 \end{oss}
 
 
@@ -104,19 +104,19 @@ La matrice di covarianza è simmetrica e semidefinita positiva, cioè: $\forall 
 %%%%%% COROLLARIO DEFINIZIONE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{cor}
-Dato $\mathbf{X}$ un vettore multivariato normale, dalla definizione di distribuzione gaussiana multivariata seguono immediatamente:
+    Given $\mathbf{X}$ a multivariate normal vector, from the definition of multivariate Gaussian distribution follow immediately:
 \begin{enumerate}
-    \item ogni componente di $\mathbf{X}$ è una variabile aleatoria gaussiana;
-    \item $\sum_{i=1}^{n} a_iX_i$ è una variabile aleatoria gaussiana $\forall a_i\in \mathbb{R}$;
-    \item se le componenti di $\mathbf{X}$ sono variabili aleatorie gaussiane indipendenti, allora $\mathbf{X}$ è un vettore multivariato normale.
+    \item each component of $\mathbf{X}$ is a Gaussian random variable;
+    \item $\sum_{i=1}^{n} a_iX_i$ is a Gaussian random variable $\forall a_i\in \mathbb{R}$;
+    \item If the components of $\mathbf{X}$ are independent Gaussian random variables, then $\mathbf{X}$ is a multivariate normal vector.
 \end{enumerate}
 \end{cor}
 
 \begin{oss}
-Il terzo punto del corollario precedente non vale se le componenti non sono indipendenti. Per esempio: $X\sim \mathcal{N}(0,1)$, $Z\indep X$,  $\mathbb{P}(Z=1)=\mathbb{P}(Z=-1)=\sfrac{1}{2}$. Si vede facilmente che $Y=ZX$ non è indipendente da $X$ e $\begin{pmatrix}
+    The third point of the previous corollary does not hold if the components are not independent. For example: $X\sim \mathcal{N}(0,1)$, $Z\indep X$, $\mathbb{P}(Z=1)=\mathbb{P}(Z=-1)=\sfrac{1}{2}$. It is easily seen that $Y=ZX$ is not independent of $X$ and $\begin{pmatrix}
 X\\
 Y
-\end{pmatrix}$ non è multivariato normale .
+\end{pmatrix}$ is not multivariate normal.
 \end{oss}
 
 \newpage
@@ -125,18 +125,18 @@ Y
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% PROPOSIZIONE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Di fondamentale importanza è la prossima proposizione. La dimostrazione viene omessa in quanto consta di lunghi calcoli che non rientrano nei fini dell'elaborato. Per la dimostrazione si rimanda a \cite{murphy_probabilistic_2022}.
-\begin{prop}[Distribuzione marginale e condizionata] \label{marginale-condizionata}
-Sia $\bm{Y}=\begin{pmatrix}\bm{y}_1 \\ \bm{y}_2\end{pmatrix}$ vettore multivariato gaussiano dove:
+Of critical importance is the next proposition. The proof is omitted because it consists of lengthy calculations that are outside the scope of the paper. For the proof, please refer to \cite{murphy_probabilistic_2022}.
+\begin{prop}[Marginal and conditional distribution] \label{marginale-condizionata}
+Let $\bm{Y}=\begin{pmatrix}\bm{y}_1 \\ \bm{y}_2\end{pmatrix}$ Gaussian multivariate vector where:
 \[
 \bm{\mu}=\begin{pmatrix}\bm{\mu}_1\\ \bm{\mu}_2\end{pmatrix}\quad
  \bm{\Sigma}=\begin{pmatrix}\bm{\Sigma}_{11}&\bm{\Sigma}_{12}\\ \bm{\Sigma}_{21}&\bm{\Sigma}_{22}\end{pmatrix}\quad \bm{\Lambda}=\bm{\Sigma}^{-1}=\begin{pmatrix}\bm{\Lambda}_{11}&\bm{\Lambda}_{12}\\\bm{\Lambda}_{21}&\bm{\Lambda}_{22}\end{pmatrix}
 \]
-Allora le distribuzioni marginali sono:
+Then the marginal distributions are:
 \[
 \bm{y}_1\sim \mathcal{N}(\bm{\mu}_1, \bm{\Sigma}_{11}) \qquad \bm{y}_2\sim \mathcal{N}(\bm{\mu}_2, \bm{\Sigma}_{22})
 \]
-Mentre le distribuzioni condizionate sono:
+While conditional distributions are:
 \[
 \bm{y}_1 | \bm{y}_2 \sim \mathcal{N}(\bm{\mu}_{1|2}, \bm{\Sigma}_{1|2}) \qquad
 \def\arraystretch{1.4}
@@ -162,115 +162,117 @@ Mentre le distribuzioni condizionate sono:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% CORRELAZIONE VETTORI
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Correlazione per vettori multivariati} \label{sezioneCorrelazione}
+\section{Correlation for multivariate vectors} \label{sezioneCorrelazione}
 
 
-\begin{defi}[Indice di correlazione di Pearson]
-L'\textbf{indice di correlazione di Pearson} tra due variabili casuali è un indice che esprime una relazione di linearità tra esse. Esso si esprime come:
+\begin{defi}[Pearson's correlation index]
+The \textbf{Pearson's correlation index} between two random variables is an index expressing a linearity relationship between them. It is expressed as:
 \[ \rho_{XY}=\frac{\text{Cov}[X,Y]}{\sqrt{\mathbb{V}[X]\mathbb{V}[Y]}}.
 \]
 \end{defi}
-\begin{oss}[Significato di $\rho_{XY}$]
-Per la disuguaglianza di Cauchy-Schwarz vale: $-1\leq \rho_{XY}\leq 1$. Si hanno tre casi principali: $\rho_{XY}=1$ indica una perfetta relazione lineare positiva;  $\rho_{XY}=-1$ indica una perfetta relazione lineare negativa; $\rho_{XY}=0$ indica assenza di correlazione lineare. 
+\begin{oss}[Meaning of $\rho_{XY}$]
+    Because of the Cauchy-Schwarz inequality it holds: $-1\leq \rho_{XY}=1$. There are three main cases: $\rho_{XY}=1$ indicates a perfect positive linear relationship; $\rho_{XY}=-1$ indicates a perfect negative linear relationship; $\rho_{XY}=0$ indicates no linear correlation. 
 \end{oss}
 
-Il seguito del capitolo sarà focalizzato sull'analisi di vettori gaussiani bivariati e la correlazione delle loro componenti per poi generalizzare l'approccio visivo a più dimensioni.
+The remainder of the chapter will focus on the analysis of bivariate Gaussian vectors and the correlation of their components and then generalize the visual approach to multiple dimensions.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% CORRELAZIONE GAUSSIANI
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Si consideri un vettore gaussiano a due dimensioni: \[\mathbf{Y}=\begin{pmatrix}Y_1\\Y_2\end{pmatrix} \qquad\text{con} \qquad \bm{\mu} = \begin{pmatrix}0\\0\end{pmatrix} \quad \mathbf{\Sigma}=\begin{pmatrix}1&0\\0&1\end{pmatrix}.
+Consider a two-dimensional Gaussian vector: \[\mathbf{Y}=\begin{pmatrix}Y_1\\Y_2\end{pmatrix} \qquad\text{con} \qquad \bm{\mu} = \begin{pmatrix}0\\0\end{pmatrix} \quad \mathbf{\Sigma}=\begin{pmatrix}1&0\\0&1\end{pmatrix}.
 \]
-Generando punti dalla distribuzione di $\mathbf{Y}$ (quindi ogni punto consiste in un vettore bidimensionale) si ottiene quanto è mostrato in figura \ref{correlazione1}.
+Generating points from the distribution of $\mathbf{Y}$ (so each point consists of a two-dimensional vector) yields what is shown in figure \ref{correlazione1}.
 
 %%%%%%%%%IMMAGINE
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.65\textwidth]{images/Gaussiane/VettoreBivariatoIndipendenza.png}
-    \caption{Nube di punti generata da una distribuzione gaussiana bivariata con componenti incorrelate \cite{wilkinson_introduction_2020}.}
+    \caption{Point cloud generated by a bivariate Gaussian distribution with uncorrelated components \cite{wilkinson_introduction_2020}.}
     \label{correlazione1}
 \end{figure}
 
 
 \newpage
-Si noti che la nube di punti è centrata in zero come conseguenza della scelta di $\bm{\mu}$. È facile calcolare $\rho_{Y_1,Y_2}=0$ che garantisce l'incorrelazione delle componenti del vettore gaussiano. Questo risultato si intuisce dalla forma della nube: dato un punto nella nube, la conoscenza della sua coordinata $Y_1$ non dà alcuna informazione sulla sua coordinata $Y_2$.\\
-Si consideri ora $\bm{\mu} = \begin{pmatrix}0\\0\end{pmatrix}$ e $\mathbf{\Sigma}=\begin{pmatrix}1&0.9\\0.9&1\end{pmatrix}$. Generando nuovamente una nube di punti si ottiene quanto mostrato in figura \ref{correlazione2}.\\
+Note that the point cloud is centered in zero as a consequence of the choice of $\bm{\mu}$. It is easy to compute $\rho_{Y_1,Y_2}=0$ which guarantees the incorrelation of the components of the Gaussian vector. This result can be guessed from the shape of the cloud: given a point in the cloud, knowledge of its $Y_1$ coordinate gives no information about its $Y_2$ coordinate.\\
+Now consider $\bm{\mu} = \begin{pmatrix}0\\0\end{pmatrix}$ e $\mathbf{\Sigma}=\begin{pmatrix}1&0.9\\0.9&1\end{pmatrix}$. Generating a cloud of points again yields what is shown in figure \ref{correlazione2}.\\
 
 %%%%%%%%%IMMAGINE
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.7\textwidth]{images/Gaussiane/VettoreBivariatoIndipendenza2.png}
-    \caption{Nube di punti generata da una distribuzione gaussiana bivariata con componenti correlate \cite{wilkinson_introduction_2020}.}
+    \caption{Point cloud generated by a bivariate Gaussian distribution with correlated components \cite{wilkinson_introduction_2020}.}
     \label{correlazione2}
 \end{figure}
 
-Dalla forma della nube è ora possibile notare la correlazione tra le componenti del vettore gaussiano. Dato un punto della nube, infatti, la prima delle due componenti dà un'idea approssimativa del valore della seconda componente (e viceversa): la nube, con una certa approssimazione, si addensa intorno ad una retta passante per l'origine.\\
-La forma ellittica della nube è conseguenza del valore dell'indice di correlazione: $\rho_{Y_1,Y_2}=0.9$, cioè c'è una grande correlazione lineare tra le due componenti.\\
+From the shape of the cloud it is now possible to see the correlation between the components of the Gaussian vector. Given a point on the cloud, in fact, the first of the two components gives an approximate idea of the value of the second component (and vice versa): the cloud, to a certain approximation, thickens around a line passing through the origin.\\
+The elliptical shape of the cloud is a consequence of the correlation index value: $\rho_{Y_1,Y_2}=0.9$, that is, there is a large linear correlation between the two components.\\
 
 \newpage
-Evidentemente la forma ellittica si accentua all'aumentare del valore dell'indice di correlazione, come è possibile notare dalla figura \ref{correlazione3}, nella quale $\mathbf{\Sigma}=\begin{pmatrix}1&0.99\\0.99&1\end{pmatrix}$ e dunque $\rho_{Y_1,Y_2}=0.99$.
+Evidently, the elliptical shape becomes more pronounced as the value of the correlation index increases, as can be seen from the figure \ref{correlazione3}, in which $\mathbf{\Sigma}=\begin{pmatrix}1&0.99\\0.99&1\end{pmatrix}$ and thus $\rho_{Y_1,Y_2}=0.99$.
 
 %%%%%%%%%%%IMMAGINE
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.7\textwidth]{images/Gaussiane/VettoreBivariatoIndipendenza3.png}
-    \caption{Nube di punti generata da una distribuzione gaussiana bivariata con componenti fortemente correlate \cite{wilkinson_introduction_2020}.}
+    \caption{Point cloud generated by a bivariate Gaussian distribution with strongly correlated components \cite{wilkinson_introduction_2020}.}
     \label{correlazione3}
 \end{figure}
 
+
+
 \newpage
 
-Per poter generalizzare a più di due dimensioni il processo visivo di interpretazione della correlazione tra le componenti di un vettore gaussiano multivariato è necessario adottare una diversa strategia: per ogni campione (cioè per ogni vettore) generato dalla distribuzione gaussiana multivariata si traccia in un grafico il valore delle componenti collegando i rispettivi valori da un segmento.\\
-In figura \ref{correlazione4} viene riportato l'esempio in due dimensioni con $\bm{\mu} = \begin{pmatrix}0\\0\end{pmatrix}$ e $\mathbf{\Sigma}=\begin{pmatrix}1&0.54\\0.54&0.3\end{pmatrix}$. Nel grafico a sinistra viene riportato l'approccio usato fino ad ora; nel grafico a destra per ogni punto del grafico a sinistra viene tracciato il valore della prima componente in corrispondenza dell'indice $1$ sulle ascisse e il valore della seconda componente in corrispondenza dell'indice $2$ sulle ascisse.
+In order to generalize to more than two dimensions the visual process of interpreting the correlation between the components of a multivariate Gaussian vector, it is necessary to adopt a different strategy: for each sample (i.e., for each vector) generated by the multivariate Gaussian distribution, the value of the components is plotted in a graph by connecting the respective values by a segment.\\
+In figure \ref{correlazione4} the example in two dimensions with $\bm{\mu} = \begin{pmatrix}0\\0\end{pmatrix}$ and $\mathbf{\Sigma}=\begin{pmatrix}1&0.54\\0.54&0.3\end{pmatrix}$. The graph on the left shows the approach used so far; the graph on the right shows for each point on the left graph the value of the first component at index $1$ on the abscissae and the value of the second component at index $2$ on the abscissae.
 
 
 %%%%%%%%%%%IMMAGINE
 \begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{images/Gaussiane/CorrelazioneMultidimensionale.png}
-    \caption{Due diversi approcci visivi alla correlazione di componenti di vettori gaussiani multivariati: $n=2$ \cite{wilkinson_introduction_2020}.}
+    \caption{Two different visual approaches to correlation of components of multivariate Gaussian vectors: $n=2$ \cite{wilkinson_introduction_2020}.}
     \label{correlazione4}
 \end{figure}
 
 
 \newpage 
 
-Questo approccio permette di generalizzare a dimensioni $n>2$. Sia ora:
+This approach allows generalization to dimensions $n>2$. Let it be now:
 \[\bm{\mu}=\bm{0} \qquad\qquad \bm{\Sigma}=\begin{pmatrix}1&0.99&0.98&0.97&0.96\\0.99&1&0.99&0.98&0.97\\0.98&0.99&1&0.99&0.98\\0.97&0.98&0.99&1&0.99\\0.96&0.97&0.98&0.99&1 \end{pmatrix}
 \]
-dove le componenti sono fortemente correlate tra loro. Si ottiene quanto in figura \ref{correlazione5}.
+Where the components are strongly correlated with each other. We obtain what is shown in the figure \ref{correlazione5}.
 
 %%%%%%%%%%%IMMAGINE
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.7\textwidth]{images/Gaussiane/CorrelazioneMultidimensionale2.png}
-    \caption{Visualizzazione tramite segmenti della correlazione di componenti di vettori gaussiani multivariati: $n=5$ \cite{wilkinson_introduction_2020}.}
+    \caption{Visualization using segments of the correlation of components of multivariate Gaussian vectors: $n=5$ \cite{wilkinson_introduction_2020}.}
     \label{correlazione5}
 \end{figure}
 
-Essendo in dimensione $n=5$, ogni campione generato dal vettore gaussiano ha cinque componenti, dunque quando un campione viene tracciato nel grafico ha cinque punti in corrispondenza degli indici 1, 2, 3, 4, 5.
+Being in dimension $n=5$, each sample generated by the Gaussian vector has five components, so when a sample is plotted in the graph it has five points at indices 1, 2, 3, 4, 5.
 \newpage
 
-In questo caso, la forte correlazione tra le componenti del vettore gaussiano si riflette nel segmento che unisce i singoli punti di ogni campione, come mostrato in figura \ref{SegmentCorrelation}.
+In this case, the strong correlation between the components of the Gaussian vector is reflected in the segment joining the individual points of each sample, as shown in Figure \ref{SegmentCorrelation}.
 
 %%%%%%%%%%%IMMAGINE
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{images/Gaussiane/CorrelazioneUnidimensionale.png}
-    \caption{Debole e forte correlazione delle componenti di vettori gaussiani multivariati visualizzata tramite segmenti \cite{damianou_gaussian_2016}.}
+    \caption{Weak and strong correlation of components of multivariate Gaussian vectors visualized by segments \cite{damianou_gaussian_2016}.}
     \label{SegmentCorrelation}
 \end{figure}
 
-Nel caso $n=50$ (con vettore norma nullo ma omettendo la matrice di covarianza, che continua ad avere uno sulla diagonale e valori prossimi a uno nelle altre entrate), si ottiene quanto in figura \ref{correlazione6}.
+In the case $n=50$ (with null norm vector but omitting the covariance matrix, which continues to have one on the diagonal and values close to one in the other entries), we obtain what is in the figure \ref{correlazione6}.
 
 
 %%%%%%%%%%%IMMAGINE
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.7\textwidth]{images/Gaussiane/CorrelazioneMultidimensionale3.png}
-    \caption{Visualizzazione tramite segmenti della correlazione di componenti di vettori gaussiani multivariati: $n=50$ \cite{wilkinson_introduction_2020}.}
+    \caption{Visualization by segments of the correlation of components of multivariate Gaussian vectors: $n=50$ \cite{wilkinson_introduction_2020}.}
     \label{correlazione6}
 \end{figure}
 
-Si noti quindi che all'aumentare di $n$ ciò che otteniamo inizia ad assomigliare a una funzione per ogni campione generato.\\
-A partire da questa approccio è possibile interpretare i processi gaussiani come funzioni oppure come distribuzioni gaussiane multivariate infinito-dimensionali ($n=\infty$) con un indice continuo (introducendo una \textit{mean function} e una \textit{covariance function}). Questa interpretazione sarà chiarita nel prossimo capitolo.
+Notice then that as $n$ increases what obtained begins to resemble a function for each sample generated.\\
+From this approach it is possible to interpret Gaussian processes either as functions or as infinite-dimensional multivariate Gaussian distributions ($n=\infty$) with a continuous index (introducing a \textit{mean function} and a \textit{covariance function}). This interpretation will be clarified in the next chapter.
