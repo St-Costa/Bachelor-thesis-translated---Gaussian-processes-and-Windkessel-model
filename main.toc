@@ -17,20 +17,20 @@
 \contentsline {section}{\numberline {II.1}Univariate Gaussian distribution}{8}{section.2.1}%
 \contentsline {section}{\numberline {II.2}Multivariate Gaussian distribution}{9}{section.2.2}%
 \contentsline {section}{\numberline {II.3}Correlation for multivariate vectors}{11}{section.2.3}%
-\contentsline {chapter}{\numberline {III}Processi gaussiani}{17}{chapter.3}%
-\contentsline {section}{\numberline {III.1}Definizione e motivazione}{18}{section.3.1}%
-\contentsline {section}{\numberline {III.2}Introduzione ai processi gaussiani e alla notazione}{20}{section.3.2}%
-\contentsline {section}{\numberline {III.3}Sulle covariance function}{24}{section.3.3}%
+\contentsline {chapter}{\numberline {III}Gaussian processes}{17}{chapter.3}%
+\contentsline {section}{\numberline {III.1}Definition and motivation}{18}{section.3.1}%
+\contentsline {section}{\numberline {III.2}Introduction to Gaussian processes and notation}{20}{section.3.2}%
+\contentsline {section}{\numberline {III.3}On covariance functions}{24}{section.3.3}%
 \contentsline {subsection}{\numberline {III.3.1}Linear kernel}{25}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {III.3.2}Squared-exponential kernel}{29}{subsection.3.3.2}%
 \contentsline {subsection}{\numberline {III.3.3}Periodic kernel}{33}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {III.3.4}Covariance function in più dimensioni}{37}{subsection.3.3.4}%
-\contentsline {subsection}{\numberline {III.3.5}Combinare le covariance function}{38}{subsection.3.3.5}%
+\contentsline {subsection}{\numberline {III.3.4}Covariance function in more dimensions}{37}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {III.3.5}Combining covariance functions}{38}{subsection.3.3.5}%
 \contentsline {subsubsection}{Squared exponential + periodic kernel}{39}{subsubsection*.36}%
 \contentsline {subsubsection}{Linear $\times $ linear kernel}{40}{subsubsection*.39}%
-\contentsline {subsubsection}{Esempio reale di covariance function composta}{41}{subsubsection*.42}%
-\contentsline {section}{\numberline {III.4}Predizioni con osservazioni senza rumore}{44}{section.3.4}%
-\contentsline {section}{\numberline {III.5}Predizioni con osservazioni rumorose}{47}{section.3.5}%
+\contentsline {subsubsection}{Real-life example of a compound covariance function}{41}{subsubsection*.42}%
+\contentsline {section}{\numberline {III.4}Predictions with noiseless observations}{44}{section.3.4}%
+\contentsline {section}{\numberline {III.5}Predictions with noisy observations}{47}{section.3.5}%
 \contentsline {chapter}{\numberline {IV}Machine learning}{51}{chapter.4}%
 \contentsline {section}{\numberline {IV.1}Introduzione al machine learning}{52}{section.4.1}%
 \contentsline {section}{\numberline {IV.2}Dataset}{52}{section.4.2}%

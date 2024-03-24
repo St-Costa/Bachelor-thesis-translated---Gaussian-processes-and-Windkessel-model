@@ -1,10 +1,10 @@
-\chapter{Processi gaussiani}\label{gaussianProcessChapter}
-In questo capitono vengono introdotti i \textbf{processi gaussiani}. Inevitabilmente il capitolo non sarà esaustivo dell'argomento ma saranno trattate le sue caratteristiche principali e interessanti ai fini dell'elaborato. Per questo motivo la trattazione non si dedicherà ad inquadrare i processi gaussiani nel vasto contesto dei processi stocastici e si limiterà ad uno studio mirato delle sue peculiarità.\\
-I codici python usati nel capitolo richiedono di eseguire i codici \ref{import} e \ref{import2} di import delle librerie. Inoltre la media cubica viene per tutti i kernel definita come nel codice \ref{cubedMean}. 
-Il codice per le immagini dei kernel si ispira a quello scritto da Peter Roelants nel suo blog alla pagina "\href{https://peterroelants.github.io/posts/gaussian-process-tutorial/#Gaussian-processes-(1/3)---From-scratch}{Gaussian processes - From scratch}". Sono state fatte importanti modifiche al codice, in particolare vengono usati i kernel implementati dalla libreria scikit-learn.
-Il codice per la predizione di dati prende invece spunto dal sito  \href{https://docs.w3cub.com/about/}{W3cubDocs} alla pagina "\href{https://docs.w3cub.com/scikit_learn/auto_examples/gaussian_process/plot_gpr_noisy_targets}{Gaussian Processes regression: basic introductory example}". Anche in questo caso sono state fatte importanti modifiche nel codice.
-Il codice sulla concentrazione di $CO_2$ è una modifica del codice "\href{https://scikit-learn.org/stable/auto_examples/gaussian_process/plot_gpr_co2.html}{Gaussian process regression (GPR) on Mauna Loa CO2 data}" presente nella documentazione di scikit-learn.\\
-Le fonti usate per la stesura del capitolo sono: \cite{rasmussen_gaussian_2006}, \cite{murphy_probabilistic_2022}, \cite{rasmussen_gaussian_2004}, \cite{duvenaud_automatic_2014}, \cite{gortler_visual_2019}, \cite{murphy_machine_2012}.
+\chapter{Gaussian processes}\label{gaussianProcessChapter}
+This chapter introduces the \textbf{Gaussian processes}. Inevitably, the chapter will not be exhaustive of the subject, but its main features of interest for the purposes of the paper will be treated. For this reason, the discussion will not be devoted to framing Gaussian processes in the vast context of stochastic processes and will limit itself to a focused study of its peculiarities.\\
+The python codes used in the chapter require executing the \ref{import} and \ref{import2} import codes of the libraries. Furthermore, the cubic mean is defined for all kernels as in the code \ref{cubedMean}. 
+The code for the kernel images is inspired by that written by Peter Roelants in his blog on the page "\href{https://peterroelants.github.io/posts/gaussian-process-tutorial/#Gaussian-processes-(1/3)---From-scratch}{Gaussian processes - From scratch}". Important changes have been made to the code, in particular the kernels implemented by the scikit-learn library are used.
+The code for data prediction, on the other hand, takes its inspiration from \href{https://docs.w3cub.com/about/}{W3cubDocs} on the page "\href{https://docs.w3cub.com/scikit_learn/auto_examples/gaussian_process/plot_gpr_noisy_targets}{Gaussian Processes regression: basic introductory example}". Again, important changes have been made in the code.
+The code about the concentration of $CO_2$ is a modification of the code '\href{https://scikit-learn.org/stable/auto_examples/gaussian_process/plot_gpr_co2.html}{Gaussian process regression (GPR) on Mauna Loa CO2 data}' present in the scikit-learn documentation.\\
+The sources used for the drafting of the chapter are: \cite{rasmussen_gaussian_2006}, \cite{murphy_probabilistic_2022}, \cite{rasmussen_gaussian_2004}, \cite{duvenaud_automatic_2014}, \cite{gortler_visual_2019}, \cite{murphy_machine_2012}.
 
 
 \begin{textblock*}{0.64\textwidth}(3.5cm+0.36\textwidth,18.5cm)
@@ -26,23 +26,23 @@ found in the real world.}{George E. P. Box}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% DEFINIZIONE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Definizione e motivazione}
+\section{Definition and motivation}
 
 
-\begin{defi}[Processo gaussiano]
-Un \textbf{processo gaussiano} è un insieme di variabili casuali tali che ogni suo sottoinsieme finito abbia distribuzione gaussiana multivariata.
+\begin{defi}[Gaussian process]
+  A \textbf{Gaussian process} is a set of random variables such that every finite subset of it has a multivariate Gaussian distribution.
 \end{defi}
 
-Dalla definizione risulta evidente come la teoria delle distribuzioni gaussiane multivariate abbia notevole importanza nello studio dei processi gaussiani.\\
-Similmente alla distribuzione gaussiana, completamente determinata dal suo vettore media e dalla sua matrice di covarianza,  i processi gaussiani sono completamente determinati da una \textit{mean function} (che ne determina la media), denotata $m(x)$, e da una \textit{covariance function} (che ne determina la covarianza), denotata $k(x,x')$. Verrà approfondito il ruolo delle due funzioni nella prossima sezione.\\
-Nonostante questa similarità però, le distribuzioni gaussiane e i processi gaussiani differiscono per una importante caratteristica: le prime lavorano con vettori, i secondi con funzioni.
+It is evident from the definition that the theory of multivariate Gaussian distributions has considerable importance in the study of Gaussian processes.\\
+Similar to the Gaussian distribution, which is completely determined by its mean vector and covariance matrix, Gaussian processes are completely determined by a \textit{mean function} (which determines its mean), denoted $m(x)$, and by a \textit{covariance function} (which determines the covariance), denoted $k(x,x')$. The role of the two functions will be discussed in more detail in the next section.\\
+Despite this similarity, however, Gaussian distributions and Gaussian processes differ in one important characteristic: the former work with vectors, the latter with functions.
 
 \vspace{0.5cm}
 
-\begin{oss}[Motivazione: regressione nonlineare]
-La principale applicazione dei processi gaussiani, nonché il tema principale di questo capitolo, è quello della \textbf{regressione nonlineare}.\\
-Mentre il modello di regressione lineare cerca, a partire da dati osservati, una relazione lineare tra una variabile dipendente $Y$ e una variabile indipendente $x$, tenendo conto di un errore statistico $\epsilon$, in forma: $Y_i=\beta_0+\beta_1 x_i+\epsilon_i$, dove le incognite sono $\beta_0$ e $\beta_1$; la regressione nonlineare è una forma di regressione in cui la funzione che esprime la relazione tra variabili indipendenti e dipendenti è una combinazione non lineare dei parametri del modello e dipende da una o più variabili indipendenti, dunque in forma: $Y=f(X,\theta)+\epsilon$, dove le incognite sono $\theta$ e la funzione $f$.\\
-Una importante differenza tra i due tipi di regressione è che per quella nonlineare, a differenza di quella lineare, non esiste un metodo generale per la determinazione dei valori dei parametri. 
+\begin{oss}[Motivation: nonlinear regression]
+  The main application of Gaussian processes, and the main theme of this chapter, is \textbf{nonlinear regression}.\\
+  While the linear regression model seeks, from observed data, a linear relationship between a dependent variable $Y$ and an independent variable $x$, taking into account a statistical error $\epsilon$, in the form $Y_i=\beta_0+\beta_1 x_i+\epsilon_i$, where the unknowns are $\beta_0$ and $\beta_1$; nonlinear regression is a form of regression in which the function expressing the relationship between independent and dependent variables is a nonlinear combination of the model parameters and depends on one or more independent variables, thus in the form: $Y=f(X,\theta)+\epsilon$, where the unknowns are $\theta$ and the function $f$.\\
+  An important difference between the two types of regression is that for nonlinear regression, unlike linear regression, there is no general method for determining parameter values. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% IMMAGINE REGRESSIONE NONLINEARE
@@ -57,13 +57,13 @@ Una importante differenza tra i due tipi di regressione è che per quella nonlin
   \centering
   \includegraphics[width=\linewidth]{images/Gaussian process/motivazione3.png}
 \end{subfigure}
-\caption{Regressione nonlineare \cite{turner_gaussian_2016}.}
+\caption{Nonlinear regression \cite{turner_gaussian_2016}.}
 \end{figure}
 
 
 \newpage
 
-I \textbf{processi gaussiani} forniscono un buon metodo per la determinazione dei parametri nella regressione nonlineare non solo perché sfruttano la teoria della distribuzione gaussiana multivariata, complessivamente semplice, ma perché oltre ad una funzione che  approssima i dati in modo nonlineare con massima probabilità (concetto chiarito successivamente) forniscono un'indicazione della confidenza della regressione in forma di un'area all'interno della quale funzioni interpolanti meno probabili (ma comunque possibili) risiedono, come illustrato in figura \ref{nonlinearRegressionGaussianProcess}.
+Gaussian processes provide a good method for the determination of parameters in nonlinear regression not only because they exploit the theory of the multivariate Gaussian distribution, which is overall simple, but because in addition to a function that approximates the data nonlinearly with maximum likelihood (a concept clarified later) they provide an indication of the confidence of the regression in the form of an area within which less likely (but still possible) interpolating functions reside, as illustrated in figure \ref{nonlinearRegressionGaussianProcess}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -72,7 +72,7 @@ I \textbf{processi gaussiani} forniscono un buon metodo per la determinazione de
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.85\textwidth]{images/Gaussian process/motivazione4.png}
-    \caption{Regressione nonlineare con processi gaussiani \cite{turner_gaussian_2016}.}
+    \caption{Nonlinear regression with Gaussian processes \cite{turner_gaussian_2016}.}
     \label{nonlinearRegressionGaussianProcess}
 \end{figure}
 
@@ -80,22 +80,22 @@ I \textbf{processi gaussiani} forniscono un buon metodo per la determinazione de
 
 \newpage
 
-\section{Introduzione ai processi gaussiani e alla notazione}
-Seppur non rientri negli scopi dell'elaborato approfondire questo aspetto, viene riportata la definizione di processo stocastico per facilitare l'introduzione della notazione usata.
+\section{Introduction to Gaussian processes and notation}
+Although it is beyond the scope of this paper to go into this in depth, the definition of a stochastic process is given to facilitate the introduction of the notation used.
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% PROCESSO STOCASTICO
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{defi}[Processo stocastico]
-Un \textbf{processo stocastico} su uno spazio di probabilità $(\Omega, \mathcal{F}, \mathbb{P})$ è una famiglia $\{X_t\}_{t\in T\subset \mathbb{R}}$ di variabili casuali indicizzata da un parametro $t$.
+\begin{defi}[Stochastic process]
+  A \textbf{stochastic process} on a probability space $(\Omega, \mathcal{F}, \mathbb{P})$ is a family $\{X_t\}_{t\in T\subset \mathbb{R}}$ of random variables indexed by a parameter $t$.
 \end{defi}
 
 
 
-È comune chiamare $t$ l'indice per sottolineare il ruolo del tempo nei processi stocastici: un processo stocastico, generalmente, descrive matematicamente l'evoluzione temporale di un sistema caratterizzato dall'essere soggetto al caso, un sistema, cioè, del quale lo stato al tempo $t$ non può essere determinato con certezza ma solo da una variabile casuale.\\
-In un sistema stocastico è dunque possibile solo calcolare la \textit{probabilità} che il sistema si trovi in uno degli stati possibili ad un tempo $t>t_0$ se è noto lo stato al tempo $t_0$; in un sistema deterministico invece l'evoluzione viene descritta da regole (tipicamente in forma di equazione differenziale) che consentono di determinare con precisione lo stato del sistema ad ogni tempo $t>t_0$ noto lo stato al tempo $t_0$.
+It is common to call $t$ the index in order to emphasise the role of time in stochastic processes: a stochastic process generally describes mathematically the temporal evolution of a system characterised by being subject to chance, i.e. a system of which the state at time $t$ cannot be determined with certainty but only by a random variable.\\
+In a stochastic system it is therefore only possible to calculate the \textit{probability} that the system is in one of the possible states at time $t>t_0$ if the state at time $t_0$ is known; in a deterministic system, on the other hand, the evolution is described by rules (typically in the form of a differential equation) that allow the state of the system to be precisely determined at each time $t>t_0$ if the state at time $t_0$ is known.
 
 
 
@@ -103,17 +103,17 @@ In un sistema stocastico è dunque possibile solo calcolare la \textit{probabili
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%% NOTAZIONE
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{nota}[Funzioni e indicizzazione nei processi gaussiani]
-Scrivendo $f\sim \mathcal{GP}(m,k)$ si  intende che "\textit{la funzione $f$ è distribuita come un processo gaussiano con mean function $m(\cdot)$ e covariance function $k(\cdot,\cdot)$}".\\
-La funzione così ottenuta si può descrivere come:
+\begin{nota}[Functions and indexing in Gaussian processes]
+  Writing $f\sim \mathcal{GP}(m,k)$ means that "\textit{ the function $f$ is distributed as a Gaussian process with mean function $m(\cdot)$ and covariance function $k(\cdot,\cdot)$}".\\
+  The function thus obtained can be described as:
 \[f: \chi \rightarrow \mathbb{R},\]
-dove $\chi$ è un qualsiasi dominio. Per ogni elemento $x$ nel dominio $\chi$ esiste una variabile casuale $f(x)$ a cui è associato.
+where $\chi$ is any domain. For each element $x$ in the domain $\chi$ there exists a random variable $f(x)$ with which it is associated.
 \end{nota}
 
 
 
-\begin{oss}[Versatilità dei processi gaussiani e generalizzazione dei vettori gaussiani] \label{oss1}
-Si noti che il dominio $\chi$ non ha restrizioni, caratteristica che rende i processi gaussiani molto versatili. Si noti inoltre che con un dominio finito un processo gaussiano è un vettore gaussiano multivariato. In questo senso, come detto in precedenza, i processi gaussiani sono una generalizzazione dei vettori gaussiani multivariati. 
+\begin{oss}[Versatility of Gaussian processes and generalisation of Gaussian vectors] \label{oss1}
+  Note that the domain $\chi$ has no restrictions, a feature that makes Gaussian processes very versatile. Note also that with a finite domain a Gaussian process is a multivariate Gaussian vector. In this sense, as mentioned above, Gaussian processes are a generalisation of multivariate Gaussian vectors. 
 \end{oss}
 
 
@@ -122,18 +122,18 @@ Si noti che il dominio $\chi$ non ha restrizioni, caratteristica che rende i pro
 %%%%%% MEAN FUNCTION
 %%%%%%%%%%%%%%%%%%%%%
 \begin{defi}[Mean function]
-Dato un processo gaussiano $f\sim \mathcal{GP}(m,k)$, la \textbf{mean function} è una funzione
+Given $f\sim \mathcal{GP}(m,k)$ a Gaussian process, the \textbf{mean function} is a function
 \[
 m:\chi \rightarrow \mathbb{R}
 \]
-dove $m(x)=\mathbb{E}[f(x)]$.
+where $m(x)=\mathbb{E}[f(x)]$.
 \end{defi}
 
 \begin{oss}
-Per la \textit{mean function} non vi è alcuna richiesta in termini di proprietà della funzione. Tipiche scelte sono $m(x)=0$ oppure $m(x)=c$ con $c$ costante.
+  For the \textit{mean function} there is no requirement in terms of properties of the function. Typical choices are $m(x)=0$ or $m(x)=c$ with $c$ constant.
 \end{oss}
 
-Diversamente dalla \textit{mean function}, la scelta della \textit{covariance function} è ristretta a una determinata classe di funzioni, perciò prima della definizione vengono introdotti alcuni concetti preliminari.
+Contrary to \textit{mean function}, the choice of \textit{covariance function} is restricted to a certain class of functions, so some preliminary concepts are introduced before the definition.
 
 
 
@@ -142,17 +142,17 @@ Diversamente dalla \textit{mean function}, la scelta della \textit{covariance fu
 %%%% MERCER KERNEL
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{defi}[Mercer kernel/positive definite kernel]
-Si definisce \textbf{Mercer kernel} (o \textbf{positive definite kernel}) qualunque funzione simmetrica 
+  A \textbf{Mercer kernel} (or \textbf{positive definite kernel}) is defined as any symmetrical function 
 \[
 \mathcal{K}: \chi\times\chi \rightarrow \mathbb{R}^+
 \]
- tale che: $\sum_{i=1}^N\sum_{j=1}^N\mathcal{K}(x_i,x_j)c_ic_j \geq 0$ per qualunque insieme di elementi distinti $\{x_i\}_{i=1}^N\subset \chi$, $\{c_i\}_{i=1}^N\subset  \mathbb{R}$.
+ such that: $\sum_{i=1}^N\sum_{j=1}^N\mathcal{K}(x_i,x_j)c_ic_j \geq 0$ for any set of distinct elements $\{x_i\}_{i=1}^N\subset \chi$, $\{c_i\}_{i=1}^N\subset  \mathbb{R}$.
 \end{defi}
 
-Una definizione alternativa si basa sul concetto di \textit{matrice di Gram}:
+An alternative definition is based on the concept of \textit{Gram matrix}:
 
-\begin{defi}[Matrice di Gram]
-Data una funzione $\mathcal{K}: \chi\times \chi\rightarrow \mathbb{R}^+$, sia $\{x_i\}_{i=1}^N\subset \chi$ un insieme qualsiasi di elementi distinti, si definisce la \textbf{matrice di Gram} di $\mathcal{K}$ la seguente:
+\begin{defi}[Gram matrix]
+  Given a function $\mathcal{K}: \chi\times \chi\rightarrow \mathbb{R}^+$, let ${x_i}_{i=1}^N\subset \chi$ be any set of distinct elements, we define the \textbf{Gram matrix} of $\mathcal{K}$ to be the following:
 \[
 \bm{K}=\begin{pmatrix}
     \mathcal{K}(x_1,x_1) & \mathcal{K}(x_1,x_2) & \dots & \mathcal{K}(x_1,x_N)\\
@@ -164,12 +164,12 @@ Data una funzione $\mathcal{K}: \chi\times \chi\rightarrow \mathbb{R}^+$, sia $\
 \end{defi}
 
 \begin{defi}[Mercer kernel/positive definite kernel]
-Data una funzione $
+Given a function $
 \mathcal{K}: \chi\times\chi \rightarrow \mathbb{R}^+
-$, $\mathcal{K}$ si dice \textbf{Mercer kernel} se e solo se la sua matrice di Gram è semidefinita positiva.
+$, $\mathcal{K}$ is called \textbf{Mercer kernel} if and only if its Gram matrix is positive semidefinite.
 \end{defi}
 
-È ora possibile definire la covariance function.
+It is now possible to define the covariance function.
 
 \newpage
 
@@ -178,18 +178,18 @@ $, $\mathcal{K}$ si dice \textbf{Mercer kernel} se e solo se la sua matrice di G
 %%%% COVARIANCE FUNCTION
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{defi}[Covariance/kernel function]
-Dato un processo gaussiano $f\sim \mathcal{GP}(m,k)$, la \textbf{covariance function} è una funzione
+  Given a Gaussian process $f\sim \mathcal{GP}(m,k)$, the \textbf{covariance function} is a function
 \[
 k:\chi\times \chi \rightarrow \mathbb{R}
 \]
-tale che $k(\cdot,\cdot)$ è un \textit{Mercer kernel}. Si ha 
+such that $k(\cdot,\cdot)$ is a \textit{Mercer kernel}. The following occurs 
 \[k(x,x')=\mathbb{E}[(f(x)-m(x))(f(x')-m(x'))]=\text{Cov}[f(x),f(x')].
 \]
 \end{defi}
 
-\begin{oss}[Similarità tra processi gaussiani e distribuzione gaussiana multivariata]
-Si è definita la \textit{mean function} senza fare restrizioni sulle proprietà della funzione mentre per la \textit{covariance function} è stato richiesto che la sua matrice di Gram sia semidefinita positiva.\\
-Questo non deve sorprendere: come precedentemente detto, i processi gaussiani generalizzano la distribuzione gaussiana multivariata e come spiegato nel precedente capitolo (e enfatizzato nell'osservazione \ref{ossGaussianaMultivariata}) quest'ultima è definita da due parametri: un vettore media, senza alcuna restrizione, e una matrice di covarianza, che deve essere simmetrica e  semidefinita positiva. Vi è dunque, anche in questo senso, similarità tra processi gaussiani e distribuzioni gaussiane multivariate.
+\begin{oss}[Similarity between Gaussian processes and multivariate Gaussian distribution]
+  The \textit{mean function} was defined without making any restrictions on the properties of the function, while for the \textit{covariance function} it was required that its Gram matrix be semidefinite positive.\\
+  This should come as no surprise: as previously mentioned, Gaussian processes generalise the multivariate Gaussian distribution and as explained in the previous chapter (and emphasised in the remark \ref{ossGaussianaMultivariata}) the latter is defined by two parameters: a mean vector, without any restriction, and a covariance matrix, which must be symmetric and semidefinite positive. There is therefore, in this sense too, similarity between Gaussian processes and multivariate Gaussian distributions.
 \end{oss}
 
 \vspace{0.5cm}
@@ -197,27 +197,27 @@ Questo non deve sorprendere: come precedentemente detto, i processi gaussiani ge
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%% ESEMPIO GP
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{ese}[Esempio di processo gaussiano] \label{esempioProcessoGaussiano}
-Si consideri $f\sim \mathcal{GP}(m,k)$, dove:
+\begin{ese}[Example of a Gaussian process] \label{esempioProcessoGaussiano}
+Consider $f\sim \mathcal{GP}(m,k)$, where:
 \[
 m(x)=\frac{x^2}{4}\qquad k(x,x')=\text{exp}\left( -\frac{1}{2}(x-x')^2\right).
 \]
-Per comprendere questo esempio di processo gaussiano si consideri il grafico di alcuni campioni della funzione $f$. Per non lavorare nel caso infinito, si consideri un dominio finito\footnote{Si tenga conto che dal punto di vista teorico i processi gaussiani che vengono considerati in questo elaborato si costruiscono su un dominio infinito di numeri reali; tuttavia quando si generano i grafici si è costretti a considerare un insieme finito di punti che poi vengono uniti per generare la curva. Con questa (obbligata) filosofia vengono costruiti i grafici della prossima sezione.\label{footnote 1}}: $\chi = \left\{x_i \right\}_{i=1}^{n}$. Essendo $\chi$ finito, quello che si ottiene valutando $m(\cdot)$ e $k(\cdot,\cdot)$ sul dominio sono un vettore $\bm{\mu}$ e una matrice $\bm{\Sigma}$ dove:
+To understand this example of a Gaussian process, consider the graph of some samples of the function $f$. In order not to work in the infinite case, we consider a finite domain.\footnote{Keep in mind that from a theoretical point of view, the Gaussian processes that are considered in this paper are constructed on an infinite domain of real numbers; however, when generating the graphs, one is forced to consider a finite set of points that are then joined to generate the curve. With this (forced) philosophy, the graphs in the next section are constructed.\label{footnote 1}}: $\chi = \left\{x_i \right\}_{i=1}^{n}$. Since $\chi$ is finite, what is obtained by evaluating $m(\cdot)$ and $k(\cdot,\cdot)$ on the domain are a vector $\bm{\mu}$ and a matrix $\bm{\Sigma}$ where:
 \[
 \begin{split}
 \mu_i&=m(x_i)=\frac{x_i^2}{4} \qquad\qquad\qquad\qquad\qquad\qquad i=1,\dots, n \\
 \Sigma_{ij}&=k(x_i,x_j)=\text{exp}\left( -\frac{1}{2}(x_i-x_j)^2\right)\qquad i,j=1,\dots, n
 \end{split}
 \]
-Si ottiene quindi, come anticipato nell'osservazione \ref{oss1}, che per ogni $x_i$ nel dominio $\chi$ la variabile casuale $f(x_i)$ è un variabile casuale gaussiana di media $\mu_i$ e varianza $\Sigma_{ii}$; chiamando $\bm{f}=(f(x_1), \dots, f(x_n))^{\text{T}}$ si ha cioè: 
+It is thus obtained, as anticipated in the remark \ref{oss1}, that for each $x_i$ in the domain $\chi$ the random variable $f(x_i)$ is a Gaussian random variable of mean $\mu_i$ and variance $\Sigma_{ii}$; calling $\bm{f}=(f(x_1), \dots, f(x_n))^{\text{T}}$ we get, i.e: 
 \[
 \bm{f}\sim \mathcal{N}(\bm{\mu}, \bm{\Sigma}).
 \]
 
 \newpage
 
- Avendo ottenuto un vettore gaussiano multivariato $n$-dimensionale risulta naturale utilizzare lo stesso metodo introdotto nella sezione \ref{sezioneCorrelazione} per ricavare il grafico della "funzione" (è in realtà un vettore) $\bm{f}$. Nella figura \ref{esempioProcessoGaussianoImmagine} vengono riportati i "grafici" di quattro campioni diversi di vettore gaussiano di dimensione $n=60$. Si noti che la forma dei quattro grafici è ben diversa da quella della figura \ref{correlazione6} come conseguenza del fatto che le distribuzioni hanno matrice di covarianza diversa. Questo sottolinea quanto sia importante la covariance function nei processi gaussiani, essendo responsabile della matrice di covarianza. Questo argomento verrà analizzato in dettaglio successivamente.\newline
- Con questo esempio si è chiarito cosa si intende quando si è detto che i processi gaussiani generalizzano la distribuzione gaussiana multivariata.
+Having obtained a multivariate $n$-dimensional Gaussian vector, it is natural to use the same method as introduced in the \ref{sezioneCorrelazione} to derive the graph of the "function" (it is actually a vector) $\bm{f}$. The figure \ref{esempioProcessoGaussianoImmagine} shows the "graphs" of four different samples of a Gaussian vector of dimension $n=60$. Note that the shape of the four graphs is quite different from that of figure \ref{correlazione6} as a consequence of the fact that the distributions have different covariance matrixes. This emphasises how important the covariance function is in Gaussian processes, being responsible for the covariance matrix. This topic will be analysed in detail later.\newline
+This example clarified what is meant when it is said that Gaussian processes generalise the multivariate Gaussian distribution.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%% IMMAGINE
@@ -225,11 +225,11 @@ Si ottiene quindi, come anticipato nell'osservazione \ref{oss1}, che per ogni $x
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.85\textwidth]{images/Gaussian process/esempioProcessoGaussiano.pdf}
-    \caption{Quattro vettori generati da un processo gaussiano definito come  nell'esempio \ref{esempioProcessoGaussiano}. Codice \ref{Example}.}
+    \caption{Four vectors generated by a Gaussian process defined as in the example \ref{esempioProcessoGaussiano}. Code \ref{Example}.}
     \label{esempioProcessoGaussianoImmagine}
 \end{figure}
 
-Si noti che il codice \ref{Example} non genererà lo stesso grafico della figura \ref{esempioProcessoGaussianoImmagine} in quanto c'è una componente randomica! Lo stesso vale per gli altri codici citati in questo capitolo.
+Note that the code \ref{Example} will not generate the same graph as the figure \ref{esempioProcessoGaussianoImmagine} as there is a random component! The same applies to the other codes mentioned in this chapter.
 \end{ese}
 
 
@@ -241,14 +241,14 @@ Si noti che il codice \ref{Example} non genererà lo stesso grafico della figura
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\section{Sulle covariance function}
-Per un processo gaussiano è di fondamentale importanza la covariance function: è infatti la funzione $k(\cdot,\cdot)$ che determina come il processo gaussiano interpreta i dati: a partire dalla definizione della covariance function è possibile ricavare diversi modelli, ad esempio la regressione lineare \footnote{Per approfondire si veda \cite{rasmussen_gaussian_2006}  e  \cite{williams_prediction_1998}} o le splines \footnote{Per approfondire si veda \cite{kimeldorf_correspondence_1970}}.\\
-\begin{oss}[Importanza della covarianza]
-Nel precedente capitolo, alla sezione \ref{sezioneCorrelazione}, è stata mostrata un'interpretazione visiva dell'indice di correlazione di Pearson ed è stato  chiarito come la covarianza influisca sulla correlazione di due variabili casuali.\\
-Risulta quindi evidente l'importanza della covariance function nella correlazione tra le variabili casuali $f(x)$ e $f(x')$ per ogni $x,x'\in \chi$. Per questo motivo è significativo, nella scelta della covariance function, tenere conto di come questa dipenda dalla coppia $(x,x')$.
+\section{On covariance functions}
+For a Gaussian process, the covariance function is of fundamental importance: it is in fact the function $k(\cdot,\cdot)$ that determines how the Gaussian process interprets the data: From the definition of the covariance function, various models can be derived, e.g. linear regression \footnote{Please see \cite{rasmussen_gaussian_2006} and \cite{williams_prediction_1998}} or splines \footnote{Please see \cite{kimeldorf_correspondence_1970}}.\\
+\begin{oss}[Importance of covariance]
+  In the previous chapter, a visual interpretation of the Pearson correlation index was shown in the \ref{sezioneCorrelazione}, and it was clarified how covariance affects the correlation of two random variables.\\
+  Thus, the importance of the covariance function in the correlation between the random variables $f(x)$ and $f(x')$ for each $x,x'\in \chi$ is evident. This is why it is significant, when choosing the covariance function, to take into account how it depends on the pair $(x,x')$.
 \end{oss}
 
-Seguono i tre principali tipi di covariance function in base alla loro dipendenza da $(x,x')$ dove $x,x'\in \mathbb{R}^D$.
+Following are the three main types of covariance functions according to their dependence on $(x,x')$ where $x,x'\in \mathbb{R}^D$.
 
 
 
@@ -256,23 +256,23 @@ Seguono i tre principali tipi di covariance function in base alla loro dipendenz
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%% PROPRIETA KERNEL
 %%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{defi}[Covariance function stazionaria]
-Una covariance function \textbf{stazionaria} è una covariance function che dipende da $x-x'$.\\
-Una covariance function di questo tipo è invariante per traslazioni.
+\begin{defi}[Stationary covariance function]
+  A \textbf{stationary} covariance function is a covariance function that depends on $x-x'$.\\
+  A covariance function of this type is translation invariant.
 \end{defi}
 
-\begin{defi}[Covariance function isotropica]
-Una covariance function \textbf{isotropica} è una covariance function che dipende da $||x-x'||$.\\
-Una covariance function di questo tipo è invariante per movimenti rigidi.
+\begin{defi}[Isotropic covariance function]
+  A \textbf{isotropic} covariance function is a covariance function that depends on $|x-x'||$.\\
+  Such a covariance function is invariant for rigid motions.
 \end{defi}
 
 \begin{defi}[Dot product covariance function]
-Una \textbf{dot product} covariance function è una covariance function che dipende da $x$ e $x'$ solo tramite $x\cdot x'$.\\
-Una covariance function di questo tipo è invariante per rotazioni centrate nell'origine ma non per traslazioni.
+  A \textbf{dot product} covariance function is a covariance function that depends on $x$ and $x'$ only via $x\cdot x'$.\\
+  Such a covariance function is invariant for rotations centred in the origin but not for translations.
 \end{defi}
 
-Di seguito vengono mostrate le principali covariance function. Come già detto in precedenza, questa non può che essere un'introduzione alle possibili scelte: importanti aspetti delle covariance function riguardano la loro generalizzazione data dall'uso della distanza di Mahalanobis, una corretta scelta del kernel per l'ottimizzazione numerica, relazione tra scelta del kernel e deep learning per i processi gaussiani \footnote{Per approfondire si veda \cite{murphy_probabilistic_2022}}, adattamento dei kernel a modelli a più dimensioni \footnote{Per approfondire si veda \cite{duvenaud_automatic_2014}}... \\
-In merito alle covariance function, è negli interessi di questo elaborato comprendere come queste influiscano nel processo gaussiano. Insieme ai prossimi esempi verranno quindi riportati dei grafici a supporto di questo interesse.
+The main covariance functions are shown below. As previously mentioned, this can only be an introduction to the possible choices: important aspects of covariance functions concern their generalisation given by the use of the Mahalanobis distance, a correct choice of kernel for numerical optimisation, relation between kernel choice and deep learning for Gaussian processes \footnote{To further elaborate see \cite{murphy_probabilistic_2022}}, adaptation of kernels to multi-dimensional models \footnote{To further elaborate see \cite{duvenaud_automatic_2014}}...\\
+With regard to covariance functions, it is in the interests of this paper to understand how these influence the Gaussian process. Together with the following examples, graphs will therefore be given to support this interest.
 
 \newpage
 
@@ -281,25 +281,25 @@ In merito alle covariance function, è negli interessi di questo elaborato compr
 %%%% LINEAR
 %%%%%%%%%%%%%%%%%%%%%%%
 \begin{defi}[Linear kernel]
-Il \textbf{linear kernel} ha forma \[
+  The \textbf{linear kernel} has the form \[
 k(x,x')=\sigma_b^2+\sigma_v^2 (x-c)(x'-c).
 \]
 \end{defi}
 
-Viene riportato il grafico della funzione $k(x,x')$. Si ottiene una retta con gli usuali parametri.
+The graph of the function $k(x,x')$ is plotted. A straight line with the usual parameters is obtained.
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%% IMMAGINE
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.6\textwidth]{images/Gaussian process/Linear Kernel.pdf}
-    \caption{Grafico di $k(x,x')$ linear kernel, $\sigma_b^2=1$, $\sigma_v^2=1$, $c=-1$ e $x'=1$. Codice \ref{linear kernel code}}
+    \caption{Graph of $k(x,x')$ linear kernel, $\sigma_b^2=1$, $\sigma_v^2=1$, $c=-1$ and $x'=1$. Code \ref{linear kernel code}}
     \label{linear kernel}
 \end{figure}
 
 \newpage
 
-Nella figura \ref{10 sample linear kernel zero mean} vengono mostrati grafici di funzioni con distribuzione $f\sim \mathcal{GP}(m,k)$ dove $m(x)=0$ e $k(x,x')$ è il linear kernel, $\sigma_b^2=0$, $\sigma_v^2=1$, $c=0$.
+Figure \ref{10 sample linear kernel zero mean} shows graphs of functions with distribution $f\sim \mathcal{GP}(m,k)$ where $m(x)=0$ and $k(x,x')$ is the linear kernel, $\sigma_b^2=0$, $\sigma_v^2=1$, $c=0$.
 
 
 
@@ -309,12 +309,12 @@ Nella figura \ref{10 sample linear kernel zero mean} vengono mostrati grafici di
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.85\textwidth]{images/Gaussian process/Linear sample.pdf}
-    \caption{Grafico di funzioni con distribuzione  $f\sim \mathcal{GP}(\bm{0},k)$ dove $k(x,x')$ è il linear kernel e $\sigma_b^2=0$, $\sigma_v^2=1$, $c=0$. Codice \ref{linear sample}.}
+    \caption{Graph of functions with distribution  $f\sim \mathcal{GP}(\bm{0},k)$ where $k(x,x')$ is the linear kernel and $\sigma_b^2=0$, $\sigma_v^2=1$, $c=0$. Code \ref{linear sample}.}
     \label{10 sample linear kernel zero mean}
 \end{figure}
 
-Si noti che il linear kernel genera delle rette, da cui il nome.\\
-Imporre la mean function uguale a zero aumenta la tendenza delle linee a passare per l'origine. Imponendo $m(x)=\alpha\in\mathbb{R}$ si aumenta la tendenza delle rette a passare per il punto $(0,\alpha)$. 
+Note that the linear kernel generates lines, hence the name.\\
+Imposing the mean function equal to zero increases the tendency of lines to pass through the origin. Imposing $m(x)=\alpha\in\mathbb{R}$ increases the tendency of lines to pass through the point $(0,\alpha)$. 
 %Esploreremo di seguito l'influenza degli altri parametri del kernel sui grafici delle funzioni, ma è già in parte evidente l'importanza della struttura del kernel nel grafico delle funzioni con distribuzione $\mathcal{GP}(m,k)$.
 
 
@@ -327,7 +327,7 @@ Imporre la mean function uguale a zero aumenta la tendenza delle linee a passare
 
 
 \vspace{1cm}
-Per comprendere l'influenza del parametro $c$, vengono mostrati grafici di funzioni con distribuzione $f\sim \mathcal{GP}(m,k)$ dove $m(x)=0$ e $k(x,x')$ è il linear kernel e viene variato il valore di $c$.
+To understand the influence of parameter $c$, graphs of functions with distribution $f\sim \mathcal{GP}(m,k)$ are shown where $m(x)=0$ and $k(x,x')$ is the linear kernel and the value of $c$ is varied.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% IMMAGINI: PARAMETRO c
@@ -344,14 +344,14 @@ Per comprendere l'influenza del parametro $c$, vengono mostrati grafici di funzi
   \includegraphics[width=\linewidth]{images/Gaussian process/Linear - c=0.pdf}
   \caption{$c=0$}
 \end{subfigure}
-\caption{Grafico di funzioni con distribuzione $f\sim \mathcal{GP}(\bm{0},k)$ dove $k(x,x')$ è il linear kernel e $\sigma_b^2=0$, $\sigma_v^2=1$, il parametro $c$ viene variato. Codice \ref{Linear - c}.}
+\caption{Graph of functions with distribution $f\sim \mathcal{GP}(\bm{0},k)$ where $k(x,x')$ is the linear kernel and $\sigma_b^2=0$, $\sigma_v^2=1$, parameter $c$ is varied. Code \ref{Linear - c}.}
 \label{10 sample linear modified c}
 \end{figure}
 
 
-Il parametro $c$ dunque impone un punto di passaggio per tutte le rette. Dunque $c$ svolge lo stesso ruolo della mean function $m(\cdot)$.
+The parameter $c$ therefore imposes a crossing point for all straight lines. Thus $c$ plays the same role as the mean function $m(\cdot)$.
 
-Per comprendere l'influenza del parametro $\sigma_b^2$, vengono mostrati grafici di funzioni con distribuzione $f\sim \mathcal{GP}(m,k)$ dove $m(x)=0$ e $k(x,x')$ è il linear kernel e viene variato il valore di $\sigma_b^2$.
+To understand the influence of the parameter $\sigma_b^2$, graphs of functions with distribution $f\sim \mathcal{GP}(m,k)$ are shown where $m(x)=0$ and $k(x,x')$ is the linear kernel and the value of $\sigma_b^2$ is varied.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% IMMAGINI: PARAMETRO sigma_b
@@ -368,14 +368,14 @@ Per comprendere l'influenza del parametro $\sigma_b^2$, vengono mostrati grafici
   \includegraphics[width=\linewidth]{images/Gaussian process/Linear - sigmab=05.pdf}
   \caption{$\sigma_b^2=0.5$}
 \end{subfigure}
-\caption{Grafico di funzioni con distribuzione $f\sim \mathcal{GP}(\bm{0},k)$ dove $k(x,x')$ è il linear kernel e $\sigma_v^2=1$, $c=0$, il parametro $\sigma_b^2$ viene variato. Codice \ref{Linear - sigmab}.}
+\caption{Graph of functions with distribution $f\sim \mathcal{GP}(\bm{0},k)$ where $k(x,x')$ is the linear kernel and $\sigma_v^2=1$, $c=0$, parameter $\sigma_b^2$ is varied. Code \ref{Linear - sigmab}.}
 \label{10 sample linear modified sigmab}
 \end{figure}
-Dunque il parametro $\sigma_b$ influenza la precisione con cui le funzioni tendono a passare per il punto $(0,c)$.
+Thus, the parameter $\sigma_b$ influences the precision with which the functions tend to pass through the point $(0,c)$.
 
 \newpage
 
-Per comprendere l'influenza del parametro $\sigma_v^2$, vengono mostrati grafici di funzioni con distribuzione $f\sim \mathcal{GP}(m,k)$ dove $m(x)=0$ e $k(x,x')$ è il linear kernel e viene variato il valore di $\sigma_v^2$.
+To understand the influence of the parameter $\sigma_v^2$, graphs of functions with distribution $f\sim \mathcal{GP}(m,k)$ are shown where $m(x)=0$ and $k(x,x')$ is the linear kernel and the value of $\sigma_v^2$ is varied.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -393,13 +393,13 @@ Per comprendere l'influenza del parametro $\sigma_v^2$, vengono mostrati grafici
   \includegraphics[width=\linewidth]{images/Gaussian process/Linear - sigmav=10.pdf}
   \caption{$\sigma_v^2=10$}
 \end{subfigure}
-\caption{Grafico di funzioni con distribuzione $f\sim \mathcal{GP}(\bm{0},k)$ dove $k(x,x')$ è il linear kernel e $\sigma_b^2=0$, $c=0$, il parametro $\sigma_v^2$ viene variato. Codice \ref{Linear - sigmav}.}
+\caption{Graph of functions with distribution $f\sim \mathcal{GP}(\bm{0},k)$ where $k(x,x')$ is the linear kernel and $\sigma_b^2=0$, $c=0$, parameter $\sigma_v^2$ is varied. Code \ref{Linear - sigmav}.}
 \label{10 sample linear modified sigmav}
 \end{figure}
 
-Dunque il parametro $\sigma_v^2$ influenza la pendenza delle rette, che è proporzionale al suo valore.
+So the parameter $\sigma_v^2$ influences the slope of the lines, which is proportional to its value.
 
-Per comprendere l'influenza della mean function, vengono di seguito mostrati grafici di funzioni con distribuzione $f\sim \mathcal{GP}(m,k)$ dove $m(x)=x^3$ e $k(\cdot,\cdot)$ è il linear kernel.
+To understand the influence of the mean function, graphs of functions with distribution $f\sim \mathcal{GP}(m,k)$ where $m(x)=x^3$ and $k(\cdot,\cdot)$ is the linear kernel are shown below.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -408,14 +408,14 @@ Per comprendere l'influenza della mean function, vengono di seguito mostrati gra
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.85\textwidth]{images/Gaussian process/Linear - cubedmean.pdf}
-    \caption{Grafico di funzioni con distribuzione $f\sim \mathcal{GP}(m,k)$ dove $m(x)=x^3$ e $k(x,x')$ è il linear kernel, $\sigma_b^2=1$, $\sigma_v^2=10$, $c=0$. Codice \ref{linear cubedmean}.}
+    \caption{Graph of functions with distribution $f\sim \mathcal{GP}(m,k)$ where $m(x)=x^3$ e $k(x,x')$ is the linear kernel, $\sigma_b^2=1$, $\sigma_v^2=10$, $c=0$. Code \ref{linear cubedmean}.}
     \label{10 sample linear kernel cubed mean}
 \end{figure}
 
 
 \newpage
 
-Dal grafico è evidente che i grafici assomigliano alla funzione $x^3$. Sarà più chiaro nei prossimi esempi di kernel, ma dalla definizione di processo gaussiano (pensando alla distribuzione gaussiana multivariata, che generalizza) ogni punto è interpretabile come campione di una distribuzione gaussiana. Ricordando l'osservazione \ref{normal decomposition}, sappiamo che ogni distribuzione normale (univariata) è scomponibile in $Y=\mu+\sigma Z$ dove $Z\sim \mathcal{N}(0,1)$; dunque ogni punto $x_i$ del grafico di una funzione con distribuzione il processo gaussiano come in figura \ref{10 sample linear kernel cubed mean} ha scomposizione $x_i^3+k(x_i,x_i)Z$. È dunque chiaro dalla scomposizione di ogni punto che i grafici aggiungeranno alla funzione $x^3$ un addendo dovuto alla covariance function.
+It is evident from the graph that the graphs resemble the function $x^3$. It will become clearer in the next kernel examples, but from the definition of a Gaussian process (thinking of the multivariate Gaussian distribution, which generalises) every point can be interpreted as a sample of a Gaussian distribution. Recalling the observation \ref{normal decomposition}, we know that every normal (univariate) distribution is decomposable into $Y=\mu+\sigma Z$ where $Z\sim \mathcal{N}(0,1)$; therefore every point $x_i$ on the graph of a function with distribution the Gaussian process as in figure \ref{10 sample linear kernel cubed mean} has decomposition $x_i^3+k(x_i,x_i)Z$. It is therefore clear from the decomposition of each point that the graphs will add to the function $x^3$ an addend due to the covariance function.
 
 
 
@@ -429,14 +429,14 @@ Dal grafico è evidente che i grafici assomigliano alla funzione $x^3$. Sarà pi
 
 %% A volte è usata ||x-x'||
 \begin{defi}[Squared-exponential kernel]
-Il \textbf{squared-exponential kernel} ha forma:
+  The \textbf{squared-exponential kernel} has form:
 \[
 k(x,x')=\sigma^2 \text{exp}\left( -\frac{(x-x')^2}{2l^2} \right).
 \]
-È dunque una covariance function isotropica.
+It is therefore an isotropic covariance function.
 \end{defi}
 
-Viene riportato il grafico della funzione $k(x,x')$. Si noti che il parametro $\sigma^2$ influisce sul picco della funzione, mentre il parametro $l$ influisce indirettamente  modificandone la velocità con cui si annulla.
+The graph of the function $k(x,x')$ is shown. Note that the parameter $\sigma^2$ affects the peak of the function, while the parameter $l$ affects it indirectly by modifying the rate at which it cancels.
 
 
 
@@ -446,17 +446,17 @@ Viene riportato il grafico della funzione $k(x,x')$. Si noti che il parametro $\
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.6\textwidth]{images/Gaussian process/Squared-exponential kernel.pdf}
-    \caption{Grafico di $k(x,x')$ squared-exponential kernel, $\sigma^2=1$ e $l^2=1$. Codice \ref{squared-exponential}.}
+    \caption{Graph of $k(x,x')$ squared-exponential kernel, $\sigma^2=1$ and $l^2=1$. Code \ref{squared-exponential}.}
     \label{squared-exponential kernel}
 \end{figure}
 
 \newpage
 
 Una funzione distribuita come il processo gaussiano con questo tipo di kernel è $C^\infty$. Esistono diverse variazioni di questo kernel codificanti ipotesi leggermente diverse
-sulla continuità (anche locale) della funzione ma non sono negli interessi dell'elaborato. \footnote{Per approfondire si veda \cite{duvenaud_automatic_2014}}
+A distributed function such as the Gaussian process with this type of kernel is $C^\infty$. There are several variations of this kernel encoding slightly different assumptions about the continuity (even local) of the function, but these are not in the interest of the paper. \footnote{For more details see \cite{duvenaud_automatic_2014}}
 \vspace{0.5cm}\\
 
-Vengono di seguito mostrati grafici di funzioni con distribuzione $f\sim \mathcal{GP}(m,k)$ dove $m(x)=0$ e $k(x,x')$ è il squared-exponential kernel.
+Shown below are graphs of functions with distribution $f\sim \mathcal{GP}(m,k)$ where $m(x)=0$ and $k(x,x')$ is the squared-exponential kernel.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
@@ -465,19 +465,19 @@ Vengono di seguito mostrati grafici di funzioni con distribuzione $f\sim \mathca
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.85\textwidth]{images/Gaussian process/RBFSample.pdf}
-    \caption{Grafico di funzioni con distribuzione $f\sim \mathcal{GP}(\bm{0},k)$ dove $k(x,x')$ è lo squared-exponential kernel e $l^2=1$, $\sigma^2=1$. Codice \ref{RBF sample}.}
+    \caption{Graph of functions with distribution $f\sim \mathcal{GP}(\bm{0},k)$ where $k(x,x')$ is the squared-exponential kernel and $l^2=1$, $\sigma^2=1$. Code \ref{RBF sample}.}
     \label{10 sample exponential kerne zero mean}
 \end{figure}
 
-Dalla figura \ref{10 sample exponential kerne zero mean} è possibile notare la differenza che il kernel ha causato nella forma del grafico delle funzioni: paragonandolo alla figura \ref{10 sample linear kernel zero mean} risulta evidente l'importanza della scelta del kernel in funzione del contesto del suo utilizzo.\\
-Come nel caso del linear kernel, imporre la mean function ad un'altra costante comporterà la traslazione delle funzioni sull'asse delle $y$.
+From the figure \ref{10 sample exponential kerne zero mean}, it is possible to see the difference that the kernel has caused in the shape of the function graph: comparing it with the figure \ref{10 sample linear kernel zero mean}, the importance of the choice of kernel according to the context of its use is evident.\\
+As in the case of the linear kernel, imposing the mean function at another constant will result in the functions being translated on the $y$-axis.
 
 
 \newpage 
 
 
 
-Per comprendere l'influenza del parametro $\sigma^2$ vengono mostrati grafici di funzioni con distribuzione $f\sim \mathcal{GP}(m,k)$ dove $m(x)=0$ e $k(x,x')$ è il squared-exponential kernel, con $l^2=1$ e due valori diversi di $\sigma^2$.
+To understand the influence of the parameter $\sigma^2$, graphs of functions with distribution $f\sim \mathcal{GP}(m,k)$ are shown where $m(x)=0$ and $k(x,x')$ is the squared-exponential kernel, with $l^2=1$ and two different values of $\sigma^2$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% IMMAGINI: PARAMETRO sigma
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -493,13 +493,13 @@ Per comprendere l'influenza del parametro $\sigma^2$ vengono mostrati grafici di
   \includegraphics[width=\linewidth]{images/Gaussian process/RBF - sigma=10.pdf}
   \caption{$\sigma^2=10$}
 \end{subfigure}
-\caption{Grafico di funzioni con distribuzione $f\sim \mathcal{GP}(\bm{0},k)$ dove $k(x,x')$ è lo squared-exponential kernel e $l^2=1$, il parametro $\sigma^2$ viene variato. Codice \ref{RBF - sigma}.}
+\caption{Graph of functions with distribution $f\sim \mathcal{GP}(\bm{0},k)$ where $k(x,x')$ is the squared-exponential kernel and $l^2=1$, parameter $\sigma^2$ is varied. Code \ref{RBF - sigma}.}
 \label{10 sample exponential modified sigma}
 \end{figure}
 
-Nei due casi dunque cambia quanto le funzioni si distanziano dalla retta $x=0$, cioè proporzionalmente al valore di $\sigma^2$. In realtà $\sigma^2$ influisce sulla tendenza delle funzioni a distanziarsi dalla media $m(x)$.
+In the two cases, therefore, it changes how far the functions are from the line $x=0$, i.e. proportionally to the value of $\sigma^2$. In reality, $\sigma^2$ affects the tendency of the functions to distance themselves from the mean $m(x)$.
 
-Per comprendere l'influenza del parametro $l^2$, vengono di seguito mostrati grafici di funzioni con distribuzione $f\sim \mathcal{GP}(m,k)$ dove $m(x)=0$ e $k(x,x')$ è il squared-exponential kernel e il parametro $l^2$ viene variato.
+To understand the influence of the parameter $l^2$, graphs of functions with distribution $f\sim \mathcal{GP}(m,k)$ are shown below, where $m(x)=0$ and $k(x,x')$ is the squared-exponential kernel and the parameter $l^2$ is varied.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -517,26 +517,26 @@ Per comprendere l'influenza del parametro $l^2$, vengono di seguito mostrati gra
   \includegraphics[width=\linewidth]{images/Gaussian process/RBF - l=10.pdf}
   \caption{$l^2=10$}
 \end{subfigure}
-\caption{Grafico di funzioni con distribuzione  $f\sim \mathcal{GP}(\bm{0},k)$ dove $k(x,x')$ è lo squared-exponential kernel e $\sigma^2=1$, il parametro $l^2$ viene variato. Codice \ref{codice9}.}
+\caption{Graph of functions with distribution  $f\sim \mathcal{GP}(\bm{0},k)$ where $k(x,x')$ is the squared-exponential kernel and $\sigma^2=1$, parameter $l^2$ is varied. Code \ref{codice9}.}
 \label{10 sample exponential modified l}
 \end{figure}
 
-Il parametro $l^2$ dunque modifica la frequenza di oscillazione delle funzioni.
+The parameter $l^2$ thus modifies the oscillation frequency of the functions.
 
 \newpage
 
-Per comprendere l'influenza della mean function, vengono di seguito mostrati grafici di funzioni con distribuzione $f\sim \mathcal{GP}(m,k)$ dove $m(x)=x^3$ e $k(x,x')$ lo squared-exponential kernel.
+To understand the influence of the mean function, graphs of functions with distribution $f\sim \mathcal{GP}(m,k)$ where $m(x)=x^3$ and $k(x,x')$ the squared-exponential kernel are shown below.
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%% IMMAGINE
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.85\textwidth]{images/Gaussian process/RBF - cubedmean.pdf}
-    \caption{Grafico di funzioni con distribuzione  $f\sim \mathcal{GP}(m,k)$ dove $m(x)=x^3$ e $k(x,x')$ lo squared-exponential kernel, $\sigma^2=7$ e $l=0.3$. Codice \ref{codice10}.}
+    \caption{Graph of functions with distribution  $f\sim \mathcal{GP}(m,k)$ where $m(x)=x^3$ e $k(x,x')$ is the squared-exponential kernel, $\sigma^2=7$ and $l=0.3$. Code \ref{codice10}.}
     \label{10 sample exponential kernel cubed mean}
 \end{figure}
 
-Sono stati scelti dei parametri in modo da risaltare i grafici delle funzioni. Con $\sigma^2=7$ (quindi un grande distanziamento dalla mean function) e $l^2=0.3$ (quindi una grande frequenza di oscillazione) le funzioni tendono a emulare la media $m(x)=x^3$ mantenendo le proprietà indotte dal kernel.
+Parameters have been chosen so that the graphs of the functions stand out. With $\sigma^2=7$ (thus a large distance from the mean function) and $l^2=0.3$ (thus a large oscillation frequency) the functions tend to emulate the mean $m(x)=x^3$ while maintaining the kernel-induced properties.
 
 \newpage
 
@@ -555,14 +555,14 @@ Sono stati scelti dei parametri in modo da risaltare i grafici delle funzioni. C
 %%%%%%%%% PERIODIC
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{defi}[Periodic kernel]
-Il \textbf{periodic kernel} ha forma:
+  The \textbf{periodic kernel} has form:
 \[
 k(x,x')=\sigma^2 \text{exp}\left( -\frac{2}{l^2} \text{sin}^2\left( \pi \frac{|x-x'|}{p}\right)\right).
 \]
-Anche questo kernel è dunque isotropico.
+This kernel is therefore also isotropic.
 \end{defi}
 
-Viene riportato il grafico della funzione $k(x,x')$. Si noti che il parametro $\sigma^2$ influisce sul picco della funzione come nel \textit{squared-esponential kernel}, similmente il parametro $l^2$ influisce sulla funzione come nel precedente kernel, il parametro $p$ influenza la periodicità del kernel. 
+The graph of the function $k(x,x')$ is shown. Note that the parameter $\sigma^2$ affects the peak of the function as in the \textit{squared-esponential kernel}, similarly the parameter $l^2$ affects the function as in the previous kernel, the parameter $p$ affects the periodicity of the kernel. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
@@ -571,7 +571,7 @@ Viene riportato il grafico della funzione $k(x,x')$. Si noti che il parametro $\
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.6\textwidth]{images/Gaussian process/Periodic kernel.pdf}
-    \caption{Grafico di $k(x,x')$ periodic kernel, $\sigma^2=1$, $l^2=1$, $p=2$. Codice \ref{periodic Kernel}.}
+    \caption{Graph of $k(x,x')$ periodic kernel, $\sigma^2=1$, $l^2=1$, $p=2$. Code \ref{periodic Kernel}.}
     \label{periodic kernel}
 \end{figure}
 
@@ -579,7 +579,7 @@ Viene riportato il grafico della funzione $k(x,x')$. Si noti che il parametro $\
 
 
 \newpage
-Vengono di seguito mostrati grafici di funzioni con distribuzione $f\sim \mathcal{GP}(m,k)$ dove $m(x)=0$ e $k(x,x')$ è il periodic kernel.
+Graphs of functions with distribution $f\sim \mathcal{GP}(m,k)$ where $m(x)=0$ and $k(x,x')$ is the periodic kernel are shown below.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%% IMMAGINE
@@ -587,12 +587,12 @@ Vengono di seguito mostrati grafici di funzioni con distribuzione $f\sim \mathca
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.85\textwidth]{images/Gaussian process/Periodic sample.pdf}
-    \caption{Grafico di funzioni con distribuzione  $f\sim \mathcal{GP}(\bm{0},k)$ dove $k(x,x')$ è il periodic kernel e $\sigma^2=1$, $l^2=2$, $p=1$. Codice \ref{periodic sample}.}
+    \caption{Graph of functions with distribution  $f\sim \mathcal{GP}(\bm{0},k)$ where $k(x,x')$ is the periodic kernel and $\sigma^2=1$, $l^2=2$, $p=1$. Code \ref{periodic sample}.}
     \label{3 sample periodic kerne zero mean}
 \end{figure}
 
-Come suggerisce il nome del kernel, le funzioni hanno andamento periodico.
-Per comprendere l'influenza del parametro $\sigma^2$, vengono di seguito mostrati grafici di funzioni con distribuzione $f\sim \mathcal{GP}(m,k)$ dove $m(x)=0$ e $k(x,x')$ è il periodic kernel e il parametro $\sigma^2$ viene variato.
+As the name of the kernel suggests, the functions are periodic.
+To understand the influence of the parameter $\sigma^2$, graphs of functions with distribution $f\sim \mathcal{GP}(m,k)$ where $m(x)=0$ and $k(x,x')$ is the periodic kernel and the parameter $\sigma^2$ is varied are shown below.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% IMMAGINI: PARAMETRO sigma
@@ -609,16 +609,16 @@ Per comprendere l'influenza del parametro $\sigma^2$, vengono di seguito mostrat
   \includegraphics[width=\linewidth]{images/Gaussian process/Periodic - sigma=10.pdf}
   \caption{$\sigma^2=10$}
 \end{subfigure}
-\caption{Grafico di funzioni con distribuzione  $f\sim \mathcal{GP}(\bm{0},k)$ dove $k(x,x')$ è il periodic kernel e $l^2=1, p=1$, il parametro $\sigma^2$ viene variato. Codice \ref{Periodic sigma}.}
+\caption{Graph of functions with distribution  $f\sim \mathcal{GP}(\bm{0},k)$ where $k(x,x')$ is the periodic kernel and $l^2=1, p=1$, parameter $\sigma^2$ is varied. Code \ref{Periodic sigma}.}
 \label{10 sample periodic modified sigma}
 \end{figure}
 
-Il parametro $\sigma^2$ è dunque responsabile dell'allontamento delle funzioni dalla media, esattamente come per lo squared-exponential kernel (la figura \ref{10 sample exponential modified sigma} riporta infatti risultati simili).
+The parameter $\sigma^2$ is thus responsible for the shift of the functions away from the mean, exactly as for the squared-exponential kernel (the figure \ref{10 sample exponential modified sigma} shows similar results).
 
 
 \newpage
 
-Per comprendere l'influenza del parametro $p$, vengono di seguito mostrati grafici di funzioni con distribuzione $f\sim \mathcal{GP}(m,k)$ dove $m(x)=0$ e $k(x,x')$ è il periodic kernel e il parametro $p$ viene variato.
+To understand the influence of parameter $p$, graphs of functions with distribution $f\sim \mathcal{GP}(m,k)$ where $m(x)=0$ and $k(x,x')$ is the periodic kernel and parameter $p$ is varied are shown below.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% IMMAGINI: PARAMETRO p
@@ -635,13 +635,13 @@ Per comprendere l'influenza del parametro $p$, vengono di seguito mostrati grafi
   \includegraphics[width=\linewidth]{images/Gaussian process/Periodic - p=10.pdf}
   \caption{$p=10$}
 \end{subfigure}
-\caption{Grafico di funzioni con distribuzione  $f\sim \mathcal{GP}(\bm{0},k)$ dove $k(x,x')$ è il periodic kernel e $\sigma^2=1$, $l^2=1$ e il parametro $p$ viene variato. Codice \ref{periodic p}.}
+\caption{Graph of functions with distribution  $f\sim \mathcal{GP}(\bm{0},k)$ where $k(x,x')$ is the periodic kernel and $\sigma^2=1$, $l^2=1$ and parameter $p$ is varied. Code \ref{periodic p}.}
 \label{10 sample periodic modified p}
 \end{figure}
 
-Il parametro $p$ influenza dunque il periodo delle funzioni.
+The parameter $p$ thus influences the period of the functions.
 
-Per comprendere l'influenza del parametro $l^2$, vengono di seguito mostrati grafici di funzioni con distribuzione $f\sim \mathcal{GP}(m,k)$ dove $m(x)=0$ e $k(x,x')$ è il periodic kernel e il parametro $l^2$ viene variato.
+To understand the influence of parameter $l^2$, graphs of functions with distribution $f\sim \mathcal{GP}(m,k)$ are shown below, where $m(x)=0$ and $k(x,x')$ is the periodic kernel and parameter $l^2$ is varied.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% IMMAGINI: PARAMETRO l
@@ -658,44 +658,44 @@ Per comprendere l'influenza del parametro $l^2$, vengono di seguito mostrati gra
   \includegraphics[width=\linewidth]{images/Gaussian process/Periodic - l=4.pdf}
   \caption{$l^2=4$}
 \end{subfigure}
-\caption{Grafico di funzioni con distribuzione  $f\sim \mathcal{GP}(\bm{0},k)$ dove $k(x,x')$ è il periodic kernel e $\sigma^2=1$, $p=1$ e il parametro $l^2$ viene variato. Codice \ref{periodic l}.}
+\caption{Graph of functions with distribution  $f\sim \mathcal{GP}(\bm{0},k)$ where $k(x,x')$ is the periodic kernel and $\sigma^2=1$, $p=1$ and parameter $l^2$ is varied. Code \ref{periodic l}.}
 \label{10 sample periodic modified l}
 \end{figure}
 
-Il parametro $l^2$ influenza dunque la "morbidezza" della frequenza delle funzioni.
+The parameter $l^2$ thus influences the 'smoothness' of the frequency of the functions.
 
 
 \newpage 
-Per comprendere l'influenza della mean function, vengono di seguito mostrati grafici di funzioni con distribuzione $f\sim \mathcal{GP}(m,k)$ dove $m(x)=x^3$ e $k(x,x')$ il periodic kernel.
+To understand the influence of the mean function, graphs of functions with distribution $f\sim \mathcal{GP}(m,k)$ where $m(x)=x^3$ and $k(x,x')$ the periodic kernel are shown below.
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%% IMMAGINE
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.85\textwidth]{images/Gaussian process/Periodic - cubedmean.pdf}
-    \caption{Grafico di funzioni con distribuzione  $f\sim \mathcal{GP}(m,k)$ dove $m(x)=x^3$ e $k(x,x')$ il periodic kernel, $\sigma^2=8$, $l^2=1$ e $p=0.5$. Codice \ref{priodic cubedmean}.}
+    \caption{Graph of functions with distribution  $f\sim \mathcal{GP}(m,k)$ where $m(x)=x^3$ and $k(x,x')$ the periodic kernel, $\sigma^2=8$, $l^2=1$ and $p=0.5$. Code \ref{priodic cubedmean}.}
     \label{3 sample periodic kernel cubed mean}
 \end{figure}
 
-Sono stati scelti dei parametri in modo da risaltare i grafici delle funzioni. Con $\sigma^2=8$ (quindi un grande distanziamento dalla mean function) e $p=0.5$ (quindi una grande frequenza di oscillazione) e $l^2=1$ (quindi molto "spigolose") le funzioni tendono a emulare la media $m(x)=x^3$ mantenendo le proprietà indotte dal kernel.
+Parameters have been chosen so that the graphs of the functions stand out. With $\sigma^2=8$ (thus a large distance from the mean function) and $p=0.5$ (thus a large oscillation frequency) and $l^2=1$ (thus very "angular") the functions tend to emulate the mean $m(x)=x^3$ while maintaining the kernel-induced properties.
 
 \newpage
 
 
 
-\subsection{Covariance function in più dimensioni}\label{multidimensionalKernel}
-Si possono estendere le covariance function in più dimensioni in diversi modi. Poiché l'estensione a più dimensioni è pressocchè identica per ogni covariance function, viene mostrato il caso del squared-exponential kernel, in quanto verrà utilizzato nella parte di elaborato dedicata al training.\\
-Per estendere il squared-exponential kernel è necessario estendere in più dimensioni la sottrazione $x-x'$. Il modo più semplice è considerare la norma $||x-x'||$, un modo più flessibile è considerare $(x-x')^\text{T}M(x-x')$ dove $M$ è una matrice.
-In questo modo è possibile generalizzare il caso:
+\subsection{Covariance function in more dimensions}\label{multidimensionalKernel}
+One can extend covariance functions in multiple dimensions in various ways. Since the multi-dimensional extension is almost identical for each covariance function, the case of the squared-exponential kernel is shown, as it will be used in the training part of the paper.\\
+In order to extend the squared-exponential kernel, it is necessary to extend the subtraction $x-x'$ in more dimensions. The simplest way is to consider the norm $||x-x'||$, a more flexible way is to consider $(x-x')^\text{T}M(x-x')$ where $M$ is a matrix.
+This makes it possible to generalise the case:
 \[
 k(x,x')=\sigma^2 \text{exp}\left( -\frac{||x-x'||^2}{2l^2} \right),
 \]
-che si può ottenere come:
+which can be obtained as:
 \[
 k(x,x')=\sigma^2 \text{exp}\left( -\frac{(x-x')^\text{T}M(x-x')}{2} \right)
 \]
-imponendo $M=l^{-2}I$.\\
-La struttura del kernel con matrice permette di dotare ogni dimensione di una differente scala di lunghezza $l_i$, imponendo $M=\text{diag}(\bf{l})^{-2}$, dove $\mathbf{l}=(l_1,...,l_n)^\text{T}$. Questa caratteristica risulta fondamentale nel training (trattato successivamente nell'elaborato) perché se uno di questi $l_i$ diventa grande, la dimensione corrispondente (che si vedrà corrispondere ad un parametro da ottimizzare) "perde di rilevanza". L'immagine \ref{multidimensional} fornisce un esempio di un comportamento simile.
+imposing $M=l^{-2}I$.\\
+The matrix kernel structure allows each dimension to be given a different length scale $l_i$, imposing $M=\text{diag}(\bf{l})^{-2}$, where $\mathbf{l}=(l_1,...,l_n)^\text{T}$. This feature is crucial in training (discussed later in the paper) because if one of these $l_i$ becomes large, the corresponding dimension (which will be seen to correspond to a parameter to be optimised) "loses relevance". The image \ref{multidimensional} provides an example of such behaviour.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%% IMMAGINE
@@ -703,7 +703,7 @@ La struttura del kernel con matrice permette di dotare ogni dimensione di una di
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.6\textwidth]{images/Gaussian process/Multidimensional RBF.pdf}
-    \caption{Grafico di funzione con distribuzione $f\sim \mathcal{GP}(0,k)$ con $k(x,x')$ lo squared-exponential kernel in due dimensioni in cui $M=\text{diag}(1,3)^{-2}$. La funzione tende a cambiare più velocemente lungo la direzione $x_1$ che lungo la direzione $x_2$. \cite{murphy_machine_2012}}
+    \caption{Graph of function with distribution $f\sim \mathcal{GP}(0,k)$ with $k(x,x')$ the squared-exponential kernel in two dimensions in which $M=\text{diag}(1,3)^{-2}$. The function tends to change faster along the $x_1$ direction than along the $x_2$ direction. \cite{murphy_machine_2012}}
     \label{multidimensional}
 \end{figure}
 
@@ -712,12 +712,12 @@ La struttura del kernel con matrice permette di dotare ogni dimensione di una di
 
 \newpage
 
-\subsection{Combinare le covariance function}
-Nelle precedenti sezioni è stata spiegata l'influenza della covariance function nella forma del grafico delle funzioni. Tuttavia non è raro dover usare funzioni con forme diverse da quelle imposte dalle covariance function precedentemente introdotte. In tal caso è possibile costruire un nuovo kernel secondo la proposizione \ref{combining kernel}.
+\subsection{Combining covariance functions}
+In the previous sections, the influence of the covariance function on the shape of the function graph has been explained. However, it is not uncommon to have to use functions with shapes other than those imposed by the previously introduced covariance functions. In this case it is possible to construct a new kernel according to the proposition \ref{combining kernel}.
 
 
 \begin{prop} \label{combining kernel}
-Dati due kernel $K_1(x,x')$ e $K_2(x,x')$, per le proprietà di un kernel i seguenti sono ancora kernel:
+  Given two kernels $K_1(x,x')$ and $K_2(x,x')$, by the properties of a kernel the following are still kernels:
 \[
 \begin{array}{l}
     K(x,x') = c\cdot K_1(x,x') \quad \forall c>0 \text{ costante}\\
@@ -729,7 +729,7 @@ Dati due kernel $K_1(x,x')$ e $K_2(x,x')$, per le proprietà di un kernel i segu
 \end{array}
 \]
 \end{prop}
-Non è negli interessi dell'elaborato studiare a fondo le combinazioni possibili dei kernel introdotti; vengono però portati due semplici casi di combinazioni di kernel a titolo puramente illustrativo.
+It is not in the interests of the paper to study in depth the possible combinations of kernels introduced; however, two simple cases of kernel combinations are given for illustrative purposes only.
 
 \newpage
 
@@ -745,7 +745,7 @@ Non è negli interessi dell'elaborato studiare a fondo le combinazioni possibili
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.55\textwidth]{images/Gaussian process/RBF + periodic kernel.pdf}
-    \caption{Grafico di $k(x,x')$ squared-exponential kernel sommato a periodic kernel. $\sigma^2=1$, $l=2$, $p=1$. Codice \ref{RBF + periodic kernel}.}
+    \caption{Graph of $k(x,x')$ squared-exponential kernel summed to periodic kernel. $\sigma^2=1$, $l=2$, $p=1$. Code \ref{RBF + periodic kernel}.}
     \label{SE + periodic kernel}
 \end{figure}
 
@@ -756,11 +756,11 @@ Non è negli interessi dell'elaborato studiare a fondo le combinazioni possibili
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[h]
     \centering    \includegraphics[width=0.69\textwidth]{images/Gaussian process/RBF + periodic sample.pdf}
-    \caption{Grafico di funzioni con distribuzione  $f\sim \mathcal{GP}(\bm{0},k)$ dove $k(x,x')$ è lo squared-exponential sommato al periodic kernel e $l^2=1.1$, $\sigma^2=1$, $p=1.1$. Codice \ref{RBF + periodic sample}.}
+    \caption{Graph of functions with distribution  $f\sim \mathcal{GP}(\bm{0},k)$ where $k(x,x')$ is the squared-exponential summed to periodic kernel and $l^2=1.1$, $\sigma^2=1$, $p=1.1$. Code \ref{RBF + periodic sample}.}
     \label{SE + periodic sample}
 \end{figure}
 
-Combinare i due kernel genera dunque funzioni periodiche con delle perturbazioni sulla coppia degli assi.
+Combining the two kernels therefore generates periodic functions with perturbations on the pair of axes.
 
 \newpage
 
@@ -772,7 +772,7 @@ Combinare i due kernel genera dunque funzioni periodiche con delle perturbazioni
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.55\textwidth]{images/Gaussian process/Linear x Linear kernel.pdf}
-    \caption{Grafico di $k(x,x')$ linear kernel moltiplicato a linear kernel. $\sigma_b^2=0$, $\sigma_v^2=1$, $c=0$, $x'=1$. Codice \ref{linear x linear}.}
+    \caption{Graph of $k(x,x')$ linear kernel multiplied by linear kernel. $\sigma_b^2=0$, $\sigma_v^2=1$, $c=0$, $x'=1$. Code \ref{linear x linear}.}
     \label{linear * linear kernel}
 \end{figure}
 
@@ -783,19 +783,19 @@ Combinare i due kernel genera dunque funzioni periodiche con delle perturbazioni
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.68\textwidth]{images/Gaussian process/linear x linear sample.pdf}
-    \caption{Grafico di funzioni con distribuzione  $f\sim \mathcal{GP}(\bm{0},k)$ dove $k(x,x')$ è il linear kernel moltiplicato al linear kernel e $\sigma_b^2=0$, $\sigma_v^2=1$, $c=0$. Codice \ref{linear x linear sample}.}
+    \caption{Graph of functions with distribution  $f\sim \mathcal{GP}(\bm{0},k)$ where $k(x,x')$ is the linear kernel multiplied by linear kernel and $\sigma_b^2=0$, $\sigma_v^2=1$, $c=0$. Code \ref{linear x linear sample}.}
     \label{linear * linear sample}
 \end{figure}
 
 
-Combinare i due kernel genera dunque funzioni con comportamento parabolico. In un certo senso era possibile prevedere questo risultato ricordando che il linear kernel genera delle rette.
+Combining the two kernels therefore generates functions with parabolic behaviour. In a sense, it was possible to predict this result by remembering that the linear kernel generates straight lines.
 
 \newpage
 
 
 
-\subsubsection{Esempio reale di covariance function composta}\label{section: mauna loa}
-Viene ripreso da \cite{rasmussen_gaussian_2006} un esempio di regressione in cui è necessario comporre più kernel function.  I dati consistono in concentrazioni medie mensili di $CO_2$ atmosferica (in parti per milione di volume: $ppmv$) derivate da campioni d'aria raccolti presso l'osservatorio di Mauna Loa, nelle Hawaii, tra il 1958 e il 2003 (con alcuni valori mancanti). L'obiettivo è modellare la concentrazione di $CO_2$ in funzione del tempo $x$, cioè predire quella che è conosciuta come \textit{curva di Keeling}. Dalla figura \ref{CO2} sono evidenti alcune caratteristiche: una tendenza all'aumento a lungo termine, una pronunciata variazione stagionale e alcune irregolarità minori. 
+\subsubsection{Real-life example of a compound covariance function}\label{section: mauna loa}
+It is taken from \cite{rasmussen_gaussian_2006} an example of a regression in which several kernel functions need to be composed.  The data consist of monthly mean atmospheric $CO_2$ concentrations (in parts per million volume: $ppmv$) derived from air samples collected at the Mauna Loa Observatory in Hawaii between 1958 and 2003 (with some missing values). The objective is to model the concentration of $CO_2$ as a function of time $x$, i.e. to predict what is known as \textit{Keeling's curve}. From the figure \ref{CO2}, some features are evident: a long-term increasing trend, a pronounced seasonal variation and some minor irregularities. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
@@ -804,36 +804,36 @@ Viene ripreso da \cite{rasmussen_gaussian_2006} un esempio di regressione in cui
 \begin{figure}[ht]
     \centering
     \includegraphics[width=1\textwidth]{images/Gaussian process/Co2_example.PNG}
-    \caption{545 osservazioni delle medie mensili della concentrazione atmosferica di $CO_2$ tra il 1958 e il 2003, inoltre viene mostrata la regione di confidenza del $95\%$ per un modello di regressione di processo gaussiano a 20 anni nel futuro. \cite{rasmussen_gaussian_2006}}
+    \caption{545 observations of monthly averages of the atmospheric concentration of $CO_2$ between 1958 and 2003, the $95\%$ confidence region for a 20-year Gaussian process regression model in the future is also shown. \cite{rasmussen_gaussian_2006}}
     \label{CO2}
 \end{figure}
 
 
-Per modellare l'andamento regolare e crescente a lungo termine viene utilizzato uno squared-exponential kernel:
+A squared-exponential kernel is used to model the regular and increasing long-term trend:
 \[
 k_1(x,x')=\theta_1^2\text{exp}\left(-\frac{(x-x')^2}{2\theta_2^2}\right).
 \]
 
 
-Viene usato il periodic kernel con un periodo di un anno per modellare la variazione stagionale. Poiché l'andamento stagionale non è esattamente periodico, viene considerato il prodotto con un squared-exponential kernel per consentire un decadimento non esattamente periodico: 
+The periodic kernel with a period of one year is used to model seasonal variation. Since the seasonal trend is not exactly periodic, the product with a squared-exponential kernel is considered to allow for a decay that is not exactly periodic: 
 \[
 k_2(x, x') = \theta^2_3 \text{exp}\left( - \frac{(x - x')^2}{2\theta^2_4} - \frac{2 \text{sin}^2(\pi(x - x'))}{\theta^2_5} \right).
 \]
-Per modellare le (piccole) irregolarità a medio termine viene utilizzato un \textit{rational quadratic} kernel (non è stato introdotto nell'elaborato): 
+A \textit{rational quadratic} kernel is used to model the (small) medium-term irregularities (not introduced in the paper): 
 \[
 k_3(x, x') = \theta^2_6 \left( 1 + \frac{(x - x')^2}{2\theta_8\theta^2_7} \right)^{-\theta_8}.
 \] 
-Infine, si modella il rumore come somma di un contributo di uno squared-exponential e di una componente indipendente:
+Finally, noise is modelled as the sum of a squared-exponential contribution and an independent component:
 \[
 k_4(x_p, x_q) = \theta^2_9 \text{exp}\left( \frac{- (x_p - x_q)^2}{2\theta^2_{10}} \right) + \theta^2_{11} \delta_{pq}.
 \]
 
-Il kernel complessivo risulta:
+The overall kernel results:
 \[
 k(x,x')=k_1(x,x')+k_2(x,x')+k_3(x,x')+k_4(x,x'),
 \]
-dove si hanno $\bm{\theta}=(\theta_1,...,\theta_{11})$ iperparametri\footnote{Si veda \ref{gerarchica}.}. Dopo una fase di training del modello vengono dati dei valori ai $\theta_i$\footnote{Viene spiegato come questo venga fatto nel capitolo \ref{machineLearning}.}. La figura \ref{CO2} mostra come il modello predice l'andamento della concentrazione atmosferica di $CO_2$ nei venti anni successivi all'ultima misurazione, mostrando anche la regione di confidenza del novantacinque percento. Si nota che più si va avanti nel tempo e più la regione di confidenza si allarga.\\
-Intuitivamente il modello sembra seguire bene l'andamento del grafico, seppur più avanti negli anni la regione di incertezza diventa più ampia, informando poco sull'effettiva concentrazione di $CO_2$. Nella figura \ref{CO2_comparison} viene comparata la predizione del modello con i dati reali presi dal sito del \href{https://gml.noaa.gov/ccgg/trends/}{Global Monitoring Laboratory}.
+where we have $\bm{\theta}=(\theta_1,...,\theta_{11})$ hyperparameters\footnote{see \ref{gerarchica}.}. After a training phase of the model, values are given to the $\theta_i$\footnote{It is explained how this is done in the chapter \ref{machineLearning}.}. Figure \ref{CO2} shows how the model predicts the trend of the atmospheric concentration of $CO_2$ over the twenty years since the last measurement, also showing the ninety-five per cent confidence region. It can be seen that the further one goes in time, the wider the confidence region becomes.\\
+Intuitively, the model seems to follow the trend of the graph well, although as the years go by, the region of uncertainty becomes larger, informing little about the actual concentration of $CO_2$. Figure \ref{CO2_comparison} compares the model's prediction with actual data taken from the \href{https://gml.noaa.gov/ccgg/trends/}{Global Monitoring Laboratory}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
@@ -842,19 +842,19 @@ Intuitivamente il modello sembra seguire bene l'andamento del grafico, seppur pi
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{images/Gaussian process/MaunaLoaPrediction.pdf}
-    \caption{Comparazione della predizione della concentrazione di $CO_2$ con i dati reali fino a maggio 2022.}
+    \caption{Comparison of the prediction of $CO_2$ concentration with actual data until May 2022.}
     \label{CO2_comparison}
 \end{figure}
 
 \newpage
 
-Si nota dunque che la previsione è stata conservativa nel lungo termine: il grande aumento nello concentrazione di $CO_2$ è dovuto, secondo alcune fonti, a come la flora ha risposto ai cambiamenti climatici (siccità e precipitazioni principalmente), ma anche alle grandi emissioni dovute all'uso di carburanti fossili.
+We can therefore see that the forecast was conservative in the long term: the large increase in the concentration of $CO_2$ is due, according to some sources, to how the flora has responded to climate change (drought and precipitation mainly), but also to the large emissions due to the use of fossil fuels.
 
-In un certo senso, dunque, è ragionevole che la predizione non sia precisa negli ultimi anni poiché avrebbe dovuto prevedere eventi (dai cambiamenti climatici ai diversi tassi di consumo di carburante) che non erano presenti negli anni in cui il processo gaussiano "ha imparato".
+In a way, therefore, it is reasonable that the prediction is not accurate in recent years as it should have predicted events (from climate change to different rates of fuel consumption) that were not present in the years when the Gaussian process 'learned'.
 
-In figura \ref{CO2_comparison_zoomed} viene ingrandita l'immagine precedente dal 1995 al 2022, dunque enfatizzando il periodo di tempo che il processo gaussiano ha predetto.
+In figure \ref{CO2_comparison_zoomed}, the previous image from 1995 to 2022 is enlarged, thus emphasising the time period predicted by the Gaussian process.
 
-Si nota che dopo il 2003 la predizione è piuttosto imprecisa, non riuscendo a stare dietro ai veloci cambiamenti umani (in termini di inquinamento).  
+It can be seen that after 2003, the prediction is rather inaccurate, failing to keep up with rapid human changes (in terms of pollution).  
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%% IMMAGINE
@@ -862,7 +862,7 @@ Si nota che dopo il 2003 la predizione è piuttosto imprecisa, non riuscendo a s
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{images/Gaussian process/MaunaLoaPredictionZoom.pdf}
-    \caption{Comparazione della predizione della concentrazione di $CO_2$ con i dati reali fino dal 1995 a maggio 2022.}
+    \caption{Comparison of the prediction of $CO_2$ concentration with actual data up to 1995 to May 2022.}
     \label{CO2_comparison_zoomed}
 \end{figure}
 
@@ -873,22 +873,22 @@ Si nota che dopo il 2003 la predizione è piuttosto imprecisa, non riuscendo a s
 
 
 
-\section{Predizioni con osservazioni senza rumore}\label{regressioneGP}
-In questa sezione viene spiegato come sfruttare le informazioni fornite dai \textit{training data} per generare una funzione che incorpori la conoscenza a priori nel caso di osservazioni senza rumore. \\
+\section{Predictions with noiseless observations}\label{regressioneGP}
+This section explains how to exploit the information provided by \textit{training data} to generate a function that incorporates a priori knowledge in the case of observations without noise. \\
 
 
 \begin{defi}[Noise-free training set]
-Il \textbf{noise-free training set} è l'insieme di osservazioni \textit{noise-free} definito come: $\mathcal{D}=\{(x_n,y_n): n=1,...,N\}$ dove $y_n=f(x_n)$ è il valore osservato della funzione $f$ nel punto $x_n$. 
+  The \textbf{noise-free training set} is the set of observations \textit{noise-free} defined as: $ \mathcal{D}=\{ (x_n,y_n) : n=1,...,N\}$ where $y_n=f(x_n)$ is the observed value of the function $f$ at point $x_n$. 
 \end{defi}
 
 
-Lo scopo del (noise-free) training set è quello di definire un insieme di punti $\mathcal{P}=\{x_n: n=1,...,N\}$ dei quali si conosce il valore della funzione per richiedere al processo gaussiano di generare funzioni che interpolino questo insieme di punti (dunque che abbiano valore $y_n$ su ogni $x_n\in \mathcal{P}$ senza incertezza).
+The purpose of the (noise-free) training set is to define a set of points $\mathcal{P}=\{x_n: n=1,...,N\}$ of which the value of the function is known in order to require the Gaussian process to generate functions that interpolate this set of points (i.e. that have value $y_n$ on every $x_n \in \mathcal{P}$ without uncertainty).
 
 \begin{defi}[Test set]
-il \textbf{test set} è l'insieme di valori $X_*=\{x_n:n=1,...,N^*\}$ dei quali si vuole avere la predizione, cioè l'output della funzione.
+  the \textbf{test set} is the set of values $X_*=\{x_n:n=1,...,N^*\}$ of which the prediction, i.e. the output of the function, is desired.
 \end{defi}
 
-Pragmaticamente, quello che si sta facendo definendo il \textit{training set} $\mathcal{D}$ è aggiungere i punti di $\mathcal{P}$ all'insieme di punti su cui valutare la covariance function per costruire la matrice di covarianza\footnote{Come accennato in \ref{footnote 1}, per ottenere un grafico è necessario partire da un dominio finito. Per questo motivo si parla di \textit{matrice di covarianza}.}. Tramite il processo di condizionamento si ottiene la distribuzione \textit{a posteriori}, la distribuzione cioè delle funzioni che interpolano i punti del training set, come illustrato nella figura \ref{intuitiveExplanationOfConditioning}.
+Pragmatically, what is being done by defining the \textit{training set} $\mathcal{D}$ is to add the points of $\mathcal{P}$ to the set of points on which to evaluate the covariance function to construct the covariance matrix\footnote{As mentioned in \ref{footnote 1}, to obtain a graph it is necessary to start from a finite domain. This is why we speak of \textit{covariance matrix}.}. Through the conditioning process we obtain the \textit{a posteriori} distribution, that is, the distribution of the functions that interpolate the points of the training set, as illustrated in Figure \ref{intuitiveExplanationOfConditioning}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
@@ -897,13 +897,13 @@ Pragmaticamente, quello che si sta facendo definendo il \textit{training set} $\
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{images/Gaussian process/GPposterior.PNG}
-    \caption{Spiegazione grafica di come viene incorporata la conoscenza a priori \cite{gortler_visual_2019}.}
+    \caption{Graphical explanation of how a priori knowledge is incorporated \cite{gortler_visual_2019}.}
     \label{intuitiveExplanationOfConditioning}
 \end{figure}
 
 \newpage
-Si consideri ora una funzione distribuita come $f\sim \mathcal{GP}(m,k)$. 
-Si consideri ora $X^*=\{x_i^*:i=1,\dots,N^*\}$ un \textit{test set} di cui si vuole predire gli output $\bm{f^*}=\left[f(x^*_1), \dots, f(x^*_{N^*}) \right]$; siano inoltre  $\bm{f}=\left[f(x_1), \dots, f(x_N) \right]$ gli output del training set dove $x_i\in \mathcal{P}$. Ricordando che gli output della funzione $f$ seguono una distribuzione gaussiana, è possibile ricavare la distribuzione congiunta:
+Consider now a function distributed as $f\sim \mathcal{GP}(m,k)$. 
+Consider now $X^*=\{x_i^*:i=1,\dots,N^*\}$ a \textit{test set} Of which you want to predict the outputs $\bm{f^*}=\left[f(x^*_1), \dots, f(x^*_{N^*}) \right]$; Let also  $\bm{f}=\left[f(x_1), \dots, f(x_N) \right]$ the outputs of the training set where $x_i\in \mathcal{P}$. Recalling that the outputs of the function $f$ follow a Gaussian distribution, the joint distribution can be derived:
 \[
 \begin{pmatrix}
 \bm{f}\\
@@ -922,15 +922,15 @@ Si consideri ora $X^*=\{x_i^*:i=1,\dots,N^*\}$ un \textit{test set} di cui si vu
 \right)
 \]
 
-dove $\bm{\mu}=\begin{pmatrix}m(x_1) \\ \vdots \\ m(x_N)\end{pmatrix}$, $\bm{\mu_*}=\begin{pmatrix}m(x^*_1) \\ \vdots \\ m(x^*_{N^*})\end{pmatrix}$, $\bm{K}_{X,X}=k(X,X)$ è una matrice $N\times N$, $\bm{K}_{X,X^*}=k(X,X^*)$ è una matrice $N\times N^*$, $\bm{K}_{X^*,X}=k(X^*,X)$ è una matrice $N^*\times N$, $\bm{K}_{X^*,X^*}=k(X^*,X^*)$ è una matrice $N^*\times N^*$.\\
+where $\bm{\mu}=\begin{pmatrix}m(x_1) \\ \vdots \\ m(x_N)\end{pmatrix}$, $\bm{\mu_*}=\begin{pmatrix}m(x^*_1) \\ \vdots \\ m(x^*_{N^*})\end{pmatrix}$, $\bm{K}_{X,X}=k(X,X)$ is a $N\times N^*$ matrix, $\bm{K}_{X,X^*}=k(X,X^*)$ is a $N\times N^*$ matrix, $\bm{K}_{X^*,X}=k(X^*,X)$ is a $N^*\times N^*$ matrix, $\bm{K}_{X^*,X^*}=k(X^*,X^*)$ is a $N^*\times N^*$ matrix .\\
 
-Dalla proposizione \ref{marginale-condizionata} ricaviamo la distribuzione condizionata di $\bm{f^*} | X^*, \mathcal{D}$:
+From the proposition \ref{marginale-condizionata} we derive the conditional distribution of $\bm{f^*} | X^*, \mathcal{D}$:
 
 \[
 \bm{f^*} | X^*, \mathcal{D} \sim \mathcal{N}(\bm{\mu^*}, \bm{\Sigma^*})
 \]
 
-dove: 
+where:
 \[
 \begin{split}
 \bm{\mu^*}=m(X^*)+\bm{K}_{X,X^*}^\text{T}\bm{K}^{-1}_{X,X}(\bm{f}-m(X))\\
@@ -940,7 +940,7 @@ dove:
 
 
 \newpage 
-In figura \ref{Interpolation} viene mostrato un esempio grafico di interpolazione di sei punti.
+A graphical example of six-point interpolation is shown in Figure \ref{Interpolation}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
@@ -949,11 +949,11 @@ In figura \ref{Interpolation} viene mostrato un esempio grafico di interpolazion
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{images/Gaussian process/Noise-free - mean&f(x).pdf}
-    \caption{Grafico di funzioni con distribuzione $f\sim \mathcal{GP}(\bm{0},k)$ dove $k(\cdot,\cdot)$ è il squared-exponential kernel; il processo gaussiano è stato condizionato per interpolare sei punti. Viene mostrata in rosso la funzione da cui sono stati scelti i punti da interpolare, in blu la media del processo gaussiano condizionato, come linee tratteggiate alcuni sample del processo gaussiano. Codice \ref{interpolation code}.}
+    \caption{Graph of functions with distribution $f\sim \mathcal{GP}(\bm{0},k)$ dove $k(\cdot,\cdot)$ is the squared-exponential kernel; the Gaussian process was conditioned to interpolate six points. Shown in red is the function from which the points to be interpolated were chosen, in blue the mean of the conditioned Gaussian process, as dashed lines some samples of the Gaussian process. Code \ref{interpolation code}.}
     \label{Interpolation}
 \end{figure}
 
-La media del processo gaussiano condizionato per interpolare i sei punti è la più affidabile nel predire la funzione $x\cdot sin(x)$ da cui sono stati generati i punti da interpolare. Le funzioni con distribuzione il processo gaussiano condizionato hanno tutte la proprietà di interpolazione dei suddetti punti, tuttavia nel resto del piano si distanziano più facilmente dalla media, anche se tendono a restare nei suoi dintorni. Nella figura \ref{Interpolation confidence region} vengono sfruttate le informazioni della matrice di covarianza a posteriori per disegnare la regione di confidenza del 95\%, dentro la quale la maggior parte dei sample risiede.
+The mean of the conditional Gaussian process to interpolate the six points is the most reliable in predicting the function $x\cdot sin(x)$ from which the points to be interpolated were generated. The functions with distribution the conditional Gaussian process all have the property of interpolating the aforementioned points, however, in the rest of the plane they are more easily distanced from the mean, although they tend to stay in its vicinity. In Figure \ref{Interpolation confidence region} information from the a posteriori covariance matrix is exploited to draw the 95\% confidence region, within which most of the samples reside.
 
 
 \newpage
@@ -963,33 +963,33 @@ La media del processo gaussiano condizionato per interpolare i sei punti è la p
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{images/Gaussian process/Noise-free - mean&samples.pdf}
-    \caption{Grafico di funzioni con distribuzione $f\sim \mathcal{GP}(\bm{0},k)$ dove $k(\cdot,\cdot)$ è il squared-exponential kernel; il processo gaussiano è stato condizionato per interpolare sei punti. Viene mostrata in blu la regione di confidenza al 95\%, in blu la media del processo gaussiano condizionato e come linee tratteggiate alcuni sample. Codice \ref{interpolation confidence region code}.}
+    \caption{Graph of functions with distribution $f\sim \mathcal{GP}(\bm{0},k)$ where $k(\cdot,\cdot)$ is the squared-exponential kernel; the Gaussian process was conditioned to interpolate six points. Shown in blue is the 95\% confidence region, in blue the mean of the conditional Gaussian process, and as dashed lines some samples. Code \ref{interpolation confidence region code}.}
     \label{Interpolation confidence region}
 \end{figure}
 
-Come anticipato, all'interno dell'area data da $\bm{\mu^*}(x_i)\pm 1.96\bm{\Sigma^*}(x_i,x_i)$ (regione di confidenza al 95\%) risiedono la maggior parte dei sample della distribuzione a posteriori. Più ci si distanzia dai punti interpolati e più facilmente le funzioni si discostano dalla media, tendendo ad uscire dall'area di incertezza, come si osserva ad esempio nella zona nei pressi di $x=10$ della figura \ref{Interpolation confidence region}.
+As anticipated, within the area given by $\bm{\mu^*}(x_i)\pm 1.96\bm{\Sigma^*}(x_i,x_i)$ (95\% confidence region) reside most of the samples of the a posteriori distribution. The farther one moves away from the interpolated points, the more easily the functions deviate from the mean, tending to move out of the area of uncertainty, as observed, for example, in the area near $x=10$ in Figure \ref{Interpolation confidence region}.
 
 
 
-\section{Predizioni con osservazioni rumorose}\label{noisyPrediction}
-In questa sezione viene spiegato come sfruttare le informazioni fornite dai \textit{training data} per generare una funzione che incorpori la conoscenza a priori nel caso di osservazioni con rumore. \\
+\section{Predictions with noisy observations}\label{noisyPrediction}
+This section explains how to exploit the information provided by \textit{training data} to generate a function that incorporates a priori knowledge in the case of observations with noise. \\
 
 \begin{defi}[Noisy training set]
-Il \textbf{noisy training set} è l'insieme di osservazioni \textit{noisy} (cioè con una componente di errore) definito come: $\mathcal{D}=\{(x_n,y_n): n=1,...,N\}$ dove $y_n=f(x_n)+\epsilon$ è il valore osservato della funzione $f$ nel punto $x_n$ con una componente di rumore $\epsilon\sim \mathcal{N}(0,\sigma_n^2)$ indipendente e identicamente distribuito. 
+  The \textbf{noisy training set} is the set of \textit{noisy} observations (i.e., with an error component) defined as: $\mathcal{D}=\{(x_n,y_n): n=1,... ,N\}$ where $y_n=f(x_n)+\epsilon$ is the observed value of the function $f$ at the point $x_n$ with a noise component $\epsilon\sim \mathcal{N}(0,\sigma_n^2)$ independent and identically distributed. 
 \end{defi}
-In questo caso si ha:
+In this case you have:
 \[
 \text{Cov}(y_p,y_q)=k(x_p,x_q)+\sigma_n^2 \delta_{pq},
 \]
-o equivalentemente:
+or equivalently:
 \[
 \text{Cov}(\mathbf{y})=k(X,X)+\sigma_n^2I.
 \]
 
 \newpage
 
-Viene usata una notazione analoga alla sezione \ref{regressioneGP}: $X^*=\{x_i^*:i=1,\dots,N^*\}$ è il \textit{test set} di cui si vogliono predire gli output $\bm{f^*}=\left[f(x^*_1), \dots, f(x^*_{N^*}) \right]$;  $\bm{y}=\left[f(x_1)+\epsilon, \dots, f(x_N)+\epsilon \right]$ gli output del training set. \\
-Si procede come nel caso della predizione con osservazioni senza rumore:
+A notation analogous to the \ref{regressioneGP} section is used: $X^*=\{x_i^*: i=1,\dots,N^*\}$ is the \textit{test set} whose outputs are to be predicted $\bm{f^*}=\left[f(x^*_1), \dots, f(x^*_{N^*}) \right]$; $\bm{y}=\left[f(x_1)+\epsilon, \dots, f(x_N)+\epsilon \right]$ the outputs of the training set. \\
+We proceed as in the case of prediction with noiseless observations:
 \[
 \begin{pmatrix}
 \bm{y}\\
@@ -1007,12 +1007,11 @@ Si procede come nel caso della predizione con osservazioni senza rumore:
 \end{pmatrix}
 \right)
 \]
-Si ricava:
+It is derived:
 \[
 \bm{f^*} | X^*, \mathcal{D} \sim \mathcal{N}(\bm{\mu^*}, \bm{\Sigma^*})
 \]
-
-dove: 
+where:
 \[
 \begin{split}
 \bm{\mu^*}=m(X^*)+\bm{K}_{X,X^*}^\text{T}(\bm{K}_{X,X}+\sigma_n^2I)^{-1}(\bm{y}-m(X))\\
@@ -1021,26 +1020,26 @@ dove:
 \]
 
 
-In figura \ref{Noisy} viene mostrato un esempio grafico di come un processo gaussiano interpreti le informazioni date da osservazioni con rumore per predire una funzione.
-Come ci si può aspettare, essendo le osservazioni in questo caso con rumore, il processo gaussiano ha bisogno di più osservazioni per poter predire l'andamento della funzione. Non verificandosi interpolazione, il processo gaussiano predice la funzione con minore precisione.
+A graphic example of how a Gaussian process interprets information given by observations with noise to predict a function is shown in Figure \ref{Noisy}.
+As might be expected, since the observations in this case are with noise, the Gaussian process needs more observations in order to predict the trend of the function. Since interpolation does not occur, the Gaussian process predicts the function with less accuracy.
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%% IMMAGINE
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{images/Gaussian process/Noise - mean&f(x).pdf}
-    \caption{Grafico di funzioni con distribuzione $f\sim \mathcal{GP}(\bm{0},k)$ dove $k(\cdot,\cdot)$ è il squared-exponential kernel; il processo gaussiano è stato condizionato per predire una funzione a partire dalle sue osservazioni rumorose. Viene mostrata in rosso la funzione da predire, in rosso i punti osservati della funzione con le barre rappresentanti il rumore, in blu la media del processo gaussiano condizionato, come linee tratteggiate alcuni sample del processo gaussiano. Codice \ref{Noise code}.}
+    \caption{Graph of functions with distribution $f\sim \mathcal{GP}(\bm{0},k)$ where $k(\cdot,\cdot)$ is the squared-exponential kernel; the Gaussian process was conditioned to predict a function from its noisy observations. Shown in red is the function to be predicted, in red the observed points of the function with bars representing the noise, in blue the average of the conditioned Gaussian process, as dashed lines some samples of the Gaussian process. Code \ref{Noise code}.}
     \label{Noisy}
 \end{figure}
 
 \newpage
 
-Anche in questo caso la media del processo gaussiano condizionato rappresenta la funzione che meglio predice $x\cdot sin(x)$. Poiché le osservazioni presentano un errore, non si ha interpolazione dei punti seppur, tendenzialmente, la media e i sample del processo gaussiano tocchino almeno le barre di errore di ogni punto.
-Sono stati presi in considerazione più punti del caso noise-free poiché con meno punti non si sarebbe ottenuto un risultato così "preciso" (comunque con un comportamento diverso da quello con osservazioni senza rumore).
+Again, the mean of the conditional Gaussian process represents the function that best predicts $x\cdot sin(x)$. Because the observations have error, there is no interpolation of the points although, it tends to be the case that the mean and samples of the Gaussian process touch at least the error bars of each point.
+More points of the noise-free case were taken into account since with fewer points such an "accurate" result would not have been obtained (however, with a different behavior from that with noise-free observations).
 
-Se nel caso senza rumore i sample tendenvano a rimanere nei pressi della media nelle vicinanze di ogni punto interpolato, qui la vicinanza alla media dipende sia dai punti che dal loro errore: nei pressi di punti con minore rumore (cioè con barre più corte) le funzioni tendono ad avvicinarsi alla media. Viceversa, nei pressi di funzioni con un grande errore (barre più lunghe) le funzioni tendono ad allontanarsi con più facilità dalla media.
+If in the noiseless case the samples tended to stay near the mean in the vicinity of each interpolated point, here the closeness to the mean depends on both the points and their error: near points with lower noise (i.e., shorter bars) the functions tend to move closer to the mean. Conversely, near features with a large error (longer bars) the features tend to move away from the mean more easily.
 
-Anche in questo caso è possibile disegnare la regione di confidenza del 95\%. La regione di confidenza ha ampiezza proporzionale alla lunghezza delle barre delle osservazioni; di conseguenza la regione di confidenza ha comportamento decisamente diverso dal caso noise-free.
+Again, the 95\% confidence region can be drawn. The confidence region has amplitude proportional to the length of the bars of the observations; consequently, the confidence region has markedly different behavior from the noise-free case.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%% IMMAGINE
@@ -1048,6 +1047,6 @@ Anche in questo caso è possibile disegnare la regione di confidenza del 95\%. L
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{images/Gaussian process/Noise - mean&samples.pdf}
-    \caption{Grafico di funzioni con distribuzione $f\sim \mathcal{GP}(\bm{0},k)$ dove $k(\cdot,\cdot)$ è il squared-exponential kernel; il processo gaussiano è stato condizionato per predire una funzione a partire dalle sue osservazioni rumorose. Viene mostrata in blu la regione di confidenza al 95\%, in rosso con le barre di errore le osservazioni, in blu la media del processo gaussiano condizionato e come linee tratteggiate alcuni sample. Codice \ref{Noise confidence region code}.}
+    \caption{Graph of functions with distribution $f\sim \mathcal{GP}(\bm{0},k)$ where $k(\cdot,\cdot)$ is the squared-exponential kernel; the Gaussian process was conditioned to predict a function from its noisy observations. Shown in blue is the 95\% confidence region, in red with error bars the observations, in blue the mean of the conditioned Gaussian process, and as dashed lines some samples. Code \ref{Noise confidence region code}.}
     \label{Noisy confidence region}
 \end{figure}

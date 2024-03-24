@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.12.17)  23 MAR 2024 18:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.12.17)  24 MAR 2024 17:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1528,124 +1528,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
 \openout10 = `main.lol'.
 
  [8] (main.lof
-Overfull \hbox (8.32092pt too wide) in paragraph at lines 17--17
- [][] [][]\OT1/cmr/m/n/12 Grafico di fun-zioni con dis-tribuzione $\OML/cmm/m/i
-t/12 f \OMS/cmsy/m/n/12 ^^X []\OT1/cmr/m/n/12 (\OT1/cmr/bx/n/12 0\OML/cmm/m/it/
-12 ; k\OT1/cmr/m/n/12 )$ dove $\OML/cmm/m/it/12 k\OT1/cmr/m/n/12 (\OML/cmm/m/it
-/12 x; x[]\OT1/cmr/m/n/12 )$ 
- []
-
-
-Overfull \hbox (8.32092pt too wide) in paragraph at lines 18--18
- [][] [][]\OT1/cmr/m/n/12 Grafico di fun-zioni con dis-tribuzione $\OML/cmm/m/i
-t/12 f \OMS/cmsy/m/n/12 ^^X []\OT1/cmr/m/n/12 (\OT1/cmr/bx/n/12 0\OML/cmm/m/it/
-12 ; k\OT1/cmr/m/n/12 )$ dove $\OML/cmm/m/it/12 k\OT1/cmr/m/n/12 (\OML/cmm/m/it
-/12 x; x[]\OT1/cmr/m/n/12 )$ 
- []
-
-
-Overfull \hbox (8.32092pt too wide) in paragraph at lines 19--19
- [][] [][]\OT1/cmr/m/n/12 Grafico di fun-zioni con dis-tribuzione $\OML/cmm/m/i
-t/12 f \OMS/cmsy/m/n/12 ^^X []\OT1/cmr/m/n/12 (\OT1/cmr/bx/n/12 0\OML/cmm/m/it/
-12 ; k\OT1/cmr/m/n/12 )$ dove $\OML/cmm/m/it/12 k\OT1/cmr/m/n/12 (\OML/cmm/m/it
-/12 x; x[]\OT1/cmr/m/n/12 )$ 
- []
-
-
-Overfull \hbox (8.32092pt too wide) in paragraph at lines 20--20
- [][] [][]\OT1/cmr/m/n/12 Grafico di fun-zioni con dis-tribuzione $\OML/cmm/m/i
-t/12 f \OMS/cmsy/m/n/12 ^^X []\OT1/cmr/m/n/12 (\OT1/cmr/bx/n/12 0\OML/cmm/m/it/
-12 ; k\OT1/cmr/m/n/12 )$ dove $\OML/cmm/m/it/12 k\OT1/cmr/m/n/12 (\OML/cmm/m/it
-/12 x; x[]\OT1/cmr/m/n/12 )$ 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3482) has occurred while \output is active []
 
  [9
 
 ]
-Overfull \hbox (8.32092pt too wide) in paragraph at lines 23--23
- [][] [][]\OT1/cmr/m/n/12 Grafico di fun-zioni con dis-tribuzione $\OML/cmm/m/i
-t/12 f \OMS/cmsy/m/n/12 ^^X []\OT1/cmr/m/n/12 (\OT1/cmr/bx/n/12 0\OML/cmm/m/it/
-12 ; k\OT1/cmr/m/n/12 )$ dove $\OML/cmm/m/it/12 k\OT1/cmr/m/n/12 (\OML/cmm/m/it
-/12 x; x[]\OT1/cmr/m/n/12 )$ 
- []
-
-
-Overfull \hbox (8.32092pt too wide) in paragraph at lines 24--24
- [][] [][]\OT1/cmr/m/n/12 Grafico di fun-zioni con dis-tribuzione $\OML/cmm/m/i
-t/12 f \OMS/cmsy/m/n/12 ^^X []\OT1/cmr/m/n/12 (\OT1/cmr/bx/n/12 0\OML/cmm/m/it/
-12 ; k\OT1/cmr/m/n/12 )$ dove $\OML/cmm/m/it/12 k\OT1/cmr/m/n/12 (\OML/cmm/m/it
-/12 x; x[]\OT1/cmr/m/n/12 )$ 
- []
-
-
-Overfull \hbox (8.32092pt too wide) in paragraph at lines 25--25
- [][] [][]\OT1/cmr/m/n/12 Grafico di fun-zioni con dis-tribuzione $\OML/cmm/m/i
-t/12 f \OMS/cmsy/m/n/12 ^^X []\OT1/cmr/m/n/12 (\OT1/cmr/bx/n/12 0\OML/cmm/m/it/
-12 ; k\OT1/cmr/m/n/12 )$ dove $\OML/cmm/m/it/12 k\OT1/cmr/m/n/12 (\OML/cmm/m/it
-/12 x; x[]\OT1/cmr/m/n/12 )$ 
- []
-
-
-Overfull \hbox (8.32092pt too wide) in paragraph at lines 28--28
- [][] [][]\OT1/cmr/m/n/12 Grafico di fun-zioni con dis-tribuzione $\OML/cmm/m/i
-t/12 f \OMS/cmsy/m/n/12 ^^X []\OT1/cmr/m/n/12 (\OT1/cmr/bx/n/12 0\OML/cmm/m/it/
-12 ; k\OT1/cmr/m/n/12 )$ dove $\OML/cmm/m/it/12 k\OT1/cmr/m/n/12 (\OML/cmm/m/it
-/12 x; x[]\OT1/cmr/m/n/12 )$ 
- []
-
-
-Overfull \hbox (8.32092pt too wide) in paragraph at lines 29--29
- [][] [][]\OT1/cmr/m/n/12 Grafico di fun-zioni con dis-tribuzione $\OML/cmm/m/i
-t/12 f \OMS/cmsy/m/n/12 ^^X []\OT1/cmr/m/n/12 (\OT1/cmr/bx/n/12 0\OML/cmm/m/it/
-12 ; k\OT1/cmr/m/n/12 )$ dove $\OML/cmm/m/it/12 k\OT1/cmr/m/n/12 (\OML/cmm/m/it
-/12 x; x[]\OT1/cmr/m/n/12 )$ 
- []
-
-
-Overfull \hbox (8.32092pt too wide) in paragraph at lines 30--30
- [][] [][]\OT1/cmr/m/n/12 Grafico di fun-zioni con dis-tribuzione $\OML/cmm/m/i
-t/12 f \OMS/cmsy/m/n/12 ^^X []\OT1/cmr/m/n/12 (\OT1/cmr/bx/n/12 0\OML/cmm/m/it/
-12 ; k\OT1/cmr/m/n/12 )$ dove $\OML/cmm/m/it/12 k\OT1/cmr/m/n/12 (\OML/cmm/m/it
-/12 x; x[]\OT1/cmr/m/n/12 )$ 
- []
-
-
-Overfull \hbox (8.32092pt too wide) in paragraph at lines 31--31
- [][] [][]\OT1/cmr/m/n/12 Grafico di fun-zioni con dis-tribuzione $\OML/cmm/m/i
-t/12 f \OMS/cmsy/m/n/12 ^^X []\OT1/cmr/m/n/12 (\OT1/cmr/bx/n/12 0\OML/cmm/m/it/
-12 ; k\OT1/cmr/m/n/12 )$ dove $\OML/cmm/m/it/12 k\OT1/cmr/m/n/12 (\OML/cmm/m/it
-/12 x; x[]\OT1/cmr/m/n/12 )$ 
- []
-
-
-Overfull \hbox (3.85562pt too wide) in paragraph at lines 33--33
- [][] [][]\OT1/cmr/m/n/12 Grafico di fun-zione con dis-tribuzione $\OML/cmm/m/i
+Overfull \hbox (2.87646pt too wide) in paragraph at lines 33--33
+ [][] [][]\OT1/cmr/m/n/12 Graph of func-tion with dis-tri-bu-tion $\OML/cmm/m/i
 t/12 f \OMS/cmsy/m/n/12 ^^X []\OT1/cmr/m/n/12 (0\OML/cmm/m/it/12 ; k\OT1/cmr/m/
-n/12 )$ con $\OML/cmm/m/it/12 k\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; x[]\OT1/cmr
-/m/n/12 )$ 
+n/12 )$ with $\OML/cmm/m/it/12 k\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; x[]\OT1/cm
+r/m/n/12 )$ 
  []
 
 
-Overfull \hbox (8.32092pt too wide) in paragraph at lines 35--35
- [][] [][]\OT1/cmr/m/n/12 Grafico di fun-zioni con dis-tribuzione $\OML/cmm/m/i
-t/12 f \OMS/cmsy/m/n/12 ^^X []\OT1/cmr/m/n/12 (\OT1/cmr/bx/n/12 0\OML/cmm/m/it/
-12 ; k\OT1/cmr/m/n/12 )$ dove $\OML/cmm/m/it/12 k\OT1/cmr/m/n/12 (\OML/cmm/m/it
-/12 x; x[]\OT1/cmr/m/n/12 )$ 
- []
-
-
-Overfull \hbox (8.32092pt too wide) in paragraph at lines 37--37
- [][] [][]\OT1/cmr/m/n/12 Grafico di fun-zioni con dis-tribuzione $\OML/cmm/m/i
-t/12 f \OMS/cmsy/m/n/12 ^^X []\OT1/cmr/m/n/12 (\OT1/cmr/bx/n/12 0\OML/cmm/m/it/
-12 ; k\OT1/cmr/m/n/12 )$ dove $\OML/cmm/m/it/12 k\OT1/cmr/m/n/12 (\OML/cmm/m/it
-/12 x; x[]\OT1/cmr/m/n/12 )$ 
- []
-
-
-Underfull \vbox (badness 2894) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1657,7 +1553,7 @@ e.[[]Wik22c[]][] []
  []
 
 
-Underfull \vbox (badness 5331) has occurred while \output is active []
+Underfull \vbox (badness 6842) has occurred while \output is active []
 
  [12]
 Overfull \hbox (39.10728pt too wide) in paragraph at lines 99--99
@@ -1769,13 +1665,13 @@ Chapter II.
 [7
 
 ]
-<images/Gaussiane/PDFNormalDistribution.png, id=1099, 722.7pt x 461.725pt>
+<images/Gaussiane/PDFNormalDistribution.png, id=1102, 722.7pt x 461.725pt>
 File: images/Gaussiane/PDFNormalDistribution.png Graphic file (type png)
 <use images/Gaussiane/PDFNormalDistribution.png>
 Package pdftex.def Info: images/Gaussiane/PDFNormalDistribution.png  used on in
 put line 32.
 (pdftex.def)             Requested size: 199.1693pt x 127.246pt.
-<images/Gaussiane/CDFNormalDistribution.png, id=1100, 722.7pt x 461.725pt>
+<images/Gaussiane/CDFNormalDistribution.png, id=1103, 722.7pt x 461.725pt>
 File: images/Gaussiane/CDFNormalDistribution.png Graphic file (type png)
 <use images/Gaussiane/CDFNormalDistribution.png>
 Package pdftex.def Info: images/Gaussiane/CDFNormalDistribution.png  used on in
@@ -1810,7 +1706,7 @@ LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <4.2> not available
 (Font)              size <5> substituted on input line 80.
 
 [9] [10]
-<images/Gaussiane/VettoreBivariatoIndipendenza.png, id=1140, 632.3625pt x 682.5
+<images/Gaussiane/VettoreBivariatoIndipendenza.png, id=1143, 632.3625pt x 682.5
 5pt>
 File: images/Gaussiane/VettoreBivariatoIndipendenza.png Graphic file (type png)
 
@@ -1823,7 +1719,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 196--198
 
  []
 
-<images/Gaussiane/VettoreBivariatoIndipendenza2.png, id=1151, 632.3625pt x 682.
+<images/Gaussiane/VettoreBivariatoIndipendenza2.png, id=1154, 632.3625pt x 682.
 55pt>
 File: images/Gaussiane/VettoreBivariatoIndipendenza2.png Graphic file (type png
 )
@@ -1837,7 +1733,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 207--209
  []
 
 [12 <./images/Gaussiane/VettoreBivariatoIndipendenza2.png>]
-<images/Gaussiane/VettoreBivariatoIndipendenza3.png, id=1160, 632.3625pt x 682.
+<images/Gaussiane/VettoreBivariatoIndipendenza3.png, id=1163, 632.3625pt x 682.
 55pt>
 File: images/Gaussiane/VettoreBivariatoIndipendenza3.png Graphic file (type png
 )
@@ -1852,7 +1748,7 @@ L/cmm/b/it/12 ^^V \OT1/cmr/m/n/12 = []$ and $\OT1/cmr/bx/n/12 ^^F \OT1/cmr/m/n/
 12 = []$.
  []
 
-<images/Gaussiane/CorrelazioneMultidimensionale.png, id=1169, 761.84625pt x 393
+<images/Gaussiane/CorrelazioneMultidimensionale.png, id=1172, 761.84625pt x 393
 .47pt>
 File: images/Gaussiane/CorrelazioneMultidimensionale.png Graphic file (type png
 )
@@ -1861,7 +1757,7 @@ Package pdftex.def Info: images/Gaussiane/CorrelazioneMultidimensionale.png  us
 ed on input line 232.
 (pdftex.def)             Requested size: 398.3386pt x 205.72829pt.
 [14 <./images/Gaussiane/CorrelazioneMultidimensionale.png>]
-<images/Gaussiane/CorrelazioneMultidimensionale2.png, id=1178, 575.14874pt x 51
+<images/Gaussiane/CorrelazioneMultidimensionale2.png, id=1181, 575.14874pt x 51
 1.9125pt>
 File: images/Gaussiane/CorrelazioneMultidimensionale2.png Graphic file (type pn
 g)
@@ -1870,14 +1766,14 @@ Package pdftex.def Info: images/Gaussiane/CorrelazioneMultidimensionale2.png  u
 sed on input line 248.
 (pdftex.def)             Requested size: 278.83578pt x 248.18353pt.
  [15 <./images/Gaussiane/CorrelazioneMultidimensionale2.png>]
-<images/Gaussiane/CorrelazioneUnidimensionale.png, id=1188, 1064.97874pt x 338.
+<images/Gaussiane/CorrelazioneUnidimensionale.png, id=1191, 1064.97874pt x 338.
 26375pt>
 File: images/Gaussiane/CorrelazioneUnidimensionale.png Graphic file (type png)
 <use images/Gaussiane/CorrelazioneUnidimensionale.png>
 Package pdftex.def Info: images/Gaussiane/CorrelazioneUnidimensionale.png  used
  on input line 261.
 (pdftex.def)             Requested size: 398.3386pt x 126.51825pt.
-<images/Gaussiane/CorrelazioneMultidimensionale3.png, id=1192, 477.785pt x 416.
+<images/Gaussiane/CorrelazioneMultidimensionale3.png, id=1195, 477.785pt x 416.
 55624pt>
 File: images/Gaussiane/CorrelazioneMultidimensionale3.png Graphic file (type pn
 g)
@@ -1892,41 +1788,42 @@ Chapter III.
 [17
 
 ]
-Overfull \hbox (0.89615pt too wide) in paragraph at lines 33--34
-\OT1/cmr/m/n/12 sieme di vari-abili ca-su-ali tali che ogni suo sot-toin-sieme 
-finito ab-bia dis-tribuzione
- []
-
-<images/Gaussian process/motivazione2.png, id=1223, 928.46875pt x 572.1375pt>
+<images/Gaussian process/motivazione2.png, id=1225, 928.46875pt x 572.1375pt>
 File: images/Gaussian process/motivazione2.png Graphic file (type png)
 <use images/Gaussian process/motivazione2.png>
 Package pdftex.def Info: images/Gaussian process/motivazione2.png  used on inpu
 t line 54.
 (pdftex.def)             Requested size: 199.1693pt x 122.7278pt.
-<images/Gaussian process/motivazione3.png, id=1224, 928.46875pt x 572.1375pt>
+<images/Gaussian process/motivazione3.png, id=1226, 928.46875pt x 572.1375pt>
 File: images/Gaussian process/motivazione3.png Graphic file (type png)
 <use images/Gaussian process/motivazione3.png>
 Package pdftex.def Info: images/Gaussian process/motivazione3.png  used on inpu
 t line 58.
 (pdftex.def)             Requested size: 199.1693pt x 122.7278pt.
-[18 <./images/Gaussian process/motivazione2.png> <./images/Gaussian process/mot
-ivazione3.png>]
-<images/Gaussian process/motivazione4.png, id=1236, 928.46875pt x 572.1375pt>
+ [18 <./images/Gaussian process/motivazione2.png> <./images/Gaussian process/mo
+tivazione3.png>]
+<images/Gaussian process/motivazione4.png, id=1238, 928.46875pt x 572.1375pt>
 File: images/Gaussian process/motivazione4.png Graphic file (type png)
 <use images/Gaussian process/motivazione4.png>
 Package pdftex.def Info: images/Gaussian process/motivazione4.png  used on inpu
 t line 74.
 (pdftex.def)             Requested size: 338.59023pt x 208.64948pt.
  [19 <./images/Gaussian process/motivazione4.png>] [20]
-Overfull \hbox (8.47884pt too wide) in paragraph at lines 125--126
-[][]\OT1/cmr/bx/n/12 Definition III.2.4 \OT1/cmr/m/n/12 (Mean func-tion)\OT1/cm
-r/bx/n/12 . []\OT1/cmr/m/n/12 Dato un pro-cesso gaus-siano $\OML/cmm/m/it/12 f 
-\OMS/cmsy/m/n/12 ^^X []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 m; k\OT1/cmr/m/n/12 )$
-,
+Overfull \hbox (5.90872pt too wide) in paragraph at lines 148--150
+\OT1/cmr/m/n/12 such that: $[][] [][] \OMS/cmsy/m/n/12 K\OT1/cmr/m/n/12 (\OML/c
+mm/m/it/12 x[]; x[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 c[]c[] \OMS/cmsy/m/n/12 ^^
+U \OT1/cmr/m/n/12 0$ for any set of dis-tinct el-e-ments $\OMS/cmsy/m/n/12 f\OM
+L/cmm/m/it/12 x[]\OMS/cmsy/m/n/12 g[] ^^Z
  []
 
-[21] [22]
-<images/Gaussian process/esempioProcessoGaussiano.pdf, id=1274, 433.62pt x 289.
+[21]
+Overfull \hbox (2.28038pt too wide) in paragraph at lines 191--193
+[][]\OT1/cmr/m/it/12 Remark \OT1/cmr/m/n/12 III.2.10 (Sim-i-lar-ity be-tween Ga
+us-sian pro-cesses and mul-ti-vari-ate Gaus-
+ []
+
+[22]
+<images/Gaussian process/esempioProcessoGaussiano.pdf, id=1276, 433.62pt x 289.
 08pt>
 File: images/Gaussian process/esempioProcessoGaussiano.pdf Graphic file (type p
 df)
@@ -1940,39 +1837,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 245--246
  []
 
 [24]
-<images/Gaussian process/Linear Kernel.pdf, id=1327, 289.08pt x 289.08pt>
+<images/Gaussian process/Linear Kernel.pdf, id=1329, 289.08pt x 289.08pt>
 File: images/Gaussian process/Linear Kernel.pdf Graphic file (type pdf)
 <use images/Gaussian process/Linear Kernel.pdf>
 Package pdftex.def Info: images/Gaussian process/Linear Kernel.pdf  used on inp
 ut line 295.
 (pdftex.def)             Requested size: 239.00558pt x 239.0056pt.
  [25 <./images/Gaussian process/Linear Kernel.pdf>]
-<images/Gaussian process/Linear sample.pdf, id=1365, 433.62pt x 289.08pt>
+<images/Gaussian process/Linear sample.pdf, id=1367, 433.62pt x 289.08pt>
 File: images/Gaussian process/Linear sample.pdf Graphic file (type pdf)
 <use images/Gaussian process/Linear sample.pdf>
 Package pdftex.def Info: images/Gaussian process/Linear sample.pdf  used on inp
 ut line 311.
 (pdftex.def)             Requested size: 338.59023pt x 225.73732pt.
  [26 <./images/Gaussian process/Linear sample.pdf>]
-<images/Gaussian process/Linear - c=-3.pdf, id=1413, 433.62pt x 289.08pt>
+<images/Gaussian process/Linear - c=-3.pdf, id=1415, 433.62pt x 289.08pt>
 File: images/Gaussian process/Linear - c=-3.pdf Graphic file (type pdf)
 <use images/Gaussian process/Linear - c=-3.pdf>
 Package pdftex.def Info: images/Gaussian process/Linear - c=-3.pdf  used on inp
 ut line 339.
 (pdftex.def)             Requested size: 199.1693pt x 132.7799pt.
-<images/Gaussian process/Linear - c=0.pdf, id=1414, 433.62pt x 289.08pt>
+<images/Gaussian process/Linear - c=0.pdf, id=1416, 433.62pt x 289.08pt>
 File: images/Gaussian process/Linear - c=0.pdf Graphic file (type pdf)
 <use images/Gaussian process/Linear - c=0.pdf>
 Package pdftex.def Info: images/Gaussian process/Linear - c=0.pdf  used on inpu
 t line 344.
 (pdftex.def)             Requested size: 199.1693pt x 132.7799pt.
-<images/Gaussian process/Linear - sigmab=0.pdf, id=1417, 433.62pt x 289.08pt>
+<images/Gaussian process/Linear - sigmab=0.pdf, id=1419, 433.62pt x 289.08pt>
 File: images/Gaussian process/Linear - sigmab=0.pdf Graphic file (type pdf)
 <use images/Gaussian process/Linear - sigmab=0.pdf>
 Package pdftex.def Info: images/Gaussian process/Linear - sigmab=0.pdf  used on
  input line 363.
 (pdftex.def)             Requested size: 199.1693pt x 132.7799pt.
-<images/Gaussian process/Linear - sigmab=05.pdf, id=1418, 433.62pt x 289.08pt>
+<images/Gaussian process/Linear - sigmab=05.pdf, id=1420, 433.62pt x 289.08pt>
 File: images/Gaussian process/Linear - sigmab=05.pdf Graphic file (type pdf)
 <use images/Gaussian process/Linear - sigmab=05.pdf>
 Package pdftex.def Info: images/Gaussian process/Linear - sigmab=05.pdf  used o
@@ -1992,38 +1889,26 @@ pdfTeX warning: pdflatex (file ./images/Gaussian process/Linear - sigmab=0.pdf)
 pdfTeX warning: pdflatex (file ./images/Gaussian process/Linear - sigmab=05.pdf
 ): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<images/Gaussian process/Linear - sigmav=1.pdf, id=1594, 433.62pt x 289.08pt>
+<images/Gaussian process/Linear - sigmav=1.pdf, id=1596, 433.62pt x 289.08pt>
 File: images/Gaussian process/Linear - sigmav=1.pdf Graphic file (type pdf)
 <use images/Gaussian process/Linear - sigmav=1.pdf>
 Package pdftex.def Info: images/Gaussian process/Linear - sigmav=1.pdf  used on
  input line 388.
 (pdftex.def)             Requested size: 199.1693pt x 132.7799pt.
-<images/Gaussian process/Linear - sigmav=10.pdf, id=1595, 433.62pt x 289.08pt>
+<images/Gaussian process/Linear - sigmav=10.pdf, id=1597, 433.62pt x 289.08pt>
 File: images/Gaussian process/Linear - sigmav=10.pdf Graphic file (type pdf)
 <use images/Gaussian process/Linear - sigmav=10.pdf>
 Package pdftex.def Info: images/Gaussian process/Linear - sigmav=10.pdf  used o
 n input line 393.
 (pdftex.def)             Requested size: 199.1693pt x 132.7799pt.
-
-Overfull \hbox (4.6261pt too wide) in paragraph at lines 400--401
-[]\OT1/cmr/m/n/12 Dunque il parametro $\OML/cmm/m/it/12 ^^[[]$ \OT1/cmr/m/n/12 
-in-fluenza la pen-denza delle rette, che ^^Re pro-porzionale
- []
-
-
-Overfull \hbox (5.62666pt too wide) in paragraph at lines 402--403
-[]\OT1/cmr/m/n/12 Per com-pren-dere l'influenza della mean func-tion, ven-gono 
-di se-guito mostrati
- []
-
-<images/Gaussian process/Linear - cubedmean.pdf, id=1598, 433.62pt x 289.08pt>
+<images/Gaussian process/Linear - cubedmean.pdf, id=1600, 433.62pt x 289.08pt>
 File: images/Gaussian process/Linear - cubedmean.pdf Graphic file (type pdf)
 <use images/Gaussian process/Linear - cubedmean.pdf>
 Package pdftex.def Info: images/Gaussian process/Linear - cubedmean.pdf  used o
 n input line 410.
 (pdftex.def)             Requested size: 338.59023pt x 225.73732pt.
-[28 <./images/Gaussian process/Linear - sigmav=1.pdf> <./images/Gaussian proces
-s/Linear - sigmav=10.pdf
+ [28 <./images/Gaussian process/Linear - sigmav=1.pdf> <./images/Gaussian proce
+ss/Linear - sigmav=10.pdf
 
 pdfTeX warning: pdflatex (file ./images/Gaussian process/Linear - sigmav=10.pdf
 ): PDF inclusion: multiple pdfs with page group included in a single page
@@ -2032,7 +1917,7 @@ pdfTeX warning: pdflatex (file ./images/Gaussian process/Linear - sigmav=10.pdf
 pdfTeX warning: pdflatex (file ./images/Gaussian process/Linear - cubedmean.pdf
 ): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<images/Gaussian process/Squared-exponential kernel.pdf, id=1726, 289.08pt x 28
+<images/Gaussian process/Squared-exponential kernel.pdf, id=1728, 289.08pt x 28
 9.08pt>
 File: images/Gaussian process/Squared-exponential kernel.pdf Graphic file (type
  pdf)
@@ -2045,39 +1930,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 455--458
 
  []
 
-
-Overfull \hbox (12.41791pt too wide) in paragraph at lines 459--460
-[]\OT1/cmr/m/n/12 Vengono di se-guito mostrati grafici di fun-zioni con dis-tri
-buzione $\OML/cmm/m/it/12 f \OMS/cmsy/m/n/12 ^^X []\OT1/cmr/m/n/12 (\OML/cmm/m/
-it/12 m; k\OT1/cmr/m/n/12 )$
- []
-
-<images/Gaussian process/RBFSample.pdf, id=1765, 433.62pt x 289.08pt>
+<images/Gaussian process/RBFSample.pdf, id=1767, 433.62pt x 289.08pt>
 File: images/Gaussian process/RBFSample.pdf Graphic file (type pdf)
 <use images/Gaussian process/RBFSample.pdf>
 Package pdftex.def Info: images/Gaussian process/RBFSample.pdf  used on input l
 ine 467.
 (pdftex.def)             Requested size: 338.59023pt x 225.73732pt.
 [30 <./images/Gaussian process/RBFSample.pdf>]
-<images/Gaussian process/RBF - sigma=01.pdf, id=1806, 433.62pt x 289.08pt>
+<images/Gaussian process/RBF - sigma=01.pdf, id=1808, 433.62pt x 289.08pt>
 File: images/Gaussian process/RBF - sigma=01.pdf Graphic file (type pdf)
 <use images/Gaussian process/RBF - sigma=01.pdf>
 Package pdftex.def Info: images/Gaussian process/RBF - sigma=01.pdf  used on in
 put line 488.
 (pdftex.def)             Requested size: 199.1693pt x 132.7799pt.
-<images/Gaussian process/RBF - sigma=10.pdf, id=1807, 433.62pt x 289.08pt>
+<images/Gaussian process/RBF - sigma=10.pdf, id=1809, 433.62pt x 289.08pt>
 File: images/Gaussian process/RBF - sigma=10.pdf Graphic file (type pdf)
 <use images/Gaussian process/RBF - sigma=10.pdf>
 Package pdftex.def Info: images/Gaussian process/RBF - sigma=10.pdf  used on in
 put line 493.
 (pdftex.def)             Requested size: 199.1693pt x 132.7799pt.
-<images/Gaussian process/RBF - l=03.pdf, id=1810, 433.62pt x 289.08pt>
+<images/Gaussian process/RBF - l=03.pdf, id=1812, 433.62pt x 289.08pt>
 File: images/Gaussian process/RBF - l=03.pdf Graphic file (type pdf)
 <use images/Gaussian process/RBF - l=03.pdf>
 Package pdftex.def Info: images/Gaussian process/RBF - l=03.pdf  used on input 
 line 512.
 (pdftex.def)             Requested size: 199.1693pt x 132.7799pt.
-<images/Gaussian process/RBF - l=10.pdf, id=1811, 433.62pt x 289.08pt>
+<images/Gaussian process/RBF - l=10.pdf, id=1813, 433.62pt x 289.08pt>
 File: images/Gaussian process/RBF - l=10.pdf Graphic file (type pdf)
 <use images/Gaussian process/RBF - l=10.pdf>
 Package pdftex.def Info: images/Gaussian process/RBF - l=10.pdf  used on input 
@@ -2097,54 +1975,42 @@ nclusion: multiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ./images/Gaussian process/RBF - l=10.pdf): PDF i
 nclusion: multiple pdfs with page group included in a single page
 >]
-<images/Gaussian process/RBF - cubedmean.pdf, id=1947, 433.62pt x 289.08pt>
+<images/Gaussian process/RBF - cubedmean.pdf, id=1949, 433.62pt x 289.08pt>
 File: images/Gaussian process/RBF - cubedmean.pdf Graphic file (type pdf)
 <use images/Gaussian process/RBF - cubedmean.pdf>
 Package pdftex.def Info: images/Gaussian process/RBF - cubedmean.pdf  used on i
 nput line 534.
 (pdftex.def)             Requested size: 338.59023pt x 225.73732pt.
-
-Overfull \hbox (5.62666pt too wide) in paragraph at lines 528--538
-[]\OT1/cmr/m/n/12 Per com-pren-dere l'influenza della mean func-tion, ven-gono 
-di se-guito mostrati
- []
-
-[32 <./images/Gaussian process/RBF - cubedmean.pdf>]
-<images/Gaussian process/Periodic kernel.pdf, id=1991, 289.08pt x 289.08pt>
+ [32 <./images/Gaussian process/RBF - cubedmean.pdf>]
+<images/Gaussian process/Periodic kernel.pdf, id=1993, 289.08pt x 289.08pt>
 File: images/Gaussian process/Periodic kernel.pdf Graphic file (type pdf)
 <use images/Gaussian process/Periodic kernel.pdf>
 Package pdftex.def Info: images/Gaussian process/Periodic kernel.pdf  used on i
 nput line 573.
 (pdftex.def)             Requested size: 239.00558pt x 239.0056pt.
  [33 <./images/Gaussian process/Periodic kernel.pdf>]
-Overfull \hbox (12.41791pt too wide) in paragraph at lines 582--583
-[]\OT1/cmr/m/n/12 Vengono di se-guito mostrati grafici di fun-zioni con dis-tri
-buzione $\OML/cmm/m/it/12 f \OMS/cmsy/m/n/12 ^^X []\OT1/cmr/m/n/12 (\OML/cmm/m/
-it/12 m; k\OT1/cmr/m/n/12 )$
- []
-
-<images/Gaussian process/Periodic sample.pdf, id=2029, 433.62pt x 289.08pt>
+<images/Gaussian process/Periodic sample.pdf, id=2031, 433.62pt x 289.08pt>
 File: images/Gaussian process/Periodic sample.pdf Graphic file (type pdf)
 <use images/Gaussian process/Periodic sample.pdf>
 Package pdftex.def Info: images/Gaussian process/Periodic sample.pdf  used on i
 nput line 589.
 (pdftex.def)             Requested size: 338.59023pt x 225.73732pt.
-<images/Gaussian process/Periodic - sigma=01.pdf, id=2032, 433.62pt x 289.08pt>
+<images/Gaussian process/Periodic - sigma=01.pdf, id=2034, 433.62pt x 289.08pt>
 
 File: images/Gaussian process/Periodic - sigma=01.pdf Graphic file (type pdf)
 <use images/Gaussian process/Periodic - sigma=01.pdf>
 Package pdftex.def Info: images/Gaussian process/Periodic - sigma=01.pdf  used 
 on input line 604.
 (pdftex.def)             Requested size: 199.1693pt x 132.7799pt.
-<images/Gaussian process/Periodic - sigma=10.pdf, id=2033, 433.62pt x 289.08pt>
+<images/Gaussian process/Periodic - sigma=10.pdf, id=2035, 433.62pt x 289.08pt>
 
 File: images/Gaussian process/Periodic - sigma=10.pdf Graphic file (type pdf)
 <use images/Gaussian process/Periodic - sigma=10.pdf>
 Package pdftex.def Info: images/Gaussian process/Periodic - sigma=10.pdf  used 
 on input line 609.
 (pdftex.def)             Requested size: 199.1693pt x 132.7799pt.
-[34 <./images/Gaussian process/Periodic sample.pdf> <./images/Gaussian process/
-Periodic - sigma=01.pdf
+ [34 <./images/Gaussian process/Periodic sample.pdf> <./images/Gaussian process
+/Periodic - sigma=01.pdf
 
 pdfTeX warning: pdflatex (file ./images/Gaussian process/Periodic - sigma=01.pd
 f): PDF inclusion: multiple pdfs with page group included in a single page
@@ -2153,25 +2019,25 @@ f): PDF inclusion: multiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ./images/Gaussian process/Periodic - sigma=10.pd
 f): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<images/Gaussian process/Periodic - p=08.pdf, id=2138, 433.62pt x 289.08pt>
+<images/Gaussian process/Periodic - p=08.pdf, id=2140, 433.62pt x 289.08pt>
 File: images/Gaussian process/Periodic - p=08.pdf Graphic file (type pdf)
 <use images/Gaussian process/Periodic - p=08.pdf>
 Package pdftex.def Info: images/Gaussian process/Periodic - p=08.pdf  used on i
 nput line 630.
 (pdftex.def)             Requested size: 199.1693pt x 132.7799pt.
-<images/Gaussian process/Periodic - p=10.pdf, id=2139, 433.62pt x 289.08pt>
+<images/Gaussian process/Periodic - p=10.pdf, id=2141, 433.62pt x 289.08pt>
 File: images/Gaussian process/Periodic - p=10.pdf Graphic file (type pdf)
 <use images/Gaussian process/Periodic - p=10.pdf>
 Package pdftex.def Info: images/Gaussian process/Periodic - p=10.pdf  used on i
 nput line 635.
 (pdftex.def)             Requested size: 199.1693pt x 132.7799pt.
-<images/Gaussian process/Periodic - l=0.8.pdf, id=2142, 433.62pt x 289.08pt>
+<images/Gaussian process/Periodic - l=0.8.pdf, id=2144, 433.62pt x 289.08pt>
 File: images/Gaussian process/Periodic - l=0.8.pdf Graphic file (type pdf)
 <use images/Gaussian process/Periodic - l=0.8.pdf>
 Package pdftex.def Info: images/Gaussian process/Periodic - l=0.8.pdf  used on 
 input line 653.
 (pdftex.def)             Requested size: 199.1693pt x 132.7799pt.
-<images/Gaussian process/Periodic - l=4.pdf, id=2143, 433.62pt x 289.08pt>
+<images/Gaussian process/Periodic - l=4.pdf, id=2145, 433.62pt x 289.08pt>
 File: images/Gaussian process/Periodic - l=4.pdf Graphic file (type pdf)
 <use images/Gaussian process/Periodic - l=4.pdf>
 Package pdftex.def Info: images/Gaussian process/Periodic - l=4.pdf  used on in
@@ -2191,21 +2057,15 @@ pdfTeX warning: pdflatex (file ./images/Gaussian process/Periodic - l=0.8.pdf):
 pdfTeX warning: pdflatex (file ./images/Gaussian process/Periodic - l=4.pdf): P
 DF inclusion: multiple pdfs with page group included in a single page
 >]
-<images/Gaussian process/Periodic - cubedmean.pdf, id=2283, 433.62pt x 289.08pt
+<images/Gaussian process/Periodic - cubedmean.pdf, id=2285, 433.62pt x 289.08pt
 >
 File: images/Gaussian process/Periodic - cubedmean.pdf Graphic file (type pdf)
 <use images/Gaussian process/Periodic - cubedmean.pdf>
 Package pdftex.def Info: images/Gaussian process/Periodic - cubedmean.pdf  used
  on input line 675.
 (pdftex.def)             Requested size: 338.59023pt x 225.73732pt.
-
-Overfull \hbox (5.62666pt too wide) in paragraph at lines 669--679
-[]\OT1/cmr/m/n/12 Per com-pren-dere l'influenza della mean func-tion, ven-gono 
-di se-guito mostrati
- []
-
-[36 <./images/Gaussian process/Periodic - cubedmean.pdf>]
-<images/Gaussian process/Multidimensional RBF.pdf, id=2329, 495.8525pt x 439.64
+ [36 <./images/Gaussian process/Periodic - cubedmean.pdf>]
+<images/Gaussian process/Multidimensional RBF.pdf, id=2331, 495.8525pt x 439.64
 25pt>
 File: images/Gaussian process/Multidimensional RBF.pdf Graphic file (type pdf)
 <use images/Gaussian process/Multidimensional RBF.pdf>
@@ -2213,7 +2073,7 @@ Package pdftex.def Info: images/Gaussian process/Multidimensional RBF.pdf  used
  on input line 705.
 (pdftex.def)             Requested size: 239.00558pt x 211.9115pt.
  [37 <./images/Gaussian process/Multidimensional RBF.pdf>] [38]
-<images/Gaussian process/RBF + periodic kernel.pdf, id=2348, 289.08pt x 289.08p
+<images/Gaussian process/RBF + periodic kernel.pdf, id=2350, 289.08pt x 289.08p
 t>
 File: images/Gaussian process/RBF + periodic kernel.pdf Graphic file (type pdf)
 
@@ -2221,7 +2081,7 @@ File: images/Gaussian process/RBF + periodic kernel.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/Gaussian process/RBF + periodic kernel.pdf  use
 d on input line 747.
 (pdftex.def)             Requested size: 219.08743pt x 219.08553pt.
-<images/Gaussian process/RBF + periodic sample.pdf, id=2351, 433.62pt x 289.08p
+<images/Gaussian process/RBF + periodic sample.pdf, id=2353, 433.62pt x 289.08p
 t>
 File: images/Gaussian process/RBF + periodic sample.pdf Graphic file (type pdf)
 
@@ -2235,7 +2095,7 @@ rocess/RBF + periodic sample.pdf
 pdfTeX warning: pdflatex (file ./images/Gaussian process/RBF + periodic sample.
 pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<images/Gaussian process/Linear x Linear kernel.pdf, id=2419, 289.08pt x 289.08
+<images/Gaussian process/Linear x Linear kernel.pdf, id=2421, 289.08pt x 289.08
 pt>
 File: images/Gaussian process/Linear x Linear kernel.pdf Graphic file (type pdf
 )
@@ -2243,7 +2103,7 @@ File: images/Gaussian process/Linear x Linear kernel.pdf Graphic file (type pdf
 Package pdftex.def Info: images/Gaussian process/Linear x Linear kernel.pdf  us
 ed on input line 774.
 (pdftex.def)             Requested size: 219.08743pt x 219.08553pt.
-<images/Gaussian process/linear x linear sample.pdf, id=2422, 433.62pt x 289.08
+<images/Gaussian process/linear x linear sample.pdf, id=2424, 433.62pt x 289.08
 pt>
 File: images/Gaussian process/linear x linear sample.pdf Graphic file (type pdf
 )
@@ -2251,33 +2111,27 @@ File: images/Gaussian process/linear x linear sample.pdf Graphic file (type pdf
 Package pdftex.def Info: images/Gaussian process/linear x linear sample.pdf  us
 ed on input line 785.
 (pdftex.def)             Requested size: 270.86732pt x 180.58632pt.
-
-Overfull \hbox (3.11557pt too wide) in paragraph at lines 791--792
-[]\OT1/cmr/m/n/12 Combinare i due ker-nel gen-era dunque fun-zioni con com-por-
-ta-mento parabol-
- []
-
-[40 <./images/Gaussian process/Linear x Linear kernel.pdf> <./images/Gaussian p
-rocess/linear x linear sample.pdf
+ [40 <./images/Gaussian process/Linear x Linear kernel.pdf> <./images/Gaussian 
+process/linear x linear sample.pdf
 
 pdfTeX warning: pdflatex (file ./images/Gaussian process/linear x linear sample
 .pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<images/Gaussian process/Co2_example.PNG, id=2501, 599.99156pt x 236.38312pt>
+<images/Gaussian process/Co2_example.PNG, id=2503, 599.99156pt x 236.38312pt>
 File: images/Gaussian process/Co2_example.PNG Graphic file (type png)
 <use images/Gaussian process/Co2_example.PNG>
 Package pdftex.def Info: images/Gaussian process/Co2_example.PNG  used on input
  line 806.
 (pdftex.def)             Requested size: 398.3386pt x 156.9403pt.
  [41 <./images/Gaussian process/Co2_example.PNG>]
-<images/Gaussian process/MaunaLoaPrediction.pdf, id=2517, 433.62pt x 289.08pt>
+<images/Gaussian process/MaunaLoaPrediction.pdf, id=2519, 433.62pt x 289.08pt>
 File: images/Gaussian process/MaunaLoaPrediction.pdf Graphic file (type pdf)
 <use images/Gaussian process/MaunaLoaPrediction.pdf>
 Package pdftex.def Info: images/Gaussian process/MaunaLoaPrediction.pdf  used o
 n input line 844.
 (pdftex.def)             Requested size: 398.3386pt x 265.57306pt.
  [42 <./images/Gaussian process/MaunaLoaPrediction.pdf>]
-<images/Gaussian process/MaunaLoaPredictionZoom.pdf, id=2565, 433.62pt x 289.08
+<images/Gaussian process/MaunaLoaPredictionZoom.pdf, id=2566, 433.62pt x 289.08
 pt>
 File: images/Gaussian process/MaunaLoaPredictionZoom.pdf Graphic file (type pdf
 )
@@ -2290,7 +2144,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 877--878
 
  []
 
-<images/Gaussian process/GPposterior.PNG, id=2612, 530.73282pt x 206.27063pt>
+<images/Gaussian process/GPposterior.PNG, id=2613, 530.73282pt x 206.27063pt>
 File: images/Gaussian process/GPposterior.PNG Graphic file (type png)
 <use images/Gaussian process/GPposterior.PNG>
 Package pdftex.def Info: images/Gaussian process/GPposterior.PNG  used on input
@@ -2302,14 +2156,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 925--926
  []
 
 
-Overfull \hbox (7.81647pt too wide) in paragraph at lines 927--928
-[]\OT1/cmr/m/n/12 Dalla propo-sizione []II.2.5[] ri-cavi-amo la dis-tribuzione 
-con-dizion-ata di $\OML/cmm/b/it/12 f[]\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 X[]; 
-\OMS/cmsy/m/n/12 D$\OT1/cmr/m/n/12 : 
+Overfull \hbox (10.75394pt too wide) in paragraph at lines 927--928
+[]\OT1/cmr/m/n/12 From the propo-si-tion []II.2.5[] we de-rive the con-di-tiona
+l dis-tri-bu-tion of $\OML/cmm/b/it/12 f[]\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 X[
+]; \OMS/cmsy/m/n/12 D$\OT1/cmr/m/n/12 : 
  []
 
 [45]
-<images/Gaussian process/Noise-free - mean&f(x).pdf, id=2633, 722.7pt x 361.35p
+<images/Gaussian process/Noise-free - mean&f(x).pdf, id=2634, 722.7pt x 361.35p
 t>
 File: images/Gaussian process/Noise-free - mean&f(x).pdf Graphic file (type pdf
 )
@@ -2318,7 +2172,7 @@ Package pdftex.def Info: images/Gaussian process/Noise-free - mean&f(x).pdf  us
 ed on input line 951.
 (pdftex.def)             Requested size: 398.3386pt x 199.16766pt.
  [46 <./images/Gaussian process/Noise-free - mean&f(x).pdf>]
-<images/Gaussian process/Noise-free - mean&samples.pdf, id=2681, 722.7pt x 361.
+<images/Gaussian process/Noise-free - mean&samples.pdf, id=2682, 722.7pt x 361.
 35pt>
 File: images/Gaussian process/Noise-free - mean&samples.pdf Graphic file (type 
 pdf)
@@ -2332,41 +2186,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 975--976
  []
 
 [47 <./images/Gaussian process/Noise-free - mean&samples.pdf>]
-Overfull \hbox (18.43489pt too wide) in paragraph at lines 991--993
-\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; [] ; N[]\OMS/cmsy/m/n/12 g$ \OT1/cmr/m/n/12
- ^^Re il \OT1/cmr/m/it/12 test set \OT1/cmr/m/n/12 di cui si vogliono predire g
-li out-put $\OML/cmm/b/it/12 f[] \OT1/cmr/m/n/12 = []$;
- []
-
-<images/Gaussian process/Noise - mean&f(x).pdf, id=2726, 722.7pt x 361.35pt>
+<images/Gaussian process/Noise - mean&f(x).pdf, id=2727, 722.7pt x 361.35pt>
 File: images/Gaussian process/Noise - mean&f(x).pdf Graphic file (type pdf)
 <use images/Gaussian process/Noise - mean&f(x).pdf>
 Package pdftex.def Info: images/Gaussian process/Noise - mean&f(x).pdf  used on
- input line 1031.
+ input line 1030.
 (pdftex.def)             Requested size: 398.3386pt x 199.16766pt.
-[48 <./images/Gaussian process/Noise - mean&f(x).pdf>]
-<images/Gaussian process/Noise - mean&samples.pdf, id=2773, 722.7pt x 361.35pt>
+ [48 <./images/Gaussian process/Noise - mean&f(x).pdf>]
+<images/Gaussian process/Noise - mean&samples.pdf, id=2774, 722.7pt x 361.35pt>
 
 File: images/Gaussian process/Noise - mean&samples.pdf Graphic file (type pdf)
 <use images/Gaussian process/Noise - mean&samples.pdf>
 Package pdftex.def Info: images/Gaussian process/Noise - mean&samples.pdf  used
- on input line 1050.
+ on input line 1049.
 (pdftex.def)             Requested size: 398.3386pt x 199.16766pt.
-)
-(Capitoli/Machine Learning.tex [49 <./images/Gaussian process/Noise - mean&samp
-les.pdf>] [50
+) (Capitoli/Machine Learning.tex [49 <./images/Gaussian process/Noise - mean&sa
+mples.pdf>] [50
 
 ]
 Chapter IV.
 [51] (Capitoli/Dataset.tex [52]
-<images/Machine learning/Overfitted_Data.png, id=2855, 378.41376pt x 256.96pt>
+<images/Machine learning/Overfitted_Data.png, id=2856, 378.41376pt x 256.96pt>
 File: images/Machine learning/Overfitted_Data.png Graphic file (type png)
 <use images/Machine learning/Overfitted_Data.png>
 Package pdftex.def Info: images/Machine learning/Overfitted_Data.png  used on i
 nput line 35.
 (pdftex.def)             Requested size: 239.00558pt x 162.29735pt.
  [53 <./images/Machine learning/Overfitted_Data.png>]
-<images/Machine learning/Overfitting error.png, id=2866, 642.4pt x 473.77pt>
+<images/Machine learning/Overfitting error.png, id=2867, 642.4pt x 473.77pt>
 File: images/Machine learning/Overfitting error.png Graphic file (type png)
 <use images/Machine learning/Overfitting error.png>
 Package pdftex.def Info: images/Machine learning/Overfitting error.png  used on
@@ -2444,7 +2291,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 213.
 
-<images/Training (teoria)/Gradient descend.png, id=2934, 803.0pt x 861.2175pt>
+<images/Training (teoria)/Gradient descend.png, id=2935, 803.0pt x 861.2175pt>
 File: images/Training (teoria)/Gradient descend.png Graphic file (type png)
 <use images/Training (teoria)/Gradient descend.png>
 Package pdftex.def Info: images/Training (teoria)/Gradient descend.png  used on
@@ -2466,13 +2313,13 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 248.
 
-<images/Training (teoria)/SGD Momentum a.PNG, id=2955, 199.49532pt x 84.315pt>
+<images/Training (teoria)/SGD Momentum a.PNG, id=2956, 199.49532pt x 84.315pt>
 File: images/Training (teoria)/SGD Momentum a.PNG Graphic file (type png)
 <use images/Training (teoria)/SGD Momentum a.PNG>
 Package pdftex.def Info: images/Training (teoria)/SGD Momentum a.PNG  used on i
 nput line 269.
 (pdftex.def)             Requested size: 199.1693pt x 84.18097pt.
-<images/Training (teoria)/SGD Momentum b.PNG, id=2956, 196.48407pt x 85.82062pt
+<images/Training (teoria)/SGD Momentum b.PNG, id=2957, 196.48407pt x 85.82062pt
 >
 File: images/Training (teoria)/SGD Momentum b.PNG Graphic file (type png)
 <use images/Training (teoria)/SGD Momentum b.PNG>
@@ -2504,7 +2351,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 304.
 
 [67]
-<images/Machine learning/Comparison.PNG, id=2976, 275.52937pt x 262.73157pt>
+<images/Machine learning/Comparison.PNG, id=2977, 275.52937pt x 262.73157pt>
 File: images/Machine learning/Comparison.PNG Graphic file (type png)
 <use images/Machine learning/Comparison.PNG>
 Package pdftex.def Info: images/Machine learning/Comparison.PNG  used on input 
@@ -2526,21 +2373,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--8
 [69
 
 ]
-<images/Windkessel/DatiReali.pdf, id=3002, 433.62pt x 289.08pt>
+<images/Windkessel/DatiReali.pdf, id=3003, 433.62pt x 289.08pt>
 File: images/Windkessel/DatiReali.pdf Graphic file (type pdf)
 <use images/Windkessel/DatiReali.pdf>
 Package pdftex.def Info: images/Windkessel/DatiReali.pdf  used on input line 27
 .
 (pdftex.def)             Requested size: 278.83578pt x 185.89717pt.
  [70 <./images/Windkessel/DatiReali.pdf>]
-<images/Windkessel/modelloSemplice.pdf, id=3057, 433.62pt x 289.08pt>
+<images/Windkessel/modelloSemplice.pdf, id=3058, 433.62pt x 289.08pt>
 File: images/Windkessel/modelloSemplice.pdf Graphic file (type pdf)
 <use images/Windkessel/modelloSemplice.pdf>
 Package pdftex.def Info: images/Windkessel/modelloSemplice.pdf  used on input l
 ine 52.
 (pdftex.def)             Requested size: 278.83578pt x 185.89717pt.
  [71 <./images/Windkessel/modelloSemplice.pdf>]
-<images/Windkessel/Cuore.png, id=3111, 502.87875pt x 481.8pt>
+<images/Windkessel/Cuore.png, id=3112, 502.87875pt x 481.8pt>
 File: images/Windkessel/Cuore.png Graphic file (type png)
 <use images/Windkessel/Cuore.png>
 Package pdftex.def Info: images/Windkessel/Cuore.png  used on input line 73.
@@ -2555,12 +2402,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
 
-<images/Windkessel/sistole.png, id=3120, 155.58125pt x 200.75pt>
+<images/Windkessel/sistole.png, id=3121, 155.58125pt x 200.75pt>
 File: images/Windkessel/sistole.png Graphic file (type png)
 <use images/Windkessel/sistole.png>
 Package pdftex.def Info: images/Windkessel/sistole.png  used on input line 95.
 (pdftex.def)             Requested size: 99.58464pt x 128.49792pt.
-<images/Windkessel/diastole.png, id=3121, 155.58125pt x 200.75pt>
+<images/Windkessel/diastole.png, id=3122, 155.58125pt x 200.75pt>
 File: images/Windkessel/diastole.png Graphic file (type png)
 <use images/Windkessel/diastole.png>
 Package pdftex.def Info: images/Windkessel/diastole.png  used on input line 100
@@ -2568,7 +2415,7 @@ Package pdftex.def Info: images/Windkessel/diastole.png  used on input line 100
 (pdftex.def)             Requested size: 99.58464pt x 128.49792pt.
 [73 <./images/Windkessel/sistole.png> <./images/Windkessel/diastole.png>]
 (Tabelle/Tabella ciclo cardiaco.tex [74])
-<images/Windkessel/Wiggers_Diagram_IT.svg.png, id=3137, 803.0pt x 641.39626pt>
+<images/Windkessel/Wiggers_Diagram_IT.svg.png, id=3138, 803.0pt x 641.39626pt>
 File: images/Windkessel/Wiggers_Diagram_IT.svg.png Graphic file (type png)
 <use images/Windkessel/Wiggers_Diagram_IT.svg.png>
 Package pdftex.def Info: images/Windkessel/Wiggers_Diagram_IT.svg.png  used on 
@@ -2583,14 +2430,14 @@ Overfull \hbox (4.58112pt too wide) in paragraph at lines 160--165
  san-guigno ^^Re di-ret-ta-mente pro-porzionale all'elasticit^^Ra
  []
 
-<images/Windkessel/WindkesselEffect.png, id=3158, 1027.84pt x 570.13pt>
+<images/Windkessel/WindkesselEffect.png, id=3159, 1027.84pt x 570.13pt>
 File: images/Windkessel/WindkesselEffect.png Graphic file (type png)
 <use images/Windkessel/WindkesselEffect.png>
 Package pdftex.def Info: images/Windkessel/WindkesselEffect.png  used on input 
 line 173.
 (pdftex.def)             Requested size: 278.83578pt x 154.66791pt.
 [77 <./images/Windkessel/WindkesselEffect.png>]
-<images/Windkessel/WindkesselEffect(libro).PNG, id=3168, 435.12563pt x 397.485p
+<images/Windkessel/WindkesselEffect(libro).PNG, id=3169, 435.12563pt x 397.485p
 t>
 File: images/Windkessel/WindkesselEffect(libro).PNG Graphic file (type png)
 <use images/Windkessel/WindkesselEffect(libro).PNG>
@@ -2608,7 +2455,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 233--234
  []
 
 [80]
-<images/Windkessel/Windkessel2Element.png, id=3199, 147.99008pt x 55.01962pt>
+<images/Windkessel/Windkessel2Element.png, id=3200, 147.99008pt x 55.01962pt>
 File: images/Windkessel/Windkessel2Element.png Graphic file (type png)
 <use images/Windkessel/Windkessel2Element.png>
 Package pdftex.def Info: images/Windkessel/Windkessel2Element.png  used on inpu
@@ -2620,12 +2467,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 274--277
  []
 
 [81 <./images/Windkessel/Windkessel2Element.png>]
-<images/Windkessel/f_C.pdf, id=3214, 433.62pt x 289.08pt>
+<images/Windkessel/f_C.pdf, id=3215, 433.62pt x 289.08pt>
 File: images/Windkessel/f_C.pdf Graphic file (type pdf)
 <use images/Windkessel/f_C.pdf>
 Package pdftex.def Info: images/Windkessel/f_C.pdf  used on input line 284.
 (pdftex.def)             Requested size: 298.75394pt x 199.1787pt.
-<images/Windkessel/modelloCstimata.pdf, id=3220, 433.62pt x 289.08pt>
+<images/Windkessel/modelloCstimata.pdf, id=3221, 433.62pt x 289.08pt>
 File: images/Windkessel/modelloCstimata.pdf Graphic file (type pdf)
 <use images/Windkessel/modelloCstimata.pdf>
 Package pdftex.def Info: images/Windkessel/modelloCstimata.pdf  used on input l
@@ -2645,7 +2492,7 @@ Underfull \vbox (badness 1931) has occurred while \output is active []
 pdfTeX warning: pdflatex (file ./images/Windkessel/modelloCstimata.pdf): PDF in
 clusion: multiple pdfs with page group included in a single page
 >]
-<images/Windkessel/modelloCalphastimata.pdf, id=3312, 433.62pt x 289.08pt>
+<images/Windkessel/modelloCalphastimata.pdf, id=3313, 433.62pt x 289.08pt>
 File: images/Windkessel/modelloCalphastimata.pdf Graphic file (type pdf)
 <use images/Windkessel/modelloCalphastimata.pdf>
 Package pdftex.def Info: images/Windkessel/modelloCalphastimata.pdf  used on in
@@ -2665,7 +2512,7 @@ Overfull \hbox (0.11086pt too wide) in paragraph at lines 351--352
  []
 
 [84]
-<images/Windkessel/modelloPeriodicoCalphastimata.pdf, id=3381, 433.62pt x 289.0
+<images/Windkessel/modelloPeriodicoCalphastimata.pdf, id=3382, 433.62pt x 289.0
 8pt>
 File: images/Windkessel/modelloPeriodicoCalphastimata.pdf Graphic file (type pd
 f)
@@ -2738,14 +2585,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--47
  []
 
 [93]
-<images/Training (risultati)/database.png, id=3495, 732.7375pt x 635.37375pt>
+<images/Training (risultati)/database.png, id=3496, 732.7375pt x 635.37375pt>
 File: images/Training (risultati)/database.png Graphic file (type png)
 <use images/Training (risultati)/database.png>
 Package pdftex.def Info: images/Training (risultati)/database.png  used on inpu
 t line 53.
 (pdftex.def)             Requested size: 398.3386pt x 345.41382pt.
  [94 <./images/Training (risultati)/database.png>]
-<images/Training (risultati)/MAP/MAP - loss.png, id=3502, 839.135pt x 322.20375
+<images/Training (risultati)/MAP/MAP - loss.png, id=3503, 839.135pt x 322.20375
 pt>
 File: images/Training (risultati)/MAP/MAP - loss.png Graphic file (type png)
 <use images/Training (risultati)/MAP/MAP - loss.png>
@@ -2765,7 +2612,7 @@ l'andamento dell'early
  []
 
 [95 <./images/Training (risultati)/MAP/MAP - loss.png>]
-<images/Training (risultati)/MAP/MAP - inference.png, id=3510, 839.135pt x 433.
+<images/Training (risultati)/MAP/MAP - inference.png, id=3511, 839.135pt x 433.
 62pt>
 File: images/Training (risultati)/MAP/MAP - inference.png Graphic file (type pn
 g)
@@ -2773,7 +2620,7 @@ g)
 Package pdftex.def Info: images/Training (risultati)/MAP/MAP - inference.png  u
 sed on input line 93.
 (pdftex.def)             Requested size: 398.3386pt x 205.83931pt.
-<images/Training (risultati)/MAP/MAP - C - full.pdf, id=3516, 1228.59pt x 614.2
+<images/Training (risultati)/MAP/MAP - C - full.pdf, id=3517, 1228.59pt x 614.2
 95pt>
 File: images/Training (risultati)/MAP/MAP - C - full.pdf Graphic file (type pdf
 )
@@ -2781,7 +2628,7 @@ File: images/Training (risultati)/MAP/MAP - C - full.pdf Graphic file (type pdf
 Package pdftex.def Info: images/Training (risultati)/MAP/MAP - C - full.pdf  us
 ed on input line 108.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/MAP/MAP - C - training.pdf, id=3517, 1228.59pt x 6
+<images/Training (risultati)/MAP/MAP - C - training.pdf, id=3518, 1228.59pt x 6
 14.295pt>
 File: images/Training (risultati)/MAP/MAP - C - training.pdf Graphic file (type
  pdf)
@@ -2789,14 +2636,14 @@ File: images/Training (risultati)/MAP/MAP - C - training.pdf Graphic file (type
 Package pdftex.def Info: images/Training (risultati)/MAP/MAP - C - training.pdf
   used on input line 116.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/MAP/MAP - C - sx.pdf, id=3518, 1228.59pt x 614.295
+<images/Training (risultati)/MAP/MAP - C - sx.pdf, id=3519, 1228.59pt x 614.295
 pt>
 File: images/Training (risultati)/MAP/MAP - C - sx.pdf Graphic file (type pdf)
 <use images/Training (risultati)/MAP/MAP - C - sx.pdf>
 Package pdftex.def Info: images/Training (risultati)/MAP/MAP - C - sx.pdf  used
  on input line 124.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/MAP/MAP - C - dx.pdf, id=3519, 1228.59pt x 614.295
+<images/Training (risultati)/MAP/MAP - C - dx.pdf, id=3520, 1228.59pt x 614.295
 pt>
 File: images/Training (risultati)/MAP/MAP - C - dx.pdf Graphic file (type pdf)
 <use images/Training (risultati)/MAP/MAP - C - dx.pdf>
@@ -2816,7 +2663,7 @@ ge
 pdfTeX warning: pdflatex (file ./images/Training (risultati)/MAP/MAP - C - dx.p
 df): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<images/Training (risultati)/MAP/MAP - R1 - full.pdf, id=3734, 1228.59pt x 614.
+<images/Training (risultati)/MAP/MAP - R1 - full.pdf, id=3735, 1228.59pt x 614.
 295pt>
 File: images/Training (risultati)/MAP/MAP - R1 - full.pdf Graphic file (type pd
 f)
@@ -2824,7 +2671,7 @@ f)
 Package pdftex.def Info: images/Training (risultati)/MAP/MAP - R1 - full.pdf  u
 sed on input line 150.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/MAP/MAP - R1 - training.pdf, id=3735, 1228.59pt x 
+<images/Training (risultati)/MAP/MAP - R1 - training.pdf, id=3736, 1228.59pt x 
 614.295pt>
 File: images/Training (risultati)/MAP/MAP - R1 - training.pdf Graphic file (typ
 e pdf)
@@ -2832,7 +2679,7 @@ e pdf)
 Package pdftex.def Info: images/Training (risultati)/MAP/MAP - R1 - training.pd
 f  used on input line 159.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/MAP/MAP - R1 - sx.pdf, id=3736, 1228.59pt x 614.29
+<images/Training (risultati)/MAP/MAP - R1 - sx.pdf, id=3737, 1228.59pt x 614.29
 5pt>
 File: images/Training (risultati)/MAP/MAP - R1 - sx.pdf Graphic file (type pdf)
 
@@ -2840,7 +2687,7 @@ File: images/Training (risultati)/MAP/MAP - R1 - sx.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/Training (risultati)/MAP/MAP - R1 - sx.pdf  use
 d on input line 166.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/MAP/MAP - R1 - dx.pdf, id=3737, 1228.59pt x 614.29
+<images/Training (risultati)/MAP/MAP - R1 - dx.pdf, id=3738, 1228.59pt x 614.29
 5pt>
 File: images/Training (risultati)/MAP/MAP - R1 - dx.pdf Graphic file (type pdf)
 
@@ -2860,7 +2707,7 @@ g (risultati)/MAP/MAP - R1 - dx.pdf
 pdfTeX warning: pdflatex (file ./images/Training (risultati)/MAP/MAP - R1 - dx.
 pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<images/Training (risultati)/MAP/MAP - R2 - full.pdf, id=3978, 1228.59pt x 614.
+<images/Training (risultati)/MAP/MAP - R2 - full.pdf, id=3979, 1228.59pt x 614.
 295pt>
 File: images/Training (risultati)/MAP/MAP - R2 - full.pdf Graphic file (type pd
 f)
@@ -2868,7 +2715,7 @@ f)
 Package pdftex.def Info: images/Training (risultati)/MAP/MAP - R2 - full.pdf  u
 sed on input line 191.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/MAP/MAP - R2 - training.pdf, id=3979, 1228.59pt x 
+<images/Training (risultati)/MAP/MAP - R2 - training.pdf, id=3980, 1228.59pt x 
 614.295pt>
 File: images/Training (risultati)/MAP/MAP - R2 - training.pdf Graphic file (typ
 e pdf)
@@ -2876,7 +2723,7 @@ e pdf)
 Package pdftex.def Info: images/Training (risultati)/MAP/MAP - R2 - training.pd
 f  used on input line 200.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/MAP/MAP - R2 - sx.pdf, id=3980, 1228.59pt x 614.29
+<images/Training (risultati)/MAP/MAP - R2 - sx.pdf, id=3981, 1228.59pt x 614.29
 5pt>
 File: images/Training (risultati)/MAP/MAP - R2 - sx.pdf Graphic file (type pdf)
 
@@ -2884,7 +2731,7 @@ File: images/Training (risultati)/MAP/MAP - R2 - sx.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/Training (risultati)/MAP/MAP - R2 - sx.pdf  use
 d on input line 207.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/MAP/MAP - R2 - dx.pdf, id=3981, 1228.59pt x 614.29
+<images/Training (risultati)/MAP/MAP - R2 - dx.pdf, id=3982, 1228.59pt x 614.29
 5pt>
 File: images/Training (risultati)/MAP/MAP - R2 - dx.pdf Graphic file (type pdf)
 
@@ -2904,7 +2751,7 @@ g (risultati)/MAP/MAP - R2 - dx.pdf
 pdfTeX warning: pdflatex (file ./images/Training (risultati)/MAP/MAP - R2 - dx.
 pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<images/Training (risultati)/DBP/DBP - loss.png, id=4222, 837.1275pt x 319.1925
+<images/Training (risultati)/DBP/DBP - loss.png, id=4223, 837.1275pt x 319.1925
 pt>
 File: images/Training (risultati)/DBP/DBP - loss.png Graphic file (type png)
 <use images/Training (risultati)/DBP/DBP - loss.png>
@@ -2923,7 +2770,7 @@ Overfull \hbox (3.3453pt too wide) in paragraph at lines 239--246
 l'andamento dell'early
  []
 
-<images/Training (risultati)/DBP/DBP - inference.png, id=4224, 837.1275pt x 432
+<images/Training (risultati)/DBP/DBP - inference.png, id=4225, 837.1275pt x 432
 .61626pt>
 File: images/Training (risultati)/DBP/DBP - inference.png Graphic file (type pn
 g)
@@ -2933,7 +2780,7 @@ sed on input line 257.
 (pdftex.def)             Requested size: 398.3386pt x 205.85132pt.
 [103 <./images/Training (risultati)/DBP/DBP - loss.png> <./images/Training (ris
 ultati)/DBP/DBP - inference.png>]
-<images/Training (risultati)/DBP/DBP - C - full.pdf, id=4237, 1228.59pt x 614.2
+<images/Training (risultati)/DBP/DBP - C - full.pdf, id=4238, 1228.59pt x 614.2
 95pt>
 File: images/Training (risultati)/DBP/DBP - C - full.pdf Graphic file (type pdf
 )
@@ -2941,7 +2788,7 @@ File: images/Training (risultati)/DBP/DBP - C - full.pdf Graphic file (type pdf
 Package pdftex.def Info: images/Training (risultati)/DBP/DBP - C - full.pdf  us
 ed on input line 274.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/DBP/DBP - C - training.pdf, id=4238, 1228.59pt x 6
+<images/Training (risultati)/DBP/DBP - C - training.pdf, id=4239, 1228.59pt x 6
 14.295pt>
 File: images/Training (risultati)/DBP/DBP - C - training.pdf Graphic file (type
  pdf)
@@ -2949,14 +2796,14 @@ File: images/Training (risultati)/DBP/DBP - C - training.pdf Graphic file (type
 Package pdftex.def Info: images/Training (risultati)/DBP/DBP - C - training.pdf
   used on input line 283.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/DBP/DBP - C - sx.pdf, id=4239, 1228.59pt x 614.295
+<images/Training (risultati)/DBP/DBP - C - sx.pdf, id=4240, 1228.59pt x 614.295
 pt>
 File: images/Training (risultati)/DBP/DBP - C - sx.pdf Graphic file (type pdf)
 <use images/Training (risultati)/DBP/DBP - C - sx.pdf>
 Package pdftex.def Info: images/Training (risultati)/DBP/DBP - C - sx.pdf  used
  on input line 292.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/DBP/DBP - C - dx.pdf, id=4240, 1228.59pt x 614.295
+<images/Training (risultati)/DBP/DBP - C - dx.pdf, id=4241, 1228.59pt x 614.295
 pt>
 File: images/Training (risultati)/DBP/DBP - C - dx.pdf Graphic file (type pdf)
 <use images/Training (risultati)/DBP/DBP - C - dx.pdf>
@@ -2975,7 +2822,7 @@ ge
 pdfTeX warning: pdflatex (file ./images/Training (risultati)/DBP/DBP - C - dx.p
 df): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<images/Training (risultati)/DBP/DBP - R1 - full.pdf, id=4464, 1228.59pt x 614.
+<images/Training (risultati)/DBP/DBP - R1 - full.pdf, id=4465, 1228.59pt x 614.
 295pt>
 File: images/Training (risultati)/DBP/DBP - R1 - full.pdf Graphic file (type pd
 f)
@@ -2983,7 +2830,7 @@ f)
 Package pdftex.def Info: images/Training (risultati)/DBP/DBP - R1 - full.pdf  u
 sed on input line 318.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/DBP/DBP - R1 - training.pdf, id=4465, 1228.59pt x 
+<images/Training (risultati)/DBP/DBP - R1 - training.pdf, id=4466, 1228.59pt x 
 614.295pt>
 File: images/Training (risultati)/DBP/DBP - R1 - training.pdf Graphic file (typ
 e pdf)
@@ -2991,7 +2838,7 @@ e pdf)
 Package pdftex.def Info: images/Training (risultati)/DBP/DBP - R1 - training.pd
 f  used on input line 327.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/DBP/DBP - R1 - sx.pdf, id=4466, 1228.59pt x 614.29
+<images/Training (risultati)/DBP/DBP - R1 - sx.pdf, id=4467, 1228.59pt x 614.29
 5pt>
 File: images/Training (risultati)/DBP/DBP - R1 - sx.pdf Graphic file (type pdf)
 
@@ -2999,7 +2846,7 @@ File: images/Training (risultati)/DBP/DBP - R1 - sx.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/Training (risultati)/DBP/DBP - R1 - sx.pdf  use
 d on input line 334.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/DBP/DBP - R1 - dx.pdf, id=4467, 1228.59pt x 614.29
+<images/Training (risultati)/DBP/DBP - R1 - dx.pdf, id=4468, 1228.59pt x 614.29
 5pt>
 File: images/Training (risultati)/DBP/DBP - R1 - dx.pdf Graphic file (type pdf)
 
@@ -3019,7 +2866,7 @@ g (risultati)/DBP/DBP - R1 - dx.pdf
 pdfTeX warning: pdflatex (file ./images/Training (risultati)/DBP/DBP - R1 - dx.
 pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<images/Training (risultati)/DBP/DBP - R2 - full.pdf, id=4711, 1228.59pt x 614.
+<images/Training (risultati)/DBP/DBP - R2 - full.pdf, id=4712, 1228.59pt x 614.
 295pt>
 File: images/Training (risultati)/DBP/DBP - R2 - full.pdf Graphic file (type pd
 f)
@@ -3027,7 +2874,7 @@ f)
 Package pdftex.def Info: images/Training (risultati)/DBP/DBP - R2 - full.pdf  u
 sed on input line 361.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/DBP/DBP - R2 - training.pdf, id=4712, 1228.59pt x 
+<images/Training (risultati)/DBP/DBP - R2 - training.pdf, id=4713, 1228.59pt x 
 614.295pt>
 File: images/Training (risultati)/DBP/DBP - R2 - training.pdf Graphic file (typ
 e pdf)
@@ -3035,7 +2882,7 @@ e pdf)
 Package pdftex.def Info: images/Training (risultati)/DBP/DBP - R2 - training.pd
 f  used on input line 370.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/DBP/DBP - R2 - sx.pdf, id=4713, 1228.59pt x 614.29
+<images/Training (risultati)/DBP/DBP - R2 - sx.pdf, id=4714, 1228.59pt x 614.29
 5pt>
 File: images/Training (risultati)/DBP/DBP - R2 - sx.pdf Graphic file (type pdf)
 
@@ -3043,7 +2890,7 @@ File: images/Training (risultati)/DBP/DBP - R2 - sx.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/Training (risultati)/DBP/DBP - R2 - sx.pdf  use
 d on input line 377.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/DBP/DBP - R2 - dx.pdf, id=4714, 1228.59pt x 614.29
+<images/Training (risultati)/DBP/DBP - R2 - dx.pdf, id=4715, 1228.59pt x 614.29
 5pt>
 File: images/Training (risultati)/DBP/DBP - R2 - dx.pdf Graphic file (type pdf)
 
@@ -3063,7 +2910,7 @@ g (risultati)/DBP/DBP - R2 - dx.pdf
 pdfTeX warning: pdflatex (file ./images/Training (risultati)/DBP/DBP - R2 - dx.
 pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<images/Training (risultati)/PP/PP - loss.png, id=4956, 839.135pt x 322.20375pt
+<images/Training (risultati)/PP/PP - loss.png, id=4957, 839.135pt x 322.20375pt
 >
 File: images/Training (risultati)/PP/PP - loss.png Graphic file (type png)
 <use images/Training (risultati)/PP/PP - loss.png>
@@ -3082,7 +2929,7 @@ Overfull \hbox (3.3453pt too wide) in paragraph at lines 408--415
 l'andamento dell'early
  []
 
-<images/Training (risultati)/PP/PP - inference.png, id=4958, 839.135pt x 434.62
+<images/Training (risultati)/PP/PP - inference.png, id=4959, 839.135pt x 434.62
 375pt>
 File: images/Training (risultati)/PP/PP - inference.png Graphic file (type png)
 
@@ -3092,14 +2939,14 @@ d on input line 426.
 (pdftex.def)             Requested size: 398.3386pt x 206.31578pt.
 [110 <./images/Training (risultati)/PP/PP - loss.png> <./images/Training (risul
 tati)/PP/PP - inference.png>]
-<images/Training (risultati)/PP/PP - C - full.pdf, id=4971, 1228.59pt x 614.295
+<images/Training (risultati)/PP/PP - C - full.pdf, id=4972, 1228.59pt x 614.295
 pt>
 File: images/Training (risultati)/PP/PP - C - full.pdf Graphic file (type pdf)
 <use images/Training (risultati)/PP/PP - C - full.pdf>
 Package pdftex.def Info: images/Training (risultati)/PP/PP - C - full.pdf  used
  on input line 443.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/PP/PP - C - training.pdf, id=4972, 1228.59pt x 614
+<images/Training (risultati)/PP/PP - C - training.pdf, id=4973, 1228.59pt x 614
 .295pt>
 File: images/Training (risultati)/PP/PP - C - training.pdf Graphic file (type p
 df)
@@ -3107,14 +2954,14 @@ df)
 Package pdftex.def Info: images/Training (risultati)/PP/PP - C - training.pdf  
 used on input line 452.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/PP/PP - C - sx.pdf, id=4973, 1228.59pt x 614.295pt
+<images/Training (risultati)/PP/PP - C - sx.pdf, id=4974, 1228.59pt x 614.295pt
 >
 File: images/Training (risultati)/PP/PP - C - sx.pdf Graphic file (type pdf)
 <use images/Training (risultati)/PP/PP - C - sx.pdf>
 Package pdftex.def Info: images/Training (risultati)/PP/PP - C - sx.pdf  used o
 n input line 459.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/PP/PP - C - dx.pdf, id=4974, 1228.59pt x 614.295pt
+<images/Training (risultati)/PP/PP - C - dx.pdf, id=4975, 1228.59pt x 614.295pt
 >
 File: images/Training (risultati)/PP/PP - C - dx.pdf Graphic file (type pdf)
 <use images/Training (risultati)/PP/PP - C - dx.pdf>
@@ -3133,7 +2980,7 @@ risultati)/PP/PP - C - dx.pdf
 pdfTeX warning: pdflatex (file ./images/Training (risultati)/PP/PP - C - dx.pdf
 ): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<images/Training (risultati)/PP/PP - R1 - full.pdf, id=5171, 1228.59pt x 614.29
+<images/Training (risultati)/PP/PP - R1 - full.pdf, id=5172, 1228.59pt x 614.29
 5pt>
 File: images/Training (risultati)/PP/PP - R1 - full.pdf Graphic file (type pdf)
 
@@ -3141,7 +2988,7 @@ File: images/Training (risultati)/PP/PP - R1 - full.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/Training (risultati)/PP/PP - R1 - full.pdf  use
 d on input line 487.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/PP/PP - R1 - training.pdf, id=5172, 1228.59pt x 61
+<images/Training (risultati)/PP/PP - R1 - training.pdf, id=5173, 1228.59pt x 61
 4.295pt>
 File: images/Training (risultati)/PP/PP - R1 - training.pdf Graphic file (type 
 pdf)
@@ -3149,14 +2996,14 @@ pdf)
 Package pdftex.def Info: images/Training (risultati)/PP/PP - R1 - training.pdf 
  used on input line 496.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/PP/PP - R1 - sx.pdf, id=5173, 1228.59pt x 614.295p
+<images/Training (risultati)/PP/PP - R1 - sx.pdf, id=5174, 1228.59pt x 614.295p
 t>
 File: images/Training (risultati)/PP/PP - R1 - sx.pdf Graphic file (type pdf)
 <use images/Training (risultati)/PP/PP - R1 - sx.pdf>
 Package pdftex.def Info: images/Training (risultati)/PP/PP - R1 - sx.pdf  used 
 on input line 503.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/PP/PP - R1 - dx.pdf, id=5174, 1228.59pt x 614.295p
+<images/Training (risultati)/PP/PP - R1 - dx.pdf, id=5175, 1228.59pt x 614.295p
 t>
 File: images/Training (risultati)/PP/PP - R1 - dx.pdf Graphic file (type pdf)
 <use images/Training (risultati)/PP/PP - R1 - dx.pdf>
@@ -3175,7 +3022,7 @@ e
 pdfTeX warning: pdflatex (file ./images/Training (risultati)/PP/PP - R1 - dx.pd
 f): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<images/Training (risultati)/PP/PP - R2 - full.pdf, id=5410, 1228.59pt x 614.29
+<images/Training (risultati)/PP/PP - R2 - full.pdf, id=5411, 1228.59pt x 614.29
 5pt>
 File: images/Training (risultati)/PP/PP - R2 - full.pdf Graphic file (type pdf)
 
@@ -3183,7 +3030,7 @@ File: images/Training (risultati)/PP/PP - R2 - full.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/Training (risultati)/PP/PP - R2 - full.pdf  use
 d on input line 530.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/PP/PP - R2 - training.pdf, id=5411, 1228.59pt x 61
+<images/Training (risultati)/PP/PP - R2 - training.pdf, id=5412, 1228.59pt x 61
 4.295pt>
 File: images/Training (risultati)/PP/PP - R2 - training.pdf Graphic file (type 
 pdf)
@@ -3191,14 +3038,14 @@ pdf)
 Package pdftex.def Info: images/Training (risultati)/PP/PP - R2 - training.pdf 
  used on input line 539.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/PP/PP - R2 - sx.pdf, id=5412, 1228.59pt x 614.295p
+<images/Training (risultati)/PP/PP - R2 - sx.pdf, id=5413, 1228.59pt x 614.295p
 t>
 File: images/Training (risultati)/PP/PP - R2 - sx.pdf Graphic file (type pdf)
 <use images/Training (risultati)/PP/PP - R2 - sx.pdf>
 Package pdftex.def Info: images/Training (risultati)/PP/PP - R2 - sx.pdf  used 
 on input line 546.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/PP/PP - R2 - dx.pdf, id=5413, 1228.59pt x 614.295p
+<images/Training (risultati)/PP/PP - R2 - dx.pdf, id=5414, 1228.59pt x 614.295p
 t>
 File: images/Training (risultati)/PP/PP - R2 - dx.pdf Graphic file (type pdf)
 <use images/Training (risultati)/PP/PP - R2 - dx.pdf>
@@ -3217,7 +3064,7 @@ e
 pdfTeX warning: pdflatex (file ./images/Training (risultati)/PP/PP - R2 - dx.pd
 f): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<images/Training (risultati)/SBP/SBP - loss.png, id=5645, 837.1275pt x 319.1925
+<images/Training (risultati)/SBP/SBP - loss.png, id=5646, 837.1275pt x 319.1925
 pt>
 File: images/Training (risultati)/SBP/SBP - loss.png Graphic file (type png)
 <use images/Training (risultati)/SBP/SBP - loss.png>
@@ -3236,7 +3083,7 @@ Overfull \hbox (3.3453pt too wide) in paragraph at lines 578--585
 l'andamento dell'early
  []
 
-<images/Training (risultati)/SBP/SBP - inference.png, id=5647, 837.1275pt x 432
+<images/Training (risultati)/SBP/SBP - inference.png, id=5648, 837.1275pt x 432
 .61626pt>
 File: images/Training (risultati)/SBP/SBP - inference.png Graphic file (type pn
 g)
@@ -3246,7 +3093,7 @@ sed on input line 596.
 (pdftex.def)             Requested size: 398.3386pt x 205.85132pt.
 [117 <./images/Training (risultati)/SBP/SBP - loss.png> <./images/Training (ris
 ultati)/SBP/SBP - inference.png>]
-<images/Training (risultati)/SBP/SBP - C - full.pdf, id=5661, 1228.59pt x 614.2
+<images/Training (risultati)/SBP/SBP - C - full.pdf, id=5662, 1228.59pt x 614.2
 95pt>
 File: images/Training (risultati)/SBP/SBP - C - full.pdf Graphic file (type pdf
 )
@@ -3254,7 +3101,7 @@ File: images/Training (risultati)/SBP/SBP - C - full.pdf Graphic file (type pdf
 Package pdftex.def Info: images/Training (risultati)/SBP/SBP - C - full.pdf  us
 ed on input line 613.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/SBP/SBP - C - training.pdf, id=5662, 1228.59pt x 6
+<images/Training (risultati)/SBP/SBP - C - training.pdf, id=5663, 1228.59pt x 6
 14.295pt>
 File: images/Training (risultati)/SBP/SBP - C - training.pdf Graphic file (type
  pdf)
@@ -3262,14 +3109,14 @@ File: images/Training (risultati)/SBP/SBP - C - training.pdf Graphic file (type
 Package pdftex.def Info: images/Training (risultati)/SBP/SBP - C - training.pdf
   used on input line 622.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/SBP/SBP - C - sx.pdf, id=5663, 1228.59pt x 614.295
+<images/Training (risultati)/SBP/SBP - C - sx.pdf, id=5664, 1228.59pt x 614.295
 pt>
 File: images/Training (risultati)/SBP/SBP - C - sx.pdf Graphic file (type pdf)
 <use images/Training (risultati)/SBP/SBP - C - sx.pdf>
 Package pdftex.def Info: images/Training (risultati)/SBP/SBP - C - sx.pdf  used
  on input line 629.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/SBP/SBP - C - dx.pdf, id=5664, 1228.59pt x 614.295
+<images/Training (risultati)/SBP/SBP - C - dx.pdf, id=5665, 1228.59pt x 614.295
 pt>
 File: images/Training (risultati)/SBP/SBP - C - dx.pdf Graphic file (type pdf)
 <use images/Training (risultati)/SBP/SBP - C - dx.pdf>
@@ -3288,7 +3135,7 @@ ge
 pdfTeX warning: pdflatex (file ./images/Training (risultati)/SBP/SBP - C - dx.p
 df): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<images/Training (risultati)/SBP/SBP - R1 - full.pdf, id=5864, 1228.59pt x 614.
+<images/Training (risultati)/SBP/SBP - R1 - full.pdf, id=5865, 1228.59pt x 614.
 295pt>
 File: images/Training (risultati)/SBP/SBP - R1 - full.pdf Graphic file (type pd
 f)
@@ -3296,7 +3143,7 @@ f)
 Package pdftex.def Info: images/Training (risultati)/SBP/SBP - R1 - full.pdf  u
 sed on input line 657.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/SBP/SBP - R1 - training.pdf, id=5865, 1228.59pt x 
+<images/Training (risultati)/SBP/SBP - R1 - training.pdf, id=5866, 1228.59pt x 
 614.295pt>
 File: images/Training (risultati)/SBP/SBP - R1 - training.pdf Graphic file (typ
 e pdf)
@@ -3304,7 +3151,7 @@ e pdf)
 Package pdftex.def Info: images/Training (risultati)/SBP/SBP - R1 - training.pd
 f  used on input line 666.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/SBP/SBP - R1 - sx.pdf, id=5866, 1228.59pt x 614.29
+<images/Training (risultati)/SBP/SBP - R1 - sx.pdf, id=5867, 1228.59pt x 614.29
 5pt>
 File: images/Training (risultati)/SBP/SBP - R1 - sx.pdf Graphic file (type pdf)
 
@@ -3312,7 +3159,7 @@ File: images/Training (risultati)/SBP/SBP - R1 - sx.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/Training (risultati)/SBP/SBP - R1 - sx.pdf  use
 d on input line 673.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/SBP/SBP - R1 - dx.pdf, id=5867, 1228.59pt x 614.29
+<images/Training (risultati)/SBP/SBP - R1 - dx.pdf, id=5868, 1228.59pt x 614.29
 5pt>
 File: images/Training (risultati)/SBP/SBP - R1 - dx.pdf Graphic file (type pdf)
 
@@ -3332,7 +3179,7 @@ g (risultati)/SBP/SBP - R1 - dx.pdf
 pdfTeX warning: pdflatex (file ./images/Training (risultati)/SBP/SBP - R1 - dx.
 pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<images/Training (risultati)/SBP/SBP - R2 - full.pdf, id=6109, 1228.59pt x 614.
+<images/Training (risultati)/SBP/SBP - R2 - full.pdf, id=6110, 1228.59pt x 614.
 295pt>
 File: images/Training (risultati)/SBP/SBP - R2 - full.pdf Graphic file (type pd
 f)
@@ -3340,7 +3187,7 @@ f)
 Package pdftex.def Info: images/Training (risultati)/SBP/SBP - R2 - full.pdf  u
 sed on input line 703.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/SBP/SBP - R2 - training.pdf, id=6110, 1228.59pt x 
+<images/Training (risultati)/SBP/SBP - R2 - training.pdf, id=6111, 1228.59pt x 
 614.295pt>
 File: images/Training (risultati)/SBP/SBP - R2 - training.pdf Graphic file (typ
 e pdf)
@@ -3348,7 +3195,7 @@ e pdf)
 Package pdftex.def Info: images/Training (risultati)/SBP/SBP - R2 - training.pd
 f  used on input line 712.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/SBP/SBP - R2 - sx.pdf, id=6111, 1228.59pt x 614.29
+<images/Training (risultati)/SBP/SBP - R2 - sx.pdf, id=6112, 1228.59pt x 614.29
 5pt>
 File: images/Training (risultati)/SBP/SBP - R2 - sx.pdf Graphic file (type pdf)
 
@@ -3356,7 +3203,7 @@ File: images/Training (risultati)/SBP/SBP - R2 - sx.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/Training (risultati)/SBP/SBP - R2 - sx.pdf  use
 d on input line 719.
 (pdftex.def)             Requested size: 398.3386pt x 199.16547pt.
-<images/Training (risultati)/SBP/SBP - R2 - dx.pdf, id=6112, 1228.59pt x 614.29
+<images/Training (risultati)/SBP/SBP - R2 - dx.pdf, id=6113, 1228.59pt x 614.29
 5pt>
 File: images/Training (risultati)/SBP/SBP - R2 - dx.pdf Graphic file (type pdf)
 
@@ -3548,7 +3395,7 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 2.90001pt have occurred.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: ED435D971AC2D5410D4DA9BC43F2073E;6454.
+(rerunfilecheck)             Checksum: 15FCCCC2929E434FE8E0BB8697220346;6433.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
@@ -3556,7 +3403,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  44110 strings out of 474491
  855052 string characters out of 5743833
- 2286473 words of memory out of 5000000
+ 2285473 words of memory out of 5000000
  63879 multiletter control sequences out of 15000+600000
  586773 words of font info for 149 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3593,9 +3440,9 @@ a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/ste
 fa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/
 Users/stefa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/m
 sbm10.pfb>
-Output written on main.pdf (176 pages, 4771348 bytes).
+Output written on main.pdf (176 pages, 4770015 bytes).
 PDF statistics:
- 8197 PDF objects out of 8907 (max. 8388607)
+ 8198 PDF objects out of 8907 (max. 8388607)
  1651 named destinations out of 1728 (max. 500000)
  1321 words of extra memory for PDF output out of 10000 (max. 10000000)
 
