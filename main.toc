@@ -32,25 +32,25 @@
 \contentsline {section}{\numberline {III.4}Predictions with noiseless observations}{44}{section.3.4}%
 \contentsline {section}{\numberline {III.5}Predictions with noisy observations}{47}{section.3.5}%
 \contentsline {chapter}{\numberline {IV}Machine learning}{51}{chapter.4}%
-\contentsline {section}{\numberline {IV.1}Introduzione al machine learning}{52}{section.4.1}%
+\contentsline {section}{\numberline {IV.1}Introduction to machine learning}{52}{section.4.1}%
 \contentsline {section}{\numberline {IV.2}Dataset}{52}{section.4.2}%
 \contentsline {subsection}{\numberline {IV.2.1}Loss function}{54}{subsection.4.2.1}%
-\contentsline {section}{\numberline {IV.3}Modelli parametrici e non parametrici}{55}{section.4.3}%
-\contentsline {subsection}{\numberline {IV.3.1}Modelli parametrici}{55}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {IV.3.2}Modelli non parametrici}{55}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {IV.3.3}Struttura gerarchica}{56}{subsection.4.3.3}%
-\contentsline {section}{\numberline {IV.4}Ottimizzazione degli iperparametri}{57}{section.4.4}%
-\contentsline {subsection}{\numberline {IV.4.1}Inferenza bayesiana}{57}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {IV.4.2}Teorema di Bayes}{58}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {IV.4.3}Evidenza bayesiana}{59}{subsection.4.4.3}%
-\contentsline {subsection}{\numberline {IV.4.4}Alternative all'evidenza bayesiana}{60}{subsection.4.4.4}%
-\contentsline {subsection}{\numberline {IV.4.5}Nei processi gaussiani}{60}{subsection.4.4.5}%
-\contentsline {section}{\numberline {IV.5}Metodo di ottimizzazione}{61}{section.4.5}%
-\contentsline {subsection}{\numberline {IV.5.1}Forma della funzione da ottimizzare}{61}{subsection.4.5.1}%
+\contentsline {section}{\numberline {IV.3}Parametric and non-parametric models}{55}{section.4.3}%
+\contentsline {subsection}{\numberline {IV.3.1}Parametric models}{55}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {IV.3.2}Non-parametric models}{55}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {IV.3.3}Hierarchical structure}{56}{subsection.4.3.3}%
+\contentsline {section}{\numberline {IV.4}Optimisation of hyperparameters}{57}{section.4.4}%
+\contentsline {subsection}{\numberline {IV.4.1}Bayesian inference}{57}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {IV.4.2}Bayes' Theorem}{58}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {IV.4.3}Bayesian evidence}{59}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {IV.4.4}Alternatives to Bayesian evidence}{60}{subsection.4.4.4}%
+\contentsline {subsection}{\numberline {IV.4.5}In Gaussian processes}{60}{subsection.4.4.5}%
+\contentsline {section}{\numberline {IV.5}Optimisation method}{61}{section.4.5}%
+\contentsline {subsection}{\numberline {IV.5.1}Form of the function to be optimised}{61}{subsection.4.5.1}%
 \contentsline {subsection}{\numberline {IV.5.2}Learning rate}{62}{subsection.4.5.2}%
-\contentsline {subsection}{\numberline {IV.5.3}Metodo del gradiente \blx@tocontentsinit {0}\cite {ruder_2022}}{63}{subsection.4.5.3}%
-\contentsline {subsection}{\numberline {IV.5.4}Discesa stocastica del gradiente \blx@tocontentsinit {0}\cite {bottou2012stochastic}}{64}{subsection.4.5.4}%
-\contentsline {subsection}{\numberline {IV.5.5}Metodo dei momenti \blx@tocontentsinit {0}\cite {ruder_2022}}{65}{subsection.4.5.5}%
+\contentsline {subsection}{\numberline {IV.5.3}Gradient method \blx@tocontentsinit {0}\cite {ruder_2022}}{63}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {IV.5.4}Stochastic gradient descent \blx@tocontentsinit {0}\cite {bottou2012stochastic}}{64}{subsection.4.5.4}%
+\contentsline {subsection}{\numberline {IV.5.5}Method of moments \blx@tocontentsinit {0}\cite {ruder_2022}}{65}{subsection.4.5.5}%
 \contentsline {subsection}{\numberline {IV.5.6}AdaGrad \blx@tocontentsinit {0}\cite {JMLR:v12:duchi11a}}{66}{subsection.4.5.6}%
 \contentsline {subsection}{\numberline {IV.5.7}Adam \blx@tocontentsinit {0}\cite {kingma_adam_2017}}{67}{subsection.4.5.7}%
 \contentsline {chapter}{\numberline {V}Modello Windkessel}{69}{chapter.5}%

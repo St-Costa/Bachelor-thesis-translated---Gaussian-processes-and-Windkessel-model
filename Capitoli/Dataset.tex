@@ -1,64 +1,64 @@
 \section{Dataset}\label{dataset}
 
-Per ottimizzare la costruzione di algoritmi predittivi, i dati di input vengono divisi in più set di dati con ruoli diversi. Tipicamente viene usata una specifica partizione dei dati in tre dataset: \textbf{training}, \textbf{validation} e \textbf{test set}.
+To optimise the construction of predictive algorithms, the input data is divided into several datasets with different roles. Typically, a specific partition of the data into three datasets is used: \textbf{training}, \textbf{validation} and \textbf{test set}.
 
 
 \begin{defi}[Training set]
-Il \textbf{training set} è un insieme di esempi utilizzati durante il processo di apprendimento per determinare (o imparare) le combinazioni ottimali di parametri.
+    The \textbf{training set} is a set of examples used during the learning process to determine (or learn) optimal combinations of parameters.
 \end{defi}
 
-In pratica, è sui dati del training set che viene eseguito il metodo di ottimizzazione scelto, aggiornando quindi i valori dei parametri o degli iperparametri.
+In practice, it is on the data of the training set that the chosen optimisation method is performed, thus updating the values of the parameters or hyper-parameters.
 
 \begin{defi}[Validation set]
-Il \textbf{validation set} è un set indipendente di dati usato per valutare il modello addestrato sul training set.
+    The \textbf{validation set} is an independent data set used to evaluate the model trained on the training set.
 \end{defi}
-La valutazione (o \textit{validazione}) del modello sul validation set porta a decidere quali siano i migliori valori per i parametri (o iperparametri) in base alla performance sul validation set, appunto. Nel caso dell'elaborato viene usato un early-stopper, che sceglie come miglior modello quello con minore errore subito prima che si verifichi overfitting.
+The evaluation (or \textit{validation}) of the model on the validation set leads to deciding which are the best values for the parameters (or hyper-parameters) based on the performance on the validation set. In the case of the elaboration set, an early-stopper is used, which chooses as the best model the one with the lowest error just before overfitting occurs.
 
 \begin{defi}[Test set]
-Un \textbf{test set} è un set indipendente di dati dal training set  usato solo per valutare le prestazioni del modello.
+    A \textbf{test set} is an independent set of data from the training set used only to evaluate the performance of the model.
 \end{defi}
 
 \newpage
 
-Cioè il test set viene usato per valutare su un terzo set di dati indipendente il modello scelto in base alla performance sul validation set. Si ottengono così caratteristiche di prestazione come la precisione, la sensibilità, la specificità... Questo dataset è importante perché permette di valutare la performance del modello su un terzo insieme di dati indipendente dai precedenti evitando il rischio di overfitting: se un modello addestrato sul training test si adatta anche al test set, si è verificato un overfitting minimo.
+That is, the test set is used to evaluate on a third independent data set the chosen model based on the performance on the validation set. Performance characteristics such as accuracy, sensitivity, specificity... are thus obtained. This dataset is important because it allows the model's performance to be evaluated on a third dataset independent of the previous ones, avoiding the risk of overfitting: if a model trained on the test set also fits the test set, minimal overfitting has occurred.
 
-È stato più volte citato il problema dell'\textbf{overfitting}, viene quindi riportata la definizione.
+The problem of \textbf{overfitting} has been mentioned several times, so the definition is given.
 
 \begin{defi}[Overfitting]
-L'\textbf{overfitting} è la generazione di un modello (o un'analisi) che corrisponde troppo strettamente a un particolare insieme di dati e può quindi non riuscire a prevedere osservazioni future in modo affidabile.
+    Overfitting is the generation of a model (or analysis) that corresponds too closely to a particular data set and may therefore fail to predict future observations reliably.
 \end{defi}
 
-L'overfitting può verificarsi per esempio includendo troppi parametri regolabili o usando un approccio troppo complicato, come mostrato in figura \ref{overfittigComplex}. Chiaramente, quando si confrontano diversi tipi di modelli la complessità deve tenere conto dell'influenza di ogni parametro sull'output\footnote{Si noti che si può incorrere nel problema opposto usando un approccio troppo semplice: l'underfitting. Ad esempio cercando di approssimare con una regressione lineare un campione con un andamento parabolico.}.
+Overfitting may occur, for example, by including too many adjustable parameters or by using an approach that is too complicated, as shown in figure \ref{overfittigComplex}. Clearly, when comparing different types of models, the complexity must take into account the influence of each parameter on the output \footnote{ Note that the opposite problem can be encountered by using an approach that is too simple: underfitting. For example, trying to approximate a sample with a parabolic trend with a linear regression}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.6\textwidth]{images/Machine learning/Overfitted_Data.png}
-    \caption{Esempio di overfitting. I dati (approssimativamente lineari) sono approssimati da una funzione lineare e da una polinomiale. Anche se la funzione polinomiale fornisce un adattamento quasi perfetto, ci si può aspettare che la funzione lineare generalizzi meglio i dati. \cite{wiki:overfitting}}
+    \caption{Example of overfitting. Data (approximately linear) are approximated by a linear function and a polynomial function. Although the polynomial function provides an almost perfect fit, the linear function can be expected to generalise the data better. \cite{wiki:overfitting}}
     \label{overfittigComplex}
 \end{figure}
 
 \newpage
 
-L'overfitting è particolarmente probabile nei casi in cui l'apprendimento è stato eseguito troppo a lungo o in cui ci sono pochi dati per l'apprendimento, facendo sì che il modello si adatti a caratteristiche casuali molto specifiche dei dati di formazione che non hanno alcuna relazione causale con l'output. In questo caso di overfitting, la performance sul training set continua ad aumentare mentre la performance sul validation set peggiora, come mostrato in figura \ref{overfittingError}.
+Overfitting is particularly likely in cases where learning has been performed for too long or where there is little data for learning, causing the model to fit very specific random features of the training data that have no causal relationship with the output. In this case of overfitting, the performance on the training set continues to increase while the performance on the validation set deteriorates, as shown in figure \ref{overfittingError}.
 
 
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.6\textwidth]{images/Machine learning/Overfitting error.png}
-    \caption{Overfitting nell'apprendimento supervisionato. Il training error (errore sul training set) è mostrato in blu, il validation error (errore su validation set) in rosso, entrambi in funzione del numero di cicli di training. \cite{wiki:overfitting}}
+    \caption{Overfitting in supervised learning. The training error (error on training set) is shown in blue, the validation error (error on validation set) in red, both as a function of the number of training cycles. \cite{wiki:overfitting}}
     \label{overfittingError}
 \end{figure}
 
 
 \subsection{Loss function}
-Finora è stato delineato il problema che interessa l'elaborato: cercare una funzione $f$ per predire l'output $Y$ a partire dai valori dell'input $X$. Per farlo è necessaria una funzione di perdita, in inglese \textit{loss function}, $L(Y, f (X))$ per penalizzare gli errori di previsione.
+So far, the problem that interests the paper has been outlined: looking for a function $f$ to predict the output $Y$ from the values of the input $X$. This requires a loss function, $L(Y, f (X))$ to penalise prediction errors.
 
 \begin{defi}[Loss function]
-Una \textbf{loss function} è una funzione in forma $\mathcal{L}(y_{\text{true}},y_{ \text{guess}})$ che definisce la perdita subita (o l'errore commesso) predicendo il valore $y_\text{guess}$ quando il valore vero è $y_{\text{true}}$,  fornendo quindi una valutazione delle capacità predittive del modello.
+    A \textbf{loss function} is a function in the form $\mathcal{L}(y_{\text{true}},y_{ \text{guess}})$ that defines the loss incurred (or the error committed) by predicting the value $y_{\text{guess}}$ when the true value is $y_{\text{true}}$, thus providing an evaluation of the model's predictive capabilities.
 \end{defi}
 
-Sarà questa la funzione da minimizzare con un algoritmo di ottimizzazione per l'adattamento degli iperparametri del processo gaussiano. Evidentemente la scelta della loss function dipende dal contesto.
+This will be the function to be minimised by an optimisation algorithm for fitting the hyperparameters of the Gaussian process. Obviously, the choice of loss function depends on the context.
 
 %\section{Mean squared error}
 %Per gli scopi dell'elaborato, si farà uso del \textit{mean squared error}.
