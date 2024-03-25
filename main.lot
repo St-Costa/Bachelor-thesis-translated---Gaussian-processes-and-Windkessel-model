@@ -4,11 +4,11 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {V.1}{\ignorespaces Tabella riassuntiva ciclo cardiaco \blx@tocontentsinit {0}\cite {wiki:cicloCardiaco}.}}{74}{table.caption.60}%
-\contentsline {table}{\numberline {V.2}{\ignorespaces Tempo di esecuzione per trovare l'approssimazione della soluzione del modello Windkessel su diversi cicli cardiaci. }}{86}{table.caption.73}%
-\contentsline {table}{\numberline {V.3}{\ignorespaces Valori variabili calcolati con il modello Windkessel e parametri di input ($C, \alpha $) stimati. I valori reali sono ripresi da \blx@tocontentsinit {0}\cite {AaronsonPhilipI.PhilipIrving2020Tcsa}.}}{87}{table.caption.74}%
+\contentsline {table}{\numberline {V.1}{\ignorespaces Cardiac cycle summary table \blx@tocontentsinit {0}\cite {wiki:cicloCardiaco}.}}{74}{table.caption.60}%
+\contentsline {table}{\numberline {V.2}{\ignorespaces Run time to find the approximation of the solution of the Windkessel model over several cardiac cycles. }}{86}{table.caption.73}%
+\contentsline {table}{\numberline {V.3}{\ignorespaces Variable values calculated with the Windkessel model and input parameters ($C, \alpha $) estimated. Actual values are taken from \blx@tocontentsinit {0}\cite {AaronsonPhilipI.PhilipIrving2020Tcsa}.}}{87}{table.caption.74}%
 \contentsline {table}{\numberline {V.4}{\ignorespaces Sensitività locale delle variabili $\mathcal {M}=\{MAP, DBP, SBP, PP\}$ al variare del valore dei parametri $\mathcal {P}=\{C,R_1,R_2,P_d\}$. I parametri sono inseriti in ordine decrescente (in modulo) di sensitività.}}{87}{table.caption.75}%
-\contentsline {table}{\numberline {V.5}{\ignorespaces Variazione delle variabili all'aumento del dieci percento dei parametri. $\mathcal {M}_S=\{\text {MAP}_S, \text {DBP}_S, \text {SBP}_S, \text {PP}_S\}$ sono le variabili ottenute con parametri standard (stimati precedentemente), $\mathcal {M}_{+10\%}=\{\text {MAP}_{+10\%}, \text {DBP}_{+10\%}, \text {SBP}_{+10\%}, \text {PP}_{+10\%}\}$ sono le variabili ottenute con singoli parametri aumentati del dieci percento, $\Delta =\{\Delta _{MAP}, \Delta _{DBP}, \Delta _{SBP}, \Delta _{PP}\}$ sono le variazioni percentuali della variabile a pedice.}}{88}{table.caption.76}%
+\contentsline {table}{\numberline {V.5}{\ignorespaces Variation of variables as parameters increase by ten percent. $\mathcal {M}_S=\{\text {MAP}_S, \text {DBP}_S, \text {SBP}_S, \text {PP}_S\}$ are the variables obtained with standard (previously estimated) parameters, $\mathcal {M}_{+10\%}=\{\text {MAP}_{+10\%}, \text {DBP}_{+10\%}, \text {SBP}_{+10\%}, \text {PP}_{+10\%}\}$ are the variables obtained with individual parameters increased by ten percent, $\Delta =\{\Delta _{MAP}, \Delta _{DBP}, \Delta _{SBP}, \Delta _{PP}\}$ are the percentage changes in the subscript variable.}}{88}{table.caption.76}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {VI.1}{\ignorespaces Tempo di esecuzione per trovare l’approssimazione dei parametri usando i processi gaussiani addestrati.}}{124}{table.caption.154}%
+\contentsline {table}{\numberline {VI.1}{\ignorespaces Run time to find parameter approximation using trained Gaussian processes.}}{124}{table.caption.154}%
 \addvspace {10\p@ }

@@ -50,18 +50,18 @@
 \contentsline {figure}{\numberline {IV.4}{\ignorespaces Method of moments applied to the stochastic gradient method. \blx@tocontentsinit {0}\cite {ruder_2022}}}{65}{figure.caption.54}%
 \contentsline {figure}{\numberline {IV.5}{\ignorespaces Comparison of methods for minimising a cost function in a neural network. \blx@tocontentsinit {0}\cite {kingma_adam_2017}}}{68}{figure.caption.55}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {V.1}{\ignorespaces Pressione sistemica e flusso aortico misurati in un paziente. Codice \ref {datiReali}.}}{70}{figure.caption.56}%
-\contentsline {figure}{\numberline {V.2}{\ignorespaces Grafico della pressione reale e output del modello semplice. Codice \ref {modelloSemplice}.}}{71}{figure.caption.57}%
-\contentsline {figure}{\numberline {V.3}{\ignorespaces Anatomia del cuore umano \blx@tocontentsinit {0}\cite {wiki:cicloCardiaco}.}}{72}{figure.caption.58}%
-\contentsline {figure}{\numberline {V.4}{\ignorespaces Diagrammi che riassumono la sistole e la diastole di un cuore umano \blx@tocontentsinit {0}\cite {wiki:cicloCardiaco}.}}{73}{figure.caption.59}%
-\contentsline {figure}{\numberline {V.5}{\ignorespaces Esempio di diagramma di Wiggers \blx@tocontentsinit {0}\cite {wiki:DiagrammaWiggers}.}}{75}{figure.caption.61}%
-\contentsline {figure}{\numberline {V.6}{\ignorespaces Illustrazione dell'analogia sull'effetto windkessel \blx@tocontentsinit {0}\cite {wiki:WindkesselEffect}.}}{77}{figure.caption.66}%
-\contentsline {figure}{\numberline {V.7}{\ignorespaces Illustrazione dell'effetto windkessel \blx@tocontentsinit {0}\cite {AaronsonPhilipI.PhilipIrving2020Tcsa}.}}{78}{figure.caption.67}%
-\contentsline {figure}{\numberline {V.8}{\ignorespaces Forma circuitale del modello Windkessel a due elementi.}}{81}{figure.caption.68}%
-\contentsline {figure}{\numberline {V.9}{\ignorespaces Grafico di $f_C$. Codice \ref {plotfC-code}.}}{82}{figure.caption.69}%
-\contentsline {figure}{\numberline {V.10}{\ignorespaces Grafico della soluzione approssimata dell'equazione (\ref {equation}) con $C$ stimata. Codice \ref {plotSoluzioneCstimata}.}}{82}{figure.caption.70}%
-\contentsline {figure}{\numberline {V.11}{\ignorespaces Grafico della soluzione approssimata dell'equazione (\ref {equation}) con $C=2,11579mL/mmHg$ e $\alpha =0,97134$. Codice \ref {soluzioneCalphastimate}.}}{83}{figure.caption.71}%
-\contentsline {figure}{\numberline {V.12}{\ignorespaces Grafico della soluzione dell'equazione (\ref {equation}) approssimata dopo venti cicli cardiaci con $C=2,03424mL/mmHg$ e $\alpha =0,97354$.}}{85}{figure.caption.72}%
+\contentsline {figure}{\numberline {V.1}{\ignorespaces Systemic pressure and aortic flow measured in a patient. Code \ref {datiReali}.}}{70}{figure.caption.56}%
+\contentsline {figure}{\numberline {V.2}{\ignorespaces Real pressure graph and simple model output. Code \ref {modelloSemplice}.}}{71}{figure.caption.57}%
+\contentsline {figure}{\numberline {V.3}{\ignorespaces Anatomy of the human heart \blx@tocontentsinit {0}\cite {wiki:cicloCardiaco}.}}{72}{figure.caption.58}%
+\contentsline {figure}{\numberline {V.4}{\ignorespaces Diagrams summarizing the systole and diastole of a human heart \blx@tocontentsinit {0}\cite {wiki:cicloCardiaco}.}}{73}{figure.caption.59}%
+\contentsline {figure}{\numberline {V.5}{\ignorespaces Example of Wiggers diagram \blx@tocontentsinit {0}\cite {wiki:DiagrammaWiggers}.}}{75}{figure.caption.61}%
+\contentsline {figure}{\numberline {V.6}{\ignorespaces Illustration of the analogy on the windkessel effect \blx@tocontentsinit {0}\cite {wiki:WindkesselEffect}.}}{77}{figure.caption.66}%
+\contentsline {figure}{\numberline {V.7}{\ignorespaces Illustration of the windkessel effect \blx@tocontentsinit {0}\cite {AaronsonPhilipI.PhilipIrving2020Tcsa}.}}{78}{figure.caption.67}%
+\contentsline {figure}{\numberline {V.8}{\ignorespaces Circuit form of the two-element Windkessel model.}}{81}{figure.caption.68}%
+\contentsline {figure}{\numberline {V.9}{\ignorespaces Graph of $f_C$. Code \ref {plotfC-code}.}}{82}{figure.caption.69}%
+\contentsline {figure}{\numberline {V.10}{\ignorespaces Graph of the approximate solution of the equation (\ref {equation}) with $C$ estimated. Code \ref {plotSoluzioneCstimata}.}}{82}{figure.caption.70}%
+\contentsline {figure}{\numberline {V.11}{\ignorespaces Graph of the approximate solution of the equation (\ref {equation}) with $C=2,11579mL/mmHg$ and $\alpha =0,97134$. Code \ref {soluzioneCalphastimate}.}}{83}{figure.caption.71}%
+\contentsline {figure}{\numberline {V.12}{\ignorespaces Graph of the solution of the equation (\ref {equation}) approximated after twenty cardiac cycles with $C=2,03424mL/mmHg$ e $\alpha =0,97354$.}}{85}{figure.caption.72}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {VI.1}{\ignorespaces Distribuzione dei dati nel database.}}{94}{figure.caption.77}%
 \contentsline {figure}{\numberline {VI.2}{\ignorespaces MAP: andamento del training e validation loss, early stopper, R2Score e MSE.}}{95}{figure.caption.79}%

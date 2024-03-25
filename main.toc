@@ -53,24 +53,24 @@
 \contentsline {subsection}{\numberline {IV.5.5}Method of moments \blx@tocontentsinit {0}\cite {ruder_2022}}{65}{subsection.4.5.5}%
 \contentsline {subsection}{\numberline {IV.5.6}AdaGrad \blx@tocontentsinit {0}\cite {JMLR:v12:duchi11a}}{66}{subsection.4.5.6}%
 \contentsline {subsection}{\numberline {IV.5.7}Adam \blx@tocontentsinit {0}\cite {kingma_adam_2017}}{67}{subsection.4.5.7}%
-\contentsline {chapter}{\numberline {V}Modello Windkessel}{69}{chapter.5}%
-\contentsline {section}{\numberline {V.1}Introduzione}{70}{section.5.1}%
-\contentsline {section}{\numberline {V.2}Concetti di fisiologia}{72}{section.5.2}%
-\contentsline {subsection}{\numberline {V.2.1}Ciclo cardiaco}{72}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {V.2.2}Terminologia utile}{76}{subsection.5.2.2}%
-\contentsline {subsubsection}{Volume sistolico}{76}{subsubsection*.62}%
-\contentsline {subsubsection}{Arteria elastica}{76}{subsubsection*.63}%
-\contentsline {subsubsection}{Resistenza vascolare}{76}{subsubsection*.64}%
-\contentsline {subsubsection}{Capacitanza o compliance}{77}{subsubsection*.65}%
-\contentsline {subsection}{\numberline {V.2.3}Effetto Windkessel}{77}{subsection.5.2.3}%
-\contentsline {section}{\numberline {V.3}Modello Windkessel a due elementi}{79}{section.5.3}%
-\contentsline {subsection}{\numberline {V.3.1}Definizione del modello}{81}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {V.3.2}Stima della compliance}{81}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {V.3.3}Stima della compliance e delle resistenze}{83}{subsection.5.3.3}%
-\contentsline {section}{\numberline {V.4}Forzante periodica}{83}{section.5.4}%
-\contentsline {subsection}{\numberline {V.4.1}Applicazione al modello Windkessel}{84}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {V.4.2}Tempo di esecuzione}{85}{subsection.5.4.2}%
-\contentsline {section}{\numberline {V.5}Analisi di sensitività locale}{86}{section.5.5}%
+\contentsline {chapter}{\numberline {V}Windkessel model}{69}{chapter.5}%
+\contentsline {section}{\numberline {V.1}Introduction}{70}{section.5.1}%
+\contentsline {section}{\numberline {V.2}Concepts of physiology}{72}{section.5.2}%
+\contentsline {subsection}{\numberline {V.2.1}Cardiac cycle}{72}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {V.2.2}Useful terminology}{76}{subsection.5.2.2}%
+\contentsline {subsubsection}{Systolic volume}{76}{subsubsection*.62}%
+\contentsline {subsubsection}{Elastic artery}{76}{subsubsection*.63}%
+\contentsline {subsubsection}{Vascular resistance}{76}{subsubsection*.64}%
+\contentsline {subsubsection}{Capacity or compliance}{77}{subsubsection*.65}%
+\contentsline {subsection}{\numberline {V.2.3}Windkessel effect}{77}{subsection.5.2.3}%
+\contentsline {section}{\numberline {V.3}Two-element Windkessel model}{79}{section.5.3}%
+\contentsline {subsection}{\numberline {V.3.1}Definition of the model}{81}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {V.3.2}Compliance estimation}{81}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {V.3.3}Estimation of compliance and resistance}{83}{subsection.5.3.3}%
+\contentsline {section}{\numberline {V.4}Periodic forcing}{83}{section.5.4}%
+\contentsline {subsection}{\numberline {V.4.1}Application to the Windkessel model}{84}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {V.4.2}Running time}{85}{subsection.5.4.2}%
+\contentsline {section}{\numberline {V.5}Local sensitivity analysis}{86}{section.5.5}%
 \contentsline {chapter}{\numberline {VI}Metodologia e risultati training}{91}{chapter.6}%
 \contentsline {section}{\numberline {VI.1}Problema di regressione}{92}{section.6.1}%
 \contentsline {section}{\numberline {VI.2}Dettagli del training}{92}{section.6.2}%
