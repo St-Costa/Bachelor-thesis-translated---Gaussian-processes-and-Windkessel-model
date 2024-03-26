@@ -2,6 +2,10 @@
 
 This README serves as a notice regarding the translation of the thesis from Italian to English.
 
+## PDF files
+[Thesis EN](main.pdf)
+[Thesis IT](mainIT.pdf)
+
 ## Purpose
 This translation was done to make the content accessible to a broader audience. The original thesis in Italian was immensely helpful to me and others interested in studying Gaussian processes, the main topic.
 
