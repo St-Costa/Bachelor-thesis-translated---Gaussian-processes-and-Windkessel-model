@@ -1,6 +1,6 @@
 # Gaussian Processes Thesis (Translated)
 
-This README serves as a notice regarding the translation of the thesis from Italian to English.
+This README serves as a notice regarding the translation of the bachelor's thesis from Italian to English.
 
 ## PDF files
 [Thesis EN](main.pdf)
