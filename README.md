@@ -4,6 +4,7 @@ This README serves as a notice regarding the translation of the thesis from Ital
 
 ## PDF files
 [Thesis EN](main.pdf)
+
 [Thesis IT](mainIT.pdf)
 
 ## Purpose
