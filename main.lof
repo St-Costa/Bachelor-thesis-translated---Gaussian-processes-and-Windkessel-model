@@ -63,61 +63,61 @@
 \contentsline {figure}{\numberline {V.11}{\ignorespaces Graph of the approximate solution of the equation (\ref {equation}) with $C=2,11579mL/mmHg$ and $\alpha =0,97134$. Code \ref {soluzioneCalphastimate}.}}{83}{figure.caption.71}%
 \contentsline {figure}{\numberline {V.12}{\ignorespaces Graph of the solution of the equation (\ref {equation}) approximated after twenty cardiac cycles with $C=2,03424mL/mmHg$ e $\alpha =0,97354$.}}{85}{figure.caption.72}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {VI.1}{\ignorespaces Distribuzione dei dati nel database.}}{94}{figure.caption.77}%
-\contentsline {figure}{\numberline {VI.2}{\ignorespaces MAP: andamento del training e validation loss, early stopper, R2Score e MSE.}}{95}{figure.caption.79}%
-\contentsline {figure}{\numberline {VI.3}{\ignorespaces MAP: predizioni sui dati di input.}}{96}{figure.caption.81}%
-\contentsline {figure}{\numberline {VI.4}{\ignorespaces Dipendenza di MAP da $C$ sull'intervallo di training e due intervalli attigui.}}{97}{figure.caption.83}%
-\contentsline {figure}{\numberline {VI.5}{\ignorespaces Dipendenza di MAP da $C$ sull'intervallo di training.}}{97}{figure.caption.84}%
-\contentsline {figure}{\numberline {VI.6}{\ignorespaces Dipendenza di MAP da $C$ sull'intervallo attiguo a sinistra dell'intervallo di training.}}{98}{figure.caption.85}%
-\contentsline {figure}{\numberline {VI.7}{\ignorespaces Dipendenza di MAP da $C$ sull'intervallo attiguo a destra dell'intervallo di training.}}{98}{figure.caption.86}%
-\contentsline {figure}{\numberline {VI.8}{\ignorespaces Dipendenza di MAP da $R1$ sull'intervallo di training e due intervalli attigui.}}{99}{figure.caption.88}%
-\contentsline {figure}{\numberline {VI.9}{\ignorespaces Dipendenza di MAP da $R1$ sull'intervallo di training.}}{99}{figure.caption.89}%
-\contentsline {figure}{\numberline {VI.10}{\ignorespaces Dipendenza di MAP da $R1$ sull'intervallo attiguo a sinistra dell'intervallo di training.}}{100}{figure.caption.90}%
-\contentsline {figure}{\numberline {VI.11}{\ignorespaces Dipendenza di MAP da $R1$ sull'intervallo attiguo a destra dell'intervallo di training.}}{100}{figure.caption.91}%
-\contentsline {figure}{\numberline {VI.12}{\ignorespaces Dipendenza di MAP da $R2$ sull'intervallo di training e due intervalli attigui.}}{101}{figure.caption.93}%
-\contentsline {figure}{\numberline {VI.13}{\ignorespaces Dipendenza di MAP da $R2$ sull'intervallo di training.}}{101}{figure.caption.94}%
-\contentsline {figure}{\numberline {VI.14}{\ignorespaces Dipendenza di MAP da $R2$ sull'intervallo attiguo a sinistra dell'intervallo di training.}}{102}{figure.caption.95}%
-\contentsline {figure}{\numberline {VI.15}{\ignorespaces Dipendenza di MAP da $R2$ sull'intervallo attiguo a destra dell'intervallo di training.}}{102}{figure.caption.96}%
-\contentsline {figure}{\numberline {VI.16}{\ignorespaces DBP: andamento del training e validation loss, early stopper, R2Score e MSE.}}{103}{figure.caption.98}%
-\contentsline {figure}{\numberline {VI.17}{\ignorespaces DBP: predizioni sui dati di input.}}{103}{figure.caption.100}%
-\contentsline {figure}{\numberline {VI.18}{\ignorespaces Dipendenza di DBP da $C$ sull'intervallo di training e due intervalli attigui.}}{104}{figure.caption.102}%
-\contentsline {figure}{\numberline {VI.19}{\ignorespaces Dipendenza di DBP da $C$ sull'intervallo di training.}}{104}{figure.caption.103}%
-\contentsline {figure}{\numberline {VI.20}{\ignorespaces Dipendenza di DBP da $C$ sull'intervallo attiguo a sinistra dell'intervallo di training.}}{105}{figure.caption.104}%
-\contentsline {figure}{\numberline {VI.21}{\ignorespaces Dipendenza di DBP da $C$ sull'intervallo attiguo a destra dell'intervallo di training.}}{105}{figure.caption.105}%
-\contentsline {figure}{\numberline {VI.22}{\ignorespaces Dipendenza di DBP da $R_1$ sull'intervallo di training e due intervalli attigui.}}{106}{figure.caption.107}%
-\contentsline {figure}{\numberline {VI.23}{\ignorespaces Dipendenza di DBP da $R_1$ sull'intervallo di training.}}{106}{figure.caption.108}%
-\contentsline {figure}{\numberline {VI.24}{\ignorespaces Dipendenza di DBP da $R_1$ sull'intervallo attiguo a sinistra dell'intervallo di training.}}{107}{figure.caption.109}%
-\contentsline {figure}{\numberline {VI.25}{\ignorespaces Dipendenza di DBP da $R_1$ sull'intervallo attiguo a destra dell'intervallo di training.}}{107}{figure.caption.110}%
-\contentsline {figure}{\numberline {VI.26}{\ignorespaces Dipendenza di DBP da $R_2$ sull'intervallo di training e due intervalli attigui.}}{108}{figure.caption.112}%
-\contentsline {figure}{\numberline {VI.27}{\ignorespaces Dipendenza di DBP da $R_2$ sull'intervallo di training.}}{108}{figure.caption.113}%
-\contentsline {figure}{\numberline {VI.28}{\ignorespaces Dipendenza di DBP da $R_2$ sull'intervallo attiguo a sinistra dell'intervallo di training.}}{109}{figure.caption.114}%
-\contentsline {figure}{\numberline {VI.29}{\ignorespaces Dipendenza di DBP da $R_2$ sull'intervallo attiguo a destra dell'intervallo di training.}}{109}{figure.caption.115}%
-\contentsline {figure}{\numberline {VI.30}{\ignorespaces PP: andamento del training e validation loss, early stopper, R2Score e MSE.}}{110}{figure.caption.117}%
-\contentsline {figure}{\numberline {VI.31}{\ignorespaces PP: predizioni sui dati di input.}}{110}{figure.caption.119}%
-\contentsline {figure}{\numberline {VI.32}{\ignorespaces Dipendenza di PP da $C$ sull'intervallo di training e due intervalli attigui.}}{111}{figure.caption.121}%
-\contentsline {figure}{\numberline {VI.33}{\ignorespaces Dipendenza di PP da $C$ sull'intervallo di training.}}{111}{figure.caption.122}%
-\contentsline {figure}{\numberline {VI.34}{\ignorespaces Dipendenza di PP da $C$ sull'intervallo attiguo a sinistra dell'intervallo di training.}}{112}{figure.caption.123}%
-\contentsline {figure}{\numberline {VI.35}{\ignorespaces Dipendenza di PP da $C$ sull'intervallo attiguo a destra dell'intervallo di training.}}{112}{figure.caption.124}%
-\contentsline {figure}{\numberline {VI.36}{\ignorespaces Dipendenza di PP da $R1$ sull'intervallo di training e due intervalli attigui.}}{113}{figure.caption.126}%
-\contentsline {figure}{\numberline {VI.37}{\ignorespaces Dipendenza di PP da $R1$ sull'intervallo di training.}}{113}{figure.caption.127}%
-\contentsline {figure}{\numberline {VI.38}{\ignorespaces Dipendenza di PP da $R1$ sull'intervallo attiguo a sinistra dell'intervallo di training.}}{114}{figure.caption.128}%
-\contentsline {figure}{\numberline {VI.39}{\ignorespaces Dipendenza di PP da $R1$ sull'intervallo attiguo a destra dell'intervallo di training.}}{114}{figure.caption.129}%
-\contentsline {figure}{\numberline {VI.40}{\ignorespaces Dipendenza di PP da $R2$ sull'intervallo di training e due intervalli attigui.}}{115}{figure.caption.131}%
-\contentsline {figure}{\numberline {VI.41}{\ignorespaces Dipendenza di PP da $R2$ sull'intervallo di training.}}{115}{figure.caption.132}%
-\contentsline {figure}{\numberline {VI.42}{\ignorespaces Dipendenza di PP da $R2$ sull'intervallo attiguo a sinistra dell'intervallo di training.}}{116}{figure.caption.133}%
-\contentsline {figure}{\numberline {VI.43}{\ignorespaces Dipendenza di PP da $R2$ sull'intervallo attiguo a destra dell'intervallo di training.}}{116}{figure.caption.134}%
+\contentsline {figure}{\numberline {VI.1}{\ignorespaces Distribution of data in the database.}}{94}{figure.caption.77}%
+\contentsline {figure}{\numberline {VI.2}{\ignorespaces MAP: progress of training and validation loss, early stopper, R2Score e MSE.}}{95}{figure.caption.79}%
+\contentsline {figure}{\numberline {VI.3}{\ignorespaces MAP: predictions about the input data.}}{96}{figure.caption.81}%
+\contentsline {figure}{\numberline {VI.4}{\ignorespaces Dependence of MAP on $C$ on the training interval and two adjacent intervals.}}{97}{figure.caption.83}%
+\contentsline {figure}{\numberline {VI.5}{\ignorespaces Dependence of MAP on $C$ over the training interval.}}{97}{figure.caption.84}%
+\contentsline {figure}{\numberline {VI.6}{\ignorespaces Dependence of MAP on $C$ on the adjacent interval to the left of the training interval.}}{98}{figure.caption.85}%
+\contentsline {figure}{\numberline {VI.7}{\ignorespaces Dependence of MAP on $C$ on the adjacent interval to the right of the training interval.}}{98}{figure.caption.86}%
+\contentsline {figure}{\numberline {VI.8}{\ignorespaces Dependence of MAP on $R1$ on the training interval and two adjacent intervals.}}{99}{figure.caption.88}%
+\contentsline {figure}{\numberline {VI.9}{\ignorespaces Dependence of MAP on $R1$ over the training interval.}}{99}{figure.caption.89}%
+\contentsline {figure}{\numberline {VI.10}{\ignorespaces Dependence of MAP on $R1$ on the adjacent interval to the left of the training interval.}}{100}{figure.caption.90}%
+\contentsline {figure}{\numberline {VI.11}{\ignorespaces Dependence of MAP on $R1$ on the adjacent interval to the right of the training interval.}}{100}{figure.caption.91}%
+\contentsline {figure}{\numberline {VI.12}{\ignorespaces Dependence of MAP on $R2$ over the training interval and two adjacent intervals.}}{101}{figure.caption.93}%
+\contentsline {figure}{\numberline {VI.13}{\ignorespaces Dependence of MAP on $R2$ over the training interval.}}{101}{figure.caption.94}%
+\contentsline {figure}{\numberline {VI.14}{\ignorespaces Dependence of MAP on $R2$ on the adjoint interval to the left of the training interval.}}{102}{figure.caption.95}%
+\contentsline {figure}{\numberline {VI.15}{\ignorespaces Dependence of MAP on $R2$ on the adjacent interval to the right of the training interval.}}{102}{figure.caption.96}%
+\contentsline {figure}{\numberline {VI.16}{\ignorespaces DBP: progress of training and validation loss, early stopper, R2Score e MSE.}}{103}{figure.caption.98}%
+\contentsline {figure}{\numberline {VI.17}{\ignorespaces DBP: input data predictions.}}{103}{figure.caption.100}%
+\contentsline {figure}{\numberline {VI.18}{\ignorespaces Dependence of DBP on $C$ on the training interval and two adjacent intervals.}}{104}{figure.caption.102}%
+\contentsline {figure}{\numberline {VI.19}{\ignorespaces Dependence of DBP on $C$ over the training interval.}}{104}{figure.caption.103}%
+\contentsline {figure}{\numberline {VI.20}{\ignorespaces Dependence of DBP on $C$ on the adjacent interval to the left of the training interval.}}{105}{figure.caption.104}%
+\contentsline {figure}{\numberline {VI.21}{\ignorespaces Dependence of DBP on $C$ on the adjacent interval to the right of the training interval.}}{105}{figure.caption.105}%
+\contentsline {figure}{\numberline {VI.22}{\ignorespaces Dependence of DBP on $R_1$ on the training interval and two adjacent intervals.}}{106}{figure.caption.107}%
+\contentsline {figure}{\numberline {VI.23}{\ignorespaces Dependence of DBP on $R_1$ over the training interval.}}{106}{figure.caption.108}%
+\contentsline {figure}{\numberline {VI.24}{\ignorespaces Dependence of DBP on $R_1$ on the adjoint interval to the left of the training interval.}}{107}{figure.caption.109}%
+\contentsline {figure}{\numberline {VI.25}{\ignorespaces Dependence of DBP on $R_1$ on the adjoint interval to the right of the training interval.}}{107}{figure.caption.110}%
+\contentsline {figure}{\numberline {VI.26}{\ignorespaces Dependence of DBP on $R_2$ on the training interval and two adjacent intervals.}}{108}{figure.caption.112}%
+\contentsline {figure}{\numberline {VI.27}{\ignorespaces Dependence of DBP on $R_2$ over the training interval.}}{108}{figure.caption.113}%
+\contentsline {figure}{\numberline {VI.28}{\ignorespaces Dependence of DBP on $R_2$ on the adjoint interval to the left of the training interval.}}{109}{figure.caption.114}%
+\contentsline {figure}{\numberline {VI.29}{\ignorespaces Dependence of DBP on $R_2$ on the adjoint interval to the right of the training interval.}}{109}{figure.caption.115}%
+\contentsline {figure}{\numberline {VI.30}{\ignorespaces PP: progress of training and validation loss, early stopper, R2Score and MSE.}}{110}{figure.caption.117}%
+\contentsline {figure}{\numberline {VI.31}{\ignorespaces PP: predictions about the input data.}}{110}{figure.caption.119}%
+\contentsline {figure}{\numberline {VI.32}{\ignorespaces Dependence of PP on $C$ on the training interval and two adjacent intervals.}}{111}{figure.caption.121}%
+\contentsline {figure}{\numberline {VI.33}{\ignorespaces Dependence of PP on $C$ over the training interval.}}{111}{figure.caption.122}%
+\contentsline {figure}{\numberline {VI.34}{\ignorespaces Dependence of PP on $C$ on the adjacent interval to the left of the training interval.}}{112}{figure.caption.123}%
+\contentsline {figure}{\numberline {VI.35}{\ignorespaces Dependence of PP on $C$ on the adjacent interval to the right of the training interval.}}{112}{figure.caption.124}%
+\contentsline {figure}{\numberline {VI.36}{\ignorespaces Dependence of PP on $R1$ on the training interval and two adjacent intervals.}}{113}{figure.caption.126}%
+\contentsline {figure}{\numberline {VI.37}{\ignorespaces Dependence of PP on $R1$ over the training interval.}}{113}{figure.caption.127}%
+\contentsline {figure}{\numberline {VI.38}{\ignorespaces Dependence of PP on $R1$ on the adjoint interval to the left of the training interval.}}{114}{figure.caption.128}%
+\contentsline {figure}{\numberline {VI.39}{\ignorespaces Dependence of PP on $R1$ on the adjacent interval to the right of the training interval.}}{114}{figure.caption.129}%
+\contentsline {figure}{\numberline {VI.40}{\ignorespaces Dependence of PP on $R2$ on the training interval and two adjacent intervals.}}{115}{figure.caption.131}%
+\contentsline {figure}{\numberline {VI.41}{\ignorespaces Dependence of PP on $R2$ over the training interval.}}{115}{figure.caption.132}%
+\contentsline {figure}{\numberline {VI.42}{\ignorespaces Dependence of PP on $R2$ on the adjacent interval to the left of the training interval.}}{116}{figure.caption.133}%
+\contentsline {figure}{\numberline {VI.43}{\ignorespaces Dependence of PP on $R2$ on the adjoint interval to the right of the training interval.}}{116}{figure.caption.134}%
 \contentsline {figure}{\numberline {VI.44}{\ignorespaces SBP: andamento del training e validation loss, early stopper, R2Score e MSE.}}{117}{figure.caption.136}%
-\contentsline {figure}{\numberline {VI.45}{\ignorespaces SBP: predizioni sui dati di input.}}{117}{figure.caption.138}%
-\contentsline {figure}{\numberline {VI.46}{\ignorespaces Dipendenza di SBP da $C$ sull'intervallo di training e due intervalli attigui.}}{118}{figure.caption.140}%
-\contentsline {figure}{\numberline {VI.47}{\ignorespaces Dipendenza di SBP da $C$ sull'intervallo di training.}}{118}{figure.caption.141}%
-\contentsline {figure}{\numberline {VI.48}{\ignorespaces Dipendenza di SBP da $C$ sull'intervallo attiguo a sinistra dell'intervallo di training.}}{119}{figure.caption.142}%
-\contentsline {figure}{\numberline {VI.49}{\ignorespaces Dipendenza di SBP da $C$ sull'intervallo attiguo a destra dell'intervallo di training.}}{119}{figure.caption.143}%
-\contentsline {figure}{\numberline {VI.50}{\ignorespaces Dipendenza di SBP da $R1$ sull'intervallo di training e due intervalli attigui.}}{120}{figure.caption.145}%
-\contentsline {figure}{\numberline {VI.51}{\ignorespaces Dipendenza di SBP da $R1$ sull'intervallo di training.}}{120}{figure.caption.146}%
-\contentsline {figure}{\numberline {VI.52}{\ignorespaces Dipendenza di SBP da $R1$ sull'intervallo attiguo a sinistra dell'intervallo di training.}}{121}{figure.caption.147}%
-\contentsline {figure}{\numberline {VI.53}{\ignorespaces Dipendenza di SBP da $R1$ sull'intervallo attiguo a destra dell'intervallo di training.}}{121}{figure.caption.148}%
-\contentsline {figure}{\numberline {VI.54}{\ignorespaces Dipendenza di SBP da $R2$ sull'intervallo di training e due intervalli attigui.}}{122}{figure.caption.150}%
-\contentsline {figure}{\numberline {VI.55}{\ignorespaces Dipendenza di SBP da $R2$ sull'intervallo di training.}}{122}{figure.caption.151}%
-\contentsline {figure}{\numberline {VI.56}{\ignorespaces Dipendenza di SBP da $R2$ sull'intervallo attiguo a sinistra dell'intervallo di training.}}{123}{figure.caption.152}%
-\contentsline {figure}{\numberline {VI.57}{\ignorespaces Dipendenza di SBP da $R2$ sull'intervallo attiguo a destra dell'intervallo di training.}}{123}{figure.caption.153}%
+\contentsline {figure}{\numberline {VI.45}{\ignorespaces SBP: predictions about the input data.}}{117}{figure.caption.138}%
+\contentsline {figure}{\numberline {VI.46}{\ignorespaces Dependence of SBP on $C$ on the training interval and two adjacent intervals.}}{118}{figure.caption.140}%
+\contentsline {figure}{\numberline {VI.47}{\ignorespaces Dependence of SBP on $C$ over the training interval.}}{118}{figure.caption.141}%
+\contentsline {figure}{\numberline {VI.48}{\ignorespaces Dependence of SBP on $C$ on the adjacent interval to the left of the training interval.}}{119}{figure.caption.142}%
+\contentsline {figure}{\numberline {VI.49}{\ignorespaces Dependence of SBP on $C$ on the adjacent interval to the right of the training interval.}}{119}{figure.caption.143}%
+\contentsline {figure}{\numberline {VI.50}{\ignorespaces Dependence of SBP on $R1$ on the training interval and two adjacent intervals.}}{120}{figure.caption.145}%
+\contentsline {figure}{\numberline {VI.51}{\ignorespaces Dependence of SBP on $R1$ over the training interval.}}{120}{figure.caption.146}%
+\contentsline {figure}{\numberline {VI.52}{\ignorespaces Dependence of SBP on $R1$ on the adjacent interval to the left of the training interval.}}{121}{figure.caption.147}%
+\contentsline {figure}{\numberline {VI.53}{\ignorespaces Dependence of SBP on $R1$ on the adjacent interval to the right of the training interval.}}{121}{figure.caption.148}%
+\contentsline {figure}{\numberline {VI.54}{\ignorespaces Dependence of SBP on $R2$ on the training interval and two adjacent intervals.}}{122}{figure.caption.150}%
+\contentsline {figure}{\numberline {VI.55}{\ignorespaces Dependence of SBP on $R2$ over the training interval.}}{122}{figure.caption.151}%
+\contentsline {figure}{\numberline {VI.56}{\ignorespaces Dependence of SBP on $R2$ on the adjacent interval to the left of the training interval.}}{123}{figure.caption.152}%
+\contentsline {figure}{\numberline {VI.57}{\ignorespaces Dependence of SBP on $R2$ on the adjacent interval to the right of the training interval.}}{123}{figure.caption.153}%
 \addvspace {10\p@ }

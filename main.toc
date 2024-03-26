@@ -71,39 +71,39 @@
 \contentsline {subsection}{\numberline {V.4.1}Application to the Windkessel model}{84}{subsection.5.4.1}%
 \contentsline {subsection}{\numberline {V.4.2}Running time}{85}{subsection.5.4.2}%
 \contentsline {section}{\numberline {V.5}Local sensitivity analysis}{86}{section.5.5}%
-\contentsline {chapter}{\numberline {VI}Metodologia e risultati training}{91}{chapter.6}%
-\contentsline {section}{\numberline {VI.1}Problema di regressione}{92}{section.6.1}%
-\contentsline {section}{\numberline {VI.2}Dettagli del training}{92}{section.6.2}%
+\contentsline {chapter}{\numberline {VI}Methodology and results training}{91}{chapter.6}%
+\contentsline {section}{\numberline {VI.1}Regression problem}{92}{section.6.1}%
+\contentsline {section}{\numberline {VI.2}Details of the training}{92}{section.6.2}%
 \contentsline {subsection}{\numberline {VI.2.1}GPErks}{92}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {VI.2.2}Processo gaussiano}{93}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {VI.2.3}Ottimizzazione degli iperparametri}{93}{subsection.6.2.3}%
-\contentsline {subsection}{\numberline {VI.2.4}Dataset di input}{93}{subsection.6.2.4}%
-\contentsline {section}{\numberline {VI.3}Risultati del training}{95}{section.6.3}%
+\contentsline {subsection}{\numberline {VI.2.2}Gaussian process}{92}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {VI.2.3}Hyperparameter optimization}{93}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {VI.2.4}Input dataset}{93}{subsection.6.2.4}%
+\contentsline {section}{\numberline {VI.3}Training results}{95}{section.6.3}%
 \contentsline {subsection}{\numberline {VI.3.1}Mean arterial pressure (MAP)}{95}{subsection.6.3.1}%
-\contentsline {subsubsection}{Training e validation loss}{95}{subsubsection*.78}%
-\contentsline {subsubsection}{Approssimazione dei dati di input}{96}{subsubsection*.80}%
-\contentsline {subsubsection}{Dipendenza da $C$}{96}{subsubsection*.82}%
-\contentsline {subsubsection}{Dipendenza da $R_1$}{99}{subsubsection*.87}%
-\contentsline {subsubsection}{Dipendenza da $R_2$}{101}{subsubsection*.92}%
+\contentsline {subsubsection}{Training and validation loss}{95}{subsubsection*.78}%
+\contentsline {subsubsection}{Approximation of input data}{96}{subsubsection*.80}%
+\contentsline {subsubsection}{Dependence on $C$}{96}{subsubsection*.82}%
+\contentsline {subsubsection}{Dependence on $R_1$}{99}{subsubsection*.87}%
+\contentsline {subsubsection}{Dependence on $R_2$}{101}{subsubsection*.92}%
 \contentsline {subsection}{\numberline {VI.3.2}Diastolic blood pressure (DBP)}{103}{subsection.6.3.2}%
-\contentsline {subsubsection}{Training e validation loss}{103}{subsubsection*.97}%
-\contentsline {subsubsection}{Approssimazione dei dati di input}{103}{subsubsection*.99}%
-\contentsline {subsubsection}{Dipendenza da $C$}{104}{subsubsection*.101}%
-\contentsline {subsubsection}{Dipendenza da $R_1$}{106}{subsubsection*.106}%
-\contentsline {subsubsection}{Dipendenza da $R_2$}{108}{subsubsection*.111}%
+\contentsline {subsubsection}{Training and validation loss}{103}{subsubsection*.97}%
+\contentsline {subsubsection}{Approximation of input data}{103}{subsubsection*.99}%
+\contentsline {subsubsection}{Dependence on $C$}{104}{subsubsection*.101}%
+\contentsline {subsubsection}{Dependence on $R_1$}{106}{subsubsection*.106}%
+\contentsline {subsubsection}{Dependence on $R_2$}{108}{subsubsection*.111}%
 \contentsline {subsection}{\numberline {VI.3.3}Pulse pressure (PP)}{110}{subsection.6.3.3}%
-\contentsline {subsubsection}{Training e validation loss}{110}{subsubsection*.116}%
-\contentsline {subsubsection}{Approssimazione dei dati di input}{110}{subsubsection*.118}%
-\contentsline {subsubsection}{Dipendenza da $C$}{111}{subsubsection*.120}%
-\contentsline {subsubsection}{Dipendenza da $R_1$}{113}{subsubsection*.125}%
-\contentsline {subsubsection}{Dipendenza da $R_2$}{115}{subsubsection*.130}%
+\contentsline {subsubsection}{Training and validation loss}{110}{subsubsection*.116}%
+\contentsline {subsubsection}{Approximation of input data}{110}{subsubsection*.118}%
+\contentsline {subsubsection}{Dependence on $C$}{111}{subsubsection*.120}%
+\contentsline {subsubsection}{Dependence on $R_1$}{113}{subsubsection*.125}%
+\contentsline {subsubsection}{Dependence on $R_2$}{115}{subsubsection*.130}%
 \contentsline {subsection}{\numberline {VI.3.4}Systolic blood pressure (SBP)}{117}{subsection.6.3.4}%
-\contentsline {subsubsection}{Training e validation loss}{117}{subsubsection*.135}%
-\contentsline {subsubsection}{Approssimazione dei dati di input}{117}{subsubsection*.137}%
-\contentsline {subsubsection}{Dipendenza da $C$}{118}{subsubsection*.139}%
-\contentsline {subsubsection}{Dipendenza da $R_1$}{120}{subsubsection*.144}%
-\contentsline {subsubsection}{Dipendenza da $R_2$}{122}{subsubsection*.149}%
-\contentsline {section}{\numberline {VI.4}Tempo di esecuzione: approssimazione di MAP, DBP, SBP, PP}{124}{section.6.4}%
+\contentsline {subsubsection}{Training and validation loss}{117}{subsubsection*.135}%
+\contentsline {subsubsection}{Approximation of input data}{117}{subsubsection*.137}%
+\contentsline {subsubsection}{Dependence on $C$}{118}{subsubsection*.139}%
+\contentsline {subsubsection}{Dependence on $R_1$}{120}{subsubsection*.144}%
+\contentsline {subsubsection}{Dependence on $R_2$}{122}{subsubsection*.149}%
+\contentsline {section}{\numberline {VI.4}Running time: approximation of MAP, DBP, SBP, PP}{124}{section.6.4}%
 \contentsline {chapter}{\numberline {VII}Conclusions and future directions}{125}{chapter.7}%
 \contentsline {section}{\numberline {VII.1}Conclusions}{126}{section.7.1}%
 \contentsline {section}{\numberline {VII.2}Future directions}{127}{section.7.2}%

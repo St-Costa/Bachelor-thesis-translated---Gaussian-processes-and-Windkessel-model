@@ -1,7 +1,7 @@
-\chapter{Metodologia e risultati training}\label{Capitolo: risultati training}
+\chapter{Methodology and results training}\label{Capitolo: risultati training}
 
 
-In questo capitolo viene spiegato il problema di regressione di interesse dell'elaborato e il processo di training del modello. Viene introdotta la libreria di python usata per la parte di training del modello riportando i dettagli di programmazione; vengono infine riportati i risultati ottenuti.
+This chapter explains the regression problem of interest in the work and the training process of the model. The python library used for the training part of the model is introduced by reporting the programming details; finally, the results obtained are reported.
 
 
 \begin{textblock*}{0.64\textwidth}(3.5cm+0.36\textwidth,18.5cm)
@@ -10,71 +10,71 @@ In questo capitolo viene spiegato il problema di regressione di interesse dell'e
 
 \newpage
 
-\section{Problema di regressione}
-Nel capitolo \ref{windkessel} è stato mostrato il funzionamento del modello Windkessel: a partire da un flusso cardiaco, resistenza prossimale, resistenza periferica e compliance il modello è in grado di dare un'approssimazione dell'andamento della pressione durante il ciclo cardiaco.\\
-Il problema che si pone l'elaborato è di ottenere MAP, DBP, SBP, PP senza dover risolvere l'equazione differenziale del modello. Per farlo viene usato l'approccio dell'apprendimento supervisionato: si genera un corposo database di combinazioni dei parametri di input associati all'output trovato risolvendo l'equazione del modello windkessel (come visto nel capitolo \ref{windkessel}), si divide il dataset in training, validation e testing set (come visto in \ref{dataset}), si esegue il training con processi gaussiani come spiegato in \ref{neiProcessiGaussiani}.
+\section{Regression problem}
+The chapter \ref{windkessel} showed how the Windkessel model works: starting with cardiac flow, proximal resistance, peripheral resistance and compliance, the model is able to give an approximation of the pressure trend during the cardiac cycle.\\
+The problem facing the paper is to obtain MAP, DBP, SBP, PP without having to solve the differential model equation. To do this, the supervised learning approach is used: a large database of combinations of the input parameters associated with the output found by solving the windkessel model equation is generated (as seen in \ref{windkessel}), the dataset is divided into training, validation, and testing set (as seen in \ref{dataset}), training is performed with Gaussian processes as explained in \ref{neiProcessiGaussiani}.
 
 
-\section{Dettagli del training}
+\section{Details of the training}
 
 \subsection{GPErks}
-Per il training è stata usata la libreria di python GPErks, progetto sviluppato dal dottor Stefano Longobardi e che ha usato in applicazioni biomediche, ad esempio in \cite{doi:10.1098/rsta.2019.0334}.\\
-Per la creazione della libreria è stata usato principalmente PyTorch, libreria di python molto comune nel machine learning.\\
+The python library GPErks, a project developed by Dr. Stefano Longobardi and used in biomedical applications, for example in \cite{doi:10.1098/rsta.2019.0334}, was used for training.\\
+PyTorch, a python library very common in machine learning, was mainly used to create the library.\\
 
-Poiché l'elaborato avrebbe sfruttato la libreria GPErks, la base teorica sulla quale poggia il suo funzionamento è stata spiegata nei capitoli precedenti, in particolare nel capitolo \ref{machineLearning}.\\
+Since the paper would take advantage of the GPErks library, the theoretical basis on which it rests has been explained in previous chapters, particularly in the chapter \ref{machineLearning}.\\
 
-In particolare GPErks divide il database di input (formato da coppie input - output di esempi) in training set, validation set e testing set. Definisce il processo gaussiano con una mean function lineare e uno squared exponential kernel (non sono scelte obbligate, ma sono le più comuni). Definisce la marginal likelihood e utilizza un metodo di ottimizzazione per la sua massimizzazione (è possibile scegliere il metodo di ottimizzazione, nel caso dell'elaborato è stato scelto il metodo di Adam). La libreria ha implementato tre diversi earlystopper utili a terminare il training prima di incorrere in overfitting. 
+In particular, GPErks divides the input database (consisting of input - output pairs of examples) into training set, validation set, and testing set. It defines the Gaussian process with a linear mean function and a squared exponential kernel (these are not mandatory choices, but they are the most common). It defines the marginal likelihood and uses an optimization method for its maximization (you can choose the optimization method; in the case of the paper, Adam's method was chosen). The library has implemented three different earlystoppers useful for terminating training before incurring overfitting. 
 
-GPErks mostra inoltre i risultati del training in forma di grafici della loss function e riporta anche i valori di \textit{metriche} (come vengono chiamate nella libreria) come R2Score e il Mean Squared Error (le due scelte per i fini dell'elaborato). Genera infine risultati di tipo inferenziali sul training, mostrando come i risultati dell'apprendimento riescano a prevedere gli output a partire dai dati di input.
+GPErks also shows the training results in the form of loss function graphs and also reports the values of \textit{metrics} (as they are called in the library) such as R2Score and Mean Squared Error (the two chosen for the purposes of the paper). Finally, it generates inferential results about the training, showing how the learning results can predict outputs from the input data.
 
-\subsection{Processo gaussiano}
-Viene usato un processo gaussiano con mean function $m(\mathbf{x})=\beta_0+\beta_1x_1+\beta_2x_2+\beta_3x_3$ e covariance function lo squared exponential kernel con un parametro di lengthscale per ogni dimensione (come descritto in \ref{multidimensionalKernel}).
+\subsection{Gaussian process}
+A Gaussian process is used with mean function $m(\mathbf{x})=\beta_0+\beta_1x_1+\beta_2x_2+\beta_3x_3$ and covariance function the squared exponential kernel with a lengthscale parameter for each dimension (as described in \ref{multidimensionalKernel}).
 
-Nello specifico, nell'elaborato si segue la struttura del codice dell'esempio quattro presente nella pagina github della libreria. 
+Specifically, in the elaborate we follow the code structure of example four found on the library's github page. 
 
-\subsection{Ottimizzazione degli iperparametri}
-Viene massimizzata la marginal likelihood, seguendo quanto detto in \ref{neiProcessiGaussiani}. Per farlo viene utilizzato il metodo di Adams (spiegato in \ref{adam}).
+\subsection{Hyperparameter optimization}
+The marginal likelihood is maximized, following what was said in \ref{neiProcessiGaussiani}. Adams' method (explained in \ref{adam}) is used to do this.
 
-\subsection{Dataset di input}\label{Risultati training: dataset}
-Il dataset di input è costituito da un file con i parametri di input: $C$, $R_1$ (resistenza prossimale), $R_2$ (resistenza distale). Non viene aggiunto $P_d$ ai dati di input per quanto visto in \ref{sensitività}: la sensitività locale di $P_d$ (cioè l'influenza sui parametri di output) è molto bassa ($<0.02$ in modulo), che significa che non c'è una relazione causale tra la pressione distale e i parametri di output. Si noti che lasciare $P_d$ nella lista dei parametri di input può peggiorare i risultati del training in quanto il modello cercherebbe di imparare una relazione causale tra $P_d$ e gli output mentre vi è solo una relazione casuale.\\
-Per generarlo si creano tre liste, una per ogni parametro di input; in particolare:
+\subsection{Input dataset}\label{Risultati training: dataset}
+The input dataset consists of a file with the input parameters: $C$, $R_1$ (proximal resistance), $R_2$ (distal resistance). No $P_d$ is added to the input data because of what was seen in \ref{sensitività}: the local sensitivity of $P_d$ (i.e., the influence on the output parameters) is very low ($<0.02$ in modulus), which means that there is no causal relationship between the distal pressure and the output parameters. Note that leaving $P_d$ in the list of input parameters may worsen the training results because the model would try to learn a causal relationship between $P_d$ and the outputs while there is only a random relationship.\\
+Three lists are created to generate it, one for each input parameter; specifically:
 \[
 C\in [1.4, 2.6] \quad R_1\in [0.01, 0.1] \quad R_2\in [0.6, 1.3]
 \]
-Per ogni parametro la lista consiste di quindici elementi. Vengono poi generate tutte le combinazioni di parametri, mescolate\footnote{Mischiare le combinazioni prima di dividere il dataset in training, validation e testing set evita problemi di overfitting.} e inserite in un file.\\
-Per ogni combinazione di parametri di input viene poi risolto il modello Windkessel, come fatto nel capitolo \ref{windkessel}. Con il risultato vengono trovati MAP, DBP, SBP, PP e vengono salvati in un file per ogni output. In questo modo si ottengono quattro file con un input per ogni combinazione di parametri contenute nel primo file generato.\\
-Il dataset di input viene poi diviso (da GPErks) in training set, validation set e testing set. La proporzione è $60\%$ training set, $20\%$ validation set, $20\%$ testing set.\\
+For each parameter, the list consists of fifteen elements. All parameter combinations are then generated, mixed\footnote{Mixing combinations before splitting the dataset into training, validation, and testing sets avoids overfitting problems.} and placed in a file.\\
+For each combination of input parameters, the Windkessel model is then solved, as done in \ref{windkessel}. With the result MAP, DBP, SBP, PP are found and are saved in one file for each output. In this way, four files are obtained with an input for each parameter combination contained in the first generated file.\\
+The input dataset is then divided (by GPErks) into training set, validation set, and testing set. The proportion is $60\%$ training set, $20\%$ validation set, $20\%$ testing set.\\
 
 \newpage
-In figura \ref{distribuzioneDataset} viene mostrata la distribuzione del database. Questa dipende dal fatto che vengono costruite tutte le combinazioni possibili di dati di input.
+Figure \ref{distribuzioneDataset} shows the distribution of the database. This depends on the fact that all possible combinations of input data are constructed.
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/database.png}
-    \caption{Distribuzione dei dati nel database.}
+    \caption{Distribution of data in the database.}
     \label{distribuzioneDataset}
 \end{figure}
 
 \newpage
-\section{Risultati del training}
+\section{Training results}
 
 
 %******************************
 %*********** MAP **************
 %******************************
 \subsection{Mean arterial pressure (MAP)}
-Viene impostato $\text{lr}=0.1$ e viene usato l'early stopper \textit{GLEarlyStoppingCriterion} con parametri: $\alpha = 5$, $\text{patience}=2$.
+$\text{lr}=0.1$ is set and the early stopper \textit{GLEarlyStoppingCriterion} is used with parameters: $\alpha = 5$, $\text{patience}=2$.
 
 
 % **********
 % MAP - loss
 % **********
-\subsubsection{Training e validation loss}
-Il training ha necessitato cinquantadue EPOCHS (ogni EPOCH consiste in valutare il gradiente su ogni elemento del dataset), ha concluso con $\text{R2Score}=0.9999$, $\text{MeanSquaredError}=0.0001$. In figura \ref{MAP - loss} viene mostrato l'andamento del training e validation loss con MSE e R2Score; in verde l'andamento dell'early stopper.
+\subsubsection{Training and validation loss}
+The training needed fifty-two EPOCHS (each EPOCH consists of evaluating the gradient on each dataset element), concluded with $\text{R2Score}=0.9999$, $\text{MeanSquaredError}=0.0001$. Figure \ref{MAP - loss} shows the training and validation loss trend with MSE and R2Score; early stopper trend in green.
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/MAP/MAP - loss.png}
-    \caption{MAP: andamento del training e validation loss, early stopper, R2Score e MSE.}
+    \caption{MAP: progress of training and validation loss, early stopper, R2Score e MSE.}
     \label{MAP - loss}
 \end{figure}
 
@@ -85,13 +85,13 @@ Il training ha necessitato cinquantadue EPOCHS (ogni EPOCH consiste in valutare 
 % **********
 % MAP - inference
 % **********
-\subsubsection{Approssimazione dei dati di input}
-In figura \ref{MAP - inference} viene mostrato come le predizioni approssimano i dati di input. La lunghezza delle barre di errore è $0.0015$, quindi sono molto corte indicando un'alta precisione.
+\subsubsection{Approximation of input data}
+Figure \ref{MAP - inference} shows how the predictions approximate the input data. The length of the error bars is $0.0015$, so they are very short indicating high accuracy.
 
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/MAP/MAP - inference.png}
-    \caption{MAP: predizioni sui dati di input.}
+    \caption{MAP: predictions about the input data.}
     \label{MAP - inference}
 \end{figure}
 
@@ -100,13 +100,13 @@ In figura \ref{MAP - inference} viene mostrato come le predizioni approssimano i
 % **********
 % MAP - C
 % **********
-\subsubsection{Dipendenza da $C$}
-Per studiare la dipendenza di MAP da $C$, vengono presi novanta valori di $C$ equidistanziati nello stesso intervallo usato per la creazione del database di input e, fissati i valori di $R_1$ e $R_2$ a quelli trovati nella loro approssimazione in \ref{stimaCR}, viene generato un file di combinazioni $C$, $R_1$ e $R_2$. Per ogni combinazione viene trovata l'approssimazione della pressione con il modello Windkessel e calcolata la MAP; con la combinazione di compliance e resistenze viene poi stimata la MAP usando il modello già addestrato. Viene poi fatto lo stesso su due intervalli attigui a quello di training e ampi il $10\%$ dell'intervallo di training. Il risultato complessivo è mostrato in figura \ref{MAP - C - full}, il risultato nel solo intervallo di training in \ref{MAP - C - training}, il risultato nei singoli intervalli attigui in \ref{MAP - C - sx} e \ref{MAP - C - dx}.
+\subsubsection{Dependence on $C$}
+To study the dependence of MAP on $C$, ninety equidistant $C$ values are taken in the same range used for creating the input database and, fixed the values of $R_1$ and $R_2$ to those found in their approximation in \ref{stimaCR}, a file of $C$, $R_1$ and $R_2$ combinations is generated. For each combination, the pressure approximation with the Windkessel model is found and MAP calculated; with the combination of compliance and strengths, MAP is then estimated using the model already trained. The same is then done on two intervals adjacent to the training interval and broaden the $10\%$ of the training interval. The overall result is shown in figure \ref{MAP - C - full}, the result in the training interval alone in \ref{MAP - C - training}, the result in the individual adjacent intervals in \ref{MAP - C - sx} and \ref{MAP - C - dx}.
 
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/MAP/MAP - C - full.pdf}
-    \caption{Dipendenza di MAP da $C$ sull'intervallo di training e due intervalli attigui.}
+    \caption{Dependence of MAP on $C$ on the training interval and two adjacent intervals.}
     \label{MAP - C - full}
 \end{figure}
 
@@ -114,7 +114,7 @@ Per studiare la dipendenza di MAP da $C$, vengono presi novanta valori di $C$ eq
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/MAP/MAP - C - training.pdf}
-    \caption{Dipendenza di MAP da $C$ sull'intervallo di training.}
+    \caption{Dependence of MAP on $C$ over the training interval.}
     \label{MAP - C - training}
 \end{figure}
 
@@ -122,7 +122,7 @@ Per studiare la dipendenza di MAP da $C$, vengono presi novanta valori di $C$ eq
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/MAP/MAP - C - sx.pdf}
-    \caption{Dipendenza di MAP da $C$ sull'intervallo attiguo a sinistra dell'intervallo di training.}
+    \caption{Dependence of MAP on $C$ on the adjacent interval to the left of the training interval.}
     \label{MAP - C - sx}
 \end{figure}
 
@@ -131,7 +131,7 @@ Per studiare la dipendenza di MAP da $C$, vengono presi novanta valori di $C$ eq
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/MAP/MAP - C - dx.pdf}
-    \caption{Dipendenza di MAP da $C$ sull'intervallo attiguo a destra dell'intervallo di training.}
+    \caption{Dependence of MAP on $C$ on the adjacent interval to the right of the training interval.}
     \label{MAP - C - dx}
 \end{figure}
 
@@ -142,13 +142,13 @@ Per studiare la dipendenza di MAP da $C$, vengono presi novanta valori di $C$ eq
 % **********
 % MAP - R1
 % **********
-\subsubsection{Dipendenza da $R_1$}
-Per studiare la dipendenza da $R_1$ viene usato lo stesso approccio. Il risultato complessivo è mostrato in figura \ref{MAP - R1 - full}, il risultato nel solo intervallo di training in \ref{MAP - R1 - training}, il risultato nei singoli intervalli attigui in \ref{MAP - R1 - sx} e \ref{MAP - R1 - dx}.
+\subsubsection{Dependence on $R_1$}
+The same approach is used to study the dependence on $R_1$. The overall result is shown in figure \ref{MAP - R1 - full}, the result in the training interval alone in \ref{MAP - R1 - training}, the result in the individual adjoint intervals in \ref{MAP - R1 - sx} and \ref{MAP - R1 - dx}.
 
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/MAP/MAP - R1 - full.pdf}
-    \caption{Dipendenza di MAP da $R1$ sull'intervallo di training e due intervalli attigui.}
+    \caption{Dependence of MAP on $R1$ on the training interval and two adjacent intervals.}
     \label{MAP - R1 - full}
 \end{figure}
 
@@ -157,14 +157,14 @@ Per studiare la dipendenza da $R_1$ viene usato lo stesso approccio. Il risultat
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/MAP/MAP - R1 - training.pdf}
-    \caption{Dipendenza di MAP da $R1$ sull'intervallo di training.}
+    \caption{Dependence of MAP on $R1$ over the training interval.}
     \label{MAP - R1 - training}
 \end{figure}
 
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/MAP/MAP - R1 - sx.pdf}
-    \caption{Dipendenza di MAP da $R1$ sull'intervallo attiguo a sinistra dell'intervallo di training.}
+    \caption{Dependence of MAP on $R1$ on the adjacent interval to the left of the training interval.}
     \label{MAP - R1 - sx}
 \end{figure}
 
@@ -172,7 +172,7 @@ Per studiare la dipendenza da $R_1$ viene usato lo stesso approccio. Il risultat
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/MAP/MAP - R1 - dx.pdf}
-    \caption{Dipendenza di MAP da $R1$ sull'intervallo attiguo a destra dell'intervallo di training.}
+    \caption{Dependence of MAP on $R1$ on the adjacent interval to the right of the training interval.}
     \label{MAP - R1 - dx}
 \end{figure}
 
@@ -183,13 +183,13 @@ Per studiare la dipendenza da $R_1$ viene usato lo stesso approccio. Il risultat
 % **********
 % MAP - R2
 % **********
-\subsubsection{Dipendenza da $R_2$}
-Per studiare la dipendenza da $R_2$ viene usato lo stesso approccio. Il risultato complessivo è mostrato in figura \ref{MAP - R2 - full}, il risultato nel solo intervallo di training in \ref{MAP - R2 - training}, il risultato nei singoli intervalli attigui in \ref{MAP - R2 - sx} e \ref{MAP - R2 - dx}.
+\subsubsection{Dependence on $R_2$}
+The same approach is used to study the dependence on $R_2$. The overall result is shown in figure \ref{MAP - R2 - full}, the result in the training interval alone in \ref{MAP - R2 - training}, the result in the individual adjoint intervals in \ref{MAP - R2 - sx} and \ref{MAP - R2 - dx}.
 
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/MAP/MAP - R2 - full.pdf}
-    \caption{Dipendenza di MAP da $R2$ sull'intervallo di training e due intervalli attigui.}
+    \caption{Dependence of MAP on $R2$ over the training interval and two adjacent intervals.}
     \label{MAP - R2 - full}
 \end{figure}
 
@@ -198,14 +198,14 @@ Per studiare la dipendenza da $R_2$ viene usato lo stesso approccio. Il risultat
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/MAP/MAP - R2 - training.pdf}
-    \caption{Dipendenza di MAP da $R2$ sull'intervallo di training.}
+    \caption{Dependence of MAP on $R2$ over the training interval.}
     \label{MAP - R2 - training}
 \end{figure}
 
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/MAP/MAP - R2 - sx.pdf}
-    \caption{Dipendenza di MAP da $R2$ sull'intervallo attiguo a sinistra dell'intervallo di training.}
+    \caption{Dependence of MAP on $R2$ on the adjoint interval to the left of the training interval.}
     \label{MAP - R2 - sx}
 \end{figure}
 
@@ -213,7 +213,7 @@ Per studiare la dipendenza da $R_2$ viene usato lo stesso approccio. Il risultat
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/MAP/MAP - R2 - dx.pdf}
-    \caption{Dipendenza di MAP da $R2$ sull'intervallo attiguo a destra dell'intervallo di training.}
+    \caption{Dependence of MAP on $R2$ on the adjacent interval to the right of the training interval.}
     \label{MAP - R2 - dx}
 \end{figure}
 
@@ -228,19 +228,19 @@ Per studiare la dipendenza da $R_2$ viene usato lo stesso approccio. Il risultat
 %*********** DBP **************
 %******************************
 \subsection{Diastolic blood pressure (DBP)}
-Viene imposto $\text{lr}=0.07$ e viene usato l'early stopper \textit{GLEarlyStoppingCriterion} con parametri: $\alpha = 2$, $\text{patience}=2$.
+$\text{lr}=0.07$ is imposed and the early stopper \textit{GLEarlyStoppingCriterion} is used with parameters: $\alpha = 2$, $\text{patience}=2$.
 
 
 
 % **********
 % DBP - loss
 % **********
-\subsubsection{Training e validation loss}
-Il training ha necessitato centotrentuno EPOCHS, ha concluso con $\text{R2Score}=0.9999$, $\text{MeanSquaredError}=0.0001$. In figura \ref{DBP - loss} viene mostrato l'andamento del training e validation loss con MSE e R2Score; in verde l'andamento dell'early stopper.
+\subsubsection{Training and validation loss}
+The training needed one hundred and thirty-one EPOCHS, concluded with $\text{R2Score}=0.9999$, $\text{MeanSquaredError}=0.0001$. Figure \ref{DBP - loss} shows the trend of training and validation loss with MSE and R2Score; in green is the trend of early stopper.
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/DBP/DBP - loss.png}
-    \caption{DBP: andamento del training e validation loss, early stopper, R2Score e MSE.}
+    \caption{DBP: progress of training and validation loss, early stopper, R2Score e MSE.}
     \label{DBP - loss}
 \end{figure}
 
@@ -249,13 +249,13 @@ Il training ha necessitato centotrentuno EPOCHS, ha concluso con $\text{R2Score}
 % **********
 % DBP - inference
 % **********
-\subsubsection{Approssimazione dei dati di input}
-In figura \ref{DBP - inference} viene mostrato come le predizioni approssimano i dati di input. La lunghezza delle barre di errore è $0.0028$.
+\subsubsection{Approximation of input data}
+Figure \ref{DBP - inference} shows how the predictions approximate the input data. The length of the error bars is $0.0028$.
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/DBP/DBP - inference.png}
-    \caption{DBP: predizioni sui dati di input.}
+    \caption{DBP: input data predictions.}
     \label{DBP - inference}
 \end{figure}
 
@@ -264,15 +264,15 @@ In figura \ref{DBP - inference} viene mostrato come le predizioni approssimano i
 % **********
 % DBP - C
 % **********
-\subsubsection{Dipendenza da $C$}
-Il risultato complessivo è mostrato in figura \ref{DBP - C - full}, il risultato nel solo intervallo di training in \ref{DBP - C - training}, il risultato nei singoli intervalli attigui in \ref{DBP - C - sx} e \ref{DBP - C - dx}. In tutti gli intervalli il modello riesce a generare ottime predizioni con una bassa incertezza (rappresentata dalle barre di errore).
+\subsubsection{Dependence on $C$}
+The overall result is shown in figure \ref{DBP - C - full}, the result in the training interval alone in \ref{DBP - C - training}, the result in the individual adjacent intervals in \ref{DBP - C - sx} and \ref{DBP - C - dx}. In all intervals the model succeeds in generating excellent predictions with low uncertainty (represented by the error bars).
 
 \vspace{1cm}
 
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/DBP/DBP - C - full.pdf}
-    \caption{Dipendenza di DBP da $C$ sull'intervallo di training e due intervalli attigui.}
+    \caption{Dependence of DBP on $C$ on the training interval and two adjacent intervals.}
     \label{DBP - C - full}
 \end{figure}
 
@@ -281,7 +281,7 @@ Il risultato complessivo è mostrato in figura \ref{DBP - C - full}, il risultat
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/DBP/DBP - C - training.pdf}
-    \caption{Dipendenza di DBP da $C$ sull'intervallo di training.}
+    \caption{Dependence of DBP on $C$ over the training interval.}
     \label{DBP - C - training}
 \end{figure}
 
@@ -290,7 +290,7 @@ Il risultato complessivo è mostrato in figura \ref{DBP - C - full}, il risultat
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/DBP/DBP - C - sx.pdf}
-    \caption{Dipendenza di DBP da $C$ sull'intervallo attiguo a sinistra dell'intervallo di training.}
+    \caption{Dependence of DBP on $C$ on the adjacent interval to the left of the training interval.}
     \label{DBP - C - sx}
 \end{figure}
 
@@ -298,7 +298,7 @@ Il risultato complessivo è mostrato in figura \ref{DBP - C - full}, il risultat
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/DBP/DBP - C - dx.pdf}
-    \caption{Dipendenza di DBP da $C$ sull'intervallo attiguo a destra dell'intervallo di training.}
+    \caption{Dependence of DBP on $C$ on the adjacent interval to the right of the training interval.}
     \label{DBP - C - dx}
 \end{figure}
 
@@ -308,15 +308,15 @@ Il risultato complessivo è mostrato in figura \ref{DBP - C - full}, il risultat
 % **********
 % DBP - R1
 % **********
-\subsubsection{Dipendenza da $R_1$}
-Il risultato complessivo è mostrato in figura \ref{DBP - R1 - full}, il risultato nel solo intervallo di training in \ref{DBP - R1 - training}, il risultato nei singoli intervalli attigui in \ref{DBP - R1 - sx} e \ref{DBP - R1 - dx}. Anche in questo caso il modello è in grado di fare predizioni molto precise.
+\subsubsection{Dependence on $R_1$}
+The overall result is shown in figure \ref{DBP - R1 - full}, the result in the training interval alone in \ref{DBP - R1 - training}, the result in the individual adjacent intervals in \ref{DBP - R1 - sx} and \ref{DBP - R1 - dx}. Again, the model is able to make very accurate predictions.
 
 \vspace{1cm}
 
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/DBP/DBP - R1 - full.pdf}
-    \caption{Dipendenza di DBP da $R_1$ sull'intervallo di training e due intervalli attigui.}
+    \caption{Dependence of DBP on $R_1$ on the training interval and two adjacent intervals.}
     \label{DBP - R1 - full}
 \end{figure}
 
@@ -325,14 +325,14 @@ Il risultato complessivo è mostrato in figura \ref{DBP - R1 - full}, il risulta
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/DBP/DBP - R1 - training.pdf}
-    \caption{Dipendenza di DBP da $R_1$ sull'intervallo di training.}
+    \caption{Dependence of DBP on $R_1$ over the training interval.}
     \label{DBP - R1 - training}
 \end{figure}
 
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/DBP/DBP - R1 - sx.pdf}
-    \caption{Dipendenza di DBP da $R_1$ sull'intervallo attiguo a sinistra dell'intervallo di training.}
+    \caption{Dependence of DBP on $R_1$ on the adjoint interval to the left of the training interval.}
     \label{DBP - R1 - sx}
 \end{figure}
 
@@ -341,7 +341,7 @@ Il risultato complessivo è mostrato in figura \ref{DBP - R1 - full}, il risulta
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/DBP/DBP - R1 - dx.pdf}
-    \caption{Dipendenza di DBP da $R_1$ sull'intervallo attiguo a destra dell'intervallo di training.}
+    \caption{Dependence of DBP on $R_1$ on the adjoint interval to the right of the training interval.}
     \label{DBP - R1 - dx}
 \end{figure}
 
@@ -351,15 +351,15 @@ Il risultato complessivo è mostrato in figura \ref{DBP - R1 - full}, il risulta
 % **********
 % DBP - R2
 % **********
-\subsubsection{Dipendenza da $R_2$}
-Il risultato complessivo è mostrato in figura \ref{DBP - R2 - full}, il risultato nel solo intervallo di training in \ref{DBP - R2 - training}, il risultato nei singoli intervalli attigui in \ref{DBP - R2 - sx} e \ref{DBP - R2 - dx}. Anche in questo caso si hanno predizioni molto precise. A prima vista sembra che le barre di errore non compaiano, in realtà sono molto brevi rispetto alla scala usata. Infatti nei grafici in cui si plottano solo gli intervalli attigui le barre di errore ricompaiono e mostrano che l'errore è minore di una unità.
+\subsubsection{Dependence on $R_2$}
+The overall result is shown in figure \ref{DBP - R2 - full}, the result in the training interval alone in \ref{DBP - R2 - training}, the result in the individual adjacent intervals in \ref{DBP - R2 - sx} and \ref{DBP - R2 - dx}. Again there are very accurate predictions. At first glance it appears that the error bars do not appear; in fact they are very short compared to the scale used. In fact, in graphs where only the adjacent intervals are plotted the error bars reappear and show that the error is less than one unit.
 
 \vspace{1cm}
 
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/DBP/DBP - R2 - full.pdf}
-    \caption{Dipendenza di DBP da $R_2$ sull'intervallo di training e due intervalli attigui.}
+    \caption{Dependence of DBP on $R_2$ on the training interval and two adjacent intervals.}
     \label{DBP - R2 - full}
 \end{figure}
 
@@ -368,14 +368,14 @@ Il risultato complessivo è mostrato in figura \ref{DBP - R2 - full}, il risulta
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/DBP/DBP - R2 - training.pdf}
-    \caption{Dipendenza di DBP da $R_2$ sull'intervallo di training.}
+    \caption{Dependence of DBP on $R_2$ over the training interval.}
     \label{DBP - R2 - training}
 \end{figure}
 
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/DBP/DBP - R2 - sx.pdf}
-    \caption{Dipendenza di DBP da $R_2$ sull'intervallo attiguo a sinistra dell'intervallo di training.}
+    \caption{Dependence of DBP on $R_2$ on the adjoint interval to the left of the training interval.}
     \label{DBP - R2 - sx}
 \end{figure}
 
@@ -383,7 +383,7 @@ Il risultato complessivo è mostrato in figura \ref{DBP - R2 - full}, il risulta
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/DBP/DBP - R2 - dx.pdf}
-    \caption{Dipendenza di DBP da $R_2$ sull'intervallo attiguo a destra dell'intervallo di training.}
+    \caption{Dependence of DBP on $R_2$ on the adjoint interval to the right of the training interval.}
     \label{DBP - R2 - dx}
 \end{figure}
 
@@ -398,18 +398,18 @@ Il risultato complessivo è mostrato in figura \ref{DBP - R2 - full}, il risulta
 %*********** PP **************
 %******************************
 \subsection{Pulse pressure (PP)}
-Viene imposto $\text{lr}=0.05$ e viene usato l'early stopper \textit{GLEarlyStoppingCriterion} con parametri: $\alpha = 5$, $\text{patience}=3$.
+$\text{lr}=0.05$ is imposed and the early stopper \textit{GLEarlyStoppingCriterion} is used with parameters: $\alpha = 5$, $\text{patience}=3$.
 
 
 % **********
 % PP - loss
 % **********
-\subsubsection{Training e validation loss}
-Il training ha necessitato novantatre EPOCHS, ha concluso con $\text{R2Score}=0.9994$, $\text{MeanSquaredError}=0.0006$. In figura \ref{PP - loss} viene mostrato l'andamento del training e validation loss con MSE e R2Score; in verde l'andamento dell'early stopper.
+\subsubsection{Training and validation loss}
+The training needed ninety-three EPOCHS, concluded with $\text{R2Score}=0.9994$, $\text{MeanSquaredError}=0.0006$. Figure \ref{PP - loss} shows the training and validation loss trend with MSE and R2Score; early stopper trend in green.
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/PP/PP - loss.png}
-    \caption{PP: andamento del training e validation loss, early stopper, R2Score e MSE.}
+    \caption{PP: progress of training and validation loss, early stopper, R2Score and MSE.}
     \label{PP - loss}
 \end{figure}
 
@@ -418,13 +418,13 @@ Il training ha necessitato novantatre EPOCHS, ha concluso con $\text{R2Score}=0.
 % **********
 % PP - inference
 % **********
-\subsubsection{Approssimazione dei dati di input}
-In figura \ref{PP - inference} viene mostrato come le predizioni approssimano i dati di input. La lunghezza delle barre di errore è $0.0034$.
+\subsubsection{Approximation of input data}
+Figure \ref{PP - inference} shows how the predictions approximate the input data. The length of the error bars is $0.0034$.
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/PP/PP - inference.png}
-    \caption{PP: predizioni sui dati di input.}
+    \caption{PP: predictions about the input data.}
     \label{PP - inference}
 \end{figure}
 
@@ -433,15 +433,15 @@ In figura \ref{PP - inference} viene mostrato come le predizioni approssimano i 
 % **********
 % PP - C
 % **********
-\subsubsection{Dipendenza da $C$}
-Il risultato complessivo è mostrato in figura \ref{PP - C - full}, il risultato nel solo intervallo di training in \ref{PP - C - training}, il risultato nei singoli intervalli attigui in \ref{PP - C - sx} e \ref{PP - C - dx}.
+\subsubsection{Dependence on $C$}
+The overall result is shown in figure \ref{PP - C - full}, the result in the training interval alone in \ref{PP - C - training}, the result in the individual adjacent intervals in \ref{PP - C - sx} and \ref{PP - C - dx}.
 
 \vspace{1cm}
 
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/PP/PP - C - full.pdf}
-    \caption{Dipendenza di PP da $C$ sull'intervallo di training e due intervalli attigui.}
+    \caption{Dependence of PP on $C$ on the training interval and two adjacent intervals.}
     \label{PP - C - full}
 \end{figure}
 
@@ -450,14 +450,14 @@ Il risultato complessivo è mostrato in figura \ref{PP - C - full}, il risultato
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/PP/PP - C - training.pdf}
-    \caption{Dipendenza di PP da $C$ sull'intervallo di training.}
+    \caption{Dependence of PP on $C$ over the training interval.}
     \label{PP - C - training}
 \end{figure}
 
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/PP/PP - C - sx.pdf}
-    \caption{Dipendenza di PP da $C$ sull'intervallo attiguo a sinistra dell'intervallo di training.}
+    \caption{Dependence of PP on $C$ on the adjacent interval to the left of the training interval.}
     \label{PP - C - sx}
 \end{figure}
 
@@ -466,7 +466,7 @@ Il risultato complessivo è mostrato in figura \ref{PP - C - full}, il risultato
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/PP/PP - C - dx.pdf}
-    \caption{Dipendenza di PP da $C$ sull'intervallo attiguo a destra dell'intervallo di training.}
+    \caption{Dependence of PP on $C$ on the adjacent interval to the right of the training interval.}
     \label{PP - C - dx}
 \end{figure}
 
@@ -477,15 +477,15 @@ Il risultato complessivo è mostrato in figura \ref{PP - C - full}, il risultato
 % **********
 % PP - R1
 % **********
-\subsubsection{Dipendenza da $R_1$}
-Il risultato complessivo è mostrato in figura \ref{PP - R1 - full}, il risultato nel solo intervallo di training in \ref{PP - R1 - training}, il risultato nei singoli intervalli attigui in \ref{PP - R1 - sx} e \ref{PP - R1 - dx}.
+\subsubsection{Dependence on $R_1$}
+The overall result is shown in figure \ref{PP - R1 - full}, the result in the training interval alone in \ref{PP - R1 - training}, the result in the individual adjacent intervals in \ref{PP - R1 - sx} and \ref{PP - R1 - dx}.
 
 \vspace{1cm}
 
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/PP/PP - R1 - full.pdf}
-    \caption{Dipendenza di PP da $R1$ sull'intervallo di training e due intervalli attigui.}
+    \caption{Dependence of PP on $R1$ on the training interval and two adjacent intervals.}
     \label{PP - R1 - full}
 \end{figure}
 
@@ -494,14 +494,14 @@ Il risultato complessivo è mostrato in figura \ref{PP - R1 - full}, il risultat
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/PP/PP - R1 - training.pdf}
-    \caption{Dipendenza di PP da $R1$ sull'intervallo di training.}
+    \caption{Dependence of PP on $R1$ over the training interval.}
     \label{PP - R1 - training}
 \end{figure}
 
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/PP/PP - R1 - sx.pdf}
-    \caption{Dipendenza di PP da $R1$ sull'intervallo attiguo a sinistra dell'intervallo di training.}
+    \caption{Dependence of PP on $R1$ on the adjoint interval to the left of the training interval.}
     \label{PP - R1 - sx}
 \end{figure}
 
@@ -510,7 +510,7 @@ Il risultato complessivo è mostrato in figura \ref{PP - R1 - full}, il risultat
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/PP/PP - R1 - dx.pdf}
-    \caption{Dipendenza di PP da $R1$ sull'intervallo attiguo a destra dell'intervallo di training.}
+    \caption{Dependence of PP on $R1$ on the adjacent interval to the right of the training interval.}
     \label{PP - R1 - dx}
 \end{figure}
 
@@ -520,15 +520,15 @@ Il risultato complessivo è mostrato in figura \ref{PP - R1 - full}, il risultat
 % **********
 % PP - R2
 % **********
-\subsubsection{Dipendenza da $R_2$}
-Il risultato complessivo è mostrato in figura \ref{PP - R2 - full}, il risultato nel solo intervallo di training in \ref{PP - R2 - training}, il risultato nei singoli intervalli attigui in \ref{PP - R2 - sx} e \ref{PP - R2 - dx}.
+\subsubsection{Dependence on $R_2$}
+The overall result is shown in figure \ref{PP - R2 - full}, the result in the training interval alone in \ref{PP - R2 - training}, the result in the individual adjacent intervals in \ref{PP - R2 - sx} and \ref{PP - R2 - dx}.
 
 \vspace{0.9cm}
 
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/PP/PP - R2 - full.pdf}
-    \caption{Dipendenza di PP da $R2$ sull'intervallo di training e due intervalli attigui.}
+    \caption{Dependence of PP on $R2$ on the training interval and two adjacent intervals.}
     \label{PP - R2 - full}
 \end{figure}
 
@@ -537,14 +537,14 @@ Il risultato complessivo è mostrato in figura \ref{PP - R2 - full}, il risultat
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/PP/PP - R2 - training.pdf}
-    \caption{Dipendenza di PP da $R2$ sull'intervallo di training.}
+    \caption{Dependence of PP on $R2$ over the training interval.}
     \label{PP - R2 - training}
 \end{figure}
 
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/PP/PP - R2 - sx.pdf}
-    \caption{Dipendenza di PP da $R2$ sull'intervallo attiguo a sinistra dell'intervallo di training.}
+    \caption{Dependence of PP on $R2$ on the adjacent interval to the left of the training interval.}
     \label{PP - R2 - sx}
 \end{figure}
 
@@ -553,7 +553,7 @@ Il risultato complessivo è mostrato in figura \ref{PP - R2 - full}, il risultat
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/PP/PP - R2 - dx.pdf}
-    \caption{Dipendenza di PP da $R2$ sull'intervallo attiguo a destra dell'intervallo di training.}
+    \caption{Dependence of PP on $R2$ on the adjoint interval to the right of the training interval.}
     \label{PP - R2 - dx}
 \end{figure}
 
@@ -569,13 +569,13 @@ Il risultato complessivo è mostrato in figura \ref{PP - R2 - full}, il risultat
 %*********** SBP **************
 %******************************
 \subsection{Systolic blood pressure (SBP)}
-Viene imposto $\text{lr}=0.07$ e viene usato l'early stopper \textit{GLEarlyStoppingCriterion} con parametri: $\alpha = 5$, $\text{patience}=1$.
+$\text{lr}=0.07$ is imposed and the early stopper \textit{GLEarlyStoppingCriterion} is used with parameters: $\alpha = 5$, $\text{patience}=1$.
 
 % **********
 % SBP - loss
 % **********
-\subsubsection{Training e validation loss}
-Il training ha necessitato centotredici EPOCHS, ha concluso con $\text{R2Score}=0.9999$, $\text{MeanSquaredError}=0.0052$. In figura \ref{SBP - loss} viene mostrato l'andamento del training e validation loss con MSE e R2Score; in verde l'andamento dell'early stopper.
+\subsubsection{Training and validation loss}
+The training needed one hundred and thirteen EPOCHS, concluded with $\text{R2Score}=0.9999$, $\text{MeanSquaredError}=0.0052$. Figure \ref{SBP - loss} shows the training and validation loss trend with MSE and R2Score; in green is the early stopper trend.
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/SBP/SBP - loss.png}
@@ -588,13 +588,13 @@ Il training ha necessitato centotredici EPOCHS, ha concluso con $\text{R2Score}=
 % **********
 % SBP - inference
 % **********
-\subsubsection{Approssimazione dei dati di input}
-In figura \ref{SBP - inference} viene mostrato come le predizioni approssimano i dati di input. Le barre di errore sono lunghe $0.0012$, dunque non si notano.
+\subsubsection{Approximation of input data}
+Figure \ref{SBP - inference} shows how the predictions approximate the input data. The error bars are $0.0012$ long, so they are not noticeable.
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/SBP/SBP - inference.png}
-    \caption{SBP: predizioni sui dati di input.}
+    \caption{SBP: predictions about the input data.}
     \label{SBP - inference}
 \end{figure}
 
@@ -603,15 +603,15 @@ In figura \ref{SBP - inference} viene mostrato come le predizioni approssimano i
 % **********
 % SBP - C
 % **********
-\subsubsection{Dipendenza da $C$}
-Il risultato complessivo è mostrato in figura \ref{SBP - C - full}, il risultato nel solo intervallo di training in \ref{SBP - C - training}, il risultato nei singoli intervalli attigui in \ref{SBP - C - sx} e \ref{SBP - C - dx}.
+\subsubsection{Dependence on $C$}
+The overall result is shown in figure \ref{SBP - C - full}, the result in the training interval alone in \ref{SBP - C - training}, the result in the individual adjacent intervals in \ref{SBP - C - sx} and \ref{SBP - C - dx}.
 
 \vspace{1cm}
 
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/SBP/SBP - C - full.pdf}
-    \caption{Dipendenza di SBP da $C$ sull'intervallo di training e due intervalli attigui.}
+    \caption{Dependence of SBP on $C$ on the training interval and two adjacent intervals.}
     \label{SBP - C - full}
 \end{figure}
 
@@ -620,14 +620,14 @@ Il risultato complessivo è mostrato in figura \ref{SBP - C - full}, il risultat
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/SBP/SBP - C - training.pdf}
-    \caption{Dipendenza di SBP da $C$ sull'intervallo di training.}
+    \caption{Dependence of SBP on $C$ over the training interval.}
     \label{SBP - C - training}
 \end{figure}
 
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/SBP/SBP - C - sx.pdf}
-    \caption{Dipendenza di SBP da $C$ sull'intervallo attiguo a sinistra dell'intervallo di training.}
+    \caption{Dependence of SBP on $C$ on the adjacent interval to the left of the training interval.}
     \label{SBP - C - sx}
 \end{figure}
 
@@ -635,7 +635,7 @@ Il risultato complessivo è mostrato in figura \ref{SBP - C - full}, il risultat
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/SBP/SBP - C - dx.pdf}
-    \caption{Dipendenza di SBP da $C$ sull'intervallo attiguo a destra dell'intervallo di training.}
+    \caption{Dependence of SBP on $C$ on the adjacent interval to the right of the training interval.}
     \label{SBP - C - dx}
 \end{figure}
 
@@ -646,8 +646,8 @@ Il risultato complessivo è mostrato in figura \ref{SBP - C - full}, il risultat
 % **********
 % SBP - R1
 % **********
-\subsubsection{Dipendenza da $R_1$}
-Il risultato complessivo è mostrato in figura \ref{SBP - R1 - full}, il risultato nel solo intervallo di training in \ref{SBP - R1 - training}, il risultato nei singoli intervalli attigui in \ref{SBP - R1 - sx} e \ref{SBP - R1 - dx}.
+\subsubsection{Dependence on $R_1$}
+The overall result is shown in figure \ref{SBP - R1 - full}, the result in the training interval alone in \ref{SBP - R1 - training}, the result in the individual adjacent intervals in \ref{SBP - R1 - sx} and \ref{SBP - R1 - dx}.
 
 \vspace{0.7cm}
 
@@ -655,7 +655,7 @@ Il risultato complessivo è mostrato in figura \ref{SBP - R1 - full}, il risulta
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/SBP/SBP - R1 - full.pdf}
-    \caption{Dipendenza di SBP da $R1$ sull'intervallo di training e due intervalli attigui.}
+    \caption{Dependence of SBP on $R1$ on the training interval and two adjacent intervals.}
     \label{SBP - R1 - full}
 \end{figure}
 
@@ -664,14 +664,14 @@ Il risultato complessivo è mostrato in figura \ref{SBP - R1 - full}, il risulta
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/SBP/SBP - R1 - training.pdf}
-    \caption{Dipendenza di SBP da $R1$ sull'intervallo di training.}
+    \caption{Dependence of SBP on $R1$ over the training interval.}
     \label{SBP - R1 - training}
 \end{figure}
 
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/SBP/SBP - R1 - sx.pdf}
-    \caption{Dipendenza di SBP da $R1$ sull'intervallo attiguo a sinistra dell'intervallo di training.}
+    \caption{Dependence of SBP on $R1$ on the adjacent interval to the left of the training interval.}
     \label{SBP - R1 - sx}
 \end{figure}
 
@@ -680,7 +680,7 @@ Il risultato complessivo è mostrato in figura \ref{SBP - R1 - full}, il risulta
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/SBP/SBP - R1 - dx.pdf}
-    \caption{Dipendenza di SBP da $R1$ sull'intervallo attiguo a destra dell'intervallo di training.}
+    \caption{Dependence of SBP on $R1$ on the adjacent interval to the right of the training interval.}
     \label{SBP - R1 - dx}
 \end{figure}
 
@@ -693,15 +693,15 @@ Il risultato complessivo è mostrato in figura \ref{SBP - R1 - full}, il risulta
 % **********
 % SBP - R2
 % **********
-\subsubsection{Dipendenza da $R_2$}
-Il risultato complessivo è mostrato in figura \ref{SBP - R2 - full}, il risultato nel solo intervallo di training in \ref{SBP - R2 - training}, il risultato nei singoli intervalli attigui in \ref{SBP - R2 - sx} e \ref{SBP - R2 - dx}.
+\subsubsection{Dependence on $R_2$}
+The overall result is shown in figure \ref{SBP - R2 - full}, the result in the training interval alone in \ref{SBP - R2 - training}, the result in the individual adjacent intervals in \ref{SBP - R2 - sx} and \ref{SBP - R2 - dx}.
 
 \vspace{1cm}
 
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/SBP/SBP - R2 - full.pdf}
-    \caption{Dipendenza di SBP da $R2$ sull'intervallo di training e due intervalli attigui.}
+    \caption{Dependence of SBP on $R2$ on the training interval and two adjacent intervals.}
     \label{SBP - R2 - full}
 \end{figure}
 
@@ -710,14 +710,14 @@ Il risultato complessivo è mostrato in figura \ref{SBP - R2 - full}, il risulta
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/SBP/SBP - R2 - training.pdf}
-    \caption{Dipendenza di SBP da $R2$ sull'intervallo di training.}
+    \caption{Dependence of SBP on $R2$ over the training interval.}
     \label{SBP - R2 - training}
 \end{figure}
 
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/SBP/SBP - R2 - sx.pdf}
-    \caption{Dipendenza di SBP da $R2$ sull'intervallo attiguo a sinistra dell'intervallo di training.}
+    \caption{Dependence of SBP on $R2$ on the adjacent interval to the left of the training interval.}
     \label{SBP - R2 - sx}
 \end{figure}
 
@@ -726,17 +726,17 @@ Il risultato complessivo è mostrato in figura \ref{SBP - R2 - full}, il risulta
 \begin{figure}
     \centering
     \includegraphics[width=1\textwidth]{images/Training (risultati)/SBP/SBP - R2 - dx.pdf}
-    \caption{Dipendenza di SBP da $R2$ sull'intervallo attiguo a destra dell'intervallo di training.}
+    \caption{Dependence of SBP on $R2$ on the adjacent interval to the right of the training interval.}
     \label{SBP - R2 - dx}
 \end{figure}
 
-\section{Tempo di esecuzione: approssimazione di MAP, DBP, SBP, PP}
-Come fatto in \ref{Windkessel: tempo esecuzione}, si calcola ora il tempo di esecuzione per trovare il valore di MAP, DBP, SBP, PP a partire dai valori di $C, R_1, R_2$. Poichè viene eseguito un training per ogni parametro, vengono riportati i tempi di stima dei parametri per ogni modello addestrato.
+\section{Running time: approximation of MAP, DBP, SBP, PP}
+As done in \ref{Windkessel: tempo esecuzione}, we now calculate the run time to find the value of MAP, DBP, SBP, PP from the values of $C, R_1, R_2$. Since one training is performed for each parameter, the parameter estimation times for each trained model are reported.
 
 \input{Tabelle/Tabella tempi parametri}
 
-Poichè per ogni parametro si addestra un modello indipendente, per ottenere i valori di MAP, DBP, SBP e PP è necessario girare i quattro processi gaussiani addestrati. Dunque il tempo di esecuzione necessario per ottenere le approssimazioni dei quattro parametri è la somma dei tempi necessari per ottenerli uno a uno. Dunque si può dire che in tutto sono necessari 20.75 ms in media per ottenere i quattro valori.
-Comparando questa quantità alla tabella \ref{tab: tempo windkessel} è evidente che l'uso dei processi gaussiani richiede molto meno tempo rispetto all'approssimazione della soluzione del modello Windkessel già dopo soli dieci cicli cardiaci (un numero piuttosto basso se l'obiettivo è trovare la soluzione a convergenza). \\
+Since an independent model is trained for each parameter, it is necessary to run the four trained Gaussian processes to obtain the MAP, DBP, SBP and PP values. So the running time needed to obtain the approximations of the four parameters is the sum of the times needed to obtain them one by one. So it can be said that in all, an average of 20.75 ms is required to obtain the four values.
+Comparing this quantity to the table \ref{tab: tempo windkessel} it is evident that using Gaussian processes takes much less time than approximating the solution of the Windkessel model already after only ten cardiac cycles (a rather low number if the goal is to find the solution at convergence). \\
 
 
-Evidentemente, dunque, i processi gaussiani risolvono il problema del tempo di esecuzione nel modello Windkessel, fornendo una buona approssimazione del valore di MAP, DBP, SBP, PP.
+Evidently, then, Gaussian processes solve the run-time problem in the Windkessel model by providing a good approximation of the value of MAP, DBP, SBP, PP.
