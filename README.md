@@ -1,4 +1,4 @@
-# Gaussian Processes Thesis (Translated)
+# GAUSSIAN PROCESSES AND SUPERVISED LEARNING: APPLICATION TO THE WINDKESSEL MODEL (Translated)
 
 This README serves as a notice regarding the translation of the bachelor's thesis from Italian to English.
 
