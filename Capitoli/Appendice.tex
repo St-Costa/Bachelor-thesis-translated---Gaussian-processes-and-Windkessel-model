@@ -1,12 +1,12 @@
-\chapter*{Appendice}
-\addcontentsline{toc}{chapter}{Appendice}
+\chapter*{Appendix}
+\addcontentsline{toc}{chapter}{Appendix}
 
 
 
 
-In questo ultimo capitolo vengono inseriti tutti i codici non precedentemente menzionati per la generazione di immagini e per poter lavorare con il modello Windkessel come proposto nel capitolo \ref{windkessel}.\\
-Tutti i codici sono in Python, per la loro creazione sono stati usati: Anaconda (versione 2021.11), conda (versione 4.12.0),  python (versione 3.9.7).\\
-Non vengono inseriti i codici completi per la creazione del training di processi gaussiani perché sono una debole modifica dei codici del dottor Stefano Longobardi, presenti su GitHub alla pagina "\href{https://github.com/stelong/GPErks}{GPErks}".
+This last chapter includes all the codes not previously mentioned for generating images and being able to work with the Windkessel model as proposed in the chapter \ref{windkessel}.\\
+All codes are in Python; Anaconda (version 2021.11), conda (version 4.12.0), python (version 3.9.7) were used to create them.\\
+The complete codes for creating Gaussian process training are not included because they are a weak modification of Dr. Stefano Longobardi's codes, found on GitHub at the "\href{https://github.com/stelong/GPErks}{GPErks}" page.
 
 
 
@@ -20,23 +20,23 @@ Non vengono inseriti i codici completi per la creazione del training di processi
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%  PROCESSI GAUSSIANI
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Processi gaussiani}
+\section*{Gaussian processes}
 
-\subsection*{Import e codici preliminari}
-
-%%% Import
-\lstinputlisting[language=Python, caption = Import necessario per la generazione di immagini dei kernel introdotti nel capitolo \ref{gaussianProcessChapter}, firstnumber=1, stepnumber=1, label={import}]{codes/Processi gaussiani/Import.txt}
+\subsection*{Import and preliminary codes}
 
 %%% Import
-\lstinputlisting[language=Python, caption = Import necessario per  la generazione di immagini sulla predizione del capitolo \ref{gaussianProcessChapter}, firstnumber=1, stepnumber=1, label={import2}]{codes/Processi gaussiani/Import2.txt}
+\lstinputlisting[language=Python, caption = Import needed for image generation of kernels introduced in the chapter \ref{gaussianProcessChapter}, firstnumber=1, stepnumber=1, label={import}]{codes/Processi gaussiani/Import.txt}
+
+%%% Import
+\lstinputlisting[language=Python, caption = Import needed for image generation on chapter prediction \ref{gaussianProcessChapter}, firstnumber=1, stepnumber=1, label={import2}]{codes/Processi gaussiani/Import2.txt}
 
 %%% Cubed mean
-\lstinputlisting[language=Python, caption = Definizione della media cubica, firstnumber=1, stepnumber=1, label={cubedMean}]{codes/Processi gaussiani/cubedMean.txt}
+\lstinputlisting[language=Python, caption = Definition of cubic mean, firstnumber=1, stepnumber=1, label={cubedMean}]{codes/Processi gaussiani/cubedMean.txt}
 
 \newpage
 
 %%% Esempio di processo gaussiano
-\lstinputlisting[language=Python, caption=Codice per generare la figura \ref{esempioProcessoGaussianoImmagine}, firstnumber=1, stepnumber=1, label={Example}]{codes/Processi gaussiani/Example.txt}
+\lstinputlisting[language=Python, caption=Code to generate the figure \ref{esempioProcessoGaussianoImmagine}, firstnumber=1, stepnumber=1, label={Example}]{codes/Processi gaussiani/Example.txt}
 
 
 
@@ -48,25 +48,25 @@ Non vengono inseriti i codici completi per la creazione del training di processi
 \subsection*{Linear kernel}
 
 %%% Plot kernel
-\lstinputlisting[language=Python, label={linear kernel code}, caption={Codice per generare la figura \ref{linear kernel}} ,firstnumber=1, stepnumber=1]{codes/Processi gaussiani/Linear kernel.txt}
+\lstinputlisting[language=Python, label={linear kernel code}, caption={Code to generate the figure \ref{linear kernel}} ,firstnumber=1, stepnumber=1]{codes/Processi gaussiani/Linear kernel.txt}
 
 %%% Sample
-\lstinputlisting[language=Python, caption={Codice per generare la figura \ref{10 sample linear kernel zero mean}} ,firstnumber=1, stepnumber=1, label={linear sample}]{codes/Processi gaussiani/Linear sample.txt}
+\lstinputlisting[language=Python, caption={Code to generate the figure \ref{10 sample linear kernel zero mean}} ,firstnumber=1, stepnumber=1, label={linear sample}]{codes/Processi gaussiani/Linear sample.txt}
 
 %%% Vario c
-\lstinputlisting[language=Python, caption={Codice per generare la figura \ref{10 sample linear modified c}} ,firstnumber=1, stepnumber=1, label={Linear - c}]{codes/Processi gaussiani/Linear - c.txt}
+\lstinputlisting[language=Python, caption={Code to generate the figure \ref{10 sample linear modified c}} ,firstnumber=1, stepnumber=1, label={Linear - c}]{codes/Processi gaussiani/Linear - c.txt}
 
 
 %%% Vario sigmab
-\lstinputlisting[language=Python, caption={Codice per generare la figura \ref{10 sample linear modified sigmab}} ,firstnumber=1, stepnumber=1, label={Linear - sigmab}]{codes/Processi gaussiani/Linear - sigmab.txt}
+\lstinputlisting[language=Python, caption={Code to generate the figure \ref{10 sample linear modified sigmab}} ,firstnumber=1, stepnumber=1, label={Linear - sigmab}]{codes/Processi gaussiani/Linear - sigmab.txt}
 
 
 %%% Vario sigmav
-\lstinputlisting[language=Python, caption={Codice per generare la figura \ref{10 sample linear modified sigmav}} ,firstnumber=1, stepnumber=1, label={Linear - sigmav}]{codes/Processi gaussiani/Linear - sigmav.txt}
+\lstinputlisting[language=Python, caption={Code to generate the figure \ref{10 sample linear modified sigmav}} ,firstnumber=1, stepnumber=1, label={Linear - sigmav}]{codes/Processi gaussiani/Linear - sigmav.txt}
 
 
 %%% cubedmean
-\lstinputlisting[language=Python, caption={Codice per generare la figura \ref{10 sample linear kernel cubed mean}} ,firstnumber=1, stepnumber=1, label={linear cubedmean}]{codes/Processi gaussiani/Linear - cubedmean.txt}
+\lstinputlisting[language=Python, caption={Code to generate the figure \ref{10 sample linear kernel cubed mean}} ,firstnumber=1, stepnumber=1, label={linear cubedmean}]{codes/Processi gaussiani/Linear - cubedmean.txt}
 
 
 
@@ -77,24 +77,24 @@ Non vengono inseriti i codici completi per la creazione del training di processi
 \subsection*{Squared-exponential kernel}
 
 %%% Plot kernel
-\lstinputlisting[language=Python, caption={Codice per generare la figura \ref{squared-exponential kernel}} ,firstnumber=1, stepnumber=1, label={squared-exponential}]{codes/Processi gaussiani/RBF kernel.txt}
+\lstinputlisting[language=Python, caption={Code to generate the figure \ref{squared-exponential kernel}} ,firstnumber=1, stepnumber=1, label={squared-exponential}]{codes/Processi gaussiani/RBF kernel.txt}
 
 %%% Sample
-\lstinputlisting[language=Python, caption={Codice per generare la figura \ref{10 sample exponential kerne zero mean}} ,firstnumber=1, stepnumber=1, label={RBF sample}]{codes/Processi gaussiani/RBF sample.txt}
+\lstinputlisting[language=Python, caption={Code to generate the figure \ref{10 sample exponential kerne zero mean}} ,firstnumber=1, stepnumber=1, label={RBF sample}]{codes/Processi gaussiani/RBF sample.txt}
 
 \newpage
 
 %%% Vario sigma
-\lstinputlisting[language=Python, caption={Codice per generare la figura \ref{10 sample exponential modified sigma}} ,firstnumber=1, stepnumber=1, label={RBF - sigma}]{codes/Processi gaussiani/RBF - sigma.txt}
+\lstinputlisting[language=Python, caption={Code to generate the figure \ref{10 sample exponential modified sigma}} ,firstnumber=1, stepnumber=1, label={RBF - sigma}]{codes/Processi gaussiani/RBF - sigma.txt}
 
 
 %%% Vario l
-\lstinputlisting[language=Python, caption={Codice per generare la figura \ref{10 sample exponential modified l}} ,firstnumber=1, stepnumber=1, label={codice9}]{codes/Processi gaussiani/RBF - l.txt}
+\lstinputlisting[language=Python, caption={Code to generate the figure \ref{10 sample exponential modified l}} ,firstnumber=1, stepnumber=1, label={codice9}]{codes/Processi gaussiani/RBF - l.txt}
 
 \newpage
 
 %%% cubedmean
-\lstinputlisting[language=Python, caption={Codice per generare la figura \ref{10 sample exponential kernel cubed mean}} ,firstnumber=1, stepnumber=1, label={codice10}]{codes/Processi gaussiani/RBF - cubedMean.txt}
+\lstinputlisting[language=Python, caption={Code to generate the figure \ref{10 sample exponential kernel cubed mean}} ,firstnumber=1, stepnumber=1, label={codice10}]{codes/Processi gaussiani/RBF - cubedMean.txt}
 
 
 
@@ -105,40 +105,40 @@ Non vengono inseriti i codici completi per la creazione del training di processi
 
 
 %%% kernel plot
-\lstinputlisting[language=Python, caption={Codice per generare la figura \ref{periodic kernel}} ,firstnumber=1, stepnumber=1, label={periodic Kernel}]{codes/Processi gaussiani/Periodic kernel.txt}
+\lstinputlisting[language=Python, caption={Code to generate the figure \ref{periodic kernel}} ,firstnumber=1, stepnumber=1, label={periodic Kernel}]{codes/Processi gaussiani/Periodic kernel.txt}
 
 %%% sample
-\lstinputlisting[language=Python, caption={Codice per generare la figura \ref{3 sample periodic kerne zero mean}} ,firstnumber=1, stepnumber=1, label={periodic sample}]{codes/Processi gaussiani/Periodic sample.txt}
+\lstinputlisting[language=Python, caption={Code to generate the figure \ref{3 sample periodic kerne zero mean}} ,firstnumber=1, stepnumber=1, label={periodic sample}]{codes/Processi gaussiani/Periodic sample.txt}
 
 %%% vario sigma
-\lstinputlisting[language=Python, caption={Codice per generare la figura \ref{10 sample periodic modified sigma}} ,firstnumber=1, stepnumber=1, label={Periodic sigma}]{codes/Processi gaussiani/Periodic sigma.txt}
+\lstinputlisting[language=Python, caption={Code to generate the figure \ref{10 sample periodic modified sigma}} ,firstnumber=1, stepnumber=1, label={Periodic sigma}]{codes/Processi gaussiani/Periodic sigma.txt}
 
 %%% vario p
-\lstinputlisting[language=Python, caption={Codice per generare la figura \ref{10 sample periodic modified p}} ,firstnumber=1, stepnumber=1, label={periodic p}]{codes/Processi gaussiani/Periodic p.txt}
+\lstinputlisting[language=Python, caption={Code to generate the figure \ref{10 sample periodic modified p}} ,firstnumber=1, stepnumber=1, label={periodic p}]{codes/Processi gaussiani/Periodic p.txt}
 
 %%% vario l
-\lstinputlisting[language=Python, caption={Codice per generare la figura \ref{10 sample periodic modified l}} ,firstnumber=1, stepnumber=1, label={periodic l}]{codes/Processi gaussiani/Periodic l.txt}
+\lstinputlisting[language=Python, caption={Code to generate the figure \ref{10 sample periodic modified l}} ,firstnumber=1, stepnumber=1, label={periodic l}]{codes/Processi gaussiani/Periodic l.txt}
 
 %%% cubed mean
-\lstinputlisting[language=Python, caption={Codice per generare la figura \ref{3 sample periodic kernel cubed mean}} ,firstnumber=1, stepnumber=1, label={priodic cubedmean}]{codes/Processi gaussiani/Periodic - cubedmean.txt}
+\lstinputlisting[language=Python, caption={Code to generate the figure \ref{3 sample periodic kernel cubed mean}} ,firstnumber=1, stepnumber=1, label={priodic cubedmean}]{codes/Processi gaussiani/Periodic - cubedmean.txt}
 
 
 
 
-\subsection*{Composizione di kernel}
+\subsection*{Composition of kernels}
 
 %%% RBF + periodic kernel
-\lstinputlisting[language=Python, caption={Codice per generare la figura \ref{SE + periodic kernel}} ,firstnumber=1, stepnumber=1, label={RBF + periodic kernel}]{codes/Processi gaussiani/RBF + periodic kernel.txt}
+\lstinputlisting[language=Python, caption={Code to generate the figure \ref{SE + periodic kernel}} ,firstnumber=1, stepnumber=1, label={RBF + periodic kernel}]{codes/Processi gaussiani/RBF + periodic kernel.txt}
 
 %%% RBF + periodic sample
-\lstinputlisting[language=Python, caption={Codice per generare la figura \ref{SE + periodic sample}} ,firstnumber=1, stepnumber=1, label={RBF + periodic sample}]{codes/Processi gaussiani/RBF + periodic sample.txt}
+\lstinputlisting[language=Python, caption={Code to generate the figure \ref{SE + periodic sample}} ,firstnumber=1, stepnumber=1, label={RBF + periodic sample}]{codes/Processi gaussiani/RBF + periodic sample.txt}
 
 
 %%% Linear x linear kernel
-\lstinputlisting[language=Python, caption={Codice per generare la figura \ref{linear * linear kernel}} ,firstnumber=1, stepnumber=1, label={linear x linear}]{codes/Processi gaussiani/Linear x linear.txt}
+\lstinputlisting[language=Python, caption={Code to generate the figure \ref{linear * linear kernel}} ,firstnumber=1, stepnumber=1, label={linear x linear}]{codes/Processi gaussiani/Linear x linear.txt}
 
 %%% Linear x linear sample
-\lstinputlisting[language=Python, caption={Codice per generare la figura \ref{linear * linear sample}} ,firstnumber=1, stepnumber=1, label={linear x linear sample}]{codes/Processi gaussiani/Linear x linear sample.txt}
+\lstinputlisting[language=Python, caption={Code to generate the figure \ref{linear * linear sample}} ,firstnumber=1, stepnumber=1, label={linear x linear sample}]{codes/Processi gaussiani/Linear x linear sample.txt}
 
 
 
@@ -148,28 +148,28 @@ Non vengono inseriti i codici completi per la creazione del training di processi
 
 
 
-\subsection*{Predizione coi processi gaussiani}
+\subsection*{Prediction with Gaussian processes}
 
 %% CODICE 21
-\lstinputlisting[caption={Codice per generare la figura \ref{Interpolation}},language=Python, columns=fullflexible, stepnumber=1, firstnumber=1, label={interpolation code}]{codes/Processi gaussiani/Interpolazione.txt}
+\lstinputlisting[caption={Code to generate the figure \ref{Interpolation}},language=Python, columns=fullflexible, stepnumber=1, firstnumber=1, label={interpolation code}]{codes/Processi gaussiani/Interpolazione.txt}
 
 
 \newpage
 
 %% CODICE 21
-\lstinputlisting[caption={Codice per generare la figura \ref{Interpolation confidence region}},language=Python, stepnumber=1, firstnumber=1, columns=fullflexible, label={interpolation confidence region code}]{codes/Processi gaussiani/InterpolazioneConfidenceRegion.txt}
+\lstinputlisting[caption={Code to generate the figure \ref{Interpolation confidence region}},language=Python, stepnumber=1, firstnumber=1, columns=fullflexible, label={interpolation confidence region code}]{codes/Processi gaussiani/InterpolazioneConfidenceRegion.txt}
 
 
 \newpage
 
 %% CODICE 21
-\lstinputlisting[caption={Codice per generare la figura \ref{Noisy}},language=Python, stepnumber=1, firstnumber=1, columns=fullflexible, label={Noise code}]{codes/Processi gaussiani/InterpolazioneConfidenceRegion.txt}
+\lstinputlisting[caption={Code to generate the figure \ref{Noisy}},language=Python, stepnumber=1, firstnumber=1, columns=fullflexible, label={Noise code}]{codes/Processi gaussiani/InterpolazioneConfidenceRegion.txt}
 
 
 \newpage
 
 %% CODICE 21
-\lstinputlisting[caption={Codice per generare la figura \ref{Noisy confidence region}},language=Python, stepnumber=1, firstnumber=1, columns=fullflexible, label={Noise confidence region code}]{codes/Processi gaussiani/NoiseConfidenceRegion.txt}
+\lstinputlisting[caption={Code to generate the figure \ref{Noisy confidence region}},language=Python, stepnumber=1, firstnumber=1, columns=fullflexible, label={Noise confidence region code}]{codes/Processi gaussiani/NoiseConfidenceRegion.txt}
 
 
 \newpage
@@ -177,7 +177,7 @@ Non vengono inseriti i codici completi per la creazione del training di processi
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%  WINDKESSEL
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Modello Windkessel}
+\section*{Windkessel model}
 \input{codes/ODE/1 - Configurazione}
 
 \input{codes/ODE/2 - Dati reali}

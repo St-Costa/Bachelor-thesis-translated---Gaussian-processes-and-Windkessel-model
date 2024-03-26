@@ -108,4 +108,4 @@
 \contentsline {section}{\numberline {VII.1}Conclusions}{126}{section.7.1}%
 \contentsline {section}{\numberline {VII.2}Future directions}{127}{section.7.2}%
 \contentsline {chapter}{Bibliography}{131}{chapter*.155}%
-\contentsline {chapter}{Appendice}{135}{chapter*.156}%
+\contentsline {chapter}{Appendix}{135}{chapter*.156}%
